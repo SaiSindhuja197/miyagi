@@ -1,6 +1,6 @@
 # Introduction to Miyagi
 
-Project Miyagi is an immersive workshop designed to showcase Microsoft's Copilot Stack for creating and deploying advanced, enterprise-grade intelligent applications. This initiative provides a comprehensive exploration of both generative and traditional machine learning use cases, offering a hands-on approach to developing AI-enhanced product experiences. The workshop is tailored for software engineers eager to dive into emerging design patterns and techniques that can elevate their applications through hyper-personalization and productivity enhancements.
+Miyagi is designed to showcase Microsoft's Copilot Stack for creating and deploying advanced, enterprise-grade intelligent applications. This initiative provides a comprehensive exploration of both generative and traditional machine learning use cases, offering a hands-on approach to developing AI-enhanced product experiences. This workshop is tailored for software engineers eager to dive into emerging design patterns and techniques that can elevate their applications through hyper-personalization and productivity enhancements.
 
 ## Objectives
 
