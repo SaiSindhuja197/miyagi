@@ -1,5 +1,7 @@
 # Lab 1 - Run Miyagi Locally
 
+### Estimated Duration: 30 minutes
+
 In this lab, you'll setup and configure Miyagi app locally.
 
 ### Task 1: Setup configuration for miyagi app
