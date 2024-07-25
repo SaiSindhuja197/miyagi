@@ -6,7 +6,7 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
 
 By the end of this lab, you will achieve the following:
 
-- **Understanding Generative AI Basics**: Grasp the foundational concepts and principles of generative AI.
+- **Understanding Generative AI**: Grasp the foundational concepts and principles of generative AI.
 - **Exploring Azure OpenAI**: Learn how to leverage Azure OpenAI for various AI-driven tasks.
 - **Implementing Retrieval Augmented Generation (RAG) Patterns**: Understand and apply RAG patterns to enhance AI model performance.
 - **Utilizing Semantic Kernel**:Gain insights into the Semantic Kernel and how to use it effectively in AI solutions.
@@ -28,7 +28,7 @@ It integrates Azure Functions, AKS/ACA, and Apache Kafka for seamless communicat
 
 ## Architecture Diagram
 
-   ![](./Lab-Scenario-Preview/sk-memory-orchestration.png)
+   ![](../Lab-Scenario-Preview/sk-memory-orchestration.png)
       
 ## Getting Started with the Lab
 
