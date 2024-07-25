@@ -1,5 +1,7 @@
 # Lab 1: Verify and Retrieve the values of Azure Resources (optional)
 
+### Estimated Duration: 20 minutes
+
 In this lab, you will verify and retrieve specific values such as Endpoint, Connection String, and Key for various Azure resources. This is crucial for ensuring the proper configuration and connectivity of these resources.
 
    - Azure OpenAI : **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** 
