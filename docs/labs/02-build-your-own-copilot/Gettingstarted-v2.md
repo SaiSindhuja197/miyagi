@@ -102,6 +102,6 @@ It integrates Azure Functions, AKS/ACA, and Apache Kafka for seamless communicat
 > [!IMPORTANT]<br>
 > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
 
-This hands-on-lab will guide you in envisioning and creating intelligent systems that integrate foundation models, resulting in improved productivity and hyper-personalized product experiences.
+This hands-on-lab will guide you to create intelligent systems with Microsoft's Copilot stack, leveraging Generative AI and RAG patterns for enhanced productivity and personalized experiences.
 
 ## Happy Learning!!
