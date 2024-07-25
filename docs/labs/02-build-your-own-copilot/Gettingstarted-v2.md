@@ -25,7 +25,7 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
 
 Miyagi's architecture uses AI for hyper-personalized user interactions, transforming applications with Semantic Kernel skills and advanced prompt engineering. It features scalable microservices and an event-driven backbone, evolving with new AI models. The frontend offers personalized experiences similar to Microsoft Copilot.
 
-It integrates Azure Functions, AKS, and Apache Kafka for seamless communication, with data managed by Cosmos DB, Azure DB for PostgreSQL, Azure Redis Cache, and Azure Storage. GitHub Actions streamlines development and deployment. Miyagi exemplifies advanced AI and Azure services for future-ready, intelligent applications.
+It integrates Azure Functions, AKS, and Apache Kafka for seamless communication, with data managed by Cosmos DB and Azure Storage. Miyagi exemplifies advanced AI and Azure services for future-ready, intelligent applications.
 
 ## Architecture Diagram
 
@@ -33,15 +33,14 @@ It integrates Azure Functions, AKS, and Apache Kafka for seamless communication,
 
 ## Explanation of Components
 
+- **Azure OpenAI**: Azure OpenAI integrates OpenAI's language models into Microsoft's Azure cloud, enabling scalable AI solutions for natural language processing and automation.
+- **AI Search**: Is a cloud service that enables powerful and flexible search capabilities, including full-text search and AI-powered features.
 - **Azure Functions**: Run code in response to events without managing servers. Scales automatically based on demand.
-- **AKS**: Managed Kubernetes service for container orchestration and scaling.
-- **ACA**: Fully managed service for running containerized apps without managing infrastructure.
+- **AKS (Azure Kubernetes Service)**: Managed Kubernetes service for container orchestration and scaling.
 - **Apache Kafka**: Handles real-time data streaming and event processing.
 - **Cosmos DB**: Globally distributed, multi-model database with low latency and high availability.
-- **Azure DB for PostgreSQL**: Managed relational database with robust features.
-- **Azure Redis Cache**: High-performance, in-memory caching.
 - **Azure Storage**: Scalable storage for blobs, files, queues, and tables.
-- **GitHub Actions**: Automates CI/CD workflows directly from GitHub.
+- **Bing Search**: Lets you add Bing search features to your apps. It provides APIs for web, image, video, and news searches.
 
 > [!IMPORTANT]<br>
 > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
