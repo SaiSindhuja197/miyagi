@@ -29,7 +29,7 @@ It integrates Azure Functions, AKS, and Apache Kafka for seamless communication,
 
 ## Architecture Diagram
 
-   ![](https://github.com/CloudLabsAI-Azure/miyagi/blob/main/docs/Lab-Scenario-Preview/sk-memory-orchestration.png)
+   ![](../../Lab-Scenario-Preview/sk-memory-orchestration.png)
 
 ## Explanation of Components
 
