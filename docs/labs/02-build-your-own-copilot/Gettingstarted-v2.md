@@ -1,6 +1,18 @@
+# Build Intelligent Apps with Microsoft's Copilot Stack & Azure OpenAI
+
+### Overall Estimated Duration: 240 minutes
+
 ## Overview
 
 In this lab, you will gain a strong understanding of Generative AI basics, Azure Open AI, Retrieval Augmented Generation (RAG) patterns, Semantic Kernel, and how to utilize these concepts to create your own Copilot for your business needs. You will also explore use cases that showcase Copilot product experiences. Using Microsoft's Copilot stack and practical use cases this lab will guide you in envisioning and creating intelligent systems that integrate foundation models resulting in improved productivity and hyper-personalized product experiences. 
+
+Here are the labs you will be performing in this lab:
+
+- Lab 1: Verify and Retrieve the values of Azure Resources (optional)
+- Lab 2: Run Miyagi App Locally
+- Lab 3.1: Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS)
+- Lab 4: Expose Open AI through APIM
+- Lab 5: Getting Started with Your Own Copilot
 
 ## Objective
 
