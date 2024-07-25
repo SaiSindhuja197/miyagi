@@ -33,3 +33,7 @@ This workshop is designed for:
 ### High-level logical architecture
 
   ![azure](./assets/images/wip-azure1.png)
+
+### In-context learning flow
+
+  ![round-trip](./assets/images/sk-round-trip.png)
