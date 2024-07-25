@@ -1,6 +1,6 @@
 # Lab 3.1: Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS) 
 
-### Duration: 80 minutes
+### Duration: 60 minutes
 
 In this lab, you will containerize and deploy the Miyagi UI and recommendation services to Azure Kubernetes Service (AKS). You will start by configuring Kubernetes and building Docker images for both services. The process involves pushing these images to Azure Container Registry (ACR) and then deploying them on an AKS cluster. This ensures that the services are seamlessly integrated and operational within a scalable, containerized environment and applying Kubernetes configurations, updating service IP addresses, and verifying the deployment by accessing the services through their respective endpoints.
 
