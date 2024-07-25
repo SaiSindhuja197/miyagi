@@ -8,7 +8,7 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
 
 ## Objective
 
-- **Verify and Retrieve the values of Azure Resources (optional)**: Verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
+- **Verify and Retrieve the values of Azure Resources**: Verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
 - **Run Miyagi App Locally** : Configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
 - **Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS)** : Containerize and deploy Miyagi UI and recommendation services to AKS, configuring Kubernetes, pushing Docker images to ACR, and verifying deployment via service endpoints.
 - **Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS**: Deploy and verify Miyagi UI and Recommendation services on AKS, testing APIs and accessing the UI through Ingress endpoints to ensure functionality.
