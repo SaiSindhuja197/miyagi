@@ -11,6 +11,7 @@ Here are the labs you will be performing in this lab:
 - Lab 1: Verify and Retrieve the values of Azure Resources (optional)
 - Lab 2: Run Miyagi App Locally
 - Lab 3.1: Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS)
+- Lab 3.2: Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS
 - Lab 4: Expose Open AI through APIM
 - Lab 5: Getting Started with Your Own Copilot
 
