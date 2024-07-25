@@ -1,6 +1,6 @@
 # Lab 4 - Expose Open AI through APIM
 
-### Duration: 80 minutes
+### Duration: 60 minutes
 
 In this lab, you'll delve into configuring and verifying APIs within Azure API Management, focusing on integrating the Azure OpenAI service. This entails setting up HTTP APIs, ensuring correct configuration, and obtaining a gateway URL for seamless external access and integration. You'll also explore policy creation, role definitions, and subscription management to securely operate the APIs. This lab underscores best practices in API management, ensuring robust authentication, authorization, and operational testing within Azure's comprehensive ecosystem.
 
