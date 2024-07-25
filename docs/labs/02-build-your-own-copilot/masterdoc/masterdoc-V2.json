@@ -4,11 +4,11 @@
 		"Language": "English",
 		"Files": [
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/READMEv2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/Gettingstarted-v2.md",
 				"Order": 1
 			},
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/Gettingstarted-v2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/READMEv3.md",
 				"Order": 2
 			},
 			{
