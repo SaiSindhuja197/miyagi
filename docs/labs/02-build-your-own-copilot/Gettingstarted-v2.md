@@ -1,3 +1,19 @@
+## Overview
+
+In this lab, you will gain a strong understanding of Generative AI basics, Azure Open AI, Retrieval Augmented Generation (RAG) patterns, Semantic Kernel, and how to utilize these concepts to create your own Copilot for your business needs. You will also explore use cases that showcase Copilot product experiences. Using Microsoft's Copilot stack and practical use cases this lab will guide you in envisioning and creating intelligent systems that integrate foundation models resulting in improved productivity and hyper-personalized product experiences. 
+
+## Objective
+
+By the end of this lab, you will achieve the following:
+
+- Understanding Generative AI Basics: Grasp the foundational concepts and principles of generative AI.
+- Exploring Azure OpenAI: Learn how to leverage Azure OpenAI for various AI-driven tasks.
+- Implementing Retrieval Augmented Generation (RAG) Patterns: Understand and apply RAG patterns to enhance AI model performance.
+- Utilizing Semantic Kernel:Gain insights into the Semantic Kernel and how to use it effectively in AI solutions.
+- Creating a Custom Copilot: Develop and customize a Copilot tailored to specific business needs.
+- Exploring Copilot Use Cases: Investigate practical use cases that demonstrate Copilot product experiences and capabilities.
+- Integrating Foundation Models: Envision and create intelligent systems that integrate foundation models to improve productivity and provide hyper-personalized product experiences.
+
 ## Getting Started with the Lab
 
 1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
@@ -56,6 +72,9 @@
 
    ![](./Media/miyagi-image8.png)
 
-
 > [!IMPORTANT]<br>
 > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
+
+This hands-on-lab will guide you in envisioning and creating intelligent systems that integrate foundation models, resulting in improved productivity and hyper-personalized product experiences.
+
+## Happy Learning!!
