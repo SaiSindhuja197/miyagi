@@ -6,13 +6,28 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
 
 By the end of this lab, you will achieve the following:
 
-- Understanding Generative AI Basics: Grasp the foundational concepts and principles of generative AI.
-- Exploring Azure OpenAI: Learn how to leverage Azure OpenAI for various AI-driven tasks.
-- Implementing Retrieval Augmented Generation (RAG) Patterns: Understand and apply RAG patterns to enhance AI model performance.
-- Utilizing Semantic Kernel:Gain insights into the Semantic Kernel and how to use it effectively in AI solutions.
-- Creating a Custom Copilot: Develop and customize a Copilot tailored to specific business needs.
-- Exploring Copilot Use Cases: Investigate practical use cases that demonstrate Copilot product experiences and capabilities.
-- Integrating Foundation Models: Envision and create intelligent systems that integrate foundation models to improve productivity and provide hyper-personalized product experiences.
+- **Understanding Generative AI Basics**: Grasp the foundational concepts and principles of generative AI.
+- **Exploring Azure OpenAI**: Learn how to leverage Azure OpenAI for various AI-driven tasks.
+- **Implementing Retrieval Augmented Generation (RAG) Patterns**: Understand and apply RAG patterns to enhance AI model performance.
+- **Utilizing Semantic Kernel**:Gain insights into the Semantic Kernel and how to use it effectively in AI solutions.
+- **Creating a Custom Copilot**: Develop and customize a Copilot tailored to specific business needs.
+- **Exploring Copilot Use Cases**: Investigate practical use cases that demonstrate Copilot product experiences and capabilities.
+- **Integrating Foundation Models**: Envision and create intelligent systems that integrate foundation models to improve productivity and provide hyper-personalized product experiences.
+
+## Pre-requisites
+
+- Understanding of Generative AI basics
+- Familiarity with Azure Open AI
+- Experience with Semantic Kernel
+
+## Architecture
+
+Miyagi's architecture uses AI for hyper-personalized user interactions, transforming applications with Semantic Kernel skills and advanced prompt engineering. It features scalable microservices and an event-driven backbone, evolving with new AI models. The frontend offers personalized experiences similar to Microsoft Copilots.
+
+It integrates Azure Functions, AKS/ACA, and Apache Kafka for seamless communication, with data managed by Cosmos DB, Azure DB for PostgreSQL, Azure Redis Cache, and Azure Storage. GitHub Actions streamlines development and deployment. Miyagi exemplifies advanced AI and Azure services for future-ready, intelligent applications.
+
+## Architecture Diagram
+
 
 ## Getting Started with the Lab
 
