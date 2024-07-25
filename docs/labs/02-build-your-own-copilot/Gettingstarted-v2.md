@@ -8,12 +8,12 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
 
 ## Objective
 
-- **Verify and Retrieve the values of Azure Resources (optional)**
-- **Run Miyagi App Locally**
-- **Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS)**
-- **Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS**
-- **Expose Open AI through APIM**
-- **Getting Started with Your Own Copilot**
+- **Verify and Retrieve the values of Azure Resources (optional)**: Verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
+- **Run Miyagi App Locally** : Configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
+- **Containerizing Miyagi UI and Recommendation service to Azure Kubernetes Service(AKS)** : Containerize and deploy Miyagi UI and recommendation services to AKS, configuring Kubernetes, pushing Docker images to ACR, and verifying deployment via service endpoints.
+- **Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS**: Deploy and verify Miyagi UI and Recommendation services on AKS, testing APIs and accessing the UI through Ingress endpoints to ensure functionality.
+- **Expose Open AI through APIM**: Verify and create APIs in the API Management service to update the Docker image for the Recommendation service, ensuring the optimization and maintenance of containerized applications.
+- **Getting Started with Your Own Copilot**: Semantic Kernel is an SDK that integrates Large Language Models (LLMs) with languages like C#, Python, and Java by allowing the creation of easily chainable plugins.
   
 ## Pre-requisites
 
