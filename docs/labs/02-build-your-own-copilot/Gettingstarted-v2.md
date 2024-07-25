@@ -18,13 +18,11 @@ Here are the labs you will be performing in this lab:
 
 By the end of this lab, you will achieve the following:
 
-- **Understanding Generative AI**: Grasp the foundational concepts and principles of generative AI.
-- **Exploring Azure OpenAI**: Learn how to leverage Azure OpenAI for various AI-driven tasks.
-- **Implementing Retrieval Augmented Generation (RAG) Patterns**: Understand and apply RAG patterns to enhance AI model performance.
-- **Utilizing Semantic Kernel**:Gain insights into the Semantic Kernel and how to use it effectively in AI solutions.
-- **Creating a Custom Copilot**: Develop and customize a Copilot tailored to specific business needs.
-- **Exploring Copilot Use Cases**: Investigate practical use cases that demonstrate Copilot product experiences and capabilities.
-- **Integrating Foundation Models**: Envision and create intelligent systems that integrate foundation models to improve productivity and provide hyper-personalized product experiences.
+- Comprehend the transformative potential of Azure AI services and Copilot Stack in revolutionizing every facet of AI app development.
+- Acquire hands-on experience in AI-driven design and user experience techniques
+- Learn to effortlessly integrate foundation models into backend services, data processing, and frontend development
+- Build an AI-infused app from the ground up during the hands-on project
+- Implement Agents using Assistants API, Code Interpretor, and Retrieval intefaces.
 
 ## Pre-requisites
 
