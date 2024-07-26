@@ -4,6 +4,16 @@
 
 In this lab, you'll delve into configuring and verifying APIs within Azure API Management, focusing on integrating the Azure OpenAI service. This entails setting up HTTP APIs, ensuring correct configuration, and obtaining a gateway URL for seamless external access and integration. You'll also explore policy creation, role definitions, and subscription management to securely operate the APIs. This lab underscores best practices in API management, ensuring robust authentication, authorization, and operational testing within Azure's comprehensive ecosystem.
 
+## Lab objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Verify the deployed API Management service and create an API
+- Task 2: Create API Management Policy and Roles
+- Task 3: Update the Docker Image for the Recommendation service
+- Task 4: Revision of Recommendation service from AKS
+- Task 5: Setup Event Hub Logging and Validate Input
+
 ### Task 1: Verify the deployed API Management service and create an API
 
 In this lab, you'll be setting up an HTTP API within Azure API Management to interact with the Azure OpenAI service. It ensures the API is configured correctly and provides a gateway URL for external access and integration with other services.
