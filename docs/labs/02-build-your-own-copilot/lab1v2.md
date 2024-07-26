@@ -1,8 +1,17 @@
 # Lab 2 - Run Miyagi App Locally
 
-### Duration: 60 minutes
+### Estimated Duration: 60 minutes
 
 In this lab, the focus is on configuring the Miyagi App for operational readiness. Subsequently, attention shifts to understanding the nuanced implementation of the Recommendation service. The practical phase involves executing the Recommendation service and deploying the Miyagi frontend locally for testing and development. A crucial step includes optimizing data retrieval efficiency by persisting embeddings in Azure AI Search. The project culminates with a broader exploration of the Miyagi App and Recommendation service, emphasizing a personalized user experience. This task-based approach ensures a systematic progression through the project intricacies, facilitating a comprehensive understanding and effective implementation.
+
+## Lab objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Setup configuration for miyagi app
+- Task 2: Understanding the implementation of the Recommendation service
+- Task 3: Run recommendation service locally
+- Task 4: Run miyagi frontend locally
 
 ### Task 1: Setup configuration for miyagi app
 
