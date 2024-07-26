@@ -1,11 +1,18 @@
 # Getting Started with Your Own Copilot
 
-### Duration: 30 minutes
+### Estimated Duration: 30 minutes
 
 Semantic Kernel is an SDK that integrates Large Language Models (LLMs) like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C#, Python, and Java. Semantic Kernel achieves this by allowing you to define plugins that can be chained together in just a few lines of code.
 
 What makes Semantic Kernel _special_, however, is its ability to _automatically_ orchestrate plugins with AI. With Semantic Kernel
 [planners](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planner), you can ask an LLM to generate a plan that achieves a user's unique goal. Afterwards, Semantic Kernel will execute the plan for the user.
+
+## Lab objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Configure and Run the Semantic Kernel Sample
+- Task 2: Configure Azure Cognitive Search
 
 ### Task 1: Configure and Run the Semantic Kernel Sample
 In this task, you will configure the Semantic Kernel plugin in Visual Studio Code, create a C# Home Automation app using Azure OpenAI, and build and run the application to interact with it.
