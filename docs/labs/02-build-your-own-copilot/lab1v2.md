@@ -12,7 +12,9 @@ You will be able to complete the following tasks:
 - Task 2: Understanding the implementation of the Recommendation service
 - Task 3: Run recommendation service locally
 - Task 4: Run miyagi frontend locally
-
+- Task 5: Persist embeddings in Azure AI Search
+- Task 6: Explore the Miyagi App and Recommendation service by Personalizing
+  
 ### Task 1: Setup configuration for miyagi app
 
 In this task, you will configure the Miyagi application by updating specific settings in Visual Studio Code. This involves replacing placeholder values in configuration files with the actual values for various Azure resources to ensure proper connectivity and functionality.
