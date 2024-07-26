@@ -27,6 +27,10 @@
    * **Password**: **<inject key="AzureAdUserPassword"></inject>**
 
      ![](./Media/img5.png)
+
+1. If **Action required** pop-up window appears, click on **Ask later**.
+
+   ![](./Media/ask-later-01.png)
    
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
