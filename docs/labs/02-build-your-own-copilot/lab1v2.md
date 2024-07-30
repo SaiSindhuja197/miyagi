@@ -1,4 +1,4 @@
-# Lab 2 - Run Miyagi App Locally
+# Lab 2: Run Miyagi App Locally
 
 ### Estimated Duration: 60 minutes
 
