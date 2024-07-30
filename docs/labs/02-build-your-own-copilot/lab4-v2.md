@@ -1,4 +1,4 @@
-# Getting Started with Your Own Copilot
+# Lab 5: Getting Started with Your Own Copilot
 
 ### Estimated Duration: 30 minutes
 
