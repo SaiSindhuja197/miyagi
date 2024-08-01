@@ -62,7 +62,7 @@ It integrates Azure Functions, AKS, and Apache Kafka for seamless communication,
 
    - If you face any issue A WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
 
-      ![](./Media/docker-issue.png)
+      ![](./Media/docker-error.png)
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
