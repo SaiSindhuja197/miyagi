@@ -232,7 +232,7 @@ In this task, you'll Push miyagi-recommendation images to acr.
    > **Note**: Please replace **[username]** with **<inject key="AzureAdUserEmail" enableCopy="true"/>**, and **[password]** with **<inject key="AzureAdUserPassword" enableCopy="true"/>**.
 
     ```
-    az login -u[username] -p[password]
+    az login -u [username] -p [password]
     ```
 
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
