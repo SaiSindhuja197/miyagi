@@ -153,7 +153,7 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
     ![](./Media/search-service.png)
 
-    > **Note**: Please click on the refresh button still you view the **Document Count**.
+    > **Note**: Please click on the refresh button till you view the **Document Count**.
 
 1. once you viewed the indexes in AI Search, Navigae back to VS Code and  press **Ctrl + C** to stop the **swagger UI** page for node terminal.
 
@@ -229,13 +229,11 @@ In this task, you'll Push miyagi-recommendation images to acr.
 
 1. Run the following command to log in to the **Azure portal**.
 
-    ```
-    az login
-    ```
+   > **Note**: Please replace **[username]** with **<inject key="AzureAdUserEmail" enableCopy="true"/>**, and **[password]** with **<inject key="AzureAdUserPassword" enableCopy="true"/>**.
 
-1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
-
-   ![](./Media/azure-account-select.png)
+    ```
+    az login -u[username] -p[password]
+    ```
 
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
 
