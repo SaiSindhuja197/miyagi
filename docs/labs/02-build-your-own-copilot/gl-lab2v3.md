@@ -318,10 +318,10 @@ In this task, you'll will be creating a container app for the recommendation.
 
 1. Provide the values as following and click on **Review + Create** and again **Create.**
 
-   - Subscription : default subscription
+   - Subscription : default selected subscription
    - Resource Group : **miyagi-rg-<inject key="DeploymentID" enableCopy="true"/>**
    - Region : **<inject key="Region" enableCopy="true"/>**
-   - Resource Name : miyagi-apim-<inject key="DeploymentID" enableCopy="true"/>
+   - Resource Name : **miyagi-apim-<inject key="DeploymentID" enableCopy="true"/>**
    - Organization Name : **contoso**
    - Administrator Email : **<inject key="AzureAdUserEmail" enableCopy="true"/>**
    - Pricing Tier : **Basic (99.95% SLA)**
