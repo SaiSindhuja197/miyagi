@@ -10,7 +10,7 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
    ![](./Media/vs.png)
 
-   >**Note** If **Join us in making promt-flow extension better!** window prompted please click on **No,thanks**.
+   >**Note**: If **Join us in making promt-flow extension better!** window prompted please click on **No,thanks**.
 
    ![](./Media/image-rg-01.png)
    
@@ -311,5 +311,23 @@ In this task, you'll will be creating a container app for the recommendation.
    ![](./Media/online-output-recommendation.png)   
 
 ### Task 8: Provision API Management Service 
+
+1. Navigate to **Search resources, services and docs** in **Azure** portal home page and search for **API management services** and click on it.
+
+1. Click on **Create**.
+
+1. Provide the values as following and click on **Review + Create** and again **Create.**
+
+   - Subscription : default subscription
+   - Resource Group : **miyagi-rg-<inject key="DeploymentID" enableCopy="true"/>**
+   - Region : **<inject key="Region" enableCopy="true"/>**
+   - Resource Name : miyagi-apim-<inject key="DeploymentID" enableCopy="true"/>
+   - Organization Name : **contoso**
+   - Administrator Email : **<inject key="AzureAdUserEmail" enableCopy="true"/>**
+   - Pricing Tier : **Basic (99.95% SLA)**
+
+      ![](./Media/api-management-prov.png)
+
+   >**Note**: Please Continue with the next step as the deployment will take around 20-30 minutes to complete. 
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
