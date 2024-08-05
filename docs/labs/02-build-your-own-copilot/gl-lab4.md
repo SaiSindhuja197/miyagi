@@ -36,10 +36,10 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
 
 1. Open PowerShell as an administrator.
    
-1. Navigate to the directory `C:/Users/demouser` by running the below command.
+1. Navigate to the directory `C:/Users/azureuser` by running the below command.
  
    ``` 
-   cd C:/Users/demouser
+   cd C:/Users/azureuser
    ```
 1. Run the command to clone the GitHub repository.
    
@@ -61,7 +61,7 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
 2. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
 
    ``` 
-   cd C:\Users\demouser\chat-copilot\scripts\
+   cd C:\Users\azureuser\chat-copilot\scripts\
    ```
 
 3. Run the below command to install Chocolatey, dotnet-7.0-sdk, nodejs, and yarn:
@@ -112,7 +112,7 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
 1. Run the following command to change the path.
  
    ```
-   cd C:\Users\demouser\chat-copilot\scripts\
+   cd C:\Users\azureuser\chat-copilot\scripts\
    ```
  
 1. Run the following to set the execution policy.
