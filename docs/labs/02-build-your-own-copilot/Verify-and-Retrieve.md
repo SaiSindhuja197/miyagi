@@ -30,7 +30,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
            ![](./Media/miyagi-image119.png)
         
-      - In the **Deployments** blade of Azure AI Studio, click on **gpt-4** model name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
+      - In the **Deployments** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
 
           ![](./Media/miyagi-image(12).png)
         
@@ -38,7 +38,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
       
       -  Navigate back to the **Deployment** page.
 
-      - In the Deployments blade of Azure AI Studio, click on **text-embedding-ada-002 model name (1)** and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
+      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** **(1)** deployment name and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
         
          ![](./Media/miyagi-image(14).png)
 
@@ -95,4 +95,4 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 ## Summary
 In this lab, you will verify and retrieve configuration values such as Endpoint, Connection String, and Key for various Azure resources like OpenAI Service, Cosmos DB, and Cognitive Search. This ensures proper configuration and connectivity. The steps involve accessing the Azure Portal, navigating to specific resource groups, and verifying the required values.
 
-### You have successfully completed this lab. Now click on **Next** from the lower right corner to move to the next page.
+## You have successfully completed this lab. Now click on **Next** from the lower right corner to move to the next page.
