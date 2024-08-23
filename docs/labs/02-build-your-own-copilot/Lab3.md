@@ -228,7 +228,7 @@ In this lab, you'll be managing the deployment lifecycle of the recommendation s
 
    ![](./Media/miyagi-image75.png)
 
-1. Once the Kubernetes service starts, select **Services and ingresses** under **Kubernetes resources** and click on **Extension IP** of the miyagi-recommendation-service.
+1. Once the Kubernetes service starts, select **Services and ingresses** under **Kubernetes resources** and click on **External IP** of the miyagi-recommendation-service.
 
    ![](./Media/miyagi-image76.png)
 
