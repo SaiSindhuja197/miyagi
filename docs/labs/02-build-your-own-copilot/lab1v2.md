@@ -88,7 +88,7 @@ In this task, you will configure the Miyagi application by updating specific set
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-   <validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
+   <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
 ### Task 2: Understanding the implementation of the Recommendation service
 
