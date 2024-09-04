@@ -111,7 +111,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-<validation step="f277b99e-c179-4bb8-b9c1-6479a526ee4b" />
+<validation step="560130f4-fca1-49e1-98a6-97ec61155364" />
 
 ### Task 3: Run recommendation service locally
 In this task, you will run the recommendation service locally by using Visual Studio Code to build and run the service in the terminal and then verify its functionality by accessing the Swagger page in the browser.
@@ -213,7 +213,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-   <validation step="940ebf1a-9add-4bf0-a7fd-c6d929961497" />
+   <validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
 
 ### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 In this task, you'll personalize the Miyagi App's Recommendation service by selecting a financial advisor and reviewing the recommendations. Then, you'll check the logs in Visual Studio Code and stop the services.
