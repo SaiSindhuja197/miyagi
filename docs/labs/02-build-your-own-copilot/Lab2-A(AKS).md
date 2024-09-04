@@ -289,7 +289,7 @@ In this task, you'll Push miyagi-recommendation images to acr.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-    <validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
+    <validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
 
 # Lab 3.2: Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS
 
