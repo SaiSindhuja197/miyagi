@@ -48,7 +48,7 @@ In this lab, you'll be setting up an HTTP API within Azure API Management to int
       > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the labguide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    <validation step="f0747771-c830-4f46-8e46-2531ad40214a" />
+    <validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
 
 ### Task 2: Create API Management Policy and Roles
 
