@@ -30,13 +30,12 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
    ![](./Media/api-product6.png)
 
 
-
-1. **¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
+   >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
    > - Pulse el botón Validar para la tarea correspondiente.
    > - Si recibe un mensaje de éxito, puede proceder a la siguiente tarea. De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
    > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
 
-    <validation step="dbb047d4-96e5-4295-b8a7-1e1584fa7aa4" />
+   <validation step="dbb047d4-96e5-4295-b8a7-1e1584fa7aa4" />
 
 ### Tarea 2: Crear Políticas y Roles de API Management
 
