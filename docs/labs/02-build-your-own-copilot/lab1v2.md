@@ -100,7 +100,8 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 
 1. **Execute the notebook cell by cell** (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
   
-   > **Note**: Make sure **.Net Interactive** is in ready State, If not please wait for 15 to 20 seconds. Also, please do not click on **Run All** option to execute all the cells at a time which may lead to exceed in token limit that results Error: 503 – Service unreachable. 
+
+   > **Note**: Make sure **.Net Interactive** is in ready State, if not please wait for 15 to 20 seconds if it is still not loading, kindly close and reopen Visual Studio. Also, please do not click on **Run All** option to execute all the cells at a time which may lead to exceed in token limit that results Error: 503 – Service unreachable. 
 
       ![](./Media/miyagi-image20.png)
    
