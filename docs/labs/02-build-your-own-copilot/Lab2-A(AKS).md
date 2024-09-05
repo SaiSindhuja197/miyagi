@@ -249,7 +249,7 @@ En esta tarea, enviará las imágenes miyagi-recommendation a acr.
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
-    <validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
+<validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
 
 # Laboratorio 3.2: Explorar y Verificar la interfaz de usuario de Miyagi y el servicio de Recomendación contenedorizados en AKS
 
