@@ -75,7 +75,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
-   <validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
+   <validation step="0640bd3e-9280-4d00-8737-7aac5159a12a" />
 
 ### Tarea 2: Comprender la implementación del servicio de Recomendación
 
@@ -98,7 +98,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
-<validation step="f277b99e-c179-4bb8-b9c1-6479a526ee4b" />
+<validation step="5beabf7d-c7bd-4367-91a8-1661d1e77e28" />
 
 ### Tarea 3: Ejecutar el servicio de recomendaciones localmente
 
@@ -191,7 +191,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
-   <validation step="940ebf1a-9add-4bf0-a7fd-c6d929961497" />
+   <validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
 
 ### Tarea 6: Explorar la Aplicación Miyagi y el servicio de Recomendación mediante Personalización
 
