@@ -76,19 +76,21 @@ In this task, You will deploy the Miyagi recommendation and UI services on an Az
 ### Task 2: Build a Docker Image for the Miyagi UI
 In this task, you will build and run the Miyagi UI Docker container locally. Begin by opening Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi UI. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
 
-1. Open the **Docker** Application from the Lab VM desktop by double-clicking on it.
+1. Navigate to Docker Desktop application from the task-bar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
 
    ![](./Media/docker1.png)
    
-1. In the **Docker Subscription Service Agreement** window, click **Accept**.
+    >**Note:** If you are prompted with Docker Desktop initial sign in prompts follow the below steps:
+    
+    >If you are prompted with the **Docker Subscription Service Agreement** window, click **Accept**.
 
-   ![](./Media/docker2.png)
+      ![](./Media/docker2.png)
 
-1. In the **Welcome to Docker Desktop** window, click on **Continue without signing in**.
+    > In the **Welcome to Docker Desktop** window, click on **Continue without signing in**.
 
-   ![](./Media/without-signin.png)
+     ![](./Media/without-signin.png)
 
-1. In the **Tell us about the work you do** window, click on **Skip**.
+    > In the **Tell us about the work you do** window, click on **Skip**.
    
 1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrate Terminal**.
 
