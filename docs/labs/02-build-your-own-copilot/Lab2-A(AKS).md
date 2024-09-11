@@ -243,8 +243,10 @@ En esta tarea, enviará las imágenes miyagi-recommendation a acr.
    
    ![](./Media/AKS-running.png)
 
+
+    <validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
  
-   >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
+>**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
 > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
