@@ -1,4 +1,4 @@
-# Lab 4 - Expose Open AI through APIM
+# Lab 4: Expose Open AI through APIM
 
 ### Duration: 60 minutes
 
