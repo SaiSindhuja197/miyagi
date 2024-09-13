@@ -32,7 +32,7 @@
 
 1. Agora digite a seguinte palavra-passe e clique em **Entrar**.
 
-    * **Password**: **<inject key="AzureAdUserPassword"></inject>**
+    * **Palavra-passe**: **<inject key="AzureAdUserPassword"></inject>**
 
       ![](../Media/miyagi-image3.png)
 
