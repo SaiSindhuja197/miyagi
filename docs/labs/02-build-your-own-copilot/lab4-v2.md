@@ -40,7 +40,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
    ![](./Media/trustauthor.png)
 
-9. Navegue al archivo **appsettings.json** **(1)** y reemplace el **script** **(2)** existente con lo siguiente:
+9. Navegue al archivo **appsettings.json** **(1)** y reemplace el **script** **(2)** existente con lo siguiente. La sección AzureOpenAIOptions en appsettings.json almacena los ajustes de configuración para los servicios de Azure OpenAI, como la clave API, la dirección URL del punto final y el nombre del modelo, que se usan para la autenticación y el acceso al servicio.
 
    ```
    {
@@ -64,13 +64,98 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
 11. Asegúrese de que su archivo `appsettings.json` se vea como se muestra en la siguiente captura de pantalla.
 
-    ![](./Media/updatenewlaste1.png)
+    ![](./Media/miyagi-image(99).png)
 
-12. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal(2)** > **Nueva Terminal(3)**.
+12. Navegue hasta el archivo **Program.cs** **(1)** y reemplace el código existente con lo siguiente. El archivo `Program.cs` configura una aplicación .NET mediante inyección de dependencia y kernel semántico. Configura servicios, incluido Azure OpenAI para completar el chat, y agrega varios complementos `(MyTimePlugin, MyAlarmPlugin, MyLightPlugin)`. Las `AzureOpenAIOptions` se cargan desde archivos de configuración y variables de entorno. Un servicio alojado `(Trabajador)` maneja la lógica de ejecución principal. Se crea un kernel de automatización del hogar con una colección de estos complementos y se agrega al contenedor de inyección de dependencias.
+
+      ```
+      using HomeAutomation.Options;
+      using HomeAutomation.Plugins;
+      using Microsoft.Extensions.DependencyInjection;
+      using Microsoft.Extensions.Hosting;
+      using Microsoft.Extensions.Options;
+      using Microsoft.SemanticKernel;
+      using Microsoft.SemanticKernel.ChatCompletion;
+      using Microsoft.SemanticKernel.Connectors.OpenAI;
+      
+      namespace HomeAutomation;
+      
+      internal static class Program
+      {
+          internal static async Task Main(string[] args)
+          {
+              HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+      
+              // Actual code to execute is found in Worker class
+              builder.Services.AddHostedService<Worker>();
+      
+              // Get configuration
+              builder.Services.AddOptions<AzureOpenAIOptions>()
+                              .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
+                              .ValidateDataAnnotations()
+                              .ValidateOnStart();
+      
+              // Chat completion service that kernels will use
+              builder.Services.AddSingleton<IChatCompletionService>(sp =>
+              {
+                  /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
+      
+                  // A custom HttpClient can be provided to this constructor
+                  return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
+      
+                   Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
+                     of OpenAI options with builder.Services.AddOptions:*/
+      
+                  AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
+      
+                  return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
+              });
+      
+              // Add plugins that can be used by kernels
+              // The plugins are added as singletons so that they can be used by multiple kernels
+              builder.Services.AddSingleton<MyTimePlugin>();
+              builder.Services.AddSingleton<MyAlarmPlugin>();
+              builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
+              builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
+              {
+                  return new MyLightPlugin(turnedOn: true);
+              });
+      
+              /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
+                 Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
+              Kernel kernel = new();
+              KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
+              builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
+      
+              KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
+              builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
+      
+              // Add a home automation kernel to the dependency injection container
+              builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
+              {
+                  // Create a collection of plugins that the kernel will use
+                  KernelPluginCollection pluginCollection = [];
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
+      
+                  // When created by the dependency injection container, Semantic Kernel logging is included by default
+                  return new Kernel(sp, pluginCollection);
+              });
+      
+              using IHost host = builder.Build();
+      
+              await host.RunAsync();
+          }
+      }
+      ```
+
+13. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal(2)** > **Nueva Terminal(3)**.
 
     ![](./Media/semtic-newterminal.png)
 
-13. Ejecute los siguientes comandos para instalar los paquetes necesarios.
+14. Ejecute los siguientes comandos para instalar los paquetes necesarios.
     
     ```
     dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9
@@ -78,7 +163,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
     dotnet add package Microsoft.SemanticKernel --version 1.11.0
     ```
 
-14. Para compilar y ejecutar la aplicación Home Automation desde la terminal, utilice los siguientes comandos: 
+15. Para compilar y ejecutar la aplicación Home Automation desde la terminal, utilice los siguientes comandos: 
 
     ```powershell
     dotnet build
@@ -89,19 +174,19 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
     > **Nota**: Por favor ignore la advertencia.
     
-15. Después de ejecutar `dotnet run`, puede hacer algunas preguntas y revisar la respuesta. Por ejemplo:: `What time is it?`
+16. Después de ejecutar `dotnet run`, puede hacer algunas preguntas y revisar la respuesta. Por ejemplo:: `What time is it?`
 
     ![](./Media/dotnetrun.png)
 
-16. Ejemplo 2: `Set an alarm for 6:00 am.`
+17. Ejemplo 2: `Set an alarm for 6:00 am.`
 
     ![](./Media/questionn2.png)
 
-17. Si desea incluir preguntas adicionales, navegue hasta el archivo **worker.cs** e inserte sus nuevas preguntas en la **línea número 32**.
+18. Si desea incluir preguntas adicionales, navegue hasta el archivo **worker.cs** e inserte sus nuevas preguntas en la **línea número 32**.
 
     ![](./Media/optional12.png)
 
-18. Alternativamente, puede plantear cualquier pregunta en la terminal.
+19. Alternativamente, puede plantear cualquier pregunta en la terminal.
 
 ### Tarea 2: Configurar Azure Cognitive Search
 
