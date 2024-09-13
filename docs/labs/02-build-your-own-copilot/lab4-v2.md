@@ -44,7 +44,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
    ```
    {
-   "AzureOpenAI": {
+   "AzureOpenAIOptions": {
      "ChatDeploymentName": "",
      "Endpoint": "",
      "ApiKey": ""
