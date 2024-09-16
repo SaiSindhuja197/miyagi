@@ -31,25 +31,25 @@ Embarque numa viagem para transformar as suas aplicações em sistemas inteligen
 ### Front-end
 A interação com modelos básicos é mais do que chat. Este exemplo mostra alguns casos de utilização
 
-![frontend](./wip-ui.png)
+![frontend](../Media/wip-ui.png)
 
 ### Arquitetura
 
 #### Arquitetura lógica de alto nível
 
-![azure](./wip-azure.png)
+![azure](../Media/wip-azure.png)
 
 #### Orquestração Kernel Semântico para o caso de uso Miyagi
 
-![sk-orchestration](./sk-memory-orchestration.png)
+![sk-orchestration](../Media/sk-memory-orchestration.png)
 
 #### Vista de 30 mil pés
 
-<p align="left"><img src="basic-arch.png" largura=30% altura=30% /></p>
+![pilha copiloto](../Media/basic-arch.png)
 
 ### Pilha de copiloto
 
-![pilha copiloto](./copilot-stack.png)
+![pilha copiloto](../Media/copilot-stack.png)
 
 ### Serviços e capacidades
 
