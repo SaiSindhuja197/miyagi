@@ -25,10 +25,10 @@ Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num clu
 1. Assim que o comando estiver concluído, deverá ter acesso ao cluster e poderá executar os seguintes comandos para implementar os serviços de aplicação.
 
     ```
-    kubectl aplicar -f ./miyagi-recommendation-service.yaml
+    kubectl apply -f ./miyagi-recommendation-service.yaml
     ```
     ```
-    kubectl aplicar -f ./miyagi-ui-service.yaml
+    kubectl apply -f ./miyagi-ui-service.yaml
     ```
 
     >**Nota**: Após a execução bem-sucedida dos comandos acima. O Kubernetes irá ler o ficheiro YAML e aplicar as suas definições ao cluster. Criará miyagi-recommendation-service e miyagi-ui
@@ -36,7 +36,7 @@ Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num clu
 1. Depois de os serviços estarem implementados, execute o comando abaixo e acompanhe os **IPs externos** do serviço. Pode demorar alguns minutos até que os **ips externos** apareçam, por isso aguarde alguns minutos antes de executar o comando.
 
     ```
-    kubectl obter svc
+    kubectl get svc
     ```
 
     ![](../Media/external-ip.png)
@@ -77,7 +77,7 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 1. Navegue de volta para a janela **Visual Studio Code** e navegue até **miyagi/ui/typescript** - clique com o botão direito do rato no menu em cascata e selecione **Abrir no terminal integrado**.
 
     ```
-    construção do docker. -t miyagi-ui
+    docker build . -t miyagi-ui
     ```
 
     > **Nota**: Aguarde, pois este comando pode demorar algum tempo a ser concluído.
@@ -87,7 +87,7 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 1. Execute o seguinte comando para obter a imagem recém-criada.
 
     ```
-    imagens da janela de encaixe
+    docker images
     ```
 
     ![](../Media/miyagi-image32.png)
@@ -125,7 +125,7 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 1. Execute o seguinte comando para construir uma **imagem Docker**
 
     ```
-    construção do docker. -t recomendação miyagi
+    docker build . -t miyagi-recommendation
     ```
 
     > **Nota**: Aguarde, pois este comando pode demorar algum tempo a ser concluído.
@@ -133,7 +133,7 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 1. Execute o seguinte comando para obter a imagem recém-criada.
 
     ```
-    imagens da janela de encaixe
+    docker images
     ```
 
     ![](../Media/miyagi-image40.png)
@@ -173,7 +173,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
 1. Execute o seguinte comando para iniciar sessão no **portal Azure**.
 
     ```
-    login az
+    az login
     ```
 
 1. Isto irá redirecionar para **página de login da Microsoft**, selecione a sua conta do Azure **<inject key="AzureAdUserEmail"></inject>** e navegue de volta para **código do Visual Studio**.
@@ -185,7 +185,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     > **Nota**: Substitua **[ACRname]** **<inject key="AcrUsername" enableCopy="true"/>**.
 
     ```
-    login az acr -n [nome do ACR]
+    az acr login -n [ACRname]
     ```
 
     >**Nota**: O comando az acr login -n [ACRname] regista-o numa instância do Azure Contentor Registry (ACR). Autentica a sua sessão com o Registo de Contentores do Azure especificado, permitindo enviar e extrair imagens de contentores de e para o registo.
@@ -195,7 +195,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     > **Nota**: Substitua **[ACRname]** por **<inject key="AcrLoginServer" enableCopy="true"/>**.
 
     ```
-    docker tag recomendação miyagi: mais recente [ACRname]/recomendação miyagi: mais recente
+    docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest
     ```
 
     >**Nota**: o comando docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest marca uma imagem local do Docker com um novo nome que inclui o nome do Azure Container Registry (ACR). Ao marcar a imagem desta forma, prepara-a para ser enviada por push para o Registo de Contentores do Azure especificado.
@@ -205,7 +205,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     > **Nota**: Substitua **[ACRname]** por **<inject key="AcrLoginServer" enableCopy="true"/>**.
 
     ```
-    docker push [nome do ACR]/recomendação miyagi: mais recente
+    docker push [ACRname]/miyagi-recommendation:latest
     ```
 
     ![](../Media/task2-6.png)
@@ -219,7 +219,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     > **Nota**: Substitua **[ACRname]** por **<inject key="AcrLoginServer" enableCopy="true"/>**.
 
     ```
-    tag docker miyagi-ui:mais recente [ACRname]/miyagi-ui:mais recente
+    docker tag miyagi-ui:latest [ACRname]/miyagi-ui:latest
     ```
 
 1. Execute o seguinte comando para enviar a imagem para o registo do contentor.
@@ -227,7 +227,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     > **Nota**: Substitua **[ACRname]** por **<inject key="AcrLoginServer" enableCopy="true"/>**.
 
     ```
-    docker push [nome do ACR]/miyagi-ui:mais recente
+    docker push [ACRname]/miyagi-ui:latest
     ```
 
 ### Tarefa 5: Implantar pods AKS
@@ -251,10 +251,10 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
 1. Execute os seguintes comandos para implementar os pods de aplicações.
 
     ```
-    kubectl aplicar -f ./miyagi-recommendation.yaml
+    kubectl apply -f ./miyagi-recommendation.yaml
     ```
     ```
-    kubectl aplicar -f ./miyagi-ui.yaml
+    kubectl apply -f ./miyagi-ui.yaml
     ```
 
 1. As aplicações devem agora ser implantadas. Para verificar, execute o comando abaixo e verá os dois pods em estado de execução.
@@ -262,7 +262,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     >**Nota**: Pode demorar alguns minutos até que a saída apareça, por isso aguarde alguns minutos antes de executar o comando.
 
     ```
-    kubectl obter pods
+    kubectl get pods
     ```
 
     ![](../Media/AKS-running.png)
@@ -286,7 +286,7 @@ Neste laboratório, irá explorar a implementação e verificação da UI Miyagi
     >**Nota**: Pode demorar alguns minutos até que a saída apareça, por isso aguarde alguns minutos antes de executar o comando.
 
     ```
-    kubectl obter svc
+    kubectl get svc
     ```
 
     ![](../Media/miyagi-image129.png)
@@ -300,7 +300,7 @@ Neste laboratório, irá explorar a implementação e verificação da UI Miyagi
 1. Para testar a UI, execute o comando abaixo para obter os endereços IP do serviço
  
     ```
-    kubectl obter svc
+    kubectl get svc
     ```
 
     ![](../Media/miyagi-image128.png)
