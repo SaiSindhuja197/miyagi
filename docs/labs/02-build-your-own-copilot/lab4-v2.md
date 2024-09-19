@@ -21,35 +21,35 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
    ![](./Media/vs.png)
 
-2. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AIENDPONTS(OPEN AI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
+1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AIENDPONTS(OPEN AI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 
     ![](./Media/miyagi-image92.png)
 
-3. Under **AI ENDPONTS(AZURE OPENAI)**, click on **sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools' wants to sign in using Microsoft** click on **Allow** **(2)**.
+1. Under **AI ENDPONTS(AZURE OPENAI)**, click on **sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools' wants to sign in using Microsoft** click on **Allow** **(2)**.
 
    ![](./Media/miyagi-image93.png)
 
-4. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
+1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
 
    ![](./Media/miyagi-image94.png)
 
-5. Navigate back to the **Visual Studio Code** From the **Functions panel**, click on the **Get started icon** **(1)** and follow the wizard to **create your app** **(2)** with the semantic function.
+1. Navigate back to the **Visual Studio Code** From the **Functions panel**, click on the **Get started icon** **(1)** and follow the wizard to **create your app** **(2)** with the semantic function.
 
    ![](./Media/miyagi-image95.png)
 
-6. Choose **C# Home Automation**
+1. Choose **C# Home Automation**
 
     ![](./Media/miyagi-image96.png)
 
-7. Browse the location **C:\LabFiles** and **select location for new app**
+1. Browse the location **C:\LabFiles** and **select location for new app**
 
    ![](./Media/miyagi-image97.png)
 
-8. Click on **Yes, I trust authors**.
+1. Click on **Yes, I trust authors**.
 
    ![](./Media/miyagi-image98.png)
 
-9. Navigate to the **appsettings.json** **(1)** file and replace the existing **script** **(2)** with the following. The `AzureOpenAIOptions` section in appsettings.json stores configuration settings for Azure OpenAI services, such as API key, endpoint URL, and model name, used for authentication and service access.
+1. Navigate to the **appsettings.json** **(1)** file and replace the existing **script** **(2)** with the following. The `AzureOpenAIOptions` section in appsettings.json stores configuration settings for Azure OpenAI services, such as API key, endpoint URL, and model name, used for authentication and service access.
 
    ```
    {
@@ -63,7 +63,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
    ![](./Media/replaceappsetting.png)
 
-10. In ASP.NET Core, `appsettings.json` is a configuration file that stores various application settings, such as service endpoints, and other application-specific settings and saves the file **Ctrl + S**. 
+1. In ASP.NET Core, `appsettings.json` is a configuration file that stores various application settings, such as service endpoints, and other application-specific settings and saves the file **Ctrl + S**. 
 
     | **Variables**       | **Values**                                             |
     | --------------------|--------------------------------------------------------|
@@ -71,11 +71,11 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
     | Endpoint            | **<inject key="OpenAIEndpoint" enableCopy="true"/>**   |
     | ApiKey              | **<inject key="OpenAIKey" enableCopy="true"/>**        |
 
-11. Make sure your `appsettings.json` file looks as shown in the screenshot below.
+1. Make sure your `appsettings.json` file looks as shown in the screenshot below.
 
     ![](./Media/miyagi-image(99).png)
 
-12. Navigate to the **Program.cs** **(1)** file and replace existing code with the following. The  `Program.cs` file sets up a .NET application using dependency injection and Semantic Kernel. It configures services, including Azure OpenAI for chat completion, and adds various plugins `(MyTimePlugin, MyAlarmPlugin, MyLightPlugin)`. The `AzureOpenAIOptions` are loaded from configuration files and environment variables. A hosted service `(Worker)` handles the main execution logic. A home automation kernel is created with a collection of these plugins and added to the dependency injection container. 
+1. Navigate to the **Program.cs** **(1)** file and replace existing code with the following. The  `Program.cs` file sets up a .NET application using dependency injection and Semantic Kernel. It configures services, including Azure OpenAI for chat completion, and adds various plugins `(MyTimePlugin, MyAlarmPlugin, MyLightPlugin)`. The `AzureOpenAIOptions` are loaded from configuration files and environment variables. A hosted service `(Worker)` handles the main execution logic. A home automation kernel is created with a collection of these plugins and added to the dependency injection container. 
 
       ```
       using HomeAutomation.Options;
@@ -160,11 +160,17 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
       }
       ```
 
-13. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal(2)** > **New Terminal(3)**.
+1. Navigate to **Worker.cs** file, and update the line number 29, and **CTRL+S**.
+
+    ```
+    ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
+    ```
+    
+1. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal(2)** > **New Terminal(3)**.
 
     ![](./Media/semtic-newterminal.png)
 
-14. Execute the following commands to install the necessary packages.
+1. Execute the following commands to install the necessary packages.
     
     ```
     dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9
@@ -181,7 +187,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
     > **dotnet add package Microsoft.SemanticKernel --version 1.11.0**: Adds the Microsoft.SemanticKernel package to the project with a specific version (1.11.0). This package likely provides functionality related to semantic analysis and processing within the application.
 
 
-15. To build and run the Home Automation application from the terminal use the following commands:
+1. To build and run the Home Automation application from the terminal use the following commands:
 
     ```powershell
     dotnet build
@@ -194,19 +200,19 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
     
     > **Note** The commands dotnet build and dotnet run are fundamental in .NET Core and .NET 5+ environments for building and running .NET applications locally on your machine.
 
-16. After running `dotnet run`, you can ask a few questions and review the response. For example: `What time is it?`
+1. After running `dotnet run`, you can ask a few questions and review the response. For example: `What time is it?`
 
     ![](./Media/miyagi-image100.png)
 
-17. Example 2: `Set an alarm for 6:00 am.`
+1. Example 2: `Set an alarm for 6:00 am.`
 
     ![](./Media/miyagi-image101.png)
 
-18. To include additional questions, navigate to the **worker.cs** file and insert your new questions at **line number 32**.
+1. To include additional questions, navigate to the **worker.cs** file and insert your new questions at **line number 32**.
 
     ![](./Media/miyagi-image102.png)
 
-19. Alternatively, you can pose any question to in the terminal.
+1. Alternatively, you can pose any question to in the terminal.
 
 ### Task 2: Configure Azure Cognitive Search
 
