@@ -83,10 +83,9 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
 1. Once after updating the values kindly save the file by pressing **CTRL + S**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
 #### Validation
 
@@ -114,7 +113,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
    <validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
 
@@ -213,7 +212,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
   <validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
 
