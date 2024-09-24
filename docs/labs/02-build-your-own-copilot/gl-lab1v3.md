@@ -6,6 +6,8 @@ In this lab, the focus is on configuring the Miyagi App for operational readines
 
 ### Task 1: Setup configuration for miyagi app
 
+In this lab, you will configure the Miyagi app by setting up the environment, installing dependencies, and preparing the database for a seamless development experience.
+
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
    ![](./Media/vs.png)
@@ -76,9 +78,11 @@ In this lab, the focus is on configuring the Miyagi App for operational readines
 
 #### Validation
 
-<validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
+<validation step="eb73d21f-c370-4eba-9380-8d78b6bfc326" />
 
 ### Task 2: Understanding the implementation of the Recommendation service
+
+In this lab, you will explore the implementation of the Recommendation service, focusing on its algorithms and data processing methods to deliver personalized suggestions.
 
 Recommendation service implements RAG pattern using Semantic Kernel SDK. The details of the implementation are captured in the Jupyter notebook in the folder miyagi/sandbox/usecases/rag/dotnet. You can open the notebook in VSCode and run the cells to understand step-by-step details of how the Recommendation Service is implemented. Pay special attention to how the RAG pattern is implemented using Semantic Kernel. Select kernel as .NET Interactive in the top right corner of the notebook.
 
@@ -100,9 +104,11 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-   <validation step="f277b99e-c179-4bb8-b9c1-6479a526ee4b" />
+   <validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
 
 ### Task 3: Run recommendation service locally
+
+In this lab, you will set up the environment, install necessary dependencies, and run the Recommendation service locally to test and develop features effectively.
 
 1. Open a new terminal: by navigating **miyagi/services/recommendation-service/dotnet** and right-click on in cascading menu select **Open in Integrated Terminal**.
 
@@ -197,7 +203,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-  <validation step="940ebf1a-9add-4bf0-a7fd-c6d929961497" />
+  <validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
 
 ### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
