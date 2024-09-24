@@ -8,7 +8,7 @@ In this lab, you'll run Chat Copilot locally after retrieving Azure OpenAI Servi
 
 ### Task 1: Retrieving the Azure OpenAI Service values
 
-From the Azure portal, you need to retrieve the Azure OpenAI Service Key, Endpoint, and LLM model names.
+In this task, you will retrieve the Azure OpenAI Service values by accessing the service configuration, querying the API, and ensuring the correct integration of parameters for your application.
 
 1. In the Azure Portal, search for **Azure OpenAI** and select it.
    
@@ -32,7 +32,7 @@ From the Azure portal, you need to retrieve the Azure OpenAI Service Key, Endpoi
 
 ### Task 2: Cloning the Chat-Copilot GitHub Repo
 
-You will clone the Chat-Copilot GitHub Repository to the environment where you're working on this lab, follow these steps to do so.
+In this task, you will clone the Chat-Copilot GitHub repository by using Git commands to download the code to your local machine for further exploration and development.
 
 1. Open PowerShell as an administrator.
    
@@ -56,6 +56,8 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
 
 ### Task 3: Setting up the Environment
 
+In this task, you will set up the environment for the Chat-Copilot project by installing necessary dependencies, configuring environment variables, and preparing the development environment for local execution.
+
 1. Open PowerShell as an administrator on your local machine. You need to have PowerShell Core 6+ installed, which is different from the default PowerShell installed on Windows.
 
 2. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
@@ -73,6 +75,8 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
    >**Note:** If you receive an error that the script is not digitally signed or cannot execute on the system, you may need to change the execution policy or unblock the script.
 
 ### Task 4: Configure and run the Chat Copilot App locally
+
+In this task, you will configure and run the Chat Copilot app locally by setting up the environment, adjusting configuration files, and launching the application for testing and development.
 
 1. Configure Chat Copilot by running the following command. You can use the Azure OpenAI Service Name, Key, Endpoint, and the already deployed model names that you noted down in the previous steps or use the values from the below mentioned table.
    
@@ -150,6 +154,8 @@ You will clone the Chat-Copilot GitHub Repository to the environment where you'r
 # Exercise 2: Chat with your own documents
 
 ## Task 1: Chat with your own documents in the Chat Copilot Application
+
+In this lab, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
 
 1. Click on the **Documents** tab at the top and click on **Upload**.
 
