@@ -182,3 +182,5 @@ In this lab, you will learn how to chat with your own documents in the Chat Copi
 1. Click on the **Edit** button on the left to rename.
 
 1. Click on the **Add** button to create a **New Session**.
+
+## You have succesfully completed the lab
