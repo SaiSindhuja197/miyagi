@@ -153,7 +153,7 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
     ![](./Media/search-service.png)
 
-    > **Note**: Please click on the refresh button still you view the **Document Count**.
+    > **Note**: Please click on the refresh button till you view the **Document Count**.
 
 1. once you viewed the indexes in AI Search, Navigae back to VS Code and  press **Ctrl + C** to stop the **swagger UI** page for node terminal.
 
@@ -229,13 +229,11 @@ In this task, you'll Push miyagi-recommendation images to acr.
 
 1. Run the following command to log in to the **Azure portal**.
 
-    ```
-    az login
-    ```
+   > **Note**: Please replace **[username]** with **<inject key="AzureAdUserEmail" enableCopy="true"/>**, and **[password]** with **<inject key="AzureAdUserPassword" enableCopy="true"/>**.
 
-1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
-
-   ![](./Media/azure-account-select.png)
+    ```
+    az login -u [username] -p [password]
+    ```
 
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
 
@@ -290,7 +288,7 @@ In this task, you'll will be creating a container app for the recommendation.
    > **Note**: Please replace **[DID]** with **<inject key="DeploymentID" enableCopy="true"/>**
    
    ```
-   az containerapp ingress enable -n ca-miyagi-rec-[DID] -g miyagi-rg-[DID] --type external --allow-insecure --target-port 80
+   az containerapp ingress enable -n ca-miyagi-rec-[DID] -g miyagi-rg-[DID] --type external --allow-insecure --target-port 8080
    ```
 
 ### Task 7: Verify Recommendation Service using Swagger
@@ -306,7 +304,7 @@ In this task, you'll will be creating a container app for the recommendation.
 
 1. In the **ca-miyagi-rec-<inject key="DeploymentID" enableCopy="false"/>** page, from left navigation pane select **Ingress** **(1)** under setting session and click on **Endpoints** **(2)** URL link.
 
-   ![](./Media/container-ca-ingress.png)
+   ![](./Media/miyag-recc-web.png)
 
 1. You can view the **miyagi Recommendation service** website running through the Container Apps.
 
