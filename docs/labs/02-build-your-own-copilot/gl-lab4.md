@@ -1,10 +1,26 @@
 # Lab 1: Bringing your own data with Azure AI Search
 
-### Duration: 120 minutes
+## Lab objectives 
 
 In this lab, you'll run Chat Copilot locally after retrieving Azure OpenAI Service values from the Azure portal. By cloning the Chat-Copilot GitHub repo and setting up dependencies, you'll configure and execute the application. Uploading documents enables interaction with Copilot, which generates responses based on their content, complete with citations for validation. This exercise provides hands-on experience in utilizing Chat Copilot with your own data, managing documents and sessions within the application.
+
+# Exercise 1: Run the Chat Copilot App Locally
+
+- Task 1: Retrieving the Azure OpenAI Service values
+- Task 2: Cloning the Chat-Copilot GitHub Repo
+- Task 3: Setting up the Environment
+- Task 4: Configure and run the Chat Copilot App locally
+
+# Exercise 2: Chat with your own documents
+
+- Task 1: Chat with your own documents in the Chat Copilot Application
+- Task 2: Cloning the Chat-Copilot GitHub Repo
+
+### Duration: 120 minutes
  
 # Exercise 1: Run the Chat Copilot App Locally
+
+In this lab, you will run the Chat Copilot app locally by setting up the environment, installing dependencies, and launching the application for testing and interaction.
 
 ### Task 1: Retrieving the Azure OpenAI Service values
 
@@ -145,13 +161,16 @@ In this task, you will configure and run the Chat Copilot app locally by setting
 
    ![azure](./Media/3-2.png)
 
-   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-> - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
+<validation step="cdec024c-9f89-47c2-9ab4-84e0f432f6f5" />
+
 # Exercise 2: Chat with your own documents
+
+In this lab, you will chat with your own documents by uploading files to the Chat Copilot app and interacting with the integrated chat interface for personalized responses.
 
 ## Task 1: Chat with your own documents in the Chat Copilot Application
 
