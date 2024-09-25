@@ -250,3 +250,4 @@ In this lab, you have accomplished the following:
 
 - Personalized recommendations in Miyagi app, testing user preference responses.
 
+## You have successfully completed the lab
