@@ -7,12 +7,12 @@ In this lab, the focus is on configuring the Miyagi App for operational readines
 ### Lab objectives
 In this lab, you will complete the following tasks:
 
-Task 1: Setup configuration for miyagi app
-Task 2: Understanding the implementation of the Recommendation service
-Task 3: Run recommendation service locally
-Task 4: Run miyagi frontend locally
-Task 5: Persist embeddings in Azure AI Search
-Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
+- Task 1: Setup configuration for miyagi app
+- Task 2: Understanding the implementation of the Recommendation service
+- Task 3: Run recommendation service locally
+- Task 4: Run miyagi frontend locally
+- Task 5: Persist embeddings in Azure AI Search
+- Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
 ## Estimated time: 90 minutes
 
@@ -234,6 +234,19 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
 1.  From the **Terminal** select **Node** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
-## Summary
+## Review
 
-In this Lab, you began with configuring the Miyagi App for operational readiness, followed by a detailed exploration of the Recommendation service's implementation. Practical execution involves running the Recommendation service and deploying the Miyagi frontend locally for testing. Enhancing data retrieval efficiency is a pivotal step, achieved by persisting embeddings in Azure AI Search. The project concludes with a broad exploration of the Miyagi App and Recommendation service, prioritizing a personalized user experience. This systematic approach ensures a thorough understanding and effective implementation throughout the project.
+In this lab, you have accomplished the following:
+
+- Installed dependencies and configured the database for the Miyagi app.
+
+- Explored algorithms and methods used in the Recommendation service.
+
+- Launched the Recommendation service locally and verified its functionality.
+
+- Executed the Miyagi frontend locally to test user interactions.
+
+- Configured and stored embeddings in Azure AI Search successfully.
+
+- Personalized recommendations in Miyagi app, testing user preference responses.
+
