@@ -116,7 +116,7 @@ In this lab, you will update the Container App Recommendation service URL for th
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-<validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
+<validation step="61a2f44e-b3e1-4dfc-b3aa-c623d519a6f8" />
 
 ### Task 3: Access Recommendation Service running on Azure Container Apps from Local Miyagi-UI 
 
