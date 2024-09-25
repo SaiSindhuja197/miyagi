@@ -200,6 +200,14 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
 1. Click on the **Edit** button on the left to rename.
 
-1. Click on the **Add** button to create a **New Session**.
+## Review
+
+In this lab, you have accomplished the following:
+
+- Retrieved Azure OpenAI Service values for proper integration.  
+- Cloned the Chat-Copilot GitHub repository to access the code.  
+- Set up the environment with required dependencies and configurations.  
+- Ran the Chat Copilot app locally for testing purposes.  
+- Interacted with your documents within the Chat Copilot app.  
 
 ## You have succesfully completed the lab
