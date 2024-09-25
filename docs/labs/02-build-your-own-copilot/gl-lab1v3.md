@@ -239,15 +239,10 @@ In this lab, you will set up the environment, install necessary dependencies, an
 In this lab, you have accomplished the following:
 
 - Installed dependencies and configured the database for the Miyagi app.
-
 - Explored algorithms and methods used in the Recommendation service.
-
 - Launched the Recommendation service locally and verified its functionality.
-
 - Executed the Miyagi frontend locally to test user interactions.
-
 - Configured and stored embeddings in Azure AI Search successfully.
-
 - Personalized recommendations in Miyagi app, testing user preference responses.
 
 ## You have successfully completed the lab
