@@ -1,12 +1,15 @@
 # Lab 2: Expose OpenAI through API Management Service
 
-### Duration: 30 minutes
+## Lab scenario
 
 In this lab, you'll be verifying and creating APIs in the deployed API Management service to update the Docker image for the Recommendation service. The revision of the Recommendation service from the Container App encapsulates the meticulous approach to maintaining and optimizing containerized applications within the project's scope.
 
+## Lab objectives 
+In this lab, you will complete the following tasks:
 
- 
-   > **Note**: Please note that authentication is not configured for APIM. In production, you will be configuring authentication in addition to other best practices.
+- Task 1: Verify the API Management Service and create an API with Operations
+- Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
+- Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
 
 ### Task 1: Verify the API Management Service and create an API with Operations
 
@@ -158,3 +161,10 @@ In this task, you will verify that the Recommendation Service successfully acces
    ![](./Media/recommend-log.png)
 
 1. From the Terminal select Node terminal, press Ctrl + C to stop the recommendation service ui page. Now, click on Next from the lower right corner to move to the next page.
+
+ ## Review
+ In this lab, you have accomplished the following:
+
+- Verified the API Management Service and created an API successfully.
+- Updated the Recommendation Service configuration for Azure OpenAI access.
+- Verified that the Recommendation service successfully accesses Azure OpenAI.
