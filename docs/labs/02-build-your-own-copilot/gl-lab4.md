@@ -174,7 +174,7 @@ In this lab, you will chat with your own documents by uploading files to the Cha
 
 ## Task 1: Chat with your own documents in the Chat Copilot Application
 
-In this lab, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
+In this task, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
 
 1. Click on the **Documents** tab at the top and click on **Upload**.
 
