@@ -21,6 +21,8 @@ In this lab, you will complete the following tasks:
 
 ### Task 1: Setup configuration for miyagi app
 
+In this lab, you will set up the configuration for the Miyagi app by installing dependencies, configuring environment variables, and preparing the database for local development.
+
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
    ![](./Media/vs.png)
@@ -108,6 +110,8 @@ In this lab, you will complete the following tasks:
 
 ### Task 2: Run miyagi frontend locally
 
+In this lab, you will run the Miyagi frontend locally by starting the development server and verifying the user interface for functionality and interaction.
+
 1. Open a new terminal: by navigating  **miyagi/ui** and right-click on **ui/typescript** , in cascading menu select **Open in Integrated Terminal**.
 
    ![](./Media/image-rg-25.png)
@@ -133,6 +137,8 @@ In this lab, you will complete the following tasks:
    ![](./Media/b1.png)
    
 ### Task 3: Persist embeddings in Azure AI Search
+
+In this lab, you will persist embeddings in Azure AI Search by configuring the service and using APIs to store and retrieve data efficiently.
 
 1. Navigate back to the **swagger UI** page, scroll to **Memory** session, click on **POST /datasets** for expansion, and click on **Try it out**.
 
@@ -175,6 +181,8 @@ In this lab, you will complete the following tasks:
 1. From the **Terminal** select **dotnet** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
 ### Task 4: Build Docker Images for the Recommendation service
+
+In this lab, you will build Docker images for the Recommendation service by creating a Dockerfile and using it to package the application for consistent deployment.
 
 1. Open the **Docker** Application from the Lab VM desktop by double-clicking on it.
 
@@ -308,6 +316,7 @@ In this task, you'll will be creating a container app for the recommendation.
 
 ### Task 7: Verify Recommendation Service using Swagger
 
+In this lab, you will verify the Recommendation Service using Swagger by accessing the API documentation, testing endpoints, and ensuring the service functions as expected.
 
 1. In the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Container Apps (1)**, and then select **Container Apps (2)** under services.
 
