@@ -170,4 +170,3 @@ In this lab, you have accomplished the following:
 - Updated the Recommendation Service URL in Miyagi UI configuration.
 - Accessed the Recommendation Service from local Miyagi UI effectively.
 
-## You have successfully completed the lab
