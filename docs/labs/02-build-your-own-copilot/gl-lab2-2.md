@@ -114,7 +114,7 @@ In this lab, you will update the Container App Recommendation service URL for th
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at CloudCloudlabs-support@spektrasystems.com.
 
 <validation step="61a2f44e-b3e1-4dfc-b3aa-c623d519a6f8" />
 
