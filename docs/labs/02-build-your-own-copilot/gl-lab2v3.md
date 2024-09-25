@@ -336,6 +336,8 @@ In this lab, you will verify the Recommendation Service using Swagger by accessi
 
 ### Task 8: Provision API Management Service 
 
+In this lab, you will provision the API Management Service by creating an instance, configuring settings, and setting up policies for efficient API management and security.
+
 1. Navigate to **Search resources, services and docs** in **Azure** portal home page and search for **API management services** and click on it.
 
 1. Click on **Create**.
