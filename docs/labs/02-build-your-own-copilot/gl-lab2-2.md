@@ -1,9 +1,17 @@
 # Lab 1.2: Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
+### Lab Scenario
+
+In this lab, you will explore and verify the containerized Recommendation Service deployed in Azure Container Apps using the local Miyagi UI. Begin by configuring the Miyagi UI to connect to the Azure endpoint of the Recommendation Service. Next, test various API calls through the UI to ensure accurate recommendations based on user inputs. Document any discrepancies or issues encountered during testing. Finally, validate the overall integration and functionality of the services.
+
+## Lab objectives
+In this lab, you will complete the following tasks:
+
+- Task 1: Verify the Recommendation service running in the Container App by Personalizing
+- Task 2: Update Container App Recommendation service URL for Miyagi UI
+- Task 3: Access Recommendation Service running on Azure Container Apps from Local Miyagi-UI
 
 ### Duration: 60 minutes
 
-In this Lab, you'll be exploring and verifying the automated Containerized Recommendation service in Azure Container App. 
- 
 ### Task 1: Verify the Recommendation service running in the Container App by Personalizing
 
 In this lab, you will verify the Recommendation service running in the Container App by personalizing recommendations based on user preferences and testing the service's responses.
@@ -104,7 +112,6 @@ In this lab, you will update the Container App Recommendation service URL for th
    ![](./Media/cntr4.png)
    
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
@@ -155,6 +162,12 @@ In this lab, you will access the Recommendation Service running on Azure Contain
 
     > **Note**: Navigate back to VS code, from the Terminal select Node terminal, and press Ctrl + C to stop the recommendation service ui page.
 
-## Summary
+## Review
 
-In this lab, you have updated the Containerized Recommendation service endpoint in Miyagi UI and verified it locally.
+In this lab, you have accomplished the following:
+
+- Verified the Recommendation Service by personalizing user interactions successfully.
+- Updated the Recommendation Service URL in Miyagi UI configuration.
+- Accessed the Recommendation Service from local Miyagi UI effectively.
+
+## You have successfully completed the lab
