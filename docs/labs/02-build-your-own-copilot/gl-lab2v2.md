@@ -1,8 +1,20 @@
 # Lab 1.1: Containerizing Recommendation service to Azure Container Apps
+## Lab scenario
+In this Lab, you'll explore the process of containerizing a recommendation service and deploying it to Azure Container Apps. Containerization has become a key strategy in modern application development and deployment, providing a consistent and reproducible environment across various stages of the software development lifecycle. Azure Container Apps, part of Microsoft's Azure cloud platform, offers a managed container service that enables developers to deploy and scale containerized applications seamlessly.  
+
+## Lab objectives
+
+In this lab, you will complete the following tasks:
+
+- Task 1: Setup configuration for miyagi app
+- Task 2: Run miyagi frontend locally
+- Task 3: Persist embeddings in Azure AI Search
+- Task 4: Build Docker Images for the Recommendation service
+- Task 5: Push the Docker Image of the Recommendation service to the Container registry
+- Task 6: Create a Container app for recommendation-service
+- Task 7: Verify Recommendation Service using Swagger
 
 ### Duration: 60 minutes
-
-In this Lab, you'll explore the process of containerizing a recommendation service and deploying it to Azure Container Apps. Containerization has become a key strategy in modern application development and deployment, providing a consistent and reproducible environment across various stages of the software development lifecycle. Azure Container Apps, part of Microsoft's Azure cloud platform, offers a managed container service that enables developers to deploy and scale containerized applications seamlessly.  
 
 ### Task 1: Setup configuration for miyagi app
 
@@ -319,4 +331,17 @@ In this lab, you will verify the Recommendation Service using Swagger by accessi
 
    ![](./Media/online-output-recommendation.png)    
 
-1. Now, click on **Next** from the lower right corner to move to the next page.
+
+## Review 
+
+In this lab, you have accomplished the following:
+
+- Configured the Miyagi app to ensure proper functionality and integration.
+- Successfully ran the Miyagi frontend locally for testing and interaction.
+- Persisted embeddings in Azure AI Search for efficient data retrieval.
+- Built Docker images for the Recommendation service to facilitate deployment.
+- Pushed the Docker image of the Recommendation service to the container registry for storage.
+- Created a container app for the Recommendation service to enable cloud deployment.
+- Verified the Recommendation service using Swagger to ensure correct API functionality.
+
+## Click on Next to proceed with the lab 
