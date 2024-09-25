@@ -87,8 +87,6 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-#### Validation
-
 <validation step="eb73d21f-c370-4eba-9380-8d78b6bfc326" />
 
 ### Task 2: Understanding the implementation of the Recommendation service
@@ -110,12 +108,11 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
    > **Note**: Incase of any issues or errors occured related to exceeded call rate limit of your current OpenAI S0 pricing tier. , Please wait for 15 to 20 seconds and Re-run the cell
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
+<validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
 
 ### Task 3: Run recommendation service locally
 
@@ -209,12 +206,11 @@ In this lab, you will set up the environment, install necessary dependencies, an
     > **Note**: Please click on the refresh button still you view the **Document Count**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-  <validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
+<validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
 
 ### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
