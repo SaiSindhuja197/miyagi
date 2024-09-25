@@ -1,10 +1,24 @@
 # Lab 1 - Run Miyagi App Locally
 
-### Duration: 90 minutes
+### Lab scenario 
 
 In this lab, the focus is on configuring the Miyagi App for operational readiness. Subsequently, attention shifts to understanding the nuanced implementation of the Recommendation service. The practical phase involves executing the Recommendation service and deploying the Miyagi frontend locally for testing and development. A crucial step includes optimizing data retrieval efficiency by persisting embeddings in Azure AI Search. The project culminates with a broader exploration of the Miyagi App and Recommendation service, emphasizing a personalized user experience. This task-based approach ensures a systematic progression through the project intricacies, facilitating a comprehensive understanding and effective implementation.
 
+### Lab objectives
+In this lab, you will complete the following tasks:
+
+- Task 1: Setup configuration for miyagi app
+- Task 2: Understanding the implementation of the Recommendation service
+- Task 3: Run recommendation service locally
+- Task 4: Run miyagi frontend locally
+- Task 5: Persist embeddings in Azure AI Search
+- Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
+
+## Estimated time: 90 minutes
+
 ### Task 1: Setup configuration for miyagi app
+
+In this lab, you will configure the Miyagi app by setting up the environment, installing dependencies, and preparing the database for a seamless development experience.
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
@@ -69,16 +83,15 @@ In this lab, the focus is on configuring the Miyagi App for operational readines
 1. Once after updating the values kindly save the file by pressing **CTRL + S**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-#### Validation
-
-<validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
+<validation step="eb73d21f-c370-4eba-9380-8d78b6bfc326" />
 
 ### Task 2: Understanding the implementation of the Recommendation service
+
+In this lab, you will explore the implementation of the Recommendation service, focusing on its algorithms and data processing methods to deliver personalized suggestions.
 
 Recommendation service implements RAG pattern using Semantic Kernel SDK. The details of the implementation are captured in the Jupyter notebook in the folder miyagi/sandbox/usecases/rag/dotnet. You can open the notebook in VSCode and run the cells to understand step-by-step details of how the Recommendation Service is implemented. Pay special attention to how the RAG pattern is implemented using Semantic Kernel. Select kernel as .NET Interactive in the top right corner of the notebook.
 
@@ -95,14 +108,15 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
    > **Note**: Incase of any issues or errors occured related to exceeded call rate limit of your current OpenAI S0 pricing tier. , Please wait for 15 to 20 seconds and Re-run the cell
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="f277b99e-c179-4bb8-b9c1-6479a526ee4b" />
+<validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
 
 ### Task 3: Run recommendation service locally
+
+In this lab, you will set up the environment, install necessary dependencies, and run the Recommendation service locally to test and develop features effectively.
 
 1. Open a new terminal: by navigating **miyagi/services/recommendation-service/dotnet** and right-click on in cascading menu select **Open in Integrated Terminal**.
 
@@ -192,12 +206,11 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
     > **Note**: Please click on the refresh button still you view the **Document Count**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-  <validation step="940ebf1a-9add-4bf0-a7fd-c6d929961497" />
+<validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
 
 ### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
@@ -221,6 +234,15 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 
 1.  From the **Terminal** select **Node** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
-## Summary
+## Review
 
-In this Lab, you began with configuring the Miyagi App for operational readiness, followed by a detailed exploration of the Recommendation service's implementation. Practical execution involves running the Recommendation service and deploying the Miyagi frontend locally for testing. Enhancing data retrieval efficiency is a pivotal step, achieved by persisting embeddings in Azure AI Search. The project concludes with a broad exploration of the Miyagi App and Recommendation service, prioritizing a personalized user experience. This systematic approach ensures a thorough understanding and effective implementation throughout the project.
+In this lab, you have accomplished the following:
+
+- Installed dependencies and configured the database for the Miyagi app.
+- Explored algorithms and methods used in the Recommendation service.
+- Launched the Recommendation service locally and verified its functionality.
+- Executed the Miyagi frontend locally to test user interactions.
+- Configured and stored embeddings in Azure AI Search successfully.
+- Personalized recommendations in Miyagi app, testing user preference responses.
+
+## You have successfully completed the lab

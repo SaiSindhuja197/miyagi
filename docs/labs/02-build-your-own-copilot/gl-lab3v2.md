@@ -1,12 +1,21 @@
 # Lab 2: Expose OpenAI through API Management Service
 
-### Duration: 30 minutes
+## Lab scenario
 
 In this lab, you'll be verifying and creating APIs in the deployed API Management service to update the Docker image for the Recommendation service. The revision of the Recommendation service from the Container App encapsulates the meticulous approach to maintaining and optimizing containerized applications within the project's scope.
- 
-   > **Note**: Please note that authentication is not configured for APIM. In production, you will be configuring authentication in addition to other best practices.
+
+## Lab objectives 
+In this lab, you will complete the following tasks:
+
+- Task 1: Verify the API Management Service and create an API with Operations
+- Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
+- Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
+
+## Estimated time: 60 minutes
 
 ### Task 1: Verify the API Management Service and create an API with Operations
+
+In this task, you will verify the API Management Service and create an API with operations by defining endpoints, setting policies, and testing the functionality to ensure proper integration and management of your APIs.
 
 1. Navigate to Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
@@ -57,7 +66,6 @@ In this lab, you'll be verifying and creating APIs in the deployed API Managemen
    ![](./Media/gateway-url.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -65,6 +73,8 @@ In this lab, you'll be verifying and creating APIs in the deployed API Managemen
    <validation step="f0747771-c830-4f46-8e46-2531ad40214a" />
    
 ### Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
+
+In this task, you will update the Recommendation Service configuration to access Azure OpenAI through API Management by modifying settings and implementing necessary authentication to enable seamless communication.
 
 1. Navigate to Visual Studio Code, open the `appsettings.json` file from the path `C:\LabFiles\miyagi\services\recommendation-service\dotnet\appsettings.json`.
 
@@ -98,7 +108,6 @@ In this lab, you'll be verifying and creating APIs in the deployed API Managemen
    ![](./Media/miyagi2.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -106,6 +115,8 @@ In this lab, you'll be verifying and creating APIs in the deployed API Managemen
    <validation step="aa92795c-d33d-45cd-a42e-4f0d861f714e" />
 
 ### Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
+
+In this task, you will verify that the Recommendation Service successfully accesses Azure OpenAI through API Management by testing the API calls and ensuring that responses are correctly received and processed.
 
 1. Navigate to **Miyagi** **(1)** folder, open **ui/typescript** **(2)** folder and then open `.env` file. Replace the existing code for **NEXT_PUBLIC_RECCOMMENDATION_SERVICE_URL** with the below provided URL and then save the file.
 
@@ -152,3 +163,10 @@ In this lab, you'll be verifying and creating APIs in the deployed API Managemen
    ![](./Media/recommend-log.png)
 
 1. From the Terminal select Node terminal, press Ctrl + C to stop the recommendation service ui page. Now, click on Next from the lower right corner to move to the next page.
+
+ ## Review
+ In this lab, you have accomplished the following:
+
+- Verified the API Management Service and created an API successfully.
+- Updated the Recommendation Service configuration for Azure OpenAI access.
+- Verified that the Recommendation service successfully accesses Azure OpenAI.

@@ -1,10 +1,20 @@
 # Lab 1.2: Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
+### Lab Scenario
+
+In this lab, you will explore and verify the containerized Recommendation Service deployed in Azure Container Apps using the local Miyagi UI. Begin by configuring the Miyagi UI to connect to the Azure endpoint of the Recommendation Service. Next, test various API calls through the UI to ensure accurate recommendations based on user inputs. Document any discrepancies or issues encountered during testing. Finally, validate the overall integration and functionality of the services.
+
+## Lab objectives
+In this lab, you will complete the following tasks:
+
+- Task 1: Verify the Recommendation service running in the Container App by Personalizing
+- Task 2: Update Container App Recommendation service URL for Miyagi UI
+- Task 3: Access Recommendation Service running on Azure Container Apps from Local Miyagi-UI
 
 ### Duration: 60 minutes
 
-In this Lab, you'll be exploring and verifying the automated Containerized Recommendation service in Azure Container App. 
- 
 ### Task 1: Verify the Recommendation service running in the Container App by Personalizing
+
+In this lab, you will verify the Recommendation service running in the Container App by personalizing recommendations based on user preferences and testing the service's responses.
 
 1. In the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Container Apps (1)**, and then select **Container Apps (2)** under services.
 
@@ -91,6 +101,8 @@ In this Lab, you'll be exploring and verifying the automated Containerized Recom
 
 ### Task 2: Update Container App Recommendation service URL for Miyagi UI
 
+In this lab, you will update the Container App Recommendation service URL for the Miyagi UI by modifying the configuration settings to ensure seamless integration between the front end and the service.
+
 1. Once you completed the review of the logs, click on **Ingress** **(1)** under **Settings** and copy **Endpoints** **(2)** URL link.
 
    ![](./Media/miyag-recc-web.png)
@@ -100,14 +112,15 @@ In this Lab, you'll be exploring and verifying the automated Containerized Recom
    ![](./Media/cntr4.png)
    
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at CloudCloudlabs-support@spektrasystems.com.
 
-<validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
+<validation step="61a2f44e-b3e1-4dfc-b3aa-c623d519a6f8" />
 
 ### Task 3: Access Recommendation Service running on Azure Container Apps from Local Miyagi-UI 
+
+In this lab, you will access the Recommendation Service running on Azure Container Apps from your local Miyagi UI by configuring API endpoints and ensuring proper network connectivity.
 
 1. Open a new terminal: by navigating  **miyagi/ui** and right-click on **ui/typescript** , in cascading menu select **Open in Integrated Terminal**.
 
@@ -149,6 +162,11 @@ In this Lab, you'll be exploring and verifying the automated Containerized Recom
 
     > **Note**: Navigate back to VS code, from the Terminal select Node terminal, and press Ctrl + C to stop the recommendation service ui page.
 
-## Summary
+## Review
 
-In this lab, you have updated the Containerized Recommendation service endpoint in Miyagi UI and verified it locally.
+In this lab, you have accomplished the following:
+
+- Verified the Recommendation Service by personalizing user interactions successfully.
+- Updated the Recommendation Service URL in Miyagi UI configuration.
+- Accessed the Recommendation Service from local Miyagi UI effectively.
+

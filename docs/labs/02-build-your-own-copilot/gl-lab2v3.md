@@ -1,10 +1,27 @@
 # Lab 1.1: Containerizing Recommendation service to Azure Container Apps
 
+## Lab scenario 
+
+In this Lab, you'll explore the process of containerizing a recommendation service and deploying it to Azure Container Apps. Containerization has become a key strategy in modern application development and deployment, providing a consistent and reproducible environment across various stages of the software development lifecycle. Azure Container Apps, part of Microsoft's Azure cloud platform, offers a managed container service that enables developers to deploy and scale containerized applications seamlessly. 
+
+## Lab objectives 
+
+In this lab, you will complete the following tasks:
+
+- Task 1: Setup configuration for miyagi app
+- Task 2: Run miyagi frontend locally
+- Task 3: Persist embeddings in Azure AI Search
+- Task 4: Build Docker Images for the Recommendation service
+- Task 5: Push the Docker Image of the Recommendation service to the Container registry
+- Task 6: Create a Container app for recommendation-service
+- Task 7: Verify Recommendation Service using Swagger
+- Task 8: Provision API Management Service 
+
 ### Duration: 60 minutes
 
-In this Lab, you'll explore the process of containerizing a recommendation service and deploying it to Azure Container Apps. Containerization has become a key strategy in modern application development and deployment, providing a consistent and reproducible environment across various stages of the software development lifecycle. Azure Container Apps, part of Microsoft's Azure cloud platform, offers a managed container service that enables developers to deploy and scale containerized applications seamlessly.  
-
 ### Task 1: Setup configuration for miyagi app
+
+In this lab, you will set up the configuration for the Miyagi app by installing dependencies, configuring environment variables, and preparing the database for local development.
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
@@ -93,6 +110,8 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
 ### Task 2: Run miyagi frontend locally
 
+In this lab, you will run the Miyagi frontend locally by starting the development server and verifying the user interface for functionality and interaction.
+
 1. Open a new terminal: by navigating  **miyagi/ui** and right-click on **ui/typescript** , in cascading menu select **Open in Integrated Terminal**.
 
    ![](./Media/image-rg-25.png)
@@ -118,6 +137,8 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
    ![](./Media/b1.png)
    
 ### Task 3: Persist embeddings in Azure AI Search
+
+In this lab, you will persist embeddings in Azure AI Search by configuring the service and using APIs to store and retrieve data efficiently.
 
 1. Navigate back to the **swagger UI** page, scroll to **Memory** session, click on **POST /datasets** for expansion, and click on **Try it out**.
 
@@ -160,6 +181,8 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 1. From the **Terminal** select **dotnet** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
 ### Task 4: Build Docker Images for the Recommendation service
+
+In this lab, you will build Docker images for the Recommendation service by creating a Dockerfile and using it to package the application for consistent deployment.
 
 1. Open the **Docker** Application from the Lab VM desktop by double-clicking on it.
 
@@ -293,6 +316,7 @@ In this task, you'll will be creating a container app for the recommendation.
 
 ### Task 7: Verify Recommendation Service using Swagger
 
+In this lab, you will verify the Recommendation Service using Swagger by accessing the API documentation, testing endpoints, and ensuring the service functions as expected.
 
 1. In the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Container Apps (1)**, and then select **Container Apps (2)** under services.
 
@@ -311,6 +335,8 @@ In this task, you'll will be creating a container app for the recommendation.
    ![](./Media/online-output-recommendation.png)   
 
 ### Task 8: Provision API Management Service 
+
+In this lab, you will provision the API Management Service by creating an instance, configuring settings, and setting up policies for efficient API management and security.
 
 1. Navigate to **Search resources, services and docs** in **Azure** portal home page and search for **API management services** and click on it.
 
@@ -331,3 +357,13 @@ In this task, you'll will be creating a container app for the recommendation.
    >**Note**: Please Continue with the next step as the deployment will take around 20-30 minutes to complete. 
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
+
+## Review
+
+In this lab, you have accomplished the following:
+
+- Configured the Miyagi app and ensured its functionality.
+- Ran the Miyagi frontend locally for testing user interactions.
+- Persisted embeddings in Azure AI Search for efficient retrieval.
+- Built and pushed Docker images for the Recommendation service.
+- Created a container app and verified it using Swagger.
