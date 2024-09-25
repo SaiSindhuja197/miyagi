@@ -11,6 +11,8 @@ In this lab, you will complete the following tasks:
 - Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 - Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
 
+## Estimated time: 60 minutes
+
 ### Task 1: Verify the API Management Service and create an API with Operations
 
 In this task, you will verify the API Management Service and create an API with operations by defining endpoints, setting policies, and testing the functionality to ensure proper integration and management of your APIs.
