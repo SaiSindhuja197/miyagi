@@ -24,7 +24,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
       - In the **OpenAI Overview** page, right-click on **Go to Azure OpenAI Studio** and click on **Open link a new tab**.
 
-         ![](./Media/goto_1.png)
+         ![](./Media/goto_1-1.png)
    
       - In the **Azure AI Studio**, from the left navigation pane under the **Management** section, select **Deployments**.
 
