@@ -28,7 +28,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
    
       - In the **Azure AI Studio**, from the left navigation pane under the **Management** section, select **Deployments**.
 
-           ![](./Media/miyagi-image119.png)
+           ![](./Media/deployments.png)
         
       - In the **Deployments** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
 
