@@ -20,11 +20,11 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
       - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the Overview tab select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
 
-        ![](./Media/miyagi-image118.png)
+        ![](./Media/openai_service.png)
 
       - In the **OpenAI Overview** page, right-click on **Go to Azure OpenAI Studio** and click on **Open link a new tab**.
 
-         ![](./Media/miyagi-image10.png)
+         ![](./Media/goto_1.png)
         
       - After navigating to Azure AI Studio, click on Explore the new experience pop-up on the top.
   
@@ -36,17 +36,17 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
         
       - In the **Deployments** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
 
-          ![](./Media/miyagi-image(12).png)
+          ![](./Media/completion_model.png)
         
-          ![](./Media/miyagi-image(13).png)
+          ![](./Media/miyagi-comp.png)
       
       -  Navigate back to the **Deployment** page.
 
       - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** **(1)** deployment name and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
         
-         ![](./Media/miyagi-image(14).png)
+         ![](./Media/embed.png)
 
-         ![](./Media/miyagi-image(15).png)
+         ![](./Media/miyagi-embeded.png)
 
 1. To verify the values for **endpoint** and **apiKey** follow the below steps:
 
