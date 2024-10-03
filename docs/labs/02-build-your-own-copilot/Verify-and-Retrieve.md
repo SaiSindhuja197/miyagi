@@ -25,10 +25,6 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
       - In the **OpenAI Overview** page, right-click on **Go to Azure OpenAI Studio** and click on **Open link a new tab**.
 
          ![](./Media/goto_1.png)
-        
-      - After navigating to Azure AI Studio, click on Explore the new experience pop-up on the top.
-  
-        ![](./Media/update01.png)
    
       - In the **Azure AI Studio**, from the left navigation pane under the **Management** section, select **Deployments**.
 
@@ -38,7 +34,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
           ![](./Media/completion_model.png)
         
-          ![](./Media/miyagi-comp.png)
+          ![](./Media/miyagi-compl.png)
       
       -  Navigate back to the **Deployment** page.
 
@@ -46,7 +42,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
         
          ![](./Media/embed.png)
 
-         ![](./Media/miyagi-embeded.png)
+         ![](./Media/miyagi-embedded.png)
 
 1. To verify the values for **endpoint** and **apiKey** follow the below steps:
 
