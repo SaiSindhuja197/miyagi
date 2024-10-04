@@ -63,6 +63,10 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
 
    ![](./Media/without-signin.png)
 
+    >**Nota**: En la ventana Cuéntenos sobre el trabajo que realiza, haga clic en Omitir.
+
+    >**Nota**: Asegúrese de que el motor Docker esté en funcionamiento antes de continuar con el siguiente paso.
+
 4. En la ventana **Cuéntenos sobre el trabajo que realiza**, haga clic en **Omitir**.
    
 5. Vuelva a la ventana de **Visual Studio Code** y navegue a **miyagi/ui/typescript** haga clic derecho y en el menú contextual seleccione **Abrir en la Terminal Integrada**.
