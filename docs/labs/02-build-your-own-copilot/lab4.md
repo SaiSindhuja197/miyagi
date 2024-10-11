@@ -13,19 +13,19 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 
    ![](./Media/vs.png)
 
-1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AIENDPONTS(OPEN AI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
+1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AIENDPONTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 
    ![](./Media/Semantic-select.png)
 
-1. Under **AI ENDPONTS(AZURE OPENAI)**, click on **sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools' wants to sign in using Microsoft** click on **Allow** **(2)**.
+1. Under **AI ENDPONTS(AZURE OPENAI)**, click on **Sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools wants to sign in using Microsoft** click on **Permitir** **(2)**.
 
    ![](./Media/Semantic-sign-in.png)
 
-1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
+1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>** and navigate back to the **Visual studio code**.
 
    ![](./Media/azure-account-select.png)
 
-1. Navigate back to the **Visual Studio Code** From the **Functions panel**, click on the **Get started icon** and follow the wizard to **create your app** with the semantic function and save it
+1. Navigate back to the **Visual Studio Code** From the **Functions panel**, click on the **Get Started** and follow the wizard to **Create a new app** with the semantic function and save it
 
     ![](./Media/sskernal.png)
 
@@ -33,11 +33,11 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 
     ![](./Media/kkernal.png)
 
-1. Browse the location **C:\LabFiles** and **select location for new app**
+1. Browse the location **C:\LabFiles (1)** and **Select location for new app (2)**.
 
     ![](./Media/image1-lab(4).png)
 
-1. Click on **Yes, I trust authors**.
+1. Click on **Si confio en los autores**.
 
     ![](./Media/trustauthor.png)
 
@@ -56,7 +56,7 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 
     ![](./Media/updatenewlaste.png)
 
-1. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal(2)** > **New Terminal(3)**.
+1. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal (2)** > **New Terminal (3)**.
 
     ![](./Media/image2-lab4.png)
 
@@ -106,7 +106,7 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 
 ### Task 2: Configure Azure Cognitive Search
 
-1. Navigate back to the **Azure portal** tab, search and select **AI Search**.
+1. Navigate back to the **Azure portal** tab, search and select **Búsqueda de IA**.
 
     ![](./Media/ai-search1.png)    
 
@@ -114,25 +114,25 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 
    > **Note**: Please click on the refresh button still you view the **Document Count**.
 
-1. In the overiew tab of search service, click on the **Import data**.
+1. In the overiew tab of search service, click on the **Importar datos**.
 
     ![](./Media/import-data1.png)    
    
-1. From the drop-down select **Data Source** as **Sample**, select the **CosmosDB hotels-sample**, and click on **Next : Add cognitive skills(optional)**.
+1. From the drop-down select **Data Source** as **Muestra**, select the **CosmosDB hotels-sample**, and click on **Siguiente: Agregar habilidades cognitivas (opcional)**.
 
    ![](./Media/import-data2.png)
    
 1. In **cognitive skills** leave as default and click on **Customize target index**.
 
-1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** and click on **Next:Create an indexer**.
+1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** and click on **Siguiente: Crear un indexador**.
 
    ![](./Media/import-data3.png)
 
-1. In the **create an indexer**, change the indexer name as **realestate-us-sample-indexer** and click on **submit**.
+1. In the **crear un indexador**, change the indexer nombre as **realestate-us-sample-indexer** and click on **entregar**.
 
    ![](./Media/import-data4.png)
     
-1. Click on **realestate-us-sample-index** in the search bar enter **Seattle** and click on **Search**.
+1. Click on **realestate-us-sample-index** in the search bar enter **Seattle (1)** and click on **Buscar (2)**.
 
    ![](./Media/final-indexer.png)
 
