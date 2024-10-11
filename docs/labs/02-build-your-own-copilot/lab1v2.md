@@ -10,11 +10,11 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
    ![](./Media/vs.png)
 
-   >**Nota** Si aparece la ventana **¡Únase a nosotros para mejorar la extensión promt-flow!**, haga clic en **No,gracias**.
+   >**Nota** Si aparece la ventana **¡Únase a nosotros para mejorar la extensión promt-flow!**, haga clic en **No,thanks**.
 
    ![](./Media/image-rg-01.png)
    
-1. En **Visual Studio Code**, de la barra de menú seleccione **Archivo(1) > Abrir carpeta (2)**.
+1. En **Visual Studio Code**, de la barra de menú seleccione **Archivo (1) > Abrir carpeta (2)**.
 
    ![](./Media/image-rg-02.png)
 
@@ -174,7 +174,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
     ![](./Media/swaggerUI-Responses.png)
 
-1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **AI Search**.
+1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **Búsqueda de IA**.
 
     ![](./Media/ai-search1.png)    
 
