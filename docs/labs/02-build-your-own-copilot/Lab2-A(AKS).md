@@ -86,7 +86,7 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
 
    ![](./Media/docker7.png)
 
-8. En la hoja **Imágenes**, observe que se ha creado la imagen **miyagi-ui(1)**, seleccione el icono **Ejecutar(2)**.
+8. En la hoja **Imágenes**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **Ejecutar (2)**.
 
    ![](./Media/docker-miyagi-ui.png)
 
@@ -134,7 +134,7 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
 
    ![](./Media/docker7.png)
 
-1. En la hoja **Imágenes**, observe que se crea la imagen **miyagi-recommendation(1)**, seleccione el icono **ejecutar(2)**.
+1. En la hoja **Imágenes**, observe que se crea la imagen **miyagi-recommendation (1)**, seleccione el icono **ejecutar (2)**.
 
    ![](./Media/docker13.png)
 
@@ -255,7 +255,7 @@ En esta tarea, enviará las imágenes miyagi-recommendation a acr.
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
-<validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
+    <validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
 
 # Laboratorio 3.2: Explorar y Verificar la interfaz de usuario de Miyagi y el servicio de Recomendación contenedorizados en AKS
 
