@@ -94,15 +94,15 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
    
 1. Ahora verá el Panel del Portal de Azure, haga clic en **Grupos de recursos** en el panel Navegar para ver los grupos de recursos.
 
-   ![](./Media/11-10-24(8).png)
+   ![](./Media/11-10-24(15).png)
 
 1. En **Grupos de recursos**, haga clic en el grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![](./Media/11-10-24(9).png)
+   ![](./Media/11-10-24(16).png)
 
 1. En el grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, verifique los recursos presentes.
 
-   ![](./Media/11-10-24(10).png)
+   ![](./Media/11-10-24(17).png)
 
 > [!IMPORTANTE]<br>
 > **Para una experiencia más fluida durante la práctica de laboratorio, es importante revisar detenidamente tanto las instrucciones como las notas que las acompañan. Esto le ayudará a realizar las tareas con facilidad y confianza**.

@@ -14,35 +14,35 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
          ![](./Media/image-rg-1.png)
 
-      - En **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, en la pestaña Información general (1) seleccione **OpenAIService-<inject key="DeploymentID" enableCopy="false"/> (2)**.
+      - En **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, en la pestaña **Información general (1)** seleccione **OpenAIService-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-        ![](./Media/select-openai.png)
+        ![](./Media/11-10-24(18).png)
 
-      - En la página **Información General de OpenAI** **(1)**, haga clic derecho en el botón **Ir a Azure OpenAI Studio** (2) y haga clic en **Abrir enlace en una pestaña nueva**.
+      - En la página **Información general de OpenAI** **(1)**, haga clic derecho en el botón **Ir a Azure OpenAI Studio** y haga clic en **Abrir enlace en una pestaña nueva** **(2)**.
 
-         ![](./Media/image-rg-03.png) 
+         ![](./Media/11-10-24(19).png) 
    
       - En **Azure AI Studio**, seleccione **Implementaciones**, en la sección Administración.
 
-      - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **(1)** **gpt-35-turbo**  y verifique el **nombre de la implementación** del modelo **(2)** gpt-35-turbo.
+      - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4 **(2)**.
 
-          ![](./Media/image-rg-7.png)
+          ![](./Media/11-10-24(20).png)
         
-          ![](./Media/image-rg-8.png)
+          ![](./Media/11-10-24(21).png)
       
       -  Vuelva a la página **Implementaciones**.
 
       - En la hoja Implementaciones de Azure AI Studio, haga clic en el **nombre del modelo (1) text-embedding-ada-002** y verifique el **nombre de la implementación** del **modelo (2) text-embedding-ada-002**.
         
-         ![](./Media/image-rg-10.png)
+         ![](./Media/11-10-24(22).png)
 
-         ![](./Media/image-rg-11.png)
+         ![](./Media/11-10-24(23).png)
 
-1. Para verificar los valores para **endpoint** y **apiKey**, siga los pasos a continuación:
+1. Para verificar los valores para **Extremo** y **Clave 1**, siga los pasos a continuación:
 
    -  Vuelva a la pestaña que muestra **Portal de Azure**. 
 
-   -  En la hoja **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** en la sección **Administración de Recursos**, seleccione **Claves y punto de conexión**, verifique **Clave 1** y **Extremo**.
+   -  En la hoja **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** en la sección **Administración de Recursos**, seleccione **Claves y punto de conexión (1)**, verifique **Clave 1 (2)** y **Extremo (3)**.
      
       ![](./Media/image-rg-3.png)
 
@@ -72,7 +72,7 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
      
      ![](./Media/image-rg-16.png)
 
-   - En **cosmos-<inject key="DeploymentID" enableCopy="false"/>** en **Configuración**, seleccione **Claves** y verifique el valor de la **Cadena de Conexión Principal de Cosmos DB**.
+   - En **cosmos-<inject key="DeploymentID" enableCopy="false"/>** en **Configuración**, seleccione **Claves (1)** y verifique el valor de la **CADENA DE CONEXIÓN PRINCIPAL de Cosmos DB (2)**.
 
      ![](./Media/cs.png)
 
