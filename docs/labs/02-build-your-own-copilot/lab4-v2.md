@@ -12,11 +12,11 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
    ![](./Media/vs.png)
 
-2. En **Visual Studio Code** en el panel izquierdo seleccione la extensión **Semantic Kernel** **(1)**, expanda haciendo clic en **AI ENDPONTS(OPEN AI)** **(2)**, haga clic en **Cambiar Proveedor de Punto de Conexión** **(3)**, y elija **AzureOpenAI** **(4)**.
+2. En **Visual Studio Code** en el panel izquierdo seleccione la extensión **Semantic Kernel** **(1)**, expanda haciendo clic en **AI ENDPONTS (OPENAI)** **(2)**, haga clic en **Cambiar Proveedor de Punto de Conexión** **(3)**, y elija **AzureOpenAI** **(4)**.
 
    ![](./Media/Semantic-select.png)
 
-3. En **AI ENDPONTS(AZURE OPENAI)**, haga clic en **Iniciar sesión en Azure** **(1)**, en la ventana emergente **La extensión 'Semantic Kernel Tools' quiere iniciar sesión con Microsoft** haga clic en **Permitir** **(2)**.
+3. En **AI ENDPONTS(AZURE OPENAI)**, haga clic en **Sign in to Azure** **(1)**, en la ventana emergente **La extensión 'Semantic Kernel Tools' quiere iniciar sesión con Microsoft** haga clic en **Permitir** **(2)**.
 
    ![](./Media/Semantic-sign-in.png)
 
@@ -24,7 +24,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
    ![](./Media/azure-account-select.png)
 
-5. De vuelta en **Visual Studio Code** en el **Panel Functions**, haga clic en el **ícono Comenzar** **(1)** y siga el asistente para **crear su aplicación** **(2)** con la función semántica y guárdela.
+5. De vuelta en **Visual Studio Code** en el **Panel Functions**, haga clic en el **ícono Comenzar** **(1)** y siga el asistente para **Create a new app** **(2)** con la función semántica y guárdela.
 
    ![](./Media/sematic-kernal-file-select.png)
 
@@ -32,7 +32,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
     ![](./Media/kkernal1.png)
 
-7. Navegue a la ubicación **C:\LabFiles** y **seleccione la ubicación para la nueva aplicación**
+7. Navegue a la ubicación **C:\LabFiles (1)** y **Select location for new app (2).**
 
    ![](./Media/image1-lab(4).png)
 
@@ -151,7 +151,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
       }
       ```
 
-13. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal(2)** > **Nueva Terminal(3)**.
+13. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal (2)** > **Nueva Terminal (3)**.
 
     ![](./Media/semtic-newterminal.png)
 
@@ -190,7 +190,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
 ### Tarea 2: Configurar Azure Cognitive Search
 
-1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **AI Search**.
+1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **Búsqueda de IA**.
 
     ![](./Media/ai-search1.png)    
 
@@ -202,13 +202,13 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 
     ![](./Media/import-data1.png)    
    
-1. En el menú desplegable, establezca el **Origen de Datos** en **Samples**, seleccione **CosmosDB hotels-sample**, y haga clic en **Siguiente : Agregar aptitudes cognitivas (opcional)**.
+1. En el menú desplegable, establezca el **Origen de Datos** en **Muestra**, seleccione **CosmosDB hotels-sample**, y haga clic en **Siguiente : Agregar aptitudes cognitivas (opcional)**.
 
    ![](./Media/import-data2.png)
    
 1. En **aptitudes cognitivas** deje todo con los valores predeterminados y haga clic en **Personalizar índice de destino**.
 
-1. En **Personalizar índice de destino**, establezca el nombre del índice como **realestate-us-sample-index** y haga clic en **Siguiente:Crear un indizador**.
+1. En **Personalizar índice de destino**, establezca el nombre del índice como **realestate-us-sample-index** y haga clic en **Siguiente: Crear indizador**.
 
    ![](./Media/import-data3.png)
 
