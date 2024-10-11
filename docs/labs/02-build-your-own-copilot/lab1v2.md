@@ -14,11 +14,11 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
    ![](./Media/image-rg-01.png)
    
-1. En **Visual Studio Code**, de la barra de menú seleccione **Archivo(1)>Abrir carpeta(2)**.
+1. En **Visual Studio Code**, de la barra de menú seleccione **Archivo(1) > Abrir carpeta (2)**.
 
    ![](./Media/image-rg-02.png)
 
-1. Dentro del **Explorador de Archivos**, navegue hasta **C:\LabFiles\miyagi** seleccione **miyagi**(1) y haga clic en **Seleccionar carpeta(2)**
+1. Dentro del **Explorador de Archivos**, navegue hasta **C:\LabFiles\miyagi** seleccione **miyagi** **(1)** y haga clic en **Seleccionar carpeta (2)**
 
    ![](./Media/image-rg(003).png)
 
@@ -71,9 +71,9 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 1. Una vez que haya actualizado los valores, guarde el archivo presionando **CTRL + S**.
 
   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
-> - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
-> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-> - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+  > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
+  > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
+  > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
    <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
@@ -94,9 +94,9 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
    > **Nota**: En caso de que se produzca algún problema o error relacionado con exceder el límite de tasa de llamadas de su nivel de precios actual de OpenAI S0, espere de 15 a 20 segundos y vuelva a ejecutar la celda.
 
   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
-> - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
-> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-> - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+  > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
+  > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
+  > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
 
    <validation step="560130f4-fca1-49e1-98a6-97ec61155364" />
 
