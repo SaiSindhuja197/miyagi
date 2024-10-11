@@ -26,7 +26,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
    ![](./Media/image-rg-18.png) 
    
-1. Expanda el directorio **miyagi>ui** y verifique que el archivo **.env** está presente. 
+1. Expanda el directorio **miyagi > ui** y verifique que el archivo **.env** está presente. 
 
 1. Expanda el directorio **miyagi/services/recommendation-service/dotnet** y verifique que el archivo **appsettings.json** está presente.
 
@@ -73,7 +73,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
   > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
   > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-  > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+  > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
    <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
@@ -96,7 +96,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
   > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
   > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-  > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+  > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
    <validation step="560130f4-fca1-49e1-98a6-97ec61155364" />
 
@@ -186,10 +186,10 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
    > **Nota**: Por favor haga clic en el botón Actualizar mientras ve el **Recuento de Documentos**.
 
->**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
-> - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
-> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-> - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
+   > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
+   > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
+   > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
    <validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
    
