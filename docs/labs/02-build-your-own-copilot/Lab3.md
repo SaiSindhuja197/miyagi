@@ -8,20 +8,20 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
 
    ![](./Media/api-select.png)
 
-1. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **APIs** **(1)** en la sección APIs del menú izquierdo y seleccione **HTTP** **(2)** en Definir una nueva API para crear una API HTTP.
+1. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **API** **(1)** en la sección APIs del menú izquierdo y seleccione **HTTP** **(2)** en Definir una nueva API para crear una API HTTP.
 
    ![](./Media/lab3-t1-s2.png)
 
 1. Introduzca los siguientes valores en el panel Crear una API HTTP:
    
-   | **Parámetro**        | **Valores**           | 
+   | **Parameter**        | **Values**           | 
    | -------------------- | -------------------- | 
-   | Tipo de API **(1)**     | **Básica**            | 
-   | Nombre para mostrar **(2)** | **miyagi-api**       |
-   | Nombre **(3)**         | **miyagi-api**       |
-   | URL de servicio web **(4)** | Introduzca el Punto de conexión de Azure OpenAI  **<inject key="OpenAIEndpoint" enableCopy="true"/>**  |
-   | Sufijo de la URL del API **(5)** | **openai** |
-   | Haga clic en  **(6)** | **Crear** |
+   | API Type **(1)**     | **Basic**            | 
+   | Display name **(2)** | **miyagi-api**       |
+   | Name **(3)**         | **miyagi-api**       |
+   | Web service URL **(4)** | Enter the Endpoint of Azure OpenAI Endpoint  **<inject key="OpenAIEndpoint" enableCopy="true"/>**  |
+   | API URL suffix **(5)** | **openai** |
+   | Click on  **(6)** | **Create** |
 
    ![](./Media/apim1.png)
 
@@ -39,11 +39,11 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
 
 ### Tarea 2: Crear Políticas y Roles de API Management
 
-1. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **APIs** **(1)**, luego clic en los **tres puntos** **(2)** al lado de miyagi-api, seleccione **Importar** **(3)**, y haga clic en **OpenAPI** **(4)**.
+1. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **API** **(1)**, luego clic en los **three dots** **(2)** al lado de miyagi-api, seleccione **Import** **(3)**, y haga clic en **OpenAPI** **(4)**.
 
    ![](./Media/api-openi-import.png)
 
-2. En la ventana emergente de **Importar desde la especificación OpenAPI** pegue el siguiente enlace en el **cuadro de texto** **(1)** de la especificación OpenAPI, y entonces haga clic en **Importar** **(2)**. 
+2. En la ventana emergente de **Import from OpenAPI specification** pegue el siguiente enlace en el **textbox** **(1)** de la especificación OpenAPI, y entonces haga clic en **Import** **(2)**. 
 
    ```
    https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/stable/2023-05-15/inference.json
@@ -55,7 +55,7 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
    
     ![](./Media/apim4.png)
 
-4. En la API **Azure OpenAI Service API** navegue a la pestaña **Configuración** **(1)** y actualice el **Nombre de Encabezado** con el valor **api-key** **(2)** y haga clic en **Guardar** **(3)**.
+4. En la API **Azure OpenAI Service API** navegue a la pestaña **Settings** **(1)** y actualice el **Header Name** con el valor **api-key** **(2)** y haga clic en **Save** **(3)**.
 
    ![](./Media/azure-open-api-setting.png)
 
@@ -75,7 +75,7 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
 
    ![](./Media/api-product4.png)
 
-9. Una vez creada la suscripción, haga clic en los **tres puntos** **(1)** al lado de la clave recién creada y haga clic en **Mostrar\ocultar claves** **(2)**. Copie la clave **principal de suscripción** **(3)** y guárdela para más adelante.
+9. Una vez creada la suscripción, haga clic en los **tres puntos** **(1)** al lado de la clave recién creada y haga clic en **Mostrar u ocultar claves** **(2)**. Copie la clave **principal de suscripción** **(3)** y guárdela para más adelante.
 
    ![](./Media/api-product5.png)
 
@@ -99,7 +99,7 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
 
 15. Vuelva al **servicio API Management** en el Portal de Azure, seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**.
 
-16. En el servicio **API Management**, seleccione **APIs** **(1)**, elija la API **Azure OpenAI Service API** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
+16. En el servicio **API Management**, seleccione **API** **(1)**, elija la API **Azure OpenAI Service API** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
 
       ![](./Media/add-inbound.png)
 
