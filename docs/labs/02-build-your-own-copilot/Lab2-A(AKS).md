@@ -55,11 +55,11 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
 
    ![](./Media/docker1.png)
    
-2. En la ventana **Acuerdo de Servicio de Suscripción de Docker**, haga clic en **Aceptar**.
+2. En la ventana **Acuerdo de Servicio de Suscripción de Docker**, haga clic en **Accept**.
 
    ![](./Media/docker2.png)
 
-3. En la ventana **Bienvenido a Docker Desktop**, haga clic en **Continuar sin iniciar sesión**.
+3. En la ventana **Welcome to Docker Desktop**, haga clic en **Continue without signing in**.
 
    ![](./Media/without-signin.png)
 
@@ -67,7 +67,7 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
 
     >**Nota**: Asegúrese de que el motor Docker esté en funcionamiento antes de continuar con el siguiente paso.
 
-4. En la ventana **Cuéntenos sobre el trabajo que realiza**, haga clic en **Omitir**.
+4. En la ventana **Tell us about the work you do**, haga clic en **Skip**.
    
 5. Vuelva a la ventana de **Visual Studio Code** y navegue a **miyagi/ui/typescript** haga clic derecho y en el menú contextual seleccione **Abrir en la Terminal Integrada**.
 
@@ -82,19 +82,19 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
    ```
    docker images
    ```
-7. Vuelva a **Docker desktop**, en el panel izquierdo seleccione **Imágenes**.
+7. Vuelva a **Docker Desktop**, en el panel izquierdo seleccione **Images**.
 
    ![](./Media/docker7.png)
 
-8. En la hoja **Imágenes**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **Ejecutar (2)**.
+8. En la hoja **Images**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **run (2)**.
 
    ![](./Media/docker-miyagi-ui.png)
 
-9. En la ventana **Ejecutar un nuevo contenedor** seleccione la flecha desplegable.
+9. En la ventana **Run a new container** seleccione la flecha desplegable.
 
    ![](./Media/docker14-(1).png)
 
-10. En **Ejecutar un nuevo contenedor**, en **Puertos** para **Puerto de Host** ingrese **3000** y haga clic en **Ejecutar**.
+10. En **Run a new container**, en **Ports** para **Host Port** ingrese **3000** y haga clic en **Run**.
 
     ![](./Media/ui-port.png)
 
@@ -130,19 +130,19 @@ En esta práctica de laboratorio, creará las imágenes de Docker y las publicar
    
    ![](./Media/task2-2.png)
 
-1. Vuelva a **Docker desktop**, en el panel izquierdo seleccione **Imágenes**.
+1. Vuelva a **Docker Desktop**, en el panel izquierdo seleccione **Images**.
 
    ![](./Media/docker7.png)
 
-1. En la hoja **Imágenes**, observe que se crea la imagen **miyagi-recommendation (1)**, seleccione el icono **ejecutar (2)**.
+1. En la hoja **Images**, observe que se crea la imagen **miyagi-recommendation (1)**, seleccione el icono **Run (2)**.
 
    ![](./Media/docker13.png)
 
-1. En la ventana **Ejecutar un nuevo contenedor**, seleccione la flecha desplegable.
+1. En la ventana **Run a new container**, seleccione la flecha desplegable.
 
    ![](./Media/docker14-(1).png)
 
-1. En **Ejecutar un nuevo contenedor**, en **Puertos** para **Puerto Host** ingrese **5224** y haga clic en **Ejecutar**.
+1. En **Run a new container**, en **Ports** para **Host Port** ingrese **5224** y haga clic en **Run**.
 
     ![](./Media/recommendation-port-new.png)
 
