@@ -46,11 +46,11 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
 
 1. Una vez configurado el ambiente, su navegador cargará una máquina virtual (JumpVM), utilice esta máquina virtual durante todo el taller para realizar el laboratorio. Puede ver el número en la parte inferior de la guía de laboratorio para cambiar a diferentes ejercicios en la guía de laboratorio.
 
-   ![](./Media/gettingstartedpagenew1-v2.png)
+   ![](./Media/11-10-24(1).png)
  
 1. Para obtener los detalles del ambiente del laboratorio, puede seleccionar la pestaña **Ambiente**. Además, las credenciales también se enviarán por correo electrónico a su dirección de correo electrónico registrada. También puede abrir la Guía de Laboratorio en una ventana completa e independiente seleccionando **Ventana Dividida** en la esquina inferior derecha. Además, puede iniciar, detener y reiniciar máquinas virtuales desde la pestaña **Recursos**.
 
-    ![](./Media/gettingstartedpagenew2-v2.png)
+    ![](./Media/11-10-24(2).png)
    
    > Verá el valor SUFFIX en la pestaña **Ambiente**; úselo dondequiera que vea SUFFIX o DeploymentID en los pasos del laboratorio.
  
@@ -58,50 +58,54 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
 
 1. Minimice **Docker Desktop** haciendo clic en el botón **Minimizar**.
 
-   ![](./Media/miyagi-image1.png)
+   ![](./Media/11-10-24(11).png)
 
-   - Si se encuentra con el problema "A WSL distro Docker Desktop relies on has exited unexpectedly.", esto generalmente sucede como resultado de que una entidad externa finalizó WSL, haga clic en el botón **Reiniciar**
+   > **Nota:** Si encuentra un error de actualización de WSL en la aplicación Docker Desktop, haga clic en **Quit** y vuelva a abrir la aplicación Docker Desktop desde el escritorio.
 
-      ![](./Media/docker-error.png)
+   ![](./Media/11-10-24(12).png)
+
+   > Si se encuentra con el problema "A WSL distro Docker Desktop relies on has exited unexpectedly.", esto generalmente sucede como resultado de que una entidad externa finalizó WSL, haga clic en el botón **Restart**.
+
+   ![](./Media/11-10-24(13).png)   
 
 1. En JumpVM, haga clic en el acceso directo al Portal de Azure del navegador Microsoft Edge, el cual se ha creado en el escritorio.
 
-   ![](./Media/gettingstartpage3.png)
+   ![](./Media/11-10-24(3).png)
 
 1. En la pestaña **Iniciar sesión en Microsoft Azure**, verá la pantalla de inicio de sesión. Ingrese el siguiente correo electrónico o nombre de usuario y haga clic en **Siguiente**. 
 
    * **Correo electrónico/Nombre de usuario**: **<inject key="AzureAdUserEmail"></inject>**
 
-     ![](./Media/miyagi-image2.png)
+     ![](./Media/11-10-24(4).png)
      
 1. Ahora ingrese la siguiente contraseña y haga clic en **Iniciar sesión**.
    
    * **Contraseña**: **<inject key="AzureAdUserPassword"></inject>**
 
-     ![](./Media/miyagi-image3.png)
+     ![](./Media/11-10-24(5).png)
    
 1. Si ve la ventana emergente **¿Permanecer conectado?**, seleccione **No**.
 
-   ![](./Media/miyagi-image4.png)
+   ![](./Media/11-10-24(6).png)
 
 1. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, seleccione **Cancelar** para omitir el recorrido.
 
-    ![](./Media/miyagi-image5.png)
+    ![](./Media/11-10-24(7).png)
    
 1. Ahora verá el Panel del Portal de Azure, haga clic en **Grupos de recursos** en el panel Navegar para ver los grupos de recursos.
 
-   ![](./Media/miyagi-image6.png)
+   ![](./Media/11-10-24(8).png)
 
 1. En **Grupos de recursos**, haga clic en el grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![](./Media/miyagi-image7.png)
+   ![](./Media/11-10-24(9).png)
 
 1. En el grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, verifique los recursos presentes.
 
-   ![](./Media/miyagi-image8.png)
+   ![](./Media/11-10-24(10).png)
 
 > [!IMPORTANTE]<br>
-> **Para una experiencia más fluida durante la práctica de laboratorio, es importante revisar detenidamente tanto las instrucciones como las notas que las acompañan. Esto le ayudará a realizar las tareas con facilidad y confianza.**
+> **Para una experiencia más fluida durante la práctica de laboratorio, es importante revisar detenidamente tanto las instrucciones como las notas que las acompañan. Esto le ayudará a realizar las tareas con facilidad y confianza**.
 
 Este laboratorio práctico lo guiará para crear sistemas inteligentes con la pila Copilot de Microsoft, aprovechando los patrones de IA Generativa y RAG para una mayor productividad y experiencias personalizadas.
 
