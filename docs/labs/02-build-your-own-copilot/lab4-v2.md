@@ -151,11 +151,17 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
       }
       ```
 
-13. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal (2)** > **Nueva Terminal (3)**.
+13. Navegue hasta el archivo Worker.cs y actualice la línea número 29 y CTRL+S.
+
+    ```
+    ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
+    ```
+
+14. Configure un punto de conexión de Azure OpenAI abriendo una nueva **Terminal**. Haga clic en **(...) (1)** al lado del menú **Ver** y seleccione **Terminal (2)** > **Nueva Terminal (3)**.
 
     ![](./Media/semtic-newterminal.png)
 
-14. Ejecute los siguientes comandos para instalar los paquetes necesarios.
+15. Ejecute los siguientes comandos para instalar los paquetes necesarios.
     
     ```
     dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9
@@ -163,7 +169,15 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
     dotnet add package Microsoft.SemanticKernel --version 1.11.0
     ```
 
-15. Para compilar y ejecutar la aplicación Home Automation desde la terminal, utilice los siguientes comandos: 
+    >**Nota:** Estos comandos se usan en un proyecto .NET Core o .NET 5+ para agregar paquetes NuGet al proyecto. Esto es lo que hace cada comando:
+
+    >**dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9:** Agrega el paquete Microsoft.Extensions.Hosting al proyecto con una versión específica (9.0.0-preview.3.24172.9). Este paquete proporciona abstracciones de inicio y alojamiento para aplicaciones .NET.
+
+    >**dotnet add package Microsoft.Extensions.Options.DataAnnotations --version 9.0.0-preview.3.24172.9:** agrega el paquete Microsoft.Extensions.Options.DataAnnotations al proyecto con una versión específica (9.0.0-preview.3.24172.9 ). Este paquete amplía el marco de opciones en .NET para admitir anotaciones de datos para objetos de configuración.
+
+    >**dotnet add package Microsoft.SemanticKernel --versión 1.11.0:** agrega el paquete Microsoft.SemanticKernel al proyecto con una versión específica (1.11.0). Es probable que este paquete proporcione funciones relacionadas con el análisis y el procesamiento semántico dentro de la aplicación.
+
+16. Para compilar y ejecutar la aplicación Home Automation desde la terminal, utilice los siguientes comandos: 
 
     ```powershell
     dotnet build
@@ -173,20 +187,22 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
     ![](./Media/dotnetbuild.png)
 
     > **Nota**: Por favor ignore la advertencia.
+
+    >**Nota:** Los comandos dotnet build y dotnet run son fundamentales en los entornos .NET Core y .NET 5+ para crear y ejecutar aplicaciones .NET localmente en su máquina.
     
-16. Después de ejecutar `dotnet run`, puede hacer algunas preguntas y revisar la respuesta. Por ejemplo:: `What time is it?`
+17. Después de ejecutar `dotnet run`, puede hacer algunas preguntas y revisar la respuesta. Por ejemplo:: `What time is it?`
 
     ![](./Media/dotnetrun.png)
 
-17. Ejemplo 2: `Set an alarm for 6:00 am.`
+18. Ejemplo 2: `Set an alarm for 6:00 am.`
 
     ![](./Media/questionn2.png)
 
-18. Si desea incluir preguntas adicionales, navegue hasta el archivo **worker.cs** e inserte sus nuevas preguntas en la **línea número 32**.
+19. Si desea incluir preguntas adicionales, navegue hasta el archivo **worker.cs** e inserte sus nuevas preguntas en la **línea número 32**.
 
     ![](./Media/optional12.png)
 
-19. Alternativamente, puede plantear cualquier pregunta en la terminal.
+20. Alternativamente, puede plantear cualquier pregunta en la terminal.
 
 ### Tarea 2: Configurar Azure Cognitive Search
 
