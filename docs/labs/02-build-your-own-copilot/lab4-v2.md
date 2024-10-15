@@ -151,7 +151,7 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
       }
       ```
 
-13. Navegue hasta el archivo Worker.cs y actualice la línea número 29 y CTRL+S.
+13. Navegue hasta el archivo **Worker.cs** y actualice la línea número **29** y **CTRL+S**.
 
     ```
     ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
