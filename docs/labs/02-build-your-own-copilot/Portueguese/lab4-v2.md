@@ -68,11 +68,102 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
     ![](../Media/miyagi-image(99).png)
 
-12. Configure um endpoint Azure OpenAI abrindo um novo **Terminal**, clique em **(...) (1)** junto ao menu **View** e seleccione **Terminal(2)** > **Novo Terminal(3)**.
+12. Navegue até o arquivo **Program.cs (1)** e substitua o código existente pelo seguinte. O arquivo `Program.cs` configura um aplicativo .NET usando injeção de dependência e Kernel Semântico. Configura serviços, incluindo Azure OpenAI para conclusão de chat, e adiciona vários plugins (`MyTimePlugin, MyAlarmPlugin, MyLightPlugin`). Os `AzureOpenAIOptions` são carregados de arquivos de configuração e variáveis ​​de ambiente. Um serviço hospedado `(Worker)` trata da lógica de execução principal. Um kernel de automação residencial é criado com uma coleção desses plug-ins e adicionado ao contêiner de injeção de dependência.
+
+    ```
+      using HomeAutomation.Options;
+      using HomeAutomation.Plugins;
+      using Microsoft.Extensions.DependencyInjection;
+      using Microsoft.Extensions.Hosting;
+      using Microsoft.Extensions.Options;
+      using Microsoft.SemanticKernel;
+      using Microsoft.SemanticKernel.ChatCompletion;
+      using Microsoft.SemanticKernel.Connectors.OpenAI;
+   
+      namespace HomeAutomation;
+   
+      internal static class Program
+      {
+         internal static async Task Main(string[] args)
+         {
+            HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+   
+            // Actual code to execute is found in Worker class
+            builder.Services.AddHostedService<Worker>();
+   
+            // Get configuration
+            builder.Services.AddOptions<AzureOpenAIOptions>()
+                              .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
+                              .ValidateDataAnnotations()
+                              .ValidateOnStart();
+   
+            // Chat completion service that kernels will use
+            builder.Services.AddSingleton<IChatCompletionService>(sp =>
+            {
+                  /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
+   
+                  // A custom HttpClient can be provided to this constructor
+                  return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
+   
+                  Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
+                     of OpenAI options with builder.Services.AddOptions:*/
+   
+                  AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
+   
+                  return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
+            });
+   
+            // Add plugins that can be used by kernels
+            // The plugins are added as singletons so that they can be used by multiple kernels
+            builder.Services.AddSingleton<MyTimePlugin>();
+            builder.Services.AddSingleton<MyAlarmPlugin>();
+            builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
+            builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
+            {
+                  return new MyLightPlugin(turnedOn: true);
+            });
+   
+            /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
+               Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
+            Kernel kernel = new();
+            KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
+            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
+   
+            KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
+            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
+   
+            // Add a home automation kernel to the dependency injection container
+            builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
+            {
+                  // Create a collection of plugins that the kernel will use
+                  KernelPluginCollection pluginCollection = [];
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
+   
+                  // When created by the dependency injection container, Semantic Kernel logging is included by default
+                  return new Kernel(sp, pluginCollection);
+            });
+   
+            using IHost host = builder.Build();
+   
+            await host.RunAsync();
+         }
+      }
+    ```
+
+13. Navegue até o arquivo **Worker.cs** e atualize o número da linha 29 e **CTRL+S**.
+
+    ```
+    ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
+    ```
+
+14. Configure um endpoint Azure OpenAI abrindo um novo **Terminal**, clique em **(...) (1)** junto ao menu **View** e seleccione **Terminal(2)** > **Novo Terminal(3)**.
 
     ![](../Media/semtic-newterminal.png)
 
-13. Execute os seguintes comandos para instalar os pacotes necessários.
+15. Execute os seguintes comandos para instalar os pacotes necessários.
 
     ```
     dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9
@@ -89,7 +180,7 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
     > **dotnet add package Microsoft.SemanticKernel --version 1.11.0**: Adiciona o pacote Microsoft.SemanticKernel ao projeto com uma versão específica (1.11.0). Este pacote provavelmente fornece funcionalidades relacionadas com a análise e processamento semântico dentro da aplicação.
 
-14. Para construir e executar a aplicação Home Automation a partir do terminalnal utilize os seguintes comandos:
+16. Para construir e executar a aplicação Home Automation a partir do terminalnal utilize os seguintes comandos:
 
     ```PowerShell
     dotnet build
@@ -102,19 +193,19 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
     > **Nota** Os comandos dotnet build e dotnet run são fundamentais em ambientes .NET Core e .NET 5+ para criar e executar aplicações .NET localmente na sua máquina.
 
-15. Depois de executar `dotnet run`, pode fazer algumas perguntas e rever a resposta. Por exemplo: `Que horas são?`
+17. Depois de executar `dotnet run`, pode fazer algumas perguntas e rever a resposta. Por exemplo: `Que horas são?`
 
     ![](../Media/miyagi-image100.png)
 
-16. Exemplo 2: `Defina um alarme para as 6h.`
+18. Exemplo 2: `Defina um alarme para as 6h.`
 
     ![](../Media/miyagi-image101.png)
 
-17. Se desejar incluir questões adicionais, navegue até ao ficheiro **worker.cs** e insira as suas novas questões na **linha número 32**.
+19. Se desejar incluir questões adicionais, navegue até ao ficheiro **worker.cs** e insira as suas novas questões na **linha número 32**.
 
     ![](../Media/miyagi-image102.png)
 
-18. Em alternativa, pode fazer qualquer pergunta no terminal.
+20. Em alternativa, pode fazer qualquer pergunta no terminal.
 
 ### Tarefa 2: Configurar a Pesquisa Cognitiva do Azure
 
