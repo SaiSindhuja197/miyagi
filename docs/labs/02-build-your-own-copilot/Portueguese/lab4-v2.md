@@ -170,8 +170,7 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
     dotnet add package Microsoft.Extensions.Options.DataAnnotations --version 9.0.0-preview.3.24172.9
     dotnet add package Microsoft.SemanticKernel --version 1.11.0
     ```
-
-
+    
     >**Nota**: Estes comandos são utilizados num projeto .NET Core ou .NET 5+ para adicionar pacotes NuGet ao projeto. Eis o que cada comando faz:
 
     > **dotnet add package Microsoft.Extensions.Hosting --version 9.0.0-preview.3.24172.9**: Adiciona o pacote Microsoft.Extensions.Hosting ao projeto com uma versão específica (9.0.0-preview.3.24172. 9 ). Este pacote fornece abstrações de alojamento e arranque para aplicações .NET.
