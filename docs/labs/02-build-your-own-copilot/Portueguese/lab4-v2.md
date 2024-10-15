@@ -70,88 +70,88 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
 12. Navegue até o arquivo **Program.cs (1)** e substitua o código existente pelo seguinte. O arquivo `Program.cs` configura um aplicativo .NET usando injeção de dependência e Kernel Semântico. Configura serviços, incluindo Azure OpenAI para conclusão de chat, e adiciona vários plugins (`MyTimePlugin, MyAlarmPlugin, MyLightPlugin`). Os `AzureOpenAIOptions` são carregados de arquivos de configuração e variáveis ​​de ambiente. Um serviço hospedado `(Worker)` trata da lógica de execução principal. Um kernel de automação residencial é criado com uma coleção desses plug-ins e adicionado ao contêiner de injeção de dependência.
 
-   ```
-   using HomeAutomation.Options;
-   using HomeAutomation.Plugins;
-   using Microsoft.Extensions.DependencyInjection;
-   using Microsoft.Extensions.Hosting;
-   using Microsoft.Extensions.Options;
-   using Microsoft.SemanticKernel;
-   using Microsoft.SemanticKernel.ChatCompletion;
-   using Microsoft.SemanticKernel.Connectors.OpenAI;
-
-   namespace HomeAutomation;
-
-   internal static class Program
-   {
-      internal static async Task Main(string[] args)
+    ```
+      using HomeAutomation.Options;
+      using HomeAutomation.Plugins;
+      using Microsoft.Extensions.DependencyInjection;
+      using Microsoft.Extensions.Hosting;
+      using Microsoft.Extensions.Options;
+      using Microsoft.SemanticKernel;
+      using Microsoft.SemanticKernel.ChatCompletion;
+      using Microsoft.SemanticKernel.Connectors.OpenAI;
+   
+      namespace HomeAutomation;
+   
+      internal static class Program
       {
-         HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
-
-         // Actual code to execute is found in Worker class
-         builder.Services.AddHostedService<Worker>();
-
-         // Get configuration
-         builder.Services.AddOptions<AzureOpenAIOptions>()
-                           .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
-                           .ValidateDataAnnotations()
-                           .ValidateOnStart();
-
-         // Chat completion service that kernels will use
-         builder.Services.AddSingleton<IChatCompletionService>(sp =>
+         internal static async Task Main(string[] args)
          {
-               /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
-
-               // A custom HttpClient can be provided to this constructor
-               return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
-
-               Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
-                  of OpenAI options with builder.Services.AddOptions:*/
-
-               AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
-
-               return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
-         });
-
-         // Add plugins that can be used by kernels
-         // The plugins are added as singletons so that they can be used by multiple kernels
-         builder.Services.AddSingleton<MyTimePlugin>();
-         builder.Services.AddSingleton<MyAlarmPlugin>();
-         builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
-         builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
-         {
-               return new MyLightPlugin(turnedOn: true);
-         });
-
-         /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
-            Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
-         Kernel kernel = new();
-         KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
-         builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
-
-         KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
-         builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
-
-         // Add a home automation kernel to the dependency injection container
-         builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
-         {
-               // Create a collection of plugins that the kernel will use
-               KernelPluginCollection pluginCollection = [];
-               pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
-               pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
-               pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
-               pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
-
-               // When created by the dependency injection container, Semantic Kernel logging is included by default
-               return new Kernel(sp, pluginCollection);
-         });
-
-         using IHost host = builder.Build();
-
-         await host.RunAsync();
+            HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+   
+            // Actual code to execute is found in Worker class
+            builder.Services.AddHostedService<Worker>();
+   
+            // Get configuration
+            builder.Services.AddOptions<AzureOpenAIOptions>()
+                              .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
+                              .ValidateDataAnnotations()
+                              .ValidateOnStart();
+   
+            // Chat completion service that kernels will use
+            builder.Services.AddSingleton<IChatCompletionService>(sp =>
+            {
+                  /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
+   
+                  // A custom HttpClient can be provided to this constructor
+                  return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
+   
+                  Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
+                     of OpenAI options with builder.Services.AddOptions:*/
+   
+                  AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
+   
+                  return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
+            });
+   
+            // Add plugins that can be used by kernels
+            // The plugins are added as singletons so that they can be used by multiple kernels
+            builder.Services.AddSingleton<MyTimePlugin>();
+            builder.Services.AddSingleton<MyAlarmPlugin>();
+            builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
+            builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
+            {
+                  return new MyLightPlugin(turnedOn: true);
+            });
+   
+            /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
+               Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
+            Kernel kernel = new();
+            KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
+            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
+   
+            KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
+            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
+   
+            // Add a home automation kernel to the dependency injection container
+            builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
+            {
+                  // Create a collection of plugins that the kernel will use
+                  KernelPluginCollection pluginCollection = [];
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
+                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
+   
+                  // When created by the dependency injection container, Semantic Kernel logging is included by default
+                  return new Kernel(sp, pluginCollection);
+            });
+   
+            using IHost host = builder.Build();
+   
+            await host.RunAsync();
+         }
       }
-   }
-   ```
+    ```
 
 13. Navegue até o arquivo **Worker.cs** e atualize o número da linha 29 e **CTRL+S**.
 
