@@ -188,7 +188,7 @@ In this task, you will configure and run the Chat Copilot app locally by setting
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-<validation step="cdec024c-9f89-47c2-9ab4-84e0f432f6f5" />
+<validation step="e9d5c65d-aefe-4e0d-96b1-d2dd82346507" />
 
 # Exercise 2: Chat with your own documents
 
