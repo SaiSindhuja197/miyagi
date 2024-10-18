@@ -26,25 +26,29 @@ In this lab, you will run the Chat Copilot app locally by setting up the environ
 
 In this task, you will retrieve the Azure OpenAI Service values by accessing the service configuration, querying the API, and ensuring the correct integration of parameters for your application.
 
-1. In the Azure Portal, search for **Azure OpenAI** and select it.
+1. In the Azure Portal, search for **OpenAI** and select **Azure OpenAI**
    
-    ![](./Media/azure-openai-1-new.png)
+    ![](./Media/sql-1.png)
 
-2. Select the Azure OpenAI resource created and click on **Keys and Endpoints** from the left pane.
+1. Select the Azure OpenAI resource created.
+
+    ![](./Media/data1.png)  
+
+1. Select the **Keys and Endpoints (1)** from the left pane. Copy the **Key1 (2)** and **Endpoint (3)** the store them in Notepad.
    
-    ![](./Media/ch1.png)
+    ![](./Media/data2.png)
 
-3. Copy the Keys and the Endpoint and store them in Notepad.
-   
-    ![](./Media/keys_endpts.png)
+   > **Note**: If you dont see the Left side Navigation pane, click on the **three horizontal line** in the top left corner.
 
-4. From the Overview page, click on **Go to Azure OpenAI Studio**.
+   ![](./Media/data3.png) 
+
+1. From the Overview page, click on **Go to Azure OpenAI Studio**.
    
     ![](./Media/ch2.png)
 
-5. Navigate to **Deployments** in the left navigation pane, copy the deployment names of your AI model and store them in Notepad.
+1. Navigate to **Deployments** in the left navigation pane, copy the deployment names of your AI model and store them in Notepad.
     
-    ![](./Media/deployment_models1.png)
+    ![](./Media/deployment-models1.png)
 
 ### Task 2: Cloning the Chat-Copilot GitHub Repo
 
