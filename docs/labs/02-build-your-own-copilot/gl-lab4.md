@@ -50,11 +50,17 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
     
     ![](./Media/deployment-models1.png)
 
+    > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.
+
+    ![](./Media/code2.png "Keys and Endpoints")              
+
 ### Task 2: Cloning the Chat-Copilot GitHub Repo
 
 In this task, you will clone the Chat-Copilot GitHub repository by using Git commands to download the code to your local machine for further exploration and development.
 
-1. Open PowerShell as an administrator.
+1. 1. In the LabVM, click on **Start**, from the start menu search and select **PowerShell** and pen PowerShell as an administrator.
+
+    ![](./Media/data5.png)  
    
 1. Navigate to the directory `C:/Users/azureuser` by running the below command.
  
@@ -66,13 +72,19 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
    ``` 
    git clone https://github.com/CloudLabsAI-Azure/chat-copilot CHAT-COPILOT
    ```
-1. Open Visual Studio Code and click on `File> Open folder`.
+1. Open Visual Studio Code from the LabVM Desktop and click on `File (1) > Open folder (2)`.
 
-   ![](./Media/ch3.png)
+   ![](./Media/data6.png)
 
-1. Select **CHAT-COPILOT** and review the files.
+1. Select **CHAT-COPILOT (1)** and click **Select Folder (2)**.
+
+   ![](./Media/data7.png)
+
+1. Review the files.
 
    ![](./Media/ch4.png)
+
+   > **Note**: If the pop up appears for **Do you trust the authors of the file in this folder**, click on **Yes, I trust the authors.**   
 
 ### Task 3: Setting up the Environment
 
@@ -80,13 +92,15 @@ In this task, you will set up the environment for the Chat-Copilot project by in
 
 1. Open PowerShell as an administrator on your local machine. You need to have PowerShell Core 6+ installed, which is different from the default PowerShell installed on Windows.
 
-2. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
+   ![](./Media/data5.png)
+
+1. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
 
    ``` 
    cd C:\Users\azureuser\chat-copilot\scripts\
    ```
 
-3. Run the below command to install Chocolatey, dotnet-7.0-sdk, nodejs, and yarn:
+1. Run the below command to install Chocolatey, dotnet-7.0-sdk, nodejs, and yarn:
 
    ```
    .\Install.ps1
@@ -115,7 +129,7 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    >
    >**Note:** The code should look similar to the image below:
 
-     ![](./Media/code-1.png)
+     ![](./Media/data8.png)
 
 1. Run Chat Copilot locally. This step starts the **backend API** application. frontend
  
@@ -130,8 +144,12 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    http://localhost:40443/healthz
    ```
    > **Note:** Don't close the PowerShell window keep it running up.
- 
+  
+     ![](./Media/data9.png)
+    
 1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 7**.
+
+   ![](./Media/data10.png)
  
 1. Run the following command to change the path.
  
@@ -145,7 +163,7 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
    ```
  
-1. The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic. Do you want to change the execution policy?, enter **A** and hit **Enter**.
+1. The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic. If promted **Do you want to change the execution policy?,** enter **A** and hit **Enter**.
  
 1. Configure **Chat Copilot** by running the following command.
  
@@ -159,11 +177,11 @@ In this task, you will configure and run the Chat Copilot app locally by setting
   
 1. You will get an output similar to this for the frontend:
 
-   ![azure](./Media/3-1.png)
+   ![azure](./Media/data11.png)
 
 1. You will get an output similar to this for the backend:
 
-   ![azure](./Media/3-2.png)
+   ![azure](./Media/data12.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -180,25 +198,27 @@ In this lab, you will chat with your own documents by uploading files to the Cha
 
 In this task, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
 
-1. Click on the **Documents** tab at the top and click on **Upload**.
+1. Click on the **Documents (1)** tab at the top and click on **Upload (2)** and select **+ New local chat document (3).**
 
-1. Navigate to C:\Labfiles\Documents to upload the 3 pdfs.
+    ![](./Media/data13.png)  
 
-   ![](./Media/ch10.png)
+1. Navigate to C:\Labfiles\Documents to upload the 3 pdfs. Select the 3 files and click **Open.**
 
-1. Once it is uploaded, provide the below prompt and check how the response is generated by Copilot.
+    ![](./Media/ch10.png)
 
-   ```
-   How to operate Android Auto in Porche Taycan? Give step-by-step instructions.
-   ```
-   ![](./Media/ch12.png)
+1. Once it is uploaded, Naviagte to the **Chat (1)** tab then provide the below prompt **(2)** then click **send (3)** button and then check how the response is generated by Copilot.
+
+    ```
+    How to operate Android Auto in Porche Taycan? Give step-by-step instructions.
+    ```
+    ![](./Media/data14.png)
    
 1. Provide another prompt and check how the response is generated by Copilot.
 
-   ```
-   Give detailed information on Apple CarPlay.
-   ```
-   ![](./Media/ch13.png)
+    ```
+    Give detailed information on Apple CarPlay.
+    ```
+    ![](./Media/ch13.png)
    
 1. The response not only answered the question based on the content found in these documents, but it also included citations (1) to that content to validate the accuracy of the information. When you click on an annotation, the app jumps right to the page of the document (2) that goes into the comparison of the plans, so that we can read more or do additional validation on the accuracy of the answer under the citation section.
 
