@@ -58,7 +58,7 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
 In this task, you will clone the Chat-Copilot GitHub repository by using Git commands to download the code to your local machine for further exploration and development.
 
-1. 1. In the LabVM, click on **Start**, from the start menu search and select **PowerShell** and pen PowerShell as an administrator.
+1. In the LabVM, click on **Start**, from the start menu search and select **PowerShell** and pen PowerShell as an administrator.
 
     ![](./Media/data5.png)  
    
