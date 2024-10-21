@@ -44,11 +44,15 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
 1. From the Overview page, click on **Go to Azure OpenAI Studio**.
    
-    ![](./Media/ch2.png)
+    ![](./Media/go_to_azure.png)
 
-1. Navigate to **Deployments** in the left navigation pane, copy the deployment names of your AI model and store them in Notepad.
+1. "Close" button on the "Discover an even better Azure AI experience" pop-up to dismiss it.
+
+    ![](./Media/take_tour-1.png)
+
+1. Go to **Deployments** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad.
     
-    ![](./Media/deployment-models1.png)
+    ![](./Media/deploy-name.png)
 
     > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.
 
@@ -74,11 +78,11 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
    ```
 1. Open Visual Studio Code from the LabVM Desktop and click on `File (1) > Open folder (2)`.
 
-   ![](./Media/data6.png)
+   ![](./Media/file-1.png)
 
 1. Select **CHAT-COPILOT (1)** and click **Select Folder (2)**.
 
-   ![](./Media/data7.png)
+   ![](./Media/data7-1.png)
 
 1. Review the files.
 
