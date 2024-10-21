@@ -50,7 +50,7 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
     ![](./Media/take_tour-1.png)
 
-1. Navigate to **Deployments** in the left navigation pane, copy the deployment names of your AI model and store them in Notepad.
+1. Go to **Deployments** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad.
     
     ![](./Media/deploy-name.png)
 
