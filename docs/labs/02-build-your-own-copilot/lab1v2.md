@@ -167,6 +167,15 @@ In this task, you will run the miyagi frontend locally by installing dependencie
    http://localhost:4001
    ```
 
+   >**Note:** You can get the port from the logs in the terminal.
+
+      ![](./Media/error-pop-up.png)
+
+   >**Note:** If you encounter an **Unhandled Runtime Error** pop-up, close the pop-up and also dismiss the error message at the bottom left corner.
+
+     ![](./Media/error-side.png)
+   
+
 ### Task 5: Persist embeddings in Azure AI Search
 
 In this task, you will persist embeddings in Azure AI Search by executing a POST request in Swagger UI, verifying the execution, and then confirming the creation of the index in the Azure portal.
@@ -207,7 +216,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 
    ![](./Media/miyagi-image27.png)
 
-   > **Note**: Please click on the refresh button still you view the **Document Count**.
+   > **Note**: Please click on the refresh button still you can view the **Document Count**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
