@@ -148,6 +148,14 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
    http://localhost:4001
    ```
 
+   >**Nota:** Puede obtener el puerto de los registros en la terminal.
+
+      ![](./Media/error-pop-up.png)
+
+   >**Nota:** Si encuentra una ventana emergente **Error de tiempo de ejecución no controlado**, ciérrela y descarte también el mensaje de error en la esquina inferior izquierda.
+
+     ![](./Media/error-side.png)
+
 ### Tarea 5: Persistiendo embeddings en Azure AI Search
 
 1. Vuelva a la página **swagger UI**, desplácese hasta la sección **Memory**, haga clic en **POST /dataset** para ampliar y haga clic en **Try it out**.
