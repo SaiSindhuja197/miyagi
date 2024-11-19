@@ -157,6 +157,14 @@ Nesta tarefa, irá executar o frontend miyagi localmente instalando dependência
     http://localhost:4001
     ```
 
+   >**Nota:** Você pode obter a porta nos logs do terminal.
+
+      ![](../Media/error-pop-up.png)
+
+   >**Observação:** Se você encontrar um pop-up **Unhandled Runtime Error**, feche o pop-up e ignore também a mensagem de erro no canto inferior esquerdo.
+
+     ![](../Media/error-side.png)
+
 ### Tarefa 5: persistir incorporações no Azure AI Search
 
 Nesta tarefa, irá persistir os embeddings no Azure AI Search executando um pedido POST na interface do utilizador do Swagger, verificando a execução e, em seguida, confirmando a criação do índice no portal do Azure.
