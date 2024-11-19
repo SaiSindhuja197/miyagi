@@ -134,6 +134,14 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
    **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
                        
    ![](./Media/L1T4S3.png)
+
+   >**Note:** You can get the port from the logs in the terminal.
+
+      ![](./Media/error-pop-up.png)
+
+   >**Note:** If you encounter an **Unhandled Runtime Error** pop-up, close the pop-up and also dismiss the error message at the bottom left corner.
+
+     ![](./Media/error-side.png)
    
 ### Task 5: Persist embeddings in Azure AI Search
 
