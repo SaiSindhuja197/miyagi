@@ -77,7 +77,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
 
    <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
-### Tarea 2: Comprender la implementación del servicio de Recomendación
+### Tarea 2: Comprender la implementación del servicio de Recomendación [Sólo lectura]
 
  El servicio de recomendación implementa el patrón RAG utilizando el SDK de Semantic Kernel. Los detalles de la implementación se capturan en el notebook (cuaderno) de Jupyter en la carpeta miyagi/sandbox/usecases/rag/dotnet. Puede abrir el cuaderno en VS Code y ejecutar las celdas para comprender los detalles paso a paso de cómo se implementa el servicio de Recomendación. Preste especial atención a cómo se implementa el patrón RAG utilizando Semantic Kernel. Seleccione el kernel como .NET Interactive en la esquina superior derecha del cuaderno.
 
