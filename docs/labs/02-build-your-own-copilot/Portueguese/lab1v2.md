@@ -81,7 +81,7 @@ Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições espe
 
  <validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
 
-### Tarefa 2: Compreender a implementação do serviço de recomendação
+### Tarefa 2: Compreender a implementação do serviço de recomendação [Somente leitura]
 
 O serviço de recomendação implementa o padrão RAG utilizando o SDK do Kernel Semântico. Os detalhes da implementação são capturados no Jupyter notebook na pasta miyagi/sandbox/usecases/rag/dotnet. Pode abrir o notebook no VSCode e executar as células para compreender os detalhes passo a passo de como o serviço de recomendação é implementado. Preste especial atenção à forma como o padrão RAG é implementado utilizando o Kernel Semântico. Selecione kernel como .NET Interactive no canto superior direito do portátil.
 
