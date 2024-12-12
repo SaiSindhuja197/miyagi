@@ -22,11 +22,11 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
         ![](./Media/openai_service.png)
 
-      - In the **OpenAI Overview** page, right-click on **Go to Azure OpenAI Studio** and click on **Open link a new tab**.
+      - In the **OpenAI Overview** page, click on **Go to Azure AI Foundry portal** it will navigate to **Azure AI Foundry portal**
 
-         ![](./Media/goto_1-1.png)
+         ![](./Media/new01.png)
    
-      - In the **Azure AI Studio**, from the left navigation pane under the **Management** section, select **Deployments**.
+      - In the **Azure AI Foundry portal**, from the left navigation pane under the **Shared resources** section, select **Deployments**.
 
            ![](./Media/deployments.png)
         
