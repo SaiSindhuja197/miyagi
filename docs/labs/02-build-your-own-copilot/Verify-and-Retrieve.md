@@ -18,15 +18,15 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
         ![](./Media/11-10-24(18).png)
 
-      - En la página **Información general de OpenAI** **(1)**, haga clic derecho en el botón **Ir a Azure OpenAI Studio** y haga clic en **Abrir enlace en una pestaña nueva** **(2)**.
+      - En la página **Información general de OpenAI** **(1)**, haga clic en el botón **Go to Azure AI Foundry portal (2)**.
 
-         ![](./Media/11-10-24(19).png) 
+           ![](./Media/azurespanishai.png) 
    
-      - En **Azure AI Studio**, seleccione **Implementaciones**, en la sección Administración.
+      - En **Azure AI Foundry portal**, seleccione **Implementaciones**, en la sección Administración.
 
       - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4 **(2)**.
 
-          ![](./Media/11-10-24(20).png)
+          ![](./Media/foundry1.png)
         
           ![](./Media/11-10-24(21).png)
       
@@ -34,7 +34,7 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
       - En la hoja Implementaciones de Azure AI Studio, haga clic en el **nombre del modelo (1) text-embedding-ada-002** y verifique el **nombre de la implementación** del **modelo (2) text-embedding-ada-002**.
         
-         ![](./Media/11-10-24(22).png)
+          ![](./Media/foundry2.png)
 
          ![](./Media/11-10-24(23).png)
 
