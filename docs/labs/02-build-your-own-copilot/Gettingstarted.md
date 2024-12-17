@@ -68,29 +68,29 @@ In this task, verification, and retrieval of specific values, including End Poin
 
          ![](./Media/image-rg-1.png)
 
-      - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the Overview (1) tab select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/> (2)**.
+      - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the **Overview (1)** tab select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-        ![](./Media/image-rg-2.png)
+        ![](./Media/n1.png)
 
-      - In the **OpenAI Overview** **(1)** page, right-click on **Go to Azure OpenAI Studio** (2) button and click on **Open link a new tab**.
+      - In the **Overview** **(1)** page, click on **Go to Azure AI Foundry portal** (2).
 
-         ![](./Media/image-rg-03.png) 
+         ![](./Media/n2.png) 
    
-      - In the **Azure AI Studio**, select **Deployments**, under the Management section.
+      - In the **Azure AI Foundry**, select **Deployments (1)**, under the Shared Resources section.
 
-      - In the **Deployments** blade of Azure AI Studio, click on **gpt-4** model name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
+      - In the **Deployments** blade of Azure AI Studio, click on **gpt-4** model name **(2)** and verify the **deployment name** of gpt-4 model **(3)**.
 
-          ![](./Media/gpt4-main.png)
+          ![](./Media/n3.png)
         
-          ![](./Media/gpt4-main-name.png)
+          ![](./Media/n4.png)
       
-      -  Navigate back to the **Deployment** page
+      -  Navigate back to the **Deployment (1)** page
 
-      - In the Deployments blade of Azure AI Studio, click on **text-embedding-ada-002 model name (1)** and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
+      - In the Deployments blade of Azure AI Foundry, click on **text-embedding-ada-002 model name (2)** and verify the **deployment name** of **text-embedding-ada-002 model (3)**.
         
-         ![](./Media/ada-main.png)
+         ![](./Media/n5.png)
 
-         ![](./Media/ada-main-name.png)
+         ![](./Media/n6.png)
 
 1. To verify the values for **endpoint** and **apiKey** follow the below steps:
 
