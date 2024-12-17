@@ -86,7 +86,7 @@ In this task, verification, and retrieval of specific values, including End Poin
       
       -  Navigate back to the **Deployment (1)** page
 
-      - In the Deployments blade of Azure AI Foundry, click on **text-embedding-ada-002 model name (2)** and verify the **deployment name** of **text-embedding-ada-002 model (3)**.
+      - In the Deployments blade of Azure AI Foundry, click on **text-embedding-ada-002 model name (2)** and verify the **deployment name** of **text-embedding-ada-002 model**.
         
          ![](./Media/n5.png)
 
@@ -96,9 +96,9 @@ In this task, verification, and retrieval of specific values, including End Poin
 
    -  Navigate back to the tab displaying **Azure portal**. 
 
-   -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint**, verify the **KEY1** and **Endpoint**.
+   -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint (1)**, verify the **KEY1 (1)**,**Endpoint (2)** and copy it to clipboard.
      
-      ![](./Media/image-rg-3.png)
+      ![](./Media/n7.png)
 
 1. To verify the values for  "azureCognitiveSearchEndpoint", "azureCognitiveSearchApiKey", follow below steps:
    
