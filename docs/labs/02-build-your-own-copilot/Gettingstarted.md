@@ -96,7 +96,7 @@ In this task, verification, and retrieval of specific values, including End Poin
 
    -  Navigate back to the tab displaying **Azure portal**. 
 
-   -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint (1)**, verify the **KEY1 (1)**,**Endpoint (2)** and copy it to clipboard.
+   -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint (1)**, verify the **KEY1 (1)** and **Endpoint (2)** 
      
       ![](./Media/n7.png)
 
