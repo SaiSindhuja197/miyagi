@@ -76,12 +76,3 @@ Interaction with foundation models is more than chat. This sample shows a few us
 - [Azure Web PubSub](https://azure.microsoft.com/en-us/products/web-pubsub)
 - [Azure Communication Services (ACS)](https://learn.microsoft.com/en-us/azure/communication-services/overview#common-scenarios)
 
-## Summary
-
-### Introduction to Build Intelligent Apps with Microsoft's Copilot stack & Azure OpenAI
-
-### Getting Started with CloudLabs Environment
-
-### Lab 1 - Run Miyagi App Locally
-
-In this lab, the focus is on configuring the Miyagi App for operational readiness. Subsequently, attention shifts to understanding the nuanced implementation of the Recommendation service. The practical phase involves executing the Recommendation service and deploying the Miyagi frontend locally for testing and development.
