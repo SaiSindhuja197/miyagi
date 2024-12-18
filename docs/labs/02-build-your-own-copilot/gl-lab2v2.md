@@ -1,4 +1,7 @@
 # Lab 1.1: Containerizing Recommendation service to Azure Container Apps
+
+### Estimated Duration: 60 minutes
+
 ## Lab scenario
 In this Lab, you'll explore the process of containerizing a recommendation service and deploying it to Azure Container Apps. Containerization has become a key strategy in modern application development and deployment, providing a consistent and reproducible environment across various stages of the software development lifecycle. Azure Container Apps, part of Microsoft's Azure cloud platform, offers a managed container service that enables developers to deploy and scale containerized applications seamlessly.  
 
@@ -13,8 +16,6 @@ In this lab, you will complete the following tasks:
 - Task 5: Push the Docker Image of the Recommendation service to the Container registry
 - Task 6: Create a Container app for recommendation-service
 - Task 7: Verify Recommendation Service using Swagger
-
-### Duration: 60 minutes
 
 ### Task 1: Setup configuration for miyagi app
 
@@ -332,7 +333,7 @@ In this task, you will verify the Recommendation Service using Swagger by access
    ![](./Media/online-output-recommendation.png)    
 
 
-## Review 
+## Summary
 
 In this lab, you have accomplished the following:
 
@@ -344,4 +345,4 @@ In this lab, you have accomplished the following:
 - Created a container app for the Recommendation service to enable cloud deployment.
 - Verified the Recommendation service using Swagger to ensure correct API functionality.
 
-## Click on Next to proceed with the lab 
+### You have successfully completed the lab
