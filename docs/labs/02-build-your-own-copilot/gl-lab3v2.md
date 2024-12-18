@@ -70,7 +70,7 @@ In this task, you will verify the API Management Service and create an API with 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="f0747771-c830-4f46-8e46-2531ad40214a" />
+   <validation step="d1631c75-22e6-4fcc-a09d-c037ab0c0eb5" />
    
 ### Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 
