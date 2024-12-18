@@ -8,9 +8,9 @@
         "Order": 1
       },
       {
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/READMEv3.md",
-				"Order": 2
-			},
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/READMEv3.md",
+	"Order": 2
+      },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/Gettingstarted.md",
         "Order": 3
