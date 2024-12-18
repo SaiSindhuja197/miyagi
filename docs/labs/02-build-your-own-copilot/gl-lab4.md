@@ -42,9 +42,9 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
    ![](./Media/data3.png) 
 
-1. From the Overview page, click on **Go to Azure OpenAI Studio**.
+1. From the Overview page, click on **Go to Azure AI Foundry portal**.
    
-    ![](./Media/go_to_azure.png)
+    ![](./Media/n2.png)
 
 1. "Close" button on the "Discover an even better Azure AI experience" pop-up to dismiss it.
 
@@ -54,9 +54,7 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
     
     ![](./Media/deploy-name.png)
 
-    > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.
-
-    ![](./Media/code2.png "Keys and Endpoints")              
+    > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.         
 
 ### Task 2: Cloning the Chat-Copilot GitHub Repo
 
@@ -228,7 +226,7 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
 1. Click on the **Edit** button on the left to rename.
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 

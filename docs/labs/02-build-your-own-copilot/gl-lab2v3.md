@@ -358,7 +358,7 @@ In this task, you will provision the API Management Service by creating an insta
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 
@@ -367,3 +367,5 @@ In this lab, you have accomplished the following:
 - Persisted embeddings in Azure AI Search for efficient retrieval.
 - Built and pushed Docker images for the Recommendation service.
 - Created a container app and verified it using Swagger.
+
+## You have successfully completed the lab

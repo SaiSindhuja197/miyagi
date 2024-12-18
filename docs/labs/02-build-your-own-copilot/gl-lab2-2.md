@@ -142,7 +142,7 @@ In this task, you will access the Recommendation Service running on Azure Contai
 
     > **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
                        
-   ![](./Media/b1.png)
+    ![](./Media/b1.png)
 
 1. In the to the **recommendation service** ui page, and click on **Personalize** button.
 
@@ -162,11 +162,13 @@ In this task, you will access the Recommendation Service running on Azure Contai
 
     > **Note**: Navigate back to VS code, from the Terminal select Node terminal, and press Ctrl + C to stop the recommendation service ui page.
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 
 - Verified the Recommendation Service by personalizing user interactions successfully.
 - Updated the Recommendation Service URL in Miyagi UI configuration.
 - Accessed the Recommendation Service from local Miyagi UI effectively.
+
+### You have successfully completed the lab
 

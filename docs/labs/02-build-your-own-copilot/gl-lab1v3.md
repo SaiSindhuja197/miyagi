@@ -234,7 +234,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
 1.  From the **Terminal** select **Node** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 
