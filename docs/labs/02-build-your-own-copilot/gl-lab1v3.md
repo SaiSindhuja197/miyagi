@@ -105,9 +105,14 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 
       ![](./Media/run.png)
 
+   > **Note**: Ensure to install python extensions before running the cells.
+   
+   > **Note**: Ensure to click on **Work or School Account** when a window opens and provide the username and password
+   
    > **Note**: Incase of any issues or errors occured related to exceeded call rate limit of your current OpenAI S0 pricing tier. , Please wait for 15 to 20 seconds and Re-run the cell
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
