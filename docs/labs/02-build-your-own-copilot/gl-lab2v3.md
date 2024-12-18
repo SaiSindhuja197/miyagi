@@ -258,6 +258,8 @@ In this task, you'll Push miyagi-recommendation images to acr.
     az login -u [username] -p [password]
     ```
 
+    **Note:** If you face error as **az is not recognized**, please run this command **Install-Module -Name Az -Repository PSGallery -Force** and try reopening the vs code.
+
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
 
    > **Note**: Please replace **[ACRname]** and **[uname]** with **<inject key="AcrUsername" enableCopy="true"/>**, and **[password]** with **<inject key="AcrPassword" enableCopy="true"/>**.
