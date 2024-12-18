@@ -110,13 +110,6 @@ In this task, you will update the Container App Recommendation service URL for t
 1. Navigate back to **Visual Studio Code**, navigate to **miyagi>ui\typescript>.env.** and replace existing code for **NEXT_PUBLIC_RECCOMMENDATION_SERVICE_URL** with copied for **Endpoints** and save the file 
 
    ![](./Media/cntr4.png)
-   
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at CloudCloudlabs-support@spektrasystems.com.
-
-  <validation step="d54f179b-7f83-4002-a3f5-d52f7c632b72" />
 
 ### Task 3: Access Recommendation Service running on Azure Container Apps from Local Miyagi-UI 
 
