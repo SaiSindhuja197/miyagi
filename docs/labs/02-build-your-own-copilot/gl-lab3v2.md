@@ -1,5 +1,7 @@
 # Lab 2: Expose OpenAI through API Management Service
 
+## Estimated Duration: 60 minutes
+
 ## Lab scenario
 
 In this lab, you'll be verifying and creating APIs in the deployed API Management service to update the Docker image for the Recommendation service. The revision of the Recommendation service from the Container App encapsulates the meticulous approach to maintaining and optimizing containerized applications within the project's scope.
@@ -10,8 +12,6 @@ In this lab, you will complete the following tasks:
 - Task 1: Verify the API Management Service and create an API with Operations
 - Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 - Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
-
-## Estimated time: 60 minutes
 
 ### Task 1: Verify the API Management Service and create an API with Operations
 
@@ -65,12 +65,13 @@ In this task, you will verify the API Management Service and create an API with 
 
    ![](./Media/gateway-url.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
-   <validation step="d1631c75-22e6-4fcc-a09d-c037ab0c0eb5" />
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at CloudCloudlabs-support@spektrasystems.com.
+
+  <validation step="d54f179b-7f83-4002-a3f5-d52f7c632b72" />
    
 ### Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 
@@ -78,15 +79,15 @@ In this task, you will update the Recommendation Service configuration to access
 
 1. Navigate to Visual Studio Code, open the `appsettings.json` file from the path `C:\LabFiles\miyagi\services\recommendation-service\dotnet\appsettings.json`.
 
-   ![](./Media/lab3-t2-s1.png)
+      ![](./Media/lab3-t2-s1.png)
 
 1. In the `appsettings.json` file, you have to replace the **endpoint** value from **OpenAI resource endpoint** to **API Gateway URL** which you have copied in Task-1 Step-7 and press Ctrl + S to save the file.
 
-   ![](./Media/lab3-t2-s2.png)
+      ![](./Media/lab3-t2-s2.png)
 
 1. Open a new terminal: by navigating **miyagi/services/recommendation-service/dotnet** and right-click on in cascading menu select **Open in intergate Terminal**.
 
-    ![](./Media/task4-1.png)
+      ![](./Media/task4-1.png)
 
 1. Run the following command to run the recommendation service locally
 
@@ -112,7 +113,7 @@ In this task, you will update the Recommendation Service configuration to access
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="aa92795c-d33d-45cd-a42e-4f0d861f714e" />
+   <validation step="d1631c75-22e6-4fcc-a09d-c037ab0c0eb5" />
 
 ### Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
 
@@ -164,7 +165,8 @@ In this task, you will verify that the Recommendation Service successfully acces
 
 1. From the Terminal select Node terminal, press Ctrl + C to stop the recommendation service ui page. Now, click on Next from the lower right corner to move to the next page.
 
- ## Review
+ ## Summary
+ 
  In this lab, you have accomplished the following:
 
 - Verified the API Management Service and created an API successfully.

@@ -1,5 +1,7 @@
 # Lab 1: Bringing your own data with Azure AI Search
 
+### Estimated Duration: 120 minutes
+
 ## Lab objectives 
 
 In this lab, you'll run Chat Copilot locally after retrieving Azure OpenAI Service values from the Azure portal. By cloning the Chat-Copilot GitHub repo and setting up dependencies, you'll configure and execute the application. Uploading documents enables interaction with Copilot, which generates responses based on their content, complete with citations for validation. This exercise provides hands-on experience in utilizing Chat Copilot with your own data, managing documents and sessions within the application.
@@ -15,8 +17,6 @@ In this lab, you'll run Chat Copilot locally after retrieving Azure OpenAI Servi
 
 - Task 1: Chat with your own documents in the Chat Copilot Application
 - Task 2: Cloning the Chat-Copilot GitHub Repo
-
-### Duration: 120 minutes
  
 # Exercise 1: Run the Chat Copilot App Locally
 
