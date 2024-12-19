@@ -1,4 +1,4 @@
-# Lab-0 Verify and Review the values of Azure Resources 
+# Lab 1 : Verify and Review the values of Azure Resources 
 
 ### Estimated Duration : 20 minutes
 
