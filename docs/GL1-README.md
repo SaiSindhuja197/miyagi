@@ -109,8 +109,8 @@ The architecture for this lab involves several key components:
 
    ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image8.png)
 
-> [!IMPORTANT]<br>
-> **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
+ > [!IMPORTANT]<br>
+ > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
 
 This hands-on-lab will guide you to create intelligent systems with Microsoft's Copilot stack, leveraging Generative AI and RAG patterns for enhanced productivity and personalized experiences.
 
