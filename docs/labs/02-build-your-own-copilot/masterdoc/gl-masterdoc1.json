@@ -4,20 +4,16 @@
 		"Language": "English",
 		"Files": [
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/GL1-README.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/Getting-started(01).md",
 				"Order": 1
 			},
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/READMEv3.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/Gettingstarted.md",
 				"Order": 2
 			},
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/Gettingstarted.md",
-				"Order": 3
-			},
-			{
 				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/main/docs/labs/02-build-your-own-copilot/gl-lab1v3.md",
-				"Order": 4
+				"Order": 3
 			}
 		]
 	}
