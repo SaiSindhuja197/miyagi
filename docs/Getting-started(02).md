@@ -30,7 +30,7 @@ The architecture involves the **Miyagi App Frontend**, which connects to the **R
 
 ## Architecture Diagram
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/n23.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/n23.PNG)
 
 ## Explanation of Components
 
