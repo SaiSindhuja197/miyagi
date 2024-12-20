@@ -27,7 +27,7 @@ In this lab, the Miyagi App is made up of several parts. The frontend allows use
 
 ## Architecture Diagram
 
-   ![](Lab-Scenario-Preview/n22.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/n22.PNG)
 
 ## Explanation of Components
 
