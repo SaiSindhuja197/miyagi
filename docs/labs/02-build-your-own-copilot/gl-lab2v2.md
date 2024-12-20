@@ -1,4 +1,4 @@
-# Lab 1.1: Containerizing Recommendation service to Azure Container Apps
+# Lab 1: Containerizing Recommendation service to Azure Container Apps
 
 ### Estimated Duration: 60 minutes
 
