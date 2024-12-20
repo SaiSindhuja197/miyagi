@@ -32,7 +32,7 @@ The architecture includes the **Recommendation Service** deployed as a container
 
 ## Architecture Diagram
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/n24.PNG)
+   ![](../docs/labs/02-build-your-own-copilot/Media/n25.PNG)
 
 ## Explanation of Components
 
