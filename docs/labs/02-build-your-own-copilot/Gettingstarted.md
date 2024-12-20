@@ -1,4 +1,4 @@
-# Lab 1 : Verify and Review the values of Azure Resources 
+#  Verify and Review the values of Azure Resources 
 
 ### Estimated Duration : 20 minutes
 
@@ -91,4 +91,4 @@ In this Lab, verification, and retrieval of specific values, including End Point
 ## Summary
 In this lab, you will verify and retrieve configuration values such as Endpoint, Connection String, and Key for various Azure resources like OpenAI Service, Cosmos DB, and Cognitive Search. This ensures proper configuration and connectivity. The steps involve accessing the Azure Portal, navigating to specific resource groups, and verifying the required values.
 
-## You have successfully completed this lab.
+### You have successfully completed this lab.
