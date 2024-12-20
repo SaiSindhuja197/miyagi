@@ -26,7 +26,7 @@ The architecture integrates **Azure OpenAI Service**, **Azure AI Search**, and t
 
 ## Architecture Diagram
 
-  ![](../docs/labs/02-build-your-own-copilot/Media/n26.png)
+  ![](../docs/labs/02-build-your-own-copilot/Media/n26.PNG)
 
 ## Explanation of Components
 
