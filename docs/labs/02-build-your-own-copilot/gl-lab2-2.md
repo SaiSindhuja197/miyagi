@@ -1,4 +1,4 @@
-# Lab 1.2: Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
+# Lab 2 : Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
 
 ### Estimated Duration: 60 minutes
 
@@ -7,6 +7,7 @@
 In this lab, you will explore and verify the containerized Recommendation Service deployed in Azure Container Apps using the local Miyagi UI. Begin by configuring the Miyagi UI to connect to the Azure endpoint of the Recommendation Service. Next, test various API calls through the UI to ensure accurate recommendations based on user inputs. Document any discrepancies or issues encountered during testing. Finally, validate the overall integration and functionality of the services.
 
 ## Lab objectives
+
 In this lab, you will complete the following tasks:
 
 - Task 1: Verify the Recommendation service running in the Container App by Personalizing
@@ -164,5 +165,5 @@ In this lab, you have accomplished the following:
 - Updated the Recommendation Service URL in Miyagi UI configuration.
 - Accessed the Recommendation Service from local Miyagi UI effectively.
 
-## You have successfully completed the lab
+### You have successfully completed the lab
 
