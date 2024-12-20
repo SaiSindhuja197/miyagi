@@ -1,51 +1,41 @@
 # Build Intelligent Apps with Microsoft's Copilot Stack & Azure OpenAI
 
-### Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 120 minutes
 
 ## Overview
 
-In this lab, you will gain a strong understanding of Generative AI basics, Azure Open AI, Retrieval Augmented Generation (RAG) patterns, Semantic Kernel, and how to utilize these concepts to create your own Copilot for your business needs. You will also explore use cases that showcase Copilot product experiences. Using Microsoft's Copilot stack and practical use cases this lab will guide you in envisioning and creating intelligent systems that integrate foundation models resulting in improved productivity and hyper-personalized product experiences. 
+In this lab, you will explore how to use Chat Copilot with your own data, leveraging Azure AI Search and Azure OpenAI Service. You will begin by retrieving necessary service values from the Azure portal and setting up the Chat Copilot app locally. Through configuring the app and uploading documents, you’ll enable the generation of context-based responses with citations for validation. This lab offers hands-on experience in integrating your data with Chat Copilot, managing documents, and interacting with the application for personalized insights.
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in containerizing and deploying a Recommendation service to Azure Container Apps and verifying it using the local Miyagi UI for seamless integration and scalability.
+Understand how to configure and run the Chat Copilot application locally, integrate your own data with Azure AI Search, and generate responses with contextual accuracy. By the end of this lab, you will be able to:
 
-- **Verify and Retrieve the values of Azure Resources**: This hands-on exercise aims to verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
-- **Run Miyagi App Locally** : This hands-on exercise aims to configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
-- **Containerizing Recommendation service to Azure Container Apps** : This hands-on exercise aims to containerize and deploy the Recommendation service to Azure Container Apps, creating Docker images, pushing them to Azure Container Registry (ACR), and verifying the deployment for scalability and accessibility. 
-- **Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI**: This hands-on exercise aims to explore and verify the containerized Recommendation service deployed in Azure Container Apps by integrating it with the local Miyagi UI, ensuring seamless functionality and validating service endpoints.
-- **Expose Open AI Service through APIM**: This hands-on exercise aims to verify and create APIs in the API Management service to update the Docker image for the Recommendation service, ensuring the optimization and maintenance of containerized applications. 
 - **Bringing your own data with Azure AI Search**: This hands-on exercise aims to integrate Large Language Models (LLMs) with languages like C#, Python, and Java by allowing the creation of easily chainable plugins. 
   
 ## Pre-requisites
 
 Participants should have the following prerequisites
 
-- Understanding of Generative AI basics
-- Familiarity with Azure Open AI
-- Experience with Semantic Kernel
+- **Basic Knowledge of Azure Services**: Familiarity with Azure OpenAI Service and Azure AI Search.
+- **Experience with Git and Repositories**: Ability to clone and work with GitHub repositories.
+- **Basic Programming Skills**: Proficiency in setting up environments and running applications locally.
 
 ## Architecture
 
-Miyagi's architecture uses AI for hyper-personalized user interactions, transforming applications with Semantic Kernel skills and advanced prompt engineering. It features scalable microservices and an event-driven backbone, evolving with new AI models. The frontend offers personalized experiences similar to Microsoft Copilot.
-
-It integrates Azure Functions, AKS, and Apache Kafka for seamless communication, with data managed by Cosmos DB and Azure Storage. Miyagi exemplifies advanced AI and Azure services for future-ready, intelligent applications.
+The architecture integrates **Azure OpenAI Service**, **Azure AI Search**, and the **Chat Copilot application** to provide personalized responses based on user-uploaded documents. Documents are uploaded to the Chat Copilot app, indexed by Azure AI Search, and used to generate context-aware responses through Azure OpenAI's language models. The application is run locally, pulling configuration values from the Azure portal and leveraging pre-built components from a GitHub repository. This setup enables seamless interaction with your data, providing accurate responses enriched with citations for validation.
 
 ## Architecture Diagram
 
-   ![](Lab-Scenario-Preview/sk-memory-orchestration.png)
+  ![](../docs/labs/02-build-your-own-copilot/Media/n26.png)
 
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
 
-- **Azure OpenAI**: Azure OpenAI integrates OpenAI's language models into Microsoft's Azure cloud, enabling scalable AI solutions for natural language processing and automation.
-- **AI Search**: Is a cloud service that enables powerful and flexible search capabilities, including full-text search and AI-powered features.
-- **Azure Functions**: Run code in response to events without managing servers. Scales automatically based on demand.
-- **Apache Kafka**: Handles real-time data streaming and event processing.
-- **Cosmos DB**: Globally distributed, multi-model database with low latency and high availability.
-- **Azure Storage**: Scalable storage for blobs, files, queues, and tables.
-- **Bing Search**: Lets you add Bing search features to your apps. It provides APIs for web, image, video, and news searches.
+- **Azure OpenAI Service**: Provides access to powerful AI models for natural language understanding and response generation.
+- **Azure AI Search**: Enables indexing and searching through uploaded documents to support contextual responses.
+- **Chat Copilot App**: A sample application that integrates Azure OpenAI and AI Search to generate insights and citations based on your data.
+- **GitHub Repository**: Contains the source code and dependencies for configuring and running the Chat Copilot app locally.
 
 # Getting Started with the Lab
 
@@ -66,18 +56,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 ![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
  
 ## Login to the Azure Portal
-
-1. Minimize the **Docker Desktop** by click on **Minimize** button.
-
-   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image1.png)
-
-   >**Note:** If you encounter WSL Update failed error in the Docker Desktop application click on **Quit** and reopen the Docker Desktop application from the Desktop.
-   
-      ![](../docs/labs/02-build-your-own-copilot/Media/err.png)
-  
-    >If you face any issue A WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
-  
-     ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
@@ -117,8 +95,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
  > [!IMPORTANT]<br>
  > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
-
-This hands-on-lab will guide you to create intelligent systems with Microsoft's Copilot stack, leveraging Generative AI and RAG patterns for enhanced productivity and personalized experiences.
 
 ## Support Contact
 
