@@ -16,7 +16,7 @@ In this lab, you will complete the following tasks:
 - Task 5: Persist embeddings in Azure AI Search
 - Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
-### Task 1: Setup configuration for miyagi app
+## Task 1: Setup configuration for miyagi app
 
 In this lab, you will configure the Miyagi app by setting up the environment, installing dependencies, and preparing the database for a seamless development experience.
 
@@ -89,7 +89,7 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
 
 <validation step="eb73d21f-c370-4eba-9380-8d78b6bfc326" />
 
-### Task 2: Understanding the implementation of the Recommendation service
+## Task 2: Understanding the implementation of the Recommendation service
 
 In this lab, you will explore the implementation of the Recommendation service, focusing on its algorithms and data processing methods to deliver personalized suggestions.
 
@@ -119,7 +119,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 
 <validation step="571b621e-6e53-4fbc-b3ec-6e614bc779a7" />
 
-### Task 3: Run recommendation service locally
+## Task 3: Run recommendation service locally
 
 In this lab, you will set up the environment, install necessary dependencies, and run the Recommendation service locally to test and develop features effectively.
 
@@ -146,7 +146,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
    ![](./Media/miyagi2.png)
 
 
-### Task 4: Run miyagi frontend locally
+## Task 4: Run miyagi frontend locally
 
 1. Open a new terminal: by navigating  **miyagi/ui** and right-click on **ui/typescript** , in cascading menu select **Open in Integrated Terminal**.
 
@@ -172,7 +172,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
                        
    ![](./Media/b1.png)
    
-### Task 5: Persist embeddings in Azure AI Search
+## Task 5: Persist embeddings in Azure AI Search
 
 1. Navigate back to the **swagger UI** page, scroll to **Memory** session, click on **POST /datasets** for expansion, and click on **Try it out**.
 
@@ -217,7 +217,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
 <validation step="07efcc74-3b48-4da3-8be6-00bf71986f9e" />
 
-### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
+## Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
 1. Navigate back to the **recommendation service** ui page, and click on **Personalize** button.
 
@@ -250,4 +250,4 @@ In this lab, you have accomplished the following:
 - Configured and stored embeddings in Azure AI Search successfully.
 - Personalized recommendations in Miyagi app, testing user preference responses.
 
-## You have successfully completed the lab
+### You have successfully completed the lab

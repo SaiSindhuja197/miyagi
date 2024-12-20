@@ -94,9 +94,9 @@ In this task, you will update the Recommendation Service configuration to access
     ```
     dotnet build
     dotnet run
-    ```
+     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+    **Note**: Let the command run, meanwhile you can proceed with the next step.
 
 1. Open another tab in Edge, in the browser window paste the following link
 
