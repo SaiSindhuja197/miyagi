@@ -172,3 +172,5 @@ In this task, you will verify that the Recommendation Service successfully acces
 - Verified the API Management Service and created an API successfully.
 - Updated the Recommendation Service configuration for Azure OpenAI access.
 - Verified that the Recommendation service successfully accesses Azure OpenAI.
+
+## You have successfully completed the lab
