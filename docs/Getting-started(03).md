@@ -1,87 +1,132 @@
-# Build Intelligent Apps with Microsoft's Copilot stack & Azure OpenAI
+# Build Intelligent Apps with Microsoft's Copilot Stack & Azure OpenAI
 
-## Workshop Overview  
+### Overall Estimated Duration: 3 Hours 30 Minutes
 
-In this workshop, you will gain a strong understanding of Generative AI basics, Azure Open AI, Retrieval Augmented Generation (RAG) patterns, Semantic Kernel, and how to utilize these concepts to create your own Copilot for your business needs. You will also explore use cases that showcase Copilot product experiences. Using Microsoft's Copilot stack and practical use cases this workshop will guide you in envisioning and creating intelligent systems that integrate foundation models resulting in improved productivity and hyper-personalized product experiences.   
+## Overview
 
-### What to expect?   
+In this lab, you will containerize the Recommendation service and deploy it to **Azure Container Apps** for scalable operations. You will then integrate it with the **Miyagi App Frontend** and verify its functionality through the local UI. Finally, you'll expose the Recommendation service through **API Management (APIM)** to securely access **Azure OpenAI**, ensuring seamless and secure interaction for generating personalized recommendations. This lab covers containerization, API management, and integration of AI services in Azure.
 
-Learn Concepts:  
+## Objective
 
-The first segment of the workshop involves a presentation that will provide a solid foundation in Generative AI concepts and guide you through the process of creating your own co-pilot using the Microsoft Copilot stack.  
+Understand how to containerize the Recommendation service, deploy it to Azure Container Apps, integrate it with the Miyagi frontend, and expose it through API Management for secure access to Azure OpenAI. By the end of this lab, you will be able to:
 
-## Hands-on Lab:  
+- **Verify and Retrieve the values of Azure Resources**: This hands-on exercise aims to verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
+- **Containerizing Recommendation service to Azure Container Apps** : This hands-on exercise aims to containerize and deploy the Recommendation service to Azure Container Apps, creating Docker images, pushing them to Azure Container Registry (ACR), and verifying the deployment for scalability and accessibility. 
+- **Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI**: This hands-on exercise aims to explore and verify the containerized Recommendation service deployed in Azure Container Apps by integrating it with the local Miyagi UI, ensuring seamless functionality and validating service endpoints.
+- **Expose Open AI Service through APIM**: This hands-on exercise aims to verify and create APIs in the API Management service to update the Docker image for the Recommendation service, ensuring the optimization and maintenance of containerized applications.
+  
+## Pre-requisites
 
-In the hands-on segment (which will be the bulk of this workshop), participants will get deep exposure to Copilot Stack’s capabilities, especially with Semantic Kernel, Prompt Engineering, and Azure Cognitive Search. During this hands-on lab portion, you'll clone a sample Investment Advisor application and deploy it to Azure. This application harnesses the power of Azure Open AI, RAG, Semantic Kernel, and other Azure services. You will explore the following key features and gain insights into the underlying mechanisms:  
+Participants should have the following prerequisites
 
-Investment Advisor Copilot: This Copilot, powered by Generative AI, provides investment recommendations based on user preferences. It utilizes Azure Open AI, Semantic Kernel, Azure Cognitive Search (with vector indexing for embeddings), Azure Cosmos DB, Container Apps, and Azure API Management.  
+- **Basic Knowledge of Docker**: Familiarity with containerization and building Docker images.
+- **Experience with Azure Container Apps**: Understanding how to deploy and manage containerized applications in Azure.
+- **Familiarity with REST APIs**: Knowledge of interacting with and configuring REST APIs for service integration.
+- **Basic Programming Skills**: Proficiency in Python or similar languages to work with the Recommendation service and integrate it with frontend applications.
+- **Understanding of API Management (APIM)**: Basic knowledge of using Azure API Management to expose and secure APIs.
+- **Experience with Frontend Development**: Familiarity with setting up and using UI interfaces (like Miyagi UI) for testing services.
 
-Chat Copilot: Get real-time assistance with investments using this feature. It leverages Azure Open AI, Semantic Kernel, Azure Cognitive Search (with vector indexing for embeddings), Azure Cosmos DB, Container Apps, and Azure API Management.
+## Architecture
 
-### Project Miyagi - Envisioning sample for [Copilot stack](https://learn.microsoft.com/en-us/semantic-kernel/overview/#semantic-kernel-is-at-the-center-of-the-copilot-stack)
+The architecture includes the **Recommendation Service** deployed as a container in **Azure Container Apps** for scalability. The **Miyagi App Frontend** connects to the service to display personalized recommendations. **Swagger** is used to test the API endpoints. **Azure API Management (APIM)** is used to securely expose the service and access **Azure OpenAI** for recommendations. Docker images of the service are stored in a **Container Registry** for deployment. This setup ensures a scalable, secure, and efficient solution for containerized AI services with managed API access.
 
-Project Miyagi showcases Microsoft's Copilot Stack in an [envisioning workshop](https://github.com/Azure-Samples/intelligent-app-workshop) aimed at designing, developing, and deploying enterprise-grade intelligent apps. By exploring both generative and traditional ML [use cases](https://iappwksp.com/wksp/05-use-cases/), Miyagi offers an experiential approach to developing AI-infused product experiences that enhance productivity and enable hyper-personalization. Additionally, the workshop introduces traditional software engineers to emerging design patterns in prompt engineering, such as chain-of-thought and retrieval-augmentation, as well as to techniques like vectorization for long-term memory, fine-tuning of OSS models, and plugins or tools for augmenting and grounding LLMs.
+## Architecture Diagram
 
-The project includes examples of usage for [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/#semantic-kernel-is-at-the-center-of-the-copilot-stack), [Promptflow](https://promptflow.azurewebsites.net/overview-what-is-prompt-flow.html), [LlamaIndex](https://github.com/jerryjliu/llama_index), [LangChain](https://github.com/hwchase17/langchain#readme), vector stores ([Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr), [CosmosDB Postgres pgvector](https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-use-pgvector), and generative image utilities such as [DreamFusion](https://huggingface.co/thegovind/reddogpillmodel512) and [ControlNet](https://github.com/lllyasviel/ControlNet). Additionally, it features fine-tuned foundation Models from AzureML such as Llama2. Utilize this project to gain insights as you modernize and transform your applications with AI and fine-tune your private data to build your own Copilots.
+   ![](../docs/labs/02-build-your-own-copilot/Media/n24.png)
 
-This polyglot codebase relies on a multitude of microservices, implementing several [use cases](https://iappwksp.com/wksp/05-use-cases/) using our Copilot stack. It includes generative text and images for personalized financial coaching, summarization, and agent-like orchestration. Built on a cloud-native event-diven architecture (EDA) backbone, the design and codebase ensures enterprise-grade quality attributes such as availability, scalability, and maintainability.
+## Explanation of Components
 
-Embark on a journey to transform your applications into cutting-edge, intelligent systems with the self-guided workshop and discover the art of the possible.
+The architecture for this lab involves several key components:
 
-### Frontend
-Interaction with foundation models is more than chat. This sample shows a few use cases 
+- **Recommendation Service**: A backend service that generates personalized recommendations, deployed as a container in Azure Container Apps.
+- **Miyagi App Frontend**: The UI that displays personalized recommendations by connecting to the Recommendation Service.
+- **Azure Container Apps**: A managed service for deploying and scaling containerized applications like the Recommendation Service.
+- **Swagger**: A tool to test and verify the API endpoints of the Recommendation Service.
+- **Azure API Management (APIM)**: Exposes the Recommendation Service securely and integrates with Azure OpenAI for recommendations.
+- **Container Registry**: Stores Docker images of the Recommendation Service for deployment.
 
-![frontend](./wip-ui.png)
+# Getting Started with the Lab
 
-### Architecture
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
-#### High-level logical architecture
+   ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartedpagenew1-v2.png)
+ 
+1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
-![azure](./wip-azure.png)
+    ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartedpagenew2-v2.png)
+   
+   > You will see the SUFFIX value on the **Environment** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
 
-#### Semantic Kernel Orchestration for Miyagi usecase
+## Lab Guide Zoom In/Zoom Out
+ 
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![sk-orchestration](./sk-memory-orchestration.png)
+![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+ 
+## Login to the Azure Portal
 
-#### 30k foot view
+1. Minimize the **Docker Desktop** by click on **Minimize** button.
 
-<p align="left"><img src="basic-arch.png" width=30% height=30% /></p>
+   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image1.png)
 
-### Copilot Stack
+   >**Note:** If you encounter WSL Update failed error in the Docker Desktop application click on **Quit** and reopen the Docker Desktop application from the Desktop.
+   
+      ![](../docs/labs/02-build-your-own-copilot/Media/err.png)
+  
+    >If you face any issue A WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
+  
+     ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
 
-![copilot stack](./copilot-stack.png)
+1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
-### Services and capabilities
+   ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartpage3.png)
 
-- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
-  - gpt-4
-  - gpt-35-turbo
-  - text-embedding-ada-002
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
-- [Use your own data with Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line&pivots=rest-api#example-curl-commands)
-- [AzureML PromptFlow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2)
-- [TypeChat](https://microsoft.github.io/TypeChat)
-- [Azure Functions](https://azure.microsoft.com/en-ca/products/functions/)
-- [APIM](https://learn.microsoft.com/en-us/azure/api-management/)
-- [Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/overview)
-- [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
-- [Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db/)
-- [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/)
-- [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction)
-- [LangChain](https://github.com/hwchase17/langchain#readme)
-- [Foundation Models from CogServices](https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/)
-- [Qdrant](https://qdrant.tech/solutions/)
-- [Microsoft DeepSpeed Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
-- [Azure Web PubSub](https://azure.microsoft.com/en-us/products/web-pubsub)
-- [Azure Communication Services (ACS)](https://learn.microsoft.com/en-us/azure/communication-services/overview#common-scenarios)
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
 
-## Summary
+   * **Email/Username**: **<inject key="AzureAdUserEmail"></inject>**
 
-### Introduction to Build Intelligent Apps with Microsoft's Copilot stack & Azure OpenAI
+     ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image2.png)
+     
+1. Now enter the following password and click on **Sign in**.
+   
+   * **Password**: **<inject key="AzureAdUserPassword"></inject>**
 
-### Getting Started with CloudLabs Environment
+     ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image3.png)
+   
+1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-### Lab 3 - Expose OpenAI through API Management Service
+   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image4.png)
 
-In this lab, you'll be verifying and creating APIs in the deployed API Management service to update the Docker image for the Recommendation service. The revision of the Recommendation service from the Container App encapsulates the meticulous approach to maintaining and optimizing containerized applications within the project's scope.
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
+
+    ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image5.png)
+   
+1. Now that you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+
+   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image6.png)
+
+1. In the **Resource groups**, click on **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group.
+
+   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image7.png)
+
+1. In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource groups, verify the resources present in it.
+
+   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image8.png)
+
+ > [!IMPORTANT]<br>
+ > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
+
+## Support Contact
+
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+
+Learner Support Contacts:
+
+- Email Support: cloudlabs-support@spektrasystems.com.
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on Next from the lower right corner to move on to the next page.
+
+![](../docs/labs/02-build-your-own-copilot/Media/n8.png)
+
+## Happy Learning!!
