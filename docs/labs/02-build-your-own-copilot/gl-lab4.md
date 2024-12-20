@@ -236,4 +236,4 @@ In this lab, you have accomplished the following:
 - Ran the Chat Copilot app locally for testing purposes.  
 - Interacted with your documents within the Chat Copilot app.  
 
-## You have succesfully completed the lab
+### You have succesfully completed the lab

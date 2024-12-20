@@ -1,4 +1,4 @@
-# Lab 1.1: Containerizing Recommendation service to Azure Container Apps
+# Lab 1 : Containerizing Recommendation service to Azure Container Apps
 
 ## Lab scenario 
 
@@ -19,7 +19,7 @@ In this lab, you will complete the following tasks:
 
 ### Duration: 60 minutes
 
-### Task 1: Setup configuration for miyagi app
+## Task 1: Setup configuration for miyagi app
 
 In this task, you will set up the configuration for the Miyagi app by installing dependencies, configuring environment variables, and preparing the database for local development.
 
@@ -108,7 +108,7 @@ In this task, you will set up the configuration for the Miyagi app by installing
    ![](./Media/miyagi2.png)
 
 
-### Task 2: Run miyagi frontend locally
+## Task 2: Run miyagi frontend locally
 
 In this task, you will run the Miyagi frontend locally by starting the development server and verifying the user interface for functionality and interaction.
 
@@ -136,7 +136,7 @@ In this task, you will run the Miyagi frontend locally by starting the developme
                        
    ![](./Media/b1.png)
    
-### Task 3: Persist embeddings in Azure AI Search
+## Task 3: Persist embeddings in Azure AI Search
 
 In this task, you will persist embeddings in Azure AI Search by configuring the service and using APIs to store and retrieve data efficiently.
 
@@ -180,7 +180,7 @@ In this task, you will persist embeddings in Azure AI Search by configuring the 
 
 1. From the **Terminal** select **dotnet** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
-### Task 4: Build Docker Images for the Recommendation service
+## Task 4: Build Docker Images for the Recommendation service
 
 In this task, you will build Docker images for the Recommendation service by creating a Dockerfile and using it to package the application for consistent deployment.
 
@@ -244,7 +244,7 @@ In this task, you will build Docker images for the Recommendation service by cre
    
    ![](./Media/docker-recommend.png)
 
-### Task 5: Push the Docker Image of the Recommendation service to the Container registry
+## Task 5: Push the Docker Image of the Recommendation service to the Container registry
 
 In this task, you'll Push miyagi-recommendation images to acr. 
 
@@ -288,7 +288,7 @@ In this task, you'll Push miyagi-recommendation images to acr.
 
    ![](./Media/task2-6.png)
 
-### Task 6: Create a Container app for recommendation-service 
+## Task 6: Create a Container app for recommendation-service 
 
 In this task, you'll will be creating a container app for the recommendation.
 
@@ -316,7 +316,7 @@ In this task, you'll will be creating a container app for the recommendation.
    az containerapp ingress enable -n ca-miyagi-rec-[DID] -g miyagi-rg-[DID] --type external --allow-insecure --target-port 8080
    ```
 
-### Task 7: Verify Recommendation Service using Swagger
+## Task 7: Verify Recommendation Service using Swagger
 
 In this task, you will verify the Recommendation Service using Swagger by accessing the API documentation, testing endpoints, and ensuring the service functions as expected.
 
@@ -336,7 +336,7 @@ In this task, you will verify the Recommendation Service using Swagger by access
 
    ![](./Media/online-output-recommendation.png)   
 
-### Task 8: Provision API Management Service 
+## Task 8: Provision API Management Service 
 
 In this task, you will provision the API Management Service by creating an instance, configuring settings, and setting up policies for efficient API management and security.
 
@@ -370,4 +370,4 @@ In this lab, you have accomplished the following:
 - Built and pushed Docker images for the Recommendation service.
 - Created a container app and verified it using Swagger.
 
-## You have successfully completed the lab
+### You have successfully completed the lab

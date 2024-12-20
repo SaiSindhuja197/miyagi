@@ -58,6 +58,12 @@ The architecture for this lab involves several key components:
     ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartedpagenew2-v2.png)
    
    > You will see the SUFFIX value on the **Environment** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
+
+## Lab Guide Zoom In/Zoom Out
+ 
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
  
 ## Login to the Azure Portal
 
@@ -109,8 +115,8 @@ The architecture for this lab involves several key components:
 
    ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image8.png)
 
-> [!IMPORTANT]<br>
-> **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
+ > [!IMPORTANT]<br>
+ > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
 
 This hands-on-lab will guide you to create intelligent systems with Microsoft's Copilot stack, leveraging Generative AI and RAG patterns for enhanced productivity and personalized experiences.
 

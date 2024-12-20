@@ -1,4 +1,4 @@
-# Lab 2: Expose OpenAI through API Management Service
+# Lab 3: Expose OpenAI through API Management Service
 
 ## Estimated Duration: 60 minutes
 
@@ -13,7 +13,7 @@ In this lab, you will complete the following tasks:
 - Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 - Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
 
-### Task 1: Verify the API Management Service and create an API with Operations
+## Task 1: Verify the API Management Service and create an API with Operations
 
 In this task, you will verify the API Management Service and create an API with operations by defining endpoints, setting policies, and testing the functionality to ensure proper integration and management of your APIs.
 
@@ -73,7 +73,7 @@ In this task, you will verify the API Management Service and create an API with 
 
   <validation step="d54f179b-7f83-4002-a3f5-d52f7c632b72" />
    
-### Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
+## Task 2: Update the Recommendation Service configuration to access Azure Open AI through APIM
 
 In this task, you will update the Recommendation Service configuration to access Azure OpenAI through API Management by modifying settings and implementing necessary authentication to enable seamless communication.
 
@@ -115,7 +115,7 @@ In this task, you will update the Recommendation Service configuration to access
 
    <validation step="d1631c75-22e6-4fcc-a09d-c037ab0c0eb5" />
 
-### Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
+## Task 3: Verify that the Recommendation service accesses Azure Open AI through APIM
 
 In this task, you will verify that the Recommendation Service successfully accesses Azure OpenAI through API Management by testing the API calls and ensuring that responses are correctly received and processed.
 
@@ -172,3 +172,5 @@ In this task, you will verify that the Recommendation Service successfully acces
 - Verified the API Management Service and created an API successfully.
 - Updated the Recommendation Service configuration for Azure OpenAI access.
 - Verified that the Recommendation service successfully accesses Azure OpenAI.
+
+### You have successfully completed the lab
