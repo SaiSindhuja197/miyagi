@@ -1,51 +1,46 @@
 # Build Intelligent Apps with Microsoft's Copilot Stack & Azure OpenAI
 
-### Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 2 Hours 30 Minutes
 
 ## Overview
 
-In this lab, you will gain a strong understanding of Generative AI basics, Azure Open AI, Retrieval Augmented Generation (RAG) patterns, Semantic Kernel, and how to utilize these concepts to create your own Copilot for your business needs. You will also explore use cases that showcase Copilot product experiences. Using Microsoft's Copilot stack and practical use cases this lab will guide you in envisioning and creating intelligent systems that integrate foundation models resulting in improved productivity and hyper-personalized product experiences. 
+In this lab, you will containerize the Recommendation service and deploy it to Azure Container Apps. Containerization ensures a consistent and reproducible environment for your application. Azure Container Apps is a fully managed service that simplifies deploying and scaling containerized applications in the cloud. By the end of the lab, you will have the Recommendation service running in containers on Azure, ready for testing and integration.
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in containerizing and deploying a Recommendation service to Azure Container Apps and verifying it using the local Miyagi UI for seamless integration and scalability.
+Learn how to containerize the Recommendation service and deploy it to Azure Container Apps for scalable and consistent cloud-based operations. By the end of this lab, you will be able to:
 
 - **Verify and Retrieve the values of Azure Resources**: This hands-on exercise aims to verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
-- **Run Miyagi App Locally** : This hands-on exercise aims to configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
 - **Containerizing Recommendation service to Azure Container Apps** : This hands-on exercise aims to containerize and deploy the Recommendation service to Azure Container Apps, creating Docker images, pushing them to Azure Container Registry (ACR), and verifying the deployment for scalability and accessibility. 
 - **Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI**: This hands-on exercise aims to explore and verify the containerized Recommendation service deployed in Azure Container Apps by integrating it with the local Miyagi UI, ensuring seamless functionality and validating service endpoints.
-- **Expose Open AI Service through APIM**: This hands-on exercise aims to verify and create APIs in the API Management service to update the Docker image for the Recommendation service, ensuring the optimization and maintenance of containerized applications. 
-- **Bringing your own data with Azure AI Search**: This hands-on exercise aims to integrate Large Language Models (LLMs) with languages like C#, Python, and Java by allowing the creation of easily chainable plugins. 
   
 ## Pre-requisites
 
 Participants should have the following prerequisites
 
-- Understanding of Generative AI basics
-- Familiarity with Azure Open AI
-- Experience with Semantic Kernel
+- **Basic Knowledge of Docker**: Familiarity with containerization concepts and Docker, including building and running Docker images.
+- **Experience with Azure Container Apps**: Understanding of Azure Container Apps and the process of deploying containerized applications on Azure.
+- **Familiarity with REST APIs**: Basic knowledge of REST API concepts for interacting with the Recommendation service and verifying functionality.
+- **Basic Programming Skills**: Proficiency in Python or a similar programming language to work with the Recommendation service and containerization scripts.
+- **Development Environment Setup**: Ability to set up a local development environment for running the Miyagi frontend and building Docker images.
 
 ## Architecture
 
-Miyagi's architecture uses AI for hyper-personalized user interactions, transforming applications with Semantic Kernel skills and advanced prompt engineering. It features scalable microservices and an event-driven backbone, evolving with new AI models. The frontend offers personalized experiences similar to Microsoft Copilot.
-
-It integrates Azure Functions, AKS, and Apache Kafka for seamless communication, with data managed by Cosmos DB and Azure Storage. Miyagi exemplifies advanced AI and Azure services for future-ready, intelligent applications.
+The architecture involves the **Miyagi App Frontend**, which connects to the **Recommendation Service** to display personalized recommendations. The service is containerized and deployed on **Azure Container Apps**, with Docker images stored in a **Container Registry** for easy deployment. **Swagger** is used to test the service's API, ensuring proper functionality. The Miyagi UI connects to the deployed service on Azure, enabling verification and seamless interaction with the Recommendation service for personalized experiences.
 
 ## Architecture Diagram
 
-   ![](Lab-Scenario-Preview/sk-memory-orchestration.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/n23.png)
 
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
 
-- **Azure OpenAI**: Azure OpenAI integrates OpenAI's language models into Microsoft's Azure cloud, enabling scalable AI solutions for natural language processing and automation.
-- **AI Search**: Is a cloud service that enables powerful and flexible search capabilities, including full-text search and AI-powered features.
-- **Azure Functions**: Run code in response to events without managing servers. Scales automatically based on demand.
-- **Apache Kafka**: Handles real-time data streaming and event processing.
-- **Cosmos DB**: Globally distributed, multi-model database with low latency and high availability.
-- **Azure Storage**: Scalable storage for blobs, files, queues, and tables.
-- **Bing Search**: Lets you add Bing search features to your apps. It provides APIs for web, image, video, and news searches.
+- **Miyagi App Frontend**: The user interface that displays personalized recommendations by connecting to the Recommendation service. It interacts with the containerized service deployed in Azure.
+- **Recommendation Service**: A backend service that generates personalized recommendations using AI models. It is containerized and accessed via the Miyagi frontend.
+- **Azure Container Apps**: A managed service to deploy and scale containerized applications. It hosts the Recommendation service and is accessed from the Miyagi UI.
+- **Swagger**: A tool to test and verify API endpoints of the Recommendation service, ensuring proper functionality after deployment.
+- **Container Registry**: A storage location for Docker images of the Recommendation service, used to deploy the containerized service to Azure Container Apps.
 
 # Getting Started with the Lab
 
@@ -117,8 +112,6 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
  > [!IMPORTANT]<br>
  > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
-
-This hands-on-lab will guide you to create intelligent systems with Microsoft's Copilot stack, leveraging Generative AI and RAG patterns for enhanced productivity and personalized experiences.
 
 ## Support Contact
 
