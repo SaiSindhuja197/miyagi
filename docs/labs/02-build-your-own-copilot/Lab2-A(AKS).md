@@ -116,7 +116,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
    ![](./Media/miyagi-image33.png)
 
-1. In the **Images** blade, notice **miyagi-ui(1)** image is created, select **run(2)** icon .
+1. In the **Images** blade, notice **miyagi-ui (1)** image is created, select **Run (2)** icon .
 
    ![](./Media/miyagi-image34.png)
 
@@ -124,7 +124,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
    ![](./Media/miyagi-image43.png)
 
-1. In the **Run a new containe**, under **Ports** for **Host Port** enter **3000 (1)** and click on **Run (2)**.
+1. In the **Run a new container**, under **Ports** for **Host Port** enter **3000 (1)** and click on **Run (2)**.
 
     ![](./Media/miyagi-image35.png)
 
