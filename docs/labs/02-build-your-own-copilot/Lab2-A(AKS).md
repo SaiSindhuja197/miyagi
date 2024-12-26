@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 60 minutes
 
-In this lab, you will containerize and deploy the Miyagi UI and recommendation services to Azure Kubernetes Service (AKS). You will start by configuring Kubernetes and building Docker images for both services. The process involves pushing these images to Azure Container Registry (ACR) and then deploying them on an AKS cluster. This ensures that the services are seamlessly integrated and operational within a scalable, containerized environment and applying Kubernetes configurations, updating service IP addresses, and verifying the deployment by accessing the services through their respective endpoints.
+In this lab, you will containerize and deploy the Miyagi UI and recommendation services to Azure Kubernetes Service (AKS). You will start by configuring Kubernetes and building Docker images for both services. The process involves pushing these images to Azure Container Registry (ACR) and then deploying them on an AKS cluster. This ensures that the services are seamlessly integratedd and operational within a scalable, containerized environment and applying Kubernetes configurations, updating service IP addresses, and verifying the deployment by accessing the services through their respective endpoints.
 
 ## Lab objectives
 
@@ -17,13 +17,13 @@ You will be able to complete the following tasks:
 ### Lab 3.2: Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS
 
 - Task 1: Explore Recommendation service in AKS using Ingress Endpoint
-- Task 2: Explore Miyagi App in AKS using Ingress Endpoint
+- Task 2: Explore the Miyagi App in AKS using Ingress Endpoint
 
 ### Task 1: Deploy AKS Services
 
-In this task, You will deploy the Miyagi recommendation and UI services on an Azure Kubernetes Service (AKS) cluster. This involves logging into the Azure portal, applying Kubernetes configurations, and updating configuration files with the services' external IP addresses.
+In this task, you will deploy the Miyagi recommendation and UI services to an Azure Kubernetes Service (AKS) cluster. This involves logging into the Azure portal, applying Kubernetes configurations, and updating configuration files with the services' external IP addresses.
 
-1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, right-click on **50-miyagi** in cascading menu, and select **Open in integrate Terminal**.
+1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, right-click on **50-miyagi** in cascading menu, and select **Open in integratedd Terminal**.
 
     ![](./Media/aks-01.png)
 
@@ -94,7 +94,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
    
     >**Note**: Please ensure that the Docker engine is in a running state before proceeding to the next step.
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrate Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integratedd Terminal**.
 
    ```
    docker build . -t miyagi-ui      
@@ -138,7 +138,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 ### Task 3: Build Docker Images for the Recommendation service
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrate Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integratedd Terminal**.
 
    ![](./Media/aks-04.png)
 
@@ -186,7 +186,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 In this task, you'll Push Miyagi-recommendation images to acr. 
 
-1. Navigate back to the **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrate Terminal**.
+1. Navigate back to the **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
 
     ![](./Media/aks-04.png)
    
@@ -232,7 +232,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
    >**Note**: The command docker push [ACRname]/miyagi-recommendation:latest uploads the specified Docker image, which has been tagged with the Azure Container Registry (ACR) name, to the ACR. This makes the image available in the ACR for deployment and use in various Azure services.
    
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrate Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrated Terminal**.
 
 1. Run the following command to add the tag.
 
@@ -252,7 +252,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
 ### Task 5: Deploy AKS Pods
 
-1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrate Terminal**.
+1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
 
     ![](./Media/aks-01.png)
 
@@ -271,18 +271,19 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 1. Run the following commands to deploy the application pods.
 
    ```
-    kubectl apply -f ./miyagi-recommendation.yaml
+   kubectl apply -f ./miyagi-recommendation.yaml
    ```
+
    ```
-    kubectl apply -f ./miyagi-ui.yaml
+   kubectl apply -f ./miyagi-ui.yaml
    ```
 
 1. The applications should now be deployed. To verify run the below command and you should see both pods in a running state.
 
-   >**Note** : It could take a few minutes for the output to appear so wait a few minutes before running the command.
+   >**Note**: It could take a few minutes for the output to appear so wait a few minutes before running the command.
    
    ```
-    kubectl get pods
+   kubectl get pods
    ```
    
    ![](./Media/AKS-running.png)
@@ -318,6 +319,7 @@ In this lab, you'll explore the deployment and verification of the Miyagi UI and
 ### Task 2: Explore Miyagi App in AKS using Ingress Endpoint
 
 1. To test the UI run the below command to get the service IP addresses
+
    ```
    kubectl get svc
    ```
