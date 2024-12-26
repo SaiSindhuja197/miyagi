@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 60 minutes
 
-In this lab, you will containerize and deploy the Miyagi UI and recommendation services to Azure Kubernetes Service (AKS). You will start by configuring Kubernetes and building Docker images for both services. The process involves pushing these images to Azure Container Registry (ACR) and then deploying them on an AKS cluster. This ensures that the services are seamlessly integratedd and operational within a scalable, containerized environment and applying Kubernetes configurations, updating service IP addresses, and verifying the deployment by accessing the services through their respective endpoints.
+In this lab, you will containerize and deploy the Miyagi UI and recommendation services to Azure Kubernetes Service (AKS). You will start by configuring Kubernetes and building Docker images for both services. The process involves pushing these images to Azure Container Registry (ACR) and then deploying them on an AKS cluster. This ensures that the services are seamlessly integrated and operational within a scalable, containerized environment applying Kubernetes configurations, updating service IP addresses, and verifying the deployment by accessing the services through their respective endpoints.
 
 ## Lab objectives
 
@@ -23,7 +23,7 @@ You will be able to complete the following tasks:
 
 In this task, you will deploy the Miyagi recommendation and UI services to an Azure Kubernetes Service (AKS) cluster. This involves logging into the Azure portal, applying Kubernetes configurations, and updating configuration files with the services' external IP addresses.
 
-1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, right-click on **50-miyagi** in cascading menu, and select **Open in integratedd Terminal**.
+1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, right-click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
 
     ![](./Media/aks-01.png)
 
@@ -35,7 +35,7 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
    az aks get-credentials -n [ClusterName] -g [ResourceGroupName]
    ```
 
-   >**Important** : The command az aks get-credentials -n [ClusterName] -g [ResourceGroupName] is used in Azure's command-line interface (CLI) to retrieve and merge the Kubernetes configuration files for a specified Azure Kubernetes Service (AKS) cluster into the local kubeconfig file.
+   >**Important**: The command az aks get-credentials -n [ClusterName] -g [ResourceGroupName] is used in Azure's command-line interface (CLI) to retrieve and merge the Kubernetes configuration files for a specified Azure Kubernetes Service (AKS) cluster into the local kubeconfig file.
    
 1. Once the command finishes you should now have access to the cluster and can run the following commands to deploy the application services.
 
@@ -62,7 +62,6 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
    ![](./Media/aks-02.png)
    
 1. Copy the **miyagi-ui** External IP address from the console and paste it in the **CorsAllowedOrigins** section formatted as an **http://** endpoint  and save the file by **Ctrl + S**.  
-
    ![](./Media/ui-cors.png)
 
 1. Next navigate to **miyagi/ui/typescript** and open the **.env** file. 
@@ -76,7 +75,7 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
 ### Task 2: Build a Docker Image for the Miyagi UI
 In this task, you will build and run the Miyagi UI Docker container locally. Begin by opening the Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi UI. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
 
-1. Navigate to the Docker Desktop application from the task bar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
+1. Navigate to the Docker Desktop application from the taskbar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
 
    ![](./Media/docker1.png)
    
@@ -138,7 +137,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 ### Task 3: Build Docker Images for the Recommendation service
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integratedd Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
 
    ![](./Media/aks-04.png)
 
@@ -202,7 +201,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
 
-   > **Note**: Please replace **[ACRname]** **<inject key="AcrUsername" enableCopy="true"/>**.
+   > **Note**: Please replace **[ACRname]** with **<inject key="AcrUsername" enableCopy="true"/>**.
    
    ```
    az acr login -n [ACRname] 
