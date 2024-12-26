@@ -86,7 +86,7 @@ In this task, you will configure the Miyagi application by updating specific set
   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
    <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
@@ -110,7 +110,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
 <validation step="560130f4-fca1-49e1-98a6-97ec61155364" />
 
@@ -221,7 +221,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
    <validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
 
