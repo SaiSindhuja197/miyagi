@@ -298,7 +298,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
 1. In the menu bar notepad select **Files** and click on **Save As**.
 
-1. In the **Save As** navigate to the `C:\LabFiles\miyagi` **(1)** path, enter the file name **aoai-logger.bicep** **(2)**, save as type to **All Files** **(3)** and click on **Save** **(4)**.
+1. In the **Save As** navigate to the `C:\LabFiles\miyagi` **(1)** path, enter the file name **aoai-logger.bicep** **(2)**, Save as type to **All Files** **(3)** and click on **Save** **(4)**.
 
     ![](./Media/bicepfile2.png)
 
@@ -327,7 +327,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/lab3-t1-s1.png)
 
-1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **Azure OpenAI Service API** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **policy code editor(4)**.
+1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **Azure OpenAI Service API** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **Policies (4)** editor.
 
     ![](./Media/api-outbound.png)
 
