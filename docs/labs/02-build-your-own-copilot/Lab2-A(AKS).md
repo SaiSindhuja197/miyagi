@@ -291,7 +291,7 @@ In this task, you'll Push miyagi-recommendation images to acr.
    >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
     <validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
 
