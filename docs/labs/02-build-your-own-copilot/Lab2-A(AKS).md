@@ -251,11 +251,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
 ### Task 5: Deploy AKS Pods
 
-1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
-
-    ![](./Media/aks-01.png)
-
-1. Open the **miyagi-recommendation.yaml** file and replace the &lt;ACR-NAME&gt; with **<inject key="acrUsername" enableCopy="true"/>** Azure container registry name and save the file by **Ctrl + S**.
+1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**. Open the **miyagi-recommendation.yaml** file and replace the &lt;ACR-NAME&gt; with **<inject key="acrUsername" enableCopy="true"/>** Azure container registry name and save the file by **Ctrl + S**.
 
    ![](./Media/miyagi-image47.png)
    
@@ -266,6 +262,10 @@ In this task, you'll Push Miyagi-recommendation images to acr.
    ![](./Media/miyagi-image49.png)
 
    ![](./Media/miyagi-image50.png)
+
+1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
+
+    ![](./Media/aks-01.png)
 
 1. Run the following commands to deploy the application pods.
 
