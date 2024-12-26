@@ -18,7 +18,7 @@ You will be able to complete the following tasks:
 
 In this lab, you'll be setting up an HTTP API within Azure API Management to interact with the Azure OpenAI service. It ensures the API is configured correctly and provides a gateway URL for external access and integration with other services.
 
-1. Navigate to Azure portal, open the **Resource Group** named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
+1. Navigate to Azure portal, open the **Resource Group** named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
    ![](./Media/miyagi-image54.png)
 
@@ -70,7 +70,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
    
     ![](./Media/miyagi-image60.png)
    
-1. In the **Azure OpenAI Service API** API navigate to the **settings** **(1)** tab and update the subscription key **Header Name** to **api-key** **(2)** and click on **Save** **(3)**.
+1. In the **Azure OpenAI Service API** API navigate to the **Settings** tab and update the subscription key **Header Name** to **api-key (1)** and click on **Save (2)**.
 
    ![](./Media/miyagi-image61.png)
 
@@ -78,7 +78,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image62.png)
 
-1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **plus sign** **(3)** select the **Azure OpenAI Service API** **(4)** hit enter and click on **Create** **(5)**.
+1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **Azure OpenAI Service API** **(4)** hit enter and click on **Create** **(5)**.
 
    ![](./Media/api-product2.png)
 
@@ -90,7 +90,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image64.png)
 
-1. Once the subscription is **AOAI Test** created click the **three dots** **(1)** next to **AOAI Test** and then click **Show\hide keys** **(2)**. Copy the **primary subscription** **(3)** key and save it for later.
+1. Once the subscription is **AOAI Test** created click the **three dots** **(1)** next to **AOAI Test** and then click **Show/hide keys** **(2)**. Copy the **Primary subscription** **(3)** key and save it for later.
 
    ![](./Media/miyagi-image(65).png)
 
@@ -118,11 +118,11 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. Navigate back to **API Management service** in the Azure Portal, select the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service.
     
-1. In the **API Management service**, select **APIs** **(1)**, select the **Azure OpenAI Service API** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policy code editor**</> **(4)** under **Inbound processing**.
+1. In the **API Management service**, select **APIs** **(1)**, select the **Azure OpenAI Service API** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policies </>** **(4)** under **Inbound processing**.
 
     ![](./Media/api-inbound.png)
 
-1. In the code editor copy the below policy to overwrite the **inbound** **(1)** tags only, replace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** of API manager which you copen in Task 1 Step 4 and click on **Save** **(3)**.
+1. In the code editor copy the below policy to overwrite the **inbound** **(1)** tags only, replace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** of API manager which you copied in Task 1 Step 4 and click on **Save** **(3)**.
 
       ```
       <inbound>
@@ -164,11 +164,11 @@ In this lab, you'll be updating the configuration of the recommendation service,
 
    ![](./Media/open-appsettings.png)
 
-1. In the `appsettings.json` file, you have to replace the **endpoint** value from **OpenAI resource endpoint** with **API Gateway URL** which you have copied in Task-1 Step-4, **apiKey** value with the **subscription key** that was copied in Task-2 Step-9 and Save the file.
+1. In the `appsettings.json` file, you have to replace the **endpoint** value from **OpenAI resource endpoint** with **API Gateway URL** which you have copied in Task-1 Step-4, **apiKey** value with the **subscription key** that was copied in Task-2 Step-9 and **Save** the file.
 
     ![](./Media/miyagi-image(72).png)
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrate Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
 
    ![](./Media/aks-04.png)
 
