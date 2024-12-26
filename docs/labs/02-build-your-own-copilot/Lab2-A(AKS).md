@@ -46,10 +46,10 @@ In this task, You will deploy the Miyagi recommendation and UI services on an Az
    kubectl apply -f ./miyagi-ui-service.yaml
    ```
    
-    >**Note**: Upon successful execution of above commands. The Kubernetes will read the YAML file and apply its configurations to the cluster. It will create miyagi-recommendation- 
+    >**Note**: Upon successful execution of the above commands. The Kubernetes will read the YAML file and apply its configurations to the cluster. It will create miyagi-recommendation- 
     service and miyagi-ui
  
-1. Once the services have been deployed run the below command and keep track of the service's **external ip's**. It could take a few minutes for the **external ip's** to appear so wait a few minutes before running the command.
+1. Once the services have been deployed run the below command and keep track of the service's **external IPs**. It could take a few minutes for the **external IPs** to appear so wait a few minutes before running the command.
 
    ```
    kubectl get svc
@@ -74,13 +74,13 @@ In this task, You will deploy the Miyagi recommendation and UI services on an Az
    ![](./Media/miyagi-ui-env.png)
 
 ### Task 2: Build a Docker Image for the Miyagi UI
-In this task, you will build and run the Miyagi UI Docker container locally. Begin by opening Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi UI. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
+In this task, you will build and run the Miyagi UI Docker container locally. Begin by opening the Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi UI. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
 
-1. Navigate to Docker Desktop application from the task-bar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
+1. Navigate to the Docker Desktop application from the task bar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
 
    ![](./Media/docker1.png)
    
-    >**Note:** If you are prompted with Docker Desktop initial sign in prompts follow the below steps:
+    >**Note:** If you are prompted with Docker Desktop initial sign-in prompts follow the below steps:
     
     >If you are prompted with the **Docker Subscription Service Agreement** window, click **Accept**.
 
@@ -92,7 +92,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
     > In the **Tell us about the work you do** window, click on **Skip**.
    
-    >**Note**: Please ensure that Docker engine is in running state before proceeding to the next step.
+    >**Note**: Please ensure that the Docker engine is in a running state before proceeding to the next step.
 
 1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrate Terminal**.
 
@@ -162,7 +162,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
    ![](./Media/miyagi-image33.png)
 
-1. In the **Images** blade, notice **miyagi-recommendation(1)** image is created, select **run(2)** icon .
+1. In the **Images** blade, notice **miyagi-recommendation (1)** image is created, select **Run (2)** icon .
 
    ![](./Media/miyagi-image41.png)
 
@@ -170,7 +170,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
    ![](./Media/miyagi-image42.png)
    
-1. In the **Run a new containe**, under **Ports** for **Host Port** enter **5224 (1)** and click on **Run(2)**.
+1. In the **Run a new container**, under **Ports** for **Host Port** enter **5224 (1)** and click on **Run (2)**.
 
     ![](./Media/miyagi-image44.png)
 
@@ -184,7 +184,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 ### Task 4: Push the Docker Image of Recommendation service to the Container registry
 
-In this task, you'll Push miyagi-recommendation images to acr. 
+In this task, you'll Push Miyagi-recommendation images to acr. 
 
 1. Navigate back to the **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrate Terminal**.
 
@@ -297,13 +297,13 @@ In this task, you'll Push miyagi-recommendation images to acr.
 
 # Lab 3.2: Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS
 
-In this lab, you'll explores the deployment and verification of the Miyagi UI and Recommendation services on Azure Kubernetes Service (AKS). Tasks involve testing APIs and accessing the UI via Ingress endpoints, ensuring proper functionality within the AKS environment.
+In this lab, you'll explore the deployment and verification of the Miyagi UI and Recommendation services on Azure Kubernetes Service (AKS). Tasks involve testing APIs and accessing the UI via Ingress endpoints, ensuring proper functionality within the AKS environment.
 
 ### Task 1: Explore Recommendation service in AKS using Ingress Endpoint
 
 1. To test the API run the below command to get the service IP addresses
 
-   >**Note** : It could take a few minutes for the output to appear so wait a few minutes before running the command.
+   >**Note**: It could take a few minutes for the output to appear so wait a few minutes before running the command.
 
    ```
    kubectl get svc
