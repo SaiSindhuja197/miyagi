@@ -39,7 +39,7 @@ In this lab, you'll be setting up an HTTP API within Azure API Management to int
 
    ![](./Media/miyagi-image56.png)
 
-1. Once API is created, click on **Overview** **(1)** then copy the **Gateway URL** **(2)** of API Management service. Record the **URL** you required in upcoming task.
+1. Once API is created, click on **Overview** **(1)** then copy the **Gateway URL** **(2)** of API Management service. Record the **URL** you require in the upcoming task.
 
     ![](./Media/miyagi-image57.png)
 
@@ -217,7 +217,6 @@ In this lab, you'll be managing the deployment lifecycle of the recommendation s
 
    ![](./Media/miyagi-image73.png)
 
-   
 1. In the Overview tab **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** Kubernetes service pane, click on **Stop** button.
 
    ![](./Media/miyagi-image74.png)
@@ -322,7 +321,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
     az deployment group create --resource-group <<RESOURCE_GROUP_NAME>> --template-file .\aoai-logger.bicep
     ```
 
-     >**Note**: This command sequence navigates to C:\LabFiles\miyagi directory containing the Bicep file and then deploys the resources defined in that file to the specified Azure resource group.
+     >**Note**: This command sequence navigates to the C:\LabFiles\miyagi directory containing the Bicep file and then deploys the resources defined in that file to the specified Azure resource group.
 
 1. Navigate to Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
@@ -353,9 +352,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
       ![](./Media/miyagi-image88.png)
 
-1. Next open the **Miyagi UI** in a separate browser tab click **Personalize** and select your **Favorite Financial Advisor (1)** and choose **GPT-4 (2)** for the 
-   **Reasoning Engine** from the dropdown menu, then click on **Personalize (3)**. repeat the same step by selecting different **Favorite Financial Advisor** for 6 - 7 
-    times to generate additional logs.
+1. Next open the **Miyagi UI** in a separate browser tab click **Personalize** and select your **Favorite Financial Advisor (1)** and choose **GPT-4 (2)** for the **Reasoning Engine** from the dropdown menu, then click on **Personalize (3)**. repeat the same step by selecting different **Favorite Financial Advisor** 6 - 7 times to generate additional logs.
 
     ![](./Media/miyagi-image126.png)
 
