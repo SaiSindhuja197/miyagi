@@ -1,4 +1,4 @@
-# Verify and Retrieve the values of Azure Resources (optional)
+# Lab 1: Verify and Retrieve the values of Azure Resources (optional)
 
 ### Estimated Duration: 20 minutes
 
