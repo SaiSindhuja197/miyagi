@@ -186,10 +186,9 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
     > **dotnet add package Microsoft.SemanticKernel --version 1.11.0**: Adds the Microsoft.SemanticKernel package to the project with a specific version (1.11.0). This package likely provides functionality related to semantic analysis and processing within the application.
 
-
 1. To build and run the Home Automation application from the terminal use the following commands:
 
-    ```powershell
+    ```PowerShell
     dotnet build
     dotnet run
     ```
