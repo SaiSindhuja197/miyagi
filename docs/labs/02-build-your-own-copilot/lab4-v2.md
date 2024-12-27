@@ -21,11 +21,11 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
    ![](./Media/vs.png)
 
-1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS(OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
+1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 
     ![](./Media/miyagi-image92.png)
 
-1. Under **AI ENDPOINTS(Azure OPENAI)**, click on **Sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools' wants to sign in using Microsoft** click on **Allow** **(2)**.
+1. Under **AI ENDPOINTS (Azure OPENAI)**, click on **Sign in to Azure** **(1)**, in the pop-up  **The extension 'Semantic Kernel Tools' wants to sign in using Microsoft** click on **Allow** **(2)**.
 
    ![](./Media/miyagi-image93.png)
 
@@ -37,11 +37,11 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
    ![](./Media/miyagi-image95.png)
 
-1. Choose **C# Home Automation**
+1. Choose **C# Home Automation**.
 
     ![](./Media/miyagi-image96.png)
 
-1. Browse the location **C:\LabFiles** and **select location for new app**
+1. Browse the location `C:\LabFiles` and **Select location for new app**.
 
    ![](./Media/miyagi-image97.png)
 
@@ -166,7 +166,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
     ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
     ```
     
-1. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal(2)** > **New Terminal(3)**.
+1. Configure an Azure OpenAI endpoint by Opening a New **Terminal** click on **(...) (1)** next to **View** menu and select **Terminal (2)** > **New Terminal (3)**.
 
     ![](./Media/semtic-newterminal.png)
 
@@ -229,19 +229,19 @@ In this task, you'll configure Azure Cognitive Search by importing data from Cos
 
     ![](./Media/miyagi-image103.png)
    
-1. From the drop-down select **Data Source** as **Sample (1)**, select the **CosmosDB hotels-sample (2)**, and click on **Next : Add cognitive skills(optional) (3)**.
+1. From the drop-down select **Data Source** as **Samples (1)**, select the **CosmosDB hotels-sample (2)**, and click on **Next : Add cognitive skills (Optional) (3)**.
 
    ![](./Media/miyagi-image104.png)
    
-1. In **cognitive skills** leave as default and click on **Customize target index**.
+1. In **Cognitive skills** leave as default and click on **Skip to: Customize target index**.
 
     ![](./Media/miyagi-image105.png)
    
-1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** and click on **Next:Create an indexer**.
+1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** and click on **Next: Create an indexer**.
 
    ![](./Media/miyagi-image106.png)
    
-1. In the **create an indexer**, change the indexer name as **realestate-us-sample-indexer** and click on **submit**.
+1. In the **Create an indexer**, change the indexer name as **realestate-us-sample-indexer (1)** and click on **Submit (2)**.
 
    ![](./Media/miyagi-image107.png)
 
