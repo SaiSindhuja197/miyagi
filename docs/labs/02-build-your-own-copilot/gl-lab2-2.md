@@ -128,6 +128,10 @@ In this Lab, you'll be exploring and verifying the automated Containerized Recom
     > **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
                        
    ![](./Media/b1.png)
+   
+   > **Note**: If you face any error as shown below Unhandled Runtime Error , please click on x and proceed on to the next step
+
+   ![](./Media/runtime-error.png)
 
 1. In the to the **recommendation service** ui page, and click on **Personalize** button.
 
