@@ -8,6 +8,6 @@
 
 - Included a new task; **Task 5: Setup Event Hub Logging and Validate Input** in **Lab 4: Expose Open AI through APIM**.
 
-- Elaborated **Task 2: Create API Management Policy and Roles**
+- Elaborated **Task 2: Create API Management Policy and Roles**.
 
 - Updated Cognitive search/ Search Service to **AI Search**. 
