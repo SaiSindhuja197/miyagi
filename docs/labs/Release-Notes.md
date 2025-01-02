@@ -10,4 +10,4 @@
 
 - Elaborated **Task 2: Create API Management Policy and Roles**.
 
-- Updated Cognitive search/ Search Service to **AI Search**. 
+- Updated Cognitive search to **AI Search**. 
