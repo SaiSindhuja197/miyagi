@@ -93,7 +93,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
    
     >**Note**: Please ensure that the Docker engine is in a running state before proceeding to the next step.
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integratedd Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in Integrated Terminal**.
 
    ```
    docker build . -t miyagi-ui      
