@@ -217,7 +217,7 @@ In this lab, you'll be managing the deployment lifecycle of the recommendation s
 
    ![](./Media/miyagi-image73.png)
 
-1. In the Overview tab **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** Kubernetes service pane, click on **Stop** button.
+1. In the Overview tab **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** Kubernetes service pane, click on **Stop** button  then click on **Yes**.
 
    ![](./Media/miyagi-image74.png)
 
@@ -255,7 +255,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/miyagi-image82.png)
  
-1. On the select managed identity pop-up for **Subscription Accept the default (1)** **under Managed identity drop-down select **API Management service** **(2)**, select the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)**, then click-on **Select** **(4)**.
+1. On the select managed identity pop-up for **Subscription Accept the default (1)** under Managed identity drop-down select **API Management service** **(2)**, select the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)**, then click-on **Select** **(4)**.
 
    ![](./Media/miyagi-image(68).png)
 
@@ -265,7 +265,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
    ![](./Media/namespace3.png)
 
-1. On the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, from the left-menu select **Event Hubs** **(1)** under **Entity** and click on **miyagi-event-<inject key="DeploymentID" enableCopy="false"/> (2)**
+1. On the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, from the left-menu select **Event Hubs** **(1)** under **Entities** and click on **miyagi-event-<inject key="DeploymentID" enableCopy="false"/> (2)**
 
    ![](./Media/miyagi-image86.png)
 
