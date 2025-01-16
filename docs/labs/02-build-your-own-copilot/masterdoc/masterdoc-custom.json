@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Build Custom Copilot Application using Azure AI Foundry",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/refs/heads/main/docs/custom-copilot-intro.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/refs/heads/main/docs/labs/02-build-your-own-copilot/custom-copilot.md",
+        "Order": 2
+      }
+    ]
+  }
+]
