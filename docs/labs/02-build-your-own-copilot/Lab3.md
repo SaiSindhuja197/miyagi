@@ -136,7 +136,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
       </inbound>
       ```
 
-    ![](./Media/api-inbound1.png)
+    ![](./Media/api-inbound1upd.png)
 
     >**Note**: Please ensure to paste the **OpenAIEndpoint** values and eliminate any duplication of **https://**.
 
