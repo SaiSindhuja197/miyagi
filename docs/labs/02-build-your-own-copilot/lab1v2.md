@@ -174,6 +174,8 @@ In this task, you will run the miyagi frontend locally by installing dependencie
 
      ![](./Media/error-side.png)
 
+   >**Note:** Please donot close the VS Code as you will need the localhost running for the future tasks.
+
 ### Task 5: Persist embeddings in Azure AI Search
 
 In this task, you will persist embeddings in Azure AI Search by executing a POST request in Swagger UI, verifying the execution, and then confirming the creation of the index in the Azure portal.
