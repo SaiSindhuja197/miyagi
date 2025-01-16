@@ -356,6 +356,8 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/miyagi-image126.png)
 
+    >**Note**: Please ensure that the localhost is running in the VS code or else follow the steps in **Page 4 - Lab 2 - Task 4 - Steps 1 & 2**
+
 1. Navigate back to Event Hub, select **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>** Event Hubs.
 
     ![](./Media/api-product9.png)
