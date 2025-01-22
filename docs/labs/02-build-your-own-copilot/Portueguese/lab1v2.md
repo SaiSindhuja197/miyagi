@@ -4,6 +4,17 @@
 
 Neste laboratório, o foco está na configuração da aplicação Miyagi para prontidão operacional. Posteriormente, a atenção passa para a compreensão da implementação diferenciada do serviço de recomendação. A fase prática envolve a execução do serviço de recomendação e a implementação local do frontend Miyagi para teste e desenvolvimento. Uma etapa crucial inclui a otimização da eficiência da recuperação de dados através da persistência de incorporações no Azure AI Search. O projeto culmina com uma exploração mais ampla da aplicação Miyagi e do serviço de recomendação, enfatizando uma experiência de utilizador personalizada. Esta abordagem baseada em tarefas garante uma progressão sistemática através das complexidades do projeto, facilitando uma compreensão abrangente e uma implementação eficaz.
 
+## Objetivos do laboratório
+
+Você poderá completar as seguintes tarefas:
+
+- Tarefa 1: Configuração da aplicação miyagi.
+- Tarefa 2: Compreender a implementação do serviço de recomendação.
+- Tarefa 3: executar o serviço de recomendação localmente.
+- Tarefa 4: Executar o frontend miyagi localmente.
+- Tarefa 5: persistir incorporações no Azure AI Search.
+- Tarefa 6: Explore a aplicação Miyagi e o serviço de recomendação personalizando.
+
 ### Tarefa 1: Configuração da aplicação miyagi
 
 Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições específicas no Visual Studio Code. Isto envolve a substituição dos valores de espaço reservado nos ficheiros de configuração pelos valores reais de vários recursos do Azure para garantir a conectividade e a funcionalidade adequadas.
