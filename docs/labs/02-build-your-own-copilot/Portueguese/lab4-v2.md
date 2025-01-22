@@ -241,7 +241,7 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
    ![](../Media/miyagi-image106.png)
 
-1. Em **criar um indexador**, altere o nome do indexador para **realestate-us-sample-indexer** e clique em **enviar**.
+1. Em **criar um indexador**, altere o nome do indexador para **realestate-us-sample-indexer (1)** e clique em **enviar (2)**.
 
    ![](../Media/miyagi-image107.png)
 
