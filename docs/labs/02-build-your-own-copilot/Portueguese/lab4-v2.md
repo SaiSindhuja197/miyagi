@@ -7,6 +7,13 @@ O Semantic Kernel é um SDK que integra Large Language Models (LLMs) como OpenAI
 O que torna o Kernel Semântico _especial_, no entanto, é a sua capacidade de orquestrar plug-ins _automaticamente_ com IA. Com Kernel Semântico
 [planeadores](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planner), pode pedir a um LLM para gerar um plano que atinja o objetivo único de um utilizador. Posteriormente, o Kernel Semântico executará o plano para o utilizador.
 
+## Objetivos do laboratório
+
+Você poderá completar as seguintes tarefas:
+
+- Tarefa 1: Configurar e executar a amostra do kernel semântico.
+- Tarefa 2: Configurar a Pesquisa Cognitiva do Azure.
+
 ### Tarefa 1: Configurar e executar a amostra do kernel semântico
 Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Code, criar uma aplicação de domótica C# utilizando o Azure OpenAI e criará e executará a aplicação para interagir com ela.
 
