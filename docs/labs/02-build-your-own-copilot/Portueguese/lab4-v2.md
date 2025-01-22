@@ -1,4 +1,4 @@
-# Primeiros passos com o seu próprio copiloto
+# Laboratório 1: Primeiros passos com o seu próprio copiloto
 
 ### Duração: 30 minutos
 
