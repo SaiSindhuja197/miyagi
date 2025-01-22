@@ -4,6 +4,17 @@
 
 Neste laboratório, irá contentorizar e implementar a UI Miyagi e os serviços de recomendação no Azure Kubernetes Service (AKS). Começará por configurar o Kubernetes e construir imagens Docker para ambos os serviços. O processo envolve o envio destas imagens para o Azure Container Registry (ACR) e depois a sua implementação num cluster AKS. Isto garante que os serviços estão perfeitamente integrados e operacionais num ambiente escalável e em contentores e aplicam configurações do Kubernetes, atualizando os endereços IP de serviço e verificando a implementação acedendo aos serviços através dos seus respetivos endpoints.
 
+
+## Objetivos do laboratório
+
+Você poderá completar as seguintes tarefas:
+
+- Tarefa 1: Implementar serviços AKS.
+- Tarefa 2: Construir uma imagem Docker para a UI Miyagi.
+- Tarefa 3: Criar imagens Docker para o serviço de recomendação.
+- Tarefa 4: enviar o serviço Docker Image of Recommendation para o Container Registry.
+- Tarefa 5: Implantar pods AKS.
+  
 ### Tarefa 1: Implementar serviços AKS
 
 Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num cluster do Azure Kubernetes Service (AKS). Isto envolve fazer login no portal do Azure, aplicar as definições do Kubernetes e atualizar os ficheiros de configuração com os endereços IP externos dos serviços.
@@ -33,7 +44,7 @@ Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num clu
 
     >**Nota**: Após a execução bem-sucedida dos comandos acima. O Kubernetes irá ler o ficheiro YAML e aplicar as suas definições ao cluster. Criará miyagi-recommendation-service e miyagi-ui
 
-1. Depois de os serviços estarem implementados, execute o comando abaixo e acompanhe os **IPs externos** do serviço. Pode demorar alguns minutos até que os **ips externos** apareçam, por isso aguarde alguns minutos antes de executar o comando.
+1. Depois de os serviços estarem implementados, execute o comando abaixo e acompanhe os **IPs externos** do serviço. Pode demorar alguns minutos até que os **IP's externos** apareçam, por isso aguarde alguns minutos antes de executar o comando.
 
     ```
     kubectl get svc
@@ -271,7 +282,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
     >**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
     > - Clique no botão Validar para a tarefa correspondente. Se receber uma mensagem de sucesso, validou o laboratório com sucesso.
     > - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
-    > - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
+    > - Se precisar de ajuda, contacte-nos através do e-mail cloudlabs-support@spektrasystems.com.
 
  <validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
 
