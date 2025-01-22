@@ -4,6 +4,16 @@
 
 Neste laboratório, irá aprofundar a configuração e verificação de APIs no Azure API Management, com foco na integração do serviço Azure OpenAI. Isto envolve configurar APIs HTTP, garantir a configuração correta e obter um URL de gateway para acesso e integração externos perfeitos. Explorará também a criação de políticas, definições de funções e gestão de assinaturas para operar as APIs em segurança. Este laboratório destaca as melhores práticas de gestão de API, garantindo a autenticação, autorização e testes operacionais robustos no ecossistema Azure abrangente.
 
+## Objetivos do laboratório
+
+Você poderá completar as seguintes tarefas:
+
+- Tarefa 1: verificar o serviço de gestão de API implementado e criar uma API.
+- Tarefa 2: Criar políticas e funções de gestão de API.
+- Tarefa 3: atualizar a imagem do Docker para o serviço de recomendação.
+- Tarefa 4: Revisão do serviço de recomendação do AKS.
+- Tarefa 5: configurar o log do Event Hub e validar a entrada.
+
 ### Tarefa 1: verificar o serviço de gestão de API implementado e criar uma API
 
 Neste laboratório, irá configurar uma API HTTP no Azure API Management para interagir com o serviço Azure OpenAI. Garante que a API está configurada corretamente e fornece um URL de gateway para acesso externo e integração com outros serviços.
