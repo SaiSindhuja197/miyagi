@@ -165,6 +165,8 @@ Nesta tarefa, irá executar o frontend miyagi localmente instalando dependência
 
      ![](../Media/error-side.png)
 
+   > **Nota**: Não feche o VS Code, pois você precisará do host local em execução para tarefas futuras.
+
 ### Tarefa 5: persistir incorporações no Azure AI Search
 
 Nesta tarefa, irá persistir os embeddings no Azure AI Search executando um pedido POST na interface do utilizador do Swagger, verificando a execução e, em seguida, confirmando a criação do índice no portal do Azure.
