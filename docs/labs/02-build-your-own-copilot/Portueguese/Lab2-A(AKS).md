@@ -33,7 +33,7 @@ Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num clu
 
     >**Nota**: Após a execução bem-sucedida dos comandos acima. O Kubernetes irá ler o ficheiro YAML e aplicar as suas definições ao cluster. Criará miyagi-recommendation-service e miyagi-ui
 
-1. Depois de os serviços estarem implementados, execute o comando abaixo e acompanhe os **IPs externos** do serviço. Pode demorar alguns minutos até que os **ips externos** apareçam, por isso aguarde alguns minutos antes de executar o comando.
+1. Depois de os serviços estarem implementados, execute o comando abaixo e acompanhe os **IPs externos** do serviço. Pode demorar alguns minutos até que os **IP's externos** apareçam, por isso aguarde alguns minutos antes de executar o comando.
 
     ```
     kubectl get svc
