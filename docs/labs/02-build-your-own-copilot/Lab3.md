@@ -42,7 +42,7 @@ Podrás completar las siguientes tareas:
    >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
    > - Pulse el botón Validar para la tarea correspondiente.
    > - Si recibe un mensaje de éxito, puede proceder a la siguiente tarea. De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-   > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
+   > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
 
     <validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
 

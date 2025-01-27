@@ -262,7 +262,7 @@ En esta tarea, enviará las imágenes miyagi-recommendation a acr.
 >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
 > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-> - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com.
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
     <validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
 
