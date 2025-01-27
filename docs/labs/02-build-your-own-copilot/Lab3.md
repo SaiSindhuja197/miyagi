@@ -2,6 +2,15 @@
 
 En esta práctica de laboratorio, verificará y creará APIs en el servicio implementado API Management a fin de actualizar la imagen de Docker para el servicio de Recomendación. La revisión del servicio de Recomendación de los servicios de Azure Kubernetes encapsula el enfoque meticuloso para mantener y optimizar las aplicaciones en contenedores dentro del alcance del proyecto.
 
+## Objetivos del laboratorio
+Podrás completar las siguientes tareas:
+
+- Tarea 1: Verificar el servicio implementado API Management y crear una API.
+- Tarea 2: Crear Políticas y Roles de API Management
+- Tarea 3: Actualizar la Imagen de Docker para el servicio de Recomendación
+- Tarea 4: Revisión del servicio de Recomendación de AKS 
+- Tarea 5: Configurar Event Hub Logging y Validar la Entrada
+
 ### Tarea 1: Verificar el servicio implementado API Management y crear una API
 
 1. Navegue al Portal de Azure, abra el Grupo de recursos llamado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  y seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** de la lista de recursos.
@@ -33,7 +42,7 @@ En esta práctica de laboratorio, verificará y creará APIs en el servicio impl
    >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
    > - Pulse el botón Validar para la tarea correspondiente.
    > - Si recibe un mensaje de éxito, puede proceder a la siguiente tarea. De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-   > - Si necesita ayuda, contáctenos en labs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
+   > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
 
     <validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
 

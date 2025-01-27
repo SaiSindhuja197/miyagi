@@ -4,6 +4,16 @@
 
 En esta práctica de laboratorio, la atención se centra en configurar la aplicación Miyagi para que esté lista para funcionar. Posteriormente, la atención se centra en comprender la implementación matizada del servicio de Recomendación. La fase práctica implica ejecutar el servicio de Recomendación e implementar el frontend Miyagi localmente para pruebas y desarrollo. Un paso crucial incluye optimizar la eficiencia de la recuperación de datos mediante la persistencia de los embeddings en Azure AI Search. El proyecto culmina con una exploración más amplia de la aplicación Miyagi y el servicio de Recomendación, enfatizando una experiencia de usuario personalizada. Este enfoque basado en tareas garantiza una progresión sistemática a través de las complejidades del proyecto, facilitando una comprensión integral y una implementación efectiva.
 
+## Objetivos del laboratorio
+Podrás completar las siguientes tareas:
+
+- Tarea 1: Configuración de la aplicación miyagi
+- Tarea 2: Comprender la implementación del servicio de Recomendación
+- Tarea 3: Ejecutar el servicio de recomendaciones localmente
+- Tarea 4: Ejecutar el frontend de Miyagi localmente
+- Tarea 5: Persistiendo embeddings en Azure AI Search
+- Tarea 6: Explorar la Aplicación Miyagi y el servicio de Recomendación mediante Personalización
+
 ### Tarea 1: Configuración de la aplicación miyagi
 
 1. Abra **Visual Studio Code** desde el escritorio de Lab VM haciendo doble clic en el acceso directo.
@@ -155,7 +165,7 @@ En esta práctica de laboratorio, la atención se centra en configurar la aplica
    >**Nota:** Si encuentra una ventana emergente **Error de tiempo de ejecución no controlado**, ciérrela y descarte también el mensaje de error en la esquina inferior izquierda.
 
      ![](./Media/error-side.png)
-
+   >**Nota:** No cierre VS Code ya que necesitará que el host local se ejecute para tareas futuras.
 ### Tarea 5: Persistiendo embeddings en Azure AI Search
 
 1. Vuelva a la página **swagger UI**, desplácese hasta la sección **Memory**, haga clic en **POST /dataset** para ampliar y haga clic en **Try it out**.
