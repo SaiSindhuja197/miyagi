@@ -2,6 +2,15 @@
 
 En esta práctica de laboratorio, creará las imágenes de Docker y las publicará en Azure Kubernetes Service (AKS).
 
+## Objetivos del laboratorio
+Podrás completar las siguientes tareas:
+
+- Tarea 1: Implementar servicios de AKS
+- Tarea 2: Crear una imagen de Docker para la interfaz de usuario de Miyagi
+- Tarea 3: Crear Imágenes de Docker para el servicio de Recomendación 
+- Tarea 4: Enviar la Imagen Docker del servicio de Recomendación a Azure Container registry
+- Tarea 5: Implementar Pods de AKS
+
 ### Tarea 1: Implementar servicios de AKS
 
 1. Vuelva a la ventana de Visual Studio Code y navegue a **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, haga clic derecho en **50-miyagi** y en el menú contextual seleccione **Abrir en Terminal Integrada**.
@@ -258,6 +267,12 @@ En esta tarea, enviará las imágenes miyagi-recommendation a acr.
     <validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
 
 # Laboratorio 3.2: Explorar y Verificar la interfaz de usuario de Miyagi y el servicio de Recomendación contenedorizados en AKS
+
+## Objetivos del laboratorio
+Podrás completar las siguientes tareas:
+
+- Tarea 1: Explorar el servicio de Recomendación en AKS mediante Ingress Endpoint
+- Tarea 2: Explorar la aplicación Miyagi en AKS usando Ingress Endpoint
 
 ### Tarea 1: Explorar el servicio de Recomendación en AKS mediante Ingress Endpoint
 

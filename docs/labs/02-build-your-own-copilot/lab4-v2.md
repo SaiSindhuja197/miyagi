@@ -6,6 +6,11 @@ Semantic Kernel es un SDK que integra Modelos de Lenguajes Grandes (LLMs) como O
 
 Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orquestar _automáticamente_ plugins con IA. Con los [planners](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planner) de Semantic Kernel, puede solicitarle a un LLM que genere un plan que logre el objetivo único del usuario. Posteriormente, Semantic Kernel ejecutará el plan por el usuario.
 
+## Objetivos del laboratorio
+Podrás completar las siguientes tareas:
+- Tarea 1: Configurar y Ejecutar el Ejemplo de Semantic Kernel.
+- Tarea 2: Configurar Azure Cognitive Search.
+
 ### Tarea 1: Configurar y Ejecutar el Ejemplo de Semantic Kernel
 
 1. Abra **Visual Studio Code** desde el escritorio de Lab VM haciendo doble clic en el acceso directo.
