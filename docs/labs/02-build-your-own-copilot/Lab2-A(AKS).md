@@ -95,7 +95,7 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/docker7.png)
 
-8. En la hoja **Images**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **run (2)**.
+8. En la hoja **Images**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **Run (2)**.
 
    ![](./Media/docker-miyagi-ui.png)
 
@@ -165,7 +165,7 @@ Podrás completar las siguientes tareas:
 
 ### Tarea 4: Enviar la Imagen Docker del servicio de Recomendación a Azure Container registry
 
-En esta tarea, enviará las imágenes miyagi-recommendation a acr. 
+En esta tarea, enviará las imágenes Miyagi-recommendation a acr. 
 
 1. Vuelva a la ventana **Visual Studio Code** y navegue a **miyagi/services/recommendation-service/dotnet** haga clic derecho en dotnet y el menú contextual seleccione **Abrir en la Terminal Integrada**.
 
