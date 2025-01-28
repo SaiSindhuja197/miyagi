@@ -18,27 +18,27 @@ Neste laboratório, irá verificar e recuperar valores específicos, como Endpoi
 
     - Em **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, no separador Overview selecione **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** .
 
-      ![](../Media/miyagi-image118.png)
+      ![](../Media/openai_serviceupd.png)
 
     - Na página **OpenAI Overview**, clique com o botão direito do rato em **Ir para Azure OpenAI Studio** e clique em **Abrir ligação num novo separador**.
 
-      ![](../Media/miyagi-image10.png)
+      ![](../Media/new01.png)
 
     - No **Azure AI Studio**, no painel de navegação esquerdo na secção **Gestão**, selecione **Implantações**.
 
       ![](../Media/miyagi-image119.png)
 
-    - Na folha **Implantações** do Azure AI Studio, clique no nome do modelo **gpt-4** **(1)** e verifique o **nome da implantação** do modelo gpt-4 **(2)**.
+    - Na folha **Implantações (1)** do Azure AI Studio, clique no nome do modelo **gpt-4** e verifique o **nome da implantação** do modelo gpt-4 **(2)**.
 
-      ![](../Media/miyagi-image(12).png)
+      ![](../Media/completion_modelupd.png)
 
       ![](../Media/miyagi-image(13).png)
 
-    - Navegue de volta para a página **Implantação**.
+    - Navegue de volta para a página **Implantação (1)**.
 
-    - Na folha Azure AI Studio Deployments, clique em **nome do modelo text-embedding-ada-002 (1)** e verifique o **nome da implementação** do modelo **text-embedding-ada-002 (2)**.
+    - Na folha Azure AI Studio Deployments, clique em **nome do modelo text-embedding-ada-002** e verifique o **nome da implementação** do modelo **text-embedding-ada-002 (2)**.
 
-      ![](../Media/miyagi-image(14).png)
+      ![](../Media/embedupd.png)
 
       ![](../Media/miyagi-image(15).png)
 
