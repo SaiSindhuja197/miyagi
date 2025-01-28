@@ -20,21 +20,21 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
       - En la página **Información general de OpenAI** **(1)**, haga clic en el botón **Go to Azure AI Foundry portal (2)**.
 
-           ![](./Media/azurespanishai.png) 
+           ![](./Media/azurespanishaiupd.png) 
    
       - En **Azure AI Foundry portal**, seleccione **Implementaciones**, en la sección Administración.
 
       - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4 **(2)**.
 
-          ![](./Media/foundry1.png)
+          ![](./Media/foundry1upd1.png)
         
           ![](./Media/11-10-24(21).png)
       
       -  Vuelva a la página **Implementaciones**.
 
-      - En la hoja Implementaciones de Azure AI Studio, haga clic en el **nombre del modelo (1) text-embedding-ada-002** y verifique el **nombre de la implementación** del **modelo (2) text-embedding-ada-002**.
+      - En la hoja Implementaciones de Azure AI Studio, haga clic en **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** nombre de implementación y verifique el **nombre de implementación** de **incrustación de texto -ada-002 modelo(2)**.
         
-          ![](./Media/foundry2.png)
+          ![](./Media/foundry2upd1.png)
 
          ![](./Media/11-10-24(23).png)
 
