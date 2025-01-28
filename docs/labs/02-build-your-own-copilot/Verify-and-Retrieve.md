@@ -28,19 +28,19 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
    
       - In the **Azure AI Foundry portal**, from the left navigation pane under the **Shared resources** section, select **Deployments**.
 
-           ![](./Media/deployments.png)
+           ![](./Media/deploymentsupd1.png)
         
-      - In the **Deployments** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name **(1)** and verify the **deployment name** of gpt-4 model **(2)**.
+      - In the **Deployments**  **(1)** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of gpt-4 model **(2)**.
 
-          ![](./Media/completion_model.png)
+          ![](./Media/completion_modelupd.png)
         
           ![](./Media/miyagi-compl.png)
       
-      -  Navigate back to the **Deployment** page.
+      -  Navigate back to the **Deployment (1)** page.
 
-      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** **(1)** deployment name and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
+      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
         
-         ![](./Media/embed.png)
+         ![](./Media/embedupd.png)
 
          ![](./Media/miyagi-embedded.png)
 
