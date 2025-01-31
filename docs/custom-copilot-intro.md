@@ -59,7 +59,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/yagi3.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/yagi-3.png)
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
 
