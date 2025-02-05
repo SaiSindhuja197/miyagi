@@ -12,7 +12,7 @@ What makes Semantic Kernel _special_, however, is its ability to _automatically_
 You will be able to complete the following tasks:
 
 - Task 1: Configure and Run the Semantic Kernel Sample
-- Task 2: Configure Azure Cognitive Search
+- Task 2: Configure Azure AI Search
 
 ### Task 1: Configure and Run the Semantic Kernel Sample
 In this task, you will configure the Semantic Kernel plugin in Visual Studio Code, create a C# Home Automation app using Azure OpenAI, and build and run the application to interact with it.
@@ -213,9 +213,9 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
 1. Alternatively, you can pose any question to in the terminal.
 
-### Task 2: Configure Azure Cognitive Search
+### Task 2: Configure Azure AI Search
 
-In this task, you'll configure Azure Cognitive Search by importing data from CosmosDB into a search index named "realestate-us-sample-index". You customize the index and create an indexer named "realestate-us-sample-indexer" to synchronize data. Finally, you verify the search functionality by querying data for "Seattle".
+In this task, you'll configure Azure AI Search by importing data from CosmosDB into a search index named "realestate-us-sample-index". You customize the index and create an indexer named "realestate-us-sample-indexer" to synchronize data. Finally, you verify the search functionality by querying data for "Seattle".
 
 1. Navigate back to the **Azure portal** tab, in Search resources, services and docs (G+/) box at the top of the portal, enter **AI Search**, and then select **AI Search** under services.
 
@@ -259,6 +259,6 @@ In this task, you'll configure Azure Cognitive Search by importing data from Cos
 
 ### Summary
 
-In this lab, you learned how to configure and run the Semantic Kernel sample by integrating the SDK into your project, setting up LLM providers, defining plugins, and executing the code. Additionally, you gained knowledge on configuring Azure Cognitive Search, including creating or selecting an index, setting up fields, configuring Semantic Kernel to interact with Azure, defining plugins, and testing the integration for enhanced search capabilities.
+In this lab, you learned how to configure and run the Semantic Kernel sample by integrating the SDK into your project, setting up LLM providers, defining plugins, and executing the code. Additionally, you gained knowledge on configuring Azure AI Search, including creating or selecting an index, setting up fields, configuring Semantic Kernel to interact with Azure, defining plugins, and testing the integration for enhanced search capabilities.
 
 ### You have completed this lab. 
