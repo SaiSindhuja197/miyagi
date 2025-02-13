@@ -28,9 +28,9 @@ Neste laboratório, irá verificar e recuperar valores específicos, como Endpoi
 
       ![](../Media/miyagi-image119.png)
 
-    - Na folha **Implantações (1)** do Azure AI Studio, clique no nome do modelo **gpt-4** e verifique o **nome da implantação** do modelo gpt-4 **(2)**.
+    - Na folha **Implantações (1)** do Azure AI Studio, clique no nome do modelo **gpt-4o** e verifique o **nome da implantação** do modelo gpt-4o **(2)**.
 
-      ![](../Media/completion_modelupd.png)
+      ![](../Media/completionmodelnew.png)
 
       ![](../Media/miyagi-image(13).png)
 
@@ -38,7 +38,7 @@ Neste laboratório, irá verificar e recuperar valores específicos, como Endpoi
 
     - Na folha Azure AI Studio Deployments, clique em **nome do modelo text-embedding-ada-002** e verifique o **nome da implementação** do modelo **text-embedding-ada-002 (2)**.
 
-      ![](../Media/embedupd.png)
+      ![](../Media/deployments0909.png)
 
       ![](../Media/miyagi-image(15).png)
 

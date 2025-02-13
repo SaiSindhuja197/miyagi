@@ -272,9 +272,9 @@ Neste laboratório, irá configurar o registo do Event Hub para a gestão de API
 
    ![](../Media/miyagi-image86.png)
 
-1. Na **Instância de Hubs de Eventos** de **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, no menu esquerdo selecione **Políticas de acesso partilhado** **(1)** em **Settings**, clique em **apimLoggerAccessPolicy** **(2)** e copie **Connection string–primary key** **(3)** cole-o num bloco de notas.
+1. Na **Instância de Hubs de Eventos** de **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, no menu esquerdo selecione **Políticas de acesso partilhado** **(1)** em **Settings**, clique em **apimLoggerAccessPolicy** **(2)** e copie **Primary connection string** **(3)** cole-o num bloco de notas.
 
-   ![](../Media/miyagi-image87.png)
+   ![](../Media/primaryconnectionstring.png)
 
 1. Abra o **notepad** do jumpvm e copie e cole o código abaixo, actualize **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** com **miyagi-apim-<inject key="DeploymentID" enableCopy= "false "/>** nome e o &lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt; copiado da etapa acima.
 
