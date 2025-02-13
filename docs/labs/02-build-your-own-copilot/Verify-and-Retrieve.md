@@ -24,9 +24,9 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
    
       - En **Azure AI Foundry portal**, seleccione **Implementaciones**, en la sección Administración.
 
-      - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4 **(2)**.
+      - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4o** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4o **(2)**.
 
-          ![](./Media/foundry1upd1.png)
+          ![](./Media/spanish-01.png)
         
           ![](./Media/11-10-24(21).png)
       
@@ -34,7 +34,7 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
       - En la hoja Implementaciones de Azure AI Studio, haga clic en **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** nombre de implementación y verifique el **nombre de implementación** de **incrustación de texto -ada-002 modelo(2)**.
         
-          ![](./Media/foundry2upd1.png)
+          ![](./Media/spanish-02.png)
 
          ![](./Media/11-10-24(23).png)
 
