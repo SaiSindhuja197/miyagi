@@ -26,11 +26,11 @@ In this lab, you will run the Chat Copilot app locally by setting up the environ
 
 In this task, you will retrieve the Azure OpenAI Service values by accessing the service configuration, querying the API, and ensuring the correct integration of parameters for your application.
 
-1. In the Azure Portal, search for **OpenAI** and select **Azure OpenAI**
+1. In the Azure Portal, search for **OpenAI (1)** and select **Azure OpenAI (2)**
    
-    ![](./Media/sql-1.png)
+    ![](./Media/cp1.png)
 
-1. Select the Azure OpenAI resource created.
+1. Select the **Azure OpenAI** resource created.
 
     ![](./Media/data1.png)  
 
@@ -50,9 +50,9 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
     ![](./Media/take_tour-1.png)
 
-1. Go to **Deployments** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad.
+1. Go to **Deployments (1)** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad **(2)**.
     
-    ![](./Media/deploy-name.png)
+    ![](./Media/cp2.png)
 
     > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.         
 
@@ -60,9 +60,9 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
 In this task, you will clone the Chat-Copilot GitHub repository by using Git commands to download the code to your local machine for further exploration and development.
 
-1. In the LabVM, click on **Start**, from the start menu search and select **PowerShell** and pen PowerShell as an administrator.
+1. In the LabVM, click on **Start**, from the start menu search for **Powershell (1)** and select **Windows PowerShell (2)** and then pen PowerShell as an administrator.
 
-    ![](./Media/data5.png)  
+    ![](./Media/cp3.png)  
    
 1. Navigate to the directory `C:/Users/azureuser` by running the below command.
  
@@ -74,13 +74,20 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
    ``` 
    git clone https://github.com/CloudLabsAI-Azure/chat-copilot CHAT-COPILOT
    ```
+
+    ![](./Media/cp4.png)
+
 1. Open Visual Studio Code from the LabVM Desktop and click on `File (1) > Open folder (2)`.
 
-   ![](./Media/file-1.png)
+   ![](./Media/cp5.png)
 
 1. Select **CHAT-COPILOT (1)** and click **Select Folder (2)**.
 
-   ![](./Media/data7-1.png)
+   ![](./Media/cp6.png)
+
+1. Click on **Yes, I trust the authors**.
+
+    ![](./Media/cp7.png)
 
 1. Review the files.
 
@@ -108,6 +115,8 @@ In this task, you will set up the environment for the Chat-Copilot project by in
    .\Install.ps1
    ```
 
+    ![](./Media/cp8.png)   
+
    >**Note:** If you receive an error that the script is not digitally signed or cannot execute on the system, you may need to change the execution policy or unblock the script.
 
 ### Task 4: Configure and run the Chat Copilot App locally
@@ -131,14 +140,14 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    >
    >**Note:** The code should look similar to the image below:
 
-     ![](./Media/data8.png)
+     ![](./Media/cp9.png)
 
 1. Run Chat Copilot locally. This step starts the **backend API** application. frontend
  
    ```powershell
    .\Start-Backend.ps1
    ```
-   > **Note:** It may take a few minutes for Yarn packages to install on the first run.
+   > **Note:** It may take a around 5 minutes for Yarn packages to install on the first run, wait untill the command run successfully.
  
 1. Open another tab in **Edge**, in the browser window paste the following link, and you should see a confirmation message: `Healthy`.
  
@@ -149,9 +158,9 @@ In this task, you will configure and run the Chat Copilot app locally by setting
   
      ![](./Media/data9.png)
     
-1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 7**.
+1. In the LabVM, click on **Start**, from the start menu search for **PowerShell (1)** and select for **PowerShell 7 (2)**.
 
-   ![](./Media/data10.png)
+   ![](./Media/cp10.png)
  
 1. Run the following command to change the path.
  
@@ -173,9 +182,13 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    .\Start-Frontend.ps1
    ```
 
+    ![](./Media/cp11.png)   
+
+     >**Note:** Please wait for 5-7 mins for the command to run completely. If it throws any warnings please ignore.     
+
 1. Once the deployment of the script is executed successfully it will redirect to `http://localhost:3000/` Chat CoPilot in **Edge** browser.
  
-   >**Note:** Please wait for 2-3 mins for the browser to load
+   >**Note:** Please wait for 3-4 mins for the browser to load
   
 1. You will get an output similar to this for the frontend:
 
@@ -204,16 +217,20 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
     ![](./Media/data13.png)  
 
-1. Navigate to C:\Labfiles\Documents to upload the 3 pdfs. Select the 3 files and click **Open.**
+1. Navigate to `C:\Labfiles\Documents` **(1)** to upload the 3 pdfs. Select the 3 files **(2)** and click **Open. (3)**
 
-    ![](./Media/ch10.png)
+    ![](./Media/cp12.png)
+
+1. Ensure the files are uploaded successfully before proceeding.
+
+    ![](./Media/cp13.png)
 
 1. Once it is uploaded, Naviagte to the **Chat (1)** tab then provide the below prompt **(2)** then click **send (3)** button and then check how the response is generated by Copilot.
 
     ```
     How to operate Android Auto in Porche Taycan? Give step-by-step instructions.
     ```
-    ![](./Media/data14.png)
+    ![](./Media/cp14.png)
    
 1. Provide another prompt and check how the response is generated by Copilot.
 
@@ -221,10 +238,20 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
     Give detailed information on Apple CarPlay.
     ```
     ![](./Media/ch13.png)
+
+     >**Note**: If you get any error while sending the second prompt, related to exceeded Token rate limit. Please wait for 5-10 seconds and then send the prompt.
+
+      ![](./Media/cp15.png)     
    
 1. The response not only answered the question based on the content found in these documents, but it also included citations (1) to that content to validate the accuracy of the information. When you click on an annotation, the app jumps right to the page of the document (2) that goes into the comparison of the plans, so that we can read more or do additional validation on the accuracy of the answer under the citation section.
 
 1. Click on the **Edit** button on the left to rename.
+
+    ![](./Media/cp16.png)
+
+1. Give any name you prefer **(1)** and then click on right mark **(2)**.    
+
+    ![](./Media/cp17.png)
 
 ## Summary
 

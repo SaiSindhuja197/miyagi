@@ -37,24 +37,42 @@ The architecture for this lab involves several key components:
 - **Chat Copilot App**: A sample application that integrates Azure OpenAI and AI Search to generate insights and citations based on your data.
 - **GitHub Repository**: Contains the source code and dependencies for configuring and running the Chat Copilot app locally.
 
-# Getting Started with the Lab
+## Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
-
-   ![](../docs/labs/02-build-your-own-copilot/Media/yagi-1.png)
+## Accessing Your Lab Environment
  
-1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
+Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
 
-    ![](../docs/labs/02-build-your-own-copilot/Media/yagi-2.png)
-   
-   > You will see the SUFFIX value on the **Environment** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
+![](../docs/labs/02-build-your-own-copilot/Media/cpg1.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-  ![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
  
+## Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+![](../docs/labs/02-build-your-own-copilot/Media/cpg2.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+![](../docs/labs/02-build-your-own-copilot/Media/cpg3.png)
+
+## Managing Your Virtual Machine
+ 
+Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+ 
+![](../docs/labs/02-build-your-own-copilot/Media/cpg4.png)
+
 ## Login to the Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
@@ -107,6 +125,6 @@ Learner Support Contacts:
 
 Now, click on Next from the lower right corner to move on to the next page.
 
-![](../docs/labs/02-build-your-own-copilot/Media/n8.png)
+![](../docs/labs/02-build-your-own-copilot/Media/cpg5.png)
 
 ## Happy Learning!!
