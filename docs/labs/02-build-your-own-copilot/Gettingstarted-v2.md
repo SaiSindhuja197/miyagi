@@ -17,6 +17,8 @@ In this lab, you will gain a strong understanding of Generative AI basics, Azure
   
 ## Pre-requisites
 
+Participants should have:
+
 - Understanding of Generative AI basics
 - Familiarity with Azure Open AI
 - Experience with Semantic Kernel
@@ -29,9 +31,11 @@ It integrates Azure Functions, AKS, and Apache Kafka for seamless communication,
 
 ## Architecture Diagram
 
-   ![](../../Lab-Scenario-Preview/sk-memory-orchestration.png)
+   ![](../../Lab-Scenario-Preview/sk-memory-orchestration-1.png)
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 - **Azure OpenAI**: Azure OpenAI integrates OpenAI's language models into Microsoft's Azure cloud, enabling scalable AI solutions for natural language processing and automation.
 - **AI Search**: Is a cloud service that enables powerful and flexible search capabilities, including full-text search and AI-powered features.
@@ -42,19 +46,47 @@ It integrates Azure Functions, AKS, and Apache Kafka for seamless communication,
 - **Azure Storage**: Scalable storage for blobs, files, queues, and tables.
 - **Bing Search**: Lets you add Bing search features to your apps. It provides APIs for web, image, video, and news searches.
 
-# Getting Started with the Lab
+## Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+Welcome to your Build Intelligent Apps with Microsoft's Copilot Stack & Azure OpenAI workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+
+## Accessing Your Lab Environment
+
+After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
    ![](./Media/gettingstartedpagenew1-v2.png)
- 
-1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
-    ![](./Media/gettingstartedpagenew2-v2.png)
-   
-   > You will see the SUFFIX value on the **Environment** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.
+
+### Virtual Machine & Lab Guide
  
-## Login to the Azure Portal
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+
+   ![](./Media/environment.png)
+   > You will see the SUFFIX value on the **Environment** tab; use it wherever you see SUFFIX or DeploymentID in lab steps.    
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+
+   ![](./Media/nleg4.png) 
+   
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+
+   ![](./Media/resources-vm-manage.png) 
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![](./Media/labzoom-1.png)
+
+## Let's Get Started with Azure Portal
 
 1. Minimize the **Docker Desktop** by click on **Minimize** button.
 
@@ -119,5 +151,7 @@ Learner Support Contacts:
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now, click on Next from the lower right corner to move on to the next page.
+
+![](./Media/next-page.png)
 
 ## Happy Learning!!
