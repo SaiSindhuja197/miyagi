@@ -95,7 +95,7 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/1.png)
 
-8. En la hoja **Images**, observe que se ha creado la imagen **miyagi-ui (1)**, seleccione el icono **Run (2)**.
+8. En la hoja **Images**, observe que se ha creado la imagen **miyagi-ui**, seleccione el icono **Run**.
 
    ![](./Media/2.png)
 
@@ -143,7 +143,7 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/1.png)
 
-1. En la hoja **Images**, observe que se crea la imagen **miyagi-recommendation (1)**, seleccione el icono **Run (2)**.
+1. En la hoja **Images**, observe que se crea la imagen **miyagi-recommendation**, seleccione el icono **Run**.
 
    ![](./Media/3.png)
 
