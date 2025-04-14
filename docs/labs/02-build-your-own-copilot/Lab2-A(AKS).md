@@ -113,11 +113,11 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 1. Navigate back to **Docker desktop**, from the left pane select **Images**.
 
-   ![](./Media/miyagi-image33.png)
+   ![](./Media/1.png)
 
-1. In the **Images** blade, notice **miyagi-ui (1)** image is created, select **Run (2)** icon .
+1. In the **Images** blade, notice **miyagi-ui** image is created, select **Run** icon .
 
-   ![](./Media/miyagi-image34.png)
+   ![](./Media/2.png)
 
 1. In the **Run a new container** window select the dropdown arrow.
 
@@ -159,11 +159,11 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
    
 1. Navigate back to **Docker desktop**, from the left pane select **Images**.
 
-   ![](./Media/miyagi-image33.png)
+   ![](./Media/1.png)
 
-1. In the **Images** blade, notice **miyagi-recommendation (1)** image is created, select **Run (2)** icon .
+1. In the **Images** blade, notice **miyagi-recommendation** image is created, select **Run** icon .
 
-   ![](./Media/miyagi-image41.png)
+   ![](./Media/3.png)
 
 1. In the **Run a new container** window select the dropdown arrow.
 
