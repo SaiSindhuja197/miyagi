@@ -66,11 +66,11 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image59.png)
 
-1. You should now see a series of APIs under the Azure OpenAI Service API.
+1. You should now see a series of APIs under the **api-key**.
    
     ![](./Media/miyagi-image60.png)
    
-1. In the **Azure OpenAI Service API** API navigate to the **Settings** tab and update the subscription key **Header Name** to **api-key (1)** and click on **Save (2)**.
+1. In the **api-key** API navigate to the **Settings** tab and update the subscription key **Header Name** to **api-key (1)** and click on **Save (2)**.
 
    ![](./Media/miyagi-image61.png)
 
@@ -78,9 +78,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image62.png)
 
-1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **Azure OpenAI Service API** **(4)** hit enter and click on **Create** **(5)**.
+1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **api-key** **(4)** hit enter and click on **Create** **(5)**.
 
-   ![](./Media/api-product2.png)
+   ![](./Media/4.png)
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, from the left navigation pane under **APIs** select **Subscriptions** **(1)**  then lick on **+ Add subscription** **(2)**.
 
@@ -118,9 +118,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. Navigate back to **API Management service** in the Azure Portal, select the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service.
     
-1. In the **API Management service**, select **APIs** **(1)**, select the **Azure OpenAI Service API** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policies </>** **(4)** under **Inbound processing**.
+1. In the **API Management service**, select **APIs** **(1)**, select the **api-key** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policies </>** **(4)** under **Inbound processing**.
 
-    ![](./Media/api-inbound.png)
+    ![](./Media/pg6-18.png)
 
 1. In the code editor copy the below policy to overwrite the **inbound** **(1)** tags only, replace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** of API manager which you copied in Task 1 Step 4 and click on **Save** **(3)**.
 
@@ -327,9 +327,9 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/lab3-t1-s1.png)
 
-1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **Azure OpenAI Service API** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **Policies (4)** editor.
+1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **api-key** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **Policies (4)** editor.
 
-    ![](./Media/api-outbound.png)
+    ![](./Media/pg6-17.png)
 
 1. In the code editor copy the below policy to overwrite the **outbound** tags only and click on **Save**.
 
