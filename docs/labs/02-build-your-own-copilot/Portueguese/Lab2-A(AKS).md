@@ -105,11 +105,11 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 
 1. Navegue de volta para **Docker desktop**, no painel esquerdo selecione **Images**.
 
-   ![](../Media/miyagi-image33.png)
+   ![](../Media/1.png)
 
-1. Na folha **Images**, repare que a imagem **miyagi-ui (1)** é criada, selecione o ícone **executar (2)** .
+1. Na folha **Images**, repare que a imagem **miyagi-ui** é criada, selecione o ícone **executar** .
 
-   ![](../Media/miyagi-image34.png)
+   ![](../Media/2.png)
 
 1. Na janela **Executar um novo contentor** selecione a seta pendente.
 
@@ -151,11 +151,11 @@ Nesta tarefa, irá criar e executar o contentor Miyagi UI Docker localmente. Com
 
 1. Navegue de volta para **Docker desktop**, no painel esquerdo selecione **Images**.
 
-   ![](../Media/miyagi-image33.png)
+   ![](../Media/1.png)
 
-1. Na folha **Images**, repare que a imagem **miyagi-recommendation (1)** está criada, selecione **run (2)** icon .
+1. Na folha **Images**, repare que a imagem **miyagi-recommendation** está criada, selecione **run** icon .
 
-   ![](../Media/miyagi-image41.png)
+   ![](../Media/3.png)
 
 1. Na janela **Executar um novo contentor** selecione a seta pendente.
 
