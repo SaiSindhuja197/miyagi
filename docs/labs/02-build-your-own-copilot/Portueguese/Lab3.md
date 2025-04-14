@@ -78,9 +78,9 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/miyagi-image62.png)
 
-1. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **Azure OpenAI Service API** **(4)** prima Enter e clique em **Create** **(5)**.
+1. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **miyagi-api** **(4)** prima Enter e clique em **Create** **(5)**.
 
-   ![](../Media/api-product2.png)
+   ![](../Media/ProductPro.png)
 
 1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management, no painel de navegação esquerdo em **APIs** selecione **Subscrições** **(1)** e clique em **+ Adicionar assinatura** **(2)**.
 
@@ -118,9 +118,9 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
 1. Navegue de volta para **serviço de gestão de API** no Portal Azure, selecione o serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management.
 
-1. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **API de serviço OpenAI do Azure** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
+1. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **miyagi-api** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
 
-   ![](../Media/api-inbound.png)
+   ![](../Media/pg6-18.png)
 
 1. No editor de código, copie a política abaixo para substituir apenas as tags **inbound** **(1)**, substitua **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** por **<inject key=" OpenAIEndpoint " enableCopy="true"/>** **(2)** do gestor de API que copiou na Tarefa 1, Passo 4 e clique em **Guardar** **(3)**.
 
@@ -330,9 +330,9 @@ Neste laboratório, irá configurar o registo do Event Hub para a gestão de API
 
    ![](../Media/lab3-t1-s1.png)
 
-1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management do menu esquerdo, clique em **APIs** **(1)** e seleccione a **Azure OpenAI Service API** **(2)** criada no passo anterior, selecione **Todas as operações** **(3)** e em **processamento de saída** clique em **código de política editor(4)**.
+1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management do menu esquerdo, clique em **APIs** **(1)** e seleccione a **miyagi-api** **(2)** criada no passo anterior, selecione **Todas as operações** **(3)** e em **processamento de saída** clique em **código de política editor(4)**.
 
-   ![](../Media/api-outbound.png)
+   ![](../Media/pg6-17.png)
 
 1. No editor de código, copie a política abaixo para substituir apenas as tags **outbound** e clique em **Guardar**.
 
