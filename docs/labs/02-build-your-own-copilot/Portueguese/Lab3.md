@@ -78,7 +78,7 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/miyagi-image62.png)
 
-1. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **miyagi-api** **(4)** prima Enter e clique em **Create** **(5)**.
+1. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **api-key** **(4)** prima Enter e clique em **Create** **(5)**.
 
    ![](../Media/ProductPro.png)
 
@@ -118,7 +118,7 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
 1. Navegue de volta para **serviço de gestão de API** no Portal Azure, selecione o serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management.
 
-1. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **miyagi-api** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
+1. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **api-key** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
 
    ![](../Media/pg6-18.png)
 
@@ -330,7 +330,7 @@ Neste laboratório, irá configurar o registo do Event Hub para a gestão de API
 
    ![](../Media/lab3-t1-s1.png)
 
-1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management do menu esquerdo, clique em **APIs** **(1)** e seleccione a **miyagi-api** **(2)** criada no passo anterior, selecione **Todas as operações** **(3)** e em **processamento de saída** clique em **código de política editor(4)**.
+1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management do menu esquerdo, clique em **APIs** **(1)** e seleccione a **api-key** **(2)** criada no passo anterior, selecione **Todas as operações** **(3)** e em **processamento de saída** clique em **código de política editor(4)**.
 
    ![](../Media/pg6-17.png)
 
