@@ -72,7 +72,7 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/api-product1.png)
 
-6. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **miyagi-api** **(4)** presione Enter y haga clic en **Crear** **(5)**.
+6. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **api-key** **(4)** presione Enter y haga clic en **Crear** **(5)**.
 
    ![](./Media/productSpan.png)
 
@@ -108,7 +108,7 @@ Podrás completar las siguientes tareas:
 
 15. Vuelva al **servicio API Management** en el Portal de Azure, seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**.
 
-16. En el servicio **API Management**, seleccione **API** **(1)**, elija la API **miyagi-api** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
+16. En el servicio **API Management**, seleccione **API** **(1)**, elija la API **api-key** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
 
       ![](./Media/pg6-18.png)
 
@@ -290,7 +290,7 @@ Podrás completar las siguientes tareas:
 
     ![](./Media/lab3-t1-s1.png)
 
-15. En servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** en el menú de la izquierda haga clic en **APIs** **(1)** y seleccione **miyagi-api** **(2)** que fue creado en un paso anterior, seleccionando **Todas las Operaciones** **(3)** y en **procesamiento saliente** haga clic en el **Editor de código de política(4)**.
+15. En servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** en el menú de la izquierda haga clic en **APIs** **(1)** y seleccione **api-key** **(2)** que fue creado en un paso anterior, seleccionando **Todas las Operaciones** **(3)** y en **procesamiento saliente** haga clic en el **Editor de código de política(4)**.
 
     ![](./Media/pg6-17.png)
 
