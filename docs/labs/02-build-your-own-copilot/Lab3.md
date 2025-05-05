@@ -70,7 +70,11 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
    
     ![](./Media/miyagi-image60.png)
    
-1. In the **api-key** API navigate to the **Settings** tab and update the subscription key **Header Name** to **api-key (1)** and click on **Save (2)**.
+1. In the **api-key** API navigate to the **Settings** **(1)** tab, and update the Web service URL **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)**.
+
+   ![](./Media/miyagi-image161n.png)
+
+1. Scroll to the update the subscription key **Header Name** to **api-key** **(1)** and click on **Save** **(2)**.
 
    ![](./Media/miyagi-image61.png)
 
@@ -132,7 +136,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
          <set-header name="Authorization" exists-action="override">
             <value>@("Bearer " + (string)context.Variables["msi-access-token"])</value>
          </set-header>
-         <set-backend-service base-url="https://<<Azure_OpenAI_Endpoint>>/openai" />
+         <set-backend-service base-url="<<Azure_OpenAI_Endpoint>>openai" />
       </inbound>
       ```
 
