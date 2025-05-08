@@ -43,7 +43,7 @@ The architecture for this lab involves several key components:
  
 Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
 
-![](../docs/labs/02-build-your-own-copilot/Media/cpg1.png)
+![](../docs/labs/02-build-your-own-copilot/Media/cpg1upd.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
@@ -59,19 +59,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![](../docs/labs/02-build-your-own-copilot/Media/cpg2.png)
+![](../docs/labs/02-build-your-own-copilot/Media/cpg2upd.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![](../docs/labs/02-build-your-own-copilot/Media/cpg3.png)
+![](../docs/labs/02-build-your-own-copilot/Media/cpg3upd.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-![](../docs/labs/02-build-your-own-copilot/Media/cpg4.png)
+![](../docs/labs/02-build-your-own-copilot/Media/cpg4upd.png)
 
 ## Login to the Azure Portal
 
