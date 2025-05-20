@@ -109,7 +109,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource groups, verify the resources present in it.
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image8.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/resources-page.png)
 
  > [!IMPORTANT]<br>
  > **For a smoother experience during the hands-on lab, it's important to thoroughly review both the instructions and the accompanying notes. This will help you navigate through the tasks with ease and confidence.**
