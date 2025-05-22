@@ -49,7 +49,7 @@ Once you're ready to dive in, your virtual machine and **Lab guide** will be rig
  
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+![](../docs/labs/02-build-your-own-copilot/Media/lop-01.png)
  
 ## Virtual Machine & Lab Guide
  

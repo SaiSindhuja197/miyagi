@@ -34,21 +34,17 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
     ![](./Media/data1.png)  
 
-1. Select the **Keys and Endpoints (1)** from the left pane. Copy the **Key1 (2)** and **Endpoint (3)** the store them in Notepad.
+1. Select **Keys and Endpoints (1)** from the left pane. Copy **Key 1 (2)** and **Endpoint (3)**, then store them in Notepad.
    
     ![](./Media/data2.png)
 
    > **Note**: If you dont see the Left side Navigation pane, click on the **three horizontal line** in the top left corner.
 
-   ![](./Media/data3.png) 
+   ![](./Media/lop-03.png) 
 
 1. From the Overview page, click on **Go to Azure AI Foundry portal**.
    
-    ![](./Media/n2.png)
-
-1. "Close" button on the "Discover an even better Azure AI experience" pop-up to dismiss it.
-
-    ![](./Media/take_tour-1.png)
+    ![](./Media/lop-02.png)
 
 1. Go to **Deployments (1)** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad **(2)**.
     
@@ -85,15 +81,13 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
 
    ![](./Media/cp6.png)
 
-1. Click on **Yes, I trust the authors**.
+1. If the pop up appears for **Do you trust the authors of the file in this folder**, click on **Yes, I trust the authors.** 
 
     ![](./Media/cp7.png)
 
 1. Review the files.
 
-   ![](./Media/ch4.png)
-
-   > **Note**: If the pop up appears for **Do you trust the authors of the file in this folder**, click on **Yes, I trust the authors.**   
+   ![](./Media/ch4.png)  
 
 ### Task 3: Setting up the Environment
 
@@ -213,11 +207,11 @@ In this lab, you will chat with your own documents by uploading files to the Cha
 
 In this task, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
 
-1. Click on the **Documents (1)** tab at the top and click on **Upload (2)** and select **+ New local chat document (3).**
+1. Navigate back to the WebApp. Click on the **Documents (1)** tab at the top and click on **Upload (2)** and select **+ New local chat document (3).**
 
     ![](./Media/data13.png)  
 
-1. Navigate to `C:\Labfiles\Documents` **(1)** to upload the 3 pdfs. Select the 3 files **(2)** and click **Open. (3)**
+1. Navigate to `C:\Labfiles\Documents` **(1)** to upload the three pdfs. Select the three files **(2)** and click **Open. (3)**
 
     ![](./Media/cp12.png)
 
