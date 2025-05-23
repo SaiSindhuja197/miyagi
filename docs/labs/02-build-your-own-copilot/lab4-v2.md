@@ -1,6 +1,6 @@
-# Comenzando con Su Propio Copiloto
+# Laboratorio 5- Cómo empezar con tu propio copiloto [Léeme]
 
-### Duración: 30 minutos
+### Duración estimada: 30 minutos
 
 Semantic Kernel es un SDK que integra Modelos de Lenguajes Grandes (LLMs) como OpenAI, Azure OpenAI y Hugging Face con lenguajes de programación convencionales como C#, Python y Java. Semantic Kernel logra esto permitiéndole definir plugins que se pueden encadenar en solo unas pocas líneas de código.
 
@@ -244,3 +244,5 @@ Podrás completar las siguientes tareas:
 ### Resumen
 
 En esta práctica de laboratorio, aprendió a configurar y ejecutar el ejemplo de Semantic Kernel integrando el SDK en su proyecto, configurando proveedores de LLM, definiendo plugins y ejecutando el código. Además, adquirió conocimientos sobre la configuración de Azure Cognitive Search, incluyendo la creación o selección de un índice, la configuración de campos, la configuración de Semantic Kernel para interactuar con Azure, la definición de plugins y la prueba de la integración para capacidades de búsqueda mejoradas.
+
+### You have completed this lab.

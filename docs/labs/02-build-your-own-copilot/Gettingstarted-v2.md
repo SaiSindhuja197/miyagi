@@ -29,9 +29,11 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
 
 ## Diagrama de Arquitectura
 
-   ![](../../Lab-Scenario-Preview/sk-memory-orchestration.png)
+   ![](../../Lab-Scenario-Preview/sk-memory-orchestration-1.png)
 
 ## Explicación de Componentes
+
+La arquitectura de este laboratorio incluye los siguientes componentes clave:
 
 - **Azure OpenAI**: Azure OpenAI integra los modelos de lenguaje de OpenAI en la nube de Microsoft Azure, permitiendo soluciones de IA escalables para el procesamiento del lenguaje natural y la automatización.
 - **AI Search**: Es un servicio en la nube que permite capacidades de búsqueda potentes y flexibles, incluyendo la búsqueda de texto completo y las funciones impulsadas por IA.
@@ -42,18 +44,46 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
 - **Azure Storage**: Almacenamiento escalable para blobs, archivos, colas y tablas.
 - **Bing Search**: Le permite agregar funciones de búsqueda de Bing a sus aplicaciones. Proporciona APIs para búsquedas web, de imágenes, videos y noticias.
 
+## Introducción al laboratorio
+
+¡Bienvenido a tu taller "Crea aplicaciones inteligentes con Copilot Stack y Azure OpenAI" de Microsoft! Hemos preparado un entorno perfecto para que explores y aprendas sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
+
 ## Comenzando con el Laboratorio
 
-1. Una vez configurado el ambiente, su navegador cargará una máquina virtual (JumpVM), utilice esta máquina virtual durante todo el taller para realizar el laboratorio. Puede ver el número en la parte inferior de la guía de laboratorio para cambiar a diferentes ejercicios en la guía de laboratorio.
+Una vez configurado el ambiente, su navegador cargará una máquina virtual (JumpVM), utilice esta máquina virtual durante todo el taller para realizar el laboratorio. Puede ver el número en la parte inferior de la guía de laboratorio para cambiar a diferentes ejercicios en la guía de laboratorio.
 
-   ![](./Media/11-10-24(1).png)
- 
-1. Para obtener los detalles del ambiente del laboratorio, puede seleccionar la pestaña **Ambiente**. Además, las credenciales también se enviarán por correo electrónico a su dirección de correo electrónico registrada. También puede abrir la Guía de Laboratorio en una ventana completa e independiente seleccionando **Ventana Dividida** en la esquina inferior derecha. Además, puede iniciar, detener y reiniciar máquinas virtuales desde la pestaña **Recursos**.
+   ![](./Media/environment-1.png)
 
-    ![](./Media/11-10-24(2).png)
+### Máquina Virtual y Guía de Laboratorio
+
+Tu máquina virtual es tu herramienta principal durante el taller. La guía de laboratorio es tu hoja de ruta hacia el éxito.
+
+## Explorando los recursos de su laboratorio
+
+Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Entorno**.
+
+   ![](./Media/2025-05-23-1.png)
    
    > Verá el valor SUFFIX en la pestaña **Ambiente**; úselo dondequiera que vea SUFFIX o DeploymentID en los pasos del laboratorio.
- 
+
+## Uso de la función de ventana dividida
+
+Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana dividida** en la esquina superior derecha.
+
+   ![](./Media/2025-05-23-2.png)
+
+## Administra tu máquina virtual
+
+Puedes iniciar, detener o reiniciar tu máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Tu experiencia está en tus manos!
+
+   ![](./Media/2025-05-23-3.png)
+
+## Guía de laboratorio: Acercar/Alejar
+
+Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono **A↕ : 100%**, ubicado junto al temporizador en el entorno de laboratorio.
+
+   ![](./Media/labzoom-1.png)
+
 ## Iniciar Sesión en el Portal de Azure
 
 1. Minimice **Docker Desktop** haciendo clic en el botón **Minimizar**.
@@ -83,6 +113,8 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
    * **Contraseña**: **<inject key="AzureAdUserPassword"></inject>**
 
      ![](./Media/11-10-24(5).png)
+
+     > **Nota**: Si se le solicita MFA, siga los pasos resaltados en - [Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible](#Pasos-para-continuar-con-la-configuración-de-MFA-si-la-opción-"Preguntar-más-tarde"-no-está-visible)  
    
 1. Si ve la ventana emergente **¿Permanecer conectado?**, seleccione **No**.
 
@@ -104,6 +136,34 @@ Integra Azure Functions, AKS y Apache Kafka para una comunicación fluida, con d
 
    ![](./Media/11-10-24(17).png)
 
+## Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible
+
+> **Nota:** Continúe con los ejercicios si la MFA ya está habilitada o la opción no está disponible.
+
+1. En el mensaje **"Se requiere más información"**, seleccione **Siguiente**.
+
+1. En la página **"Mantenga su cuenta segura"**, seleccione **Siguiente** dos veces.
+
+1. **Nota:** Si no tiene la aplicación Microsoft Authenticator instalada en su dispositivo móvil:
+
+- Abra **Google Play Store** (Android) o **App Store** (iOS).
+- Busque **Microsoft Authenticator** y pulse **Instalar**.
+- Abra la aplicación **Microsoft Authenticator**, seleccione **Agregar cuenta** y luego elija **Cuenta profesional o educativa**.
+
+1. Se mostrará un **código QR** en la pantalla de su computadora.
+
+1. En la aplicación Authenticator, seleccione **Escanear un código QR** y escanee el código que aparece en la pantalla.
+
+1. Después de escanear, haga clic en **Siguiente** para continuar.
+
+1. En su teléfono, ingrese el número que se muestra en la pantalla de su computadora en la aplicación Authenticator y seleccione **Siguiente**.
+
+1. Si se le solicita que mantenga la sesión iniciada, puede hacer clic en **No**.
+
+1. Si aparece la ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Cancelar** para omitir la visita guiada.
+
+1. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+
 > [!IMPORTANTE]<br>
 > **Para una experiencia más fluida durante la práctica de laboratorio, es importante revisar detenidamente tanto las instrucciones como las notas que las acompañan. Esto le ayudará a realizar las tareas con facilidad y confianza**.
 
@@ -119,5 +179,7 @@ Contactos de Soporte para Estudiantes:
 - Soporte por Chat En Vivo: https://cloudlabs.ai/labs-support
 
 Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+
+   ![](./Media/next-page-2.png)
 
 ## ¡¡Feliz Aprendizaje!!

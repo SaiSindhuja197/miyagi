@@ -39,12 +39,12 @@ Podrás completar las siguientes tareas:
    ![](./Media/api-product6.png)
 
 
-   >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
-   > - Pulse el botón Validar para la tarea correspondiente.
-   > - Si recibe un mensaje de éxito, puede proceder a la siguiente tarea. De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-   > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
+>**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
+> - Pulse el botón Validar para la tarea correspondiente.
+> - Si recibe un mensaje de éxito, puede proceder a la siguiente tarea. De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarle.
 
-    <validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
+<validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
 
 ### Tarea 2: Crear Políticas y Roles de API Management
 
@@ -63,6 +63,10 @@ Podrás completar las siguientes tareas:
 3. Ahora debería ver una serie de APIs en Azure OpenAI Service API.
    
     ![](./Media/apim4.png)
+
+1. En la API **api-key**, navegue a la pestaña **Configuración** **(1)** y actualice la URL del servicio web **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)**.
+
+   ![](./Media/miyagi-image161n.png)
 
 4. En la API **Azure OpenAI Service API** navegue a la pestaña **Settings** **(1)** y actualice el **Header Name** con el valor **api-key** **(2)** y haga clic en **Save** **(3)**.
 
@@ -92,19 +96,19 @@ Podrás completar las siguientes tareas:
 
 11. En **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, seleccione **Control de acceso (IAM)** **(1)**, haga clic en **+ Agregar** **(2)**, y seleccione **Agregar asignación de roles** **(3)**.
 
-    ![](./Media/apinew2.png)
+    ![](./Media/apinew2-1.png)
    
 12. En la pestaña **Adición de la asignación de roles** en la barra de búsqueda escriba y seleccione **Cognitive Services User** y haga clic en **Siguiente**.
 
-    ![](./Media/apinew3.png)
+    ![](./Media/apinew3-1.png)
 
 13. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**, en la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada seleccione **API Management service** **(3)**, elija **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)** y haga clic en **Siguiente** **(6)**.
 
-    ![](./Media/apim-role.png)
+    ![](./Media/apim-role-1.png)
 
 14. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
-      ![](./Media/apim-role1.png)
+      ![](./Media/namespace3-1.png)
 
 15. Vuelva al **servicio API Management** en el Portal de Azure, seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -214,21 +218,23 @@ Podrás completar las siguientes tareas:
 
 1. En el Portal de Azure, busque y seleccione **Event Hubs**, seleccione **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
 
+   ![](./Media/api-product9.png)
+
 2. En la pestaña Espacios de nombres de Event hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Control de acceso (IAM)** **(1)** , haga clic en **+ Agregar** **(2)**, y seleccione **Agregar asignación de roles** **(3)**.
 
-   ![](./Media/namespace1.png)
+   ![](./Media/namespace1-1.png)
 
 3. En la pestaña **Rol** de la pestaña Adición de la asignación de roles en la barra de búsqueda escriba y seleccione **Azure Event Hubs Data Sender** y haga clic en **Siguiente**.
 
-   ![](./Media/namespace2.png)
+   ![](./Media/namespace2-1.png)
 
 4. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**, en la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada elija **API Management service** **(3)**, seleccione **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)** y haga clic en **Siguiente** **(6)**.
 
-   ![](./Media/apim-role.png)
+   ![](./Media/apim-role-2.png)
 
 5. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
-   ![](./Media/namespace3.png)
+   ![](./Media/namespace3-2.png)
 
 6. En la pestaña Espacio de nombres de Event hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Event Hubs** **(1)** en Entidades y haga clic en **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**
 
@@ -265,7 +271,7 @@ Podrás completar las siguientes tareas:
 
 10. En **Guardar como** navegue a la ruta `C:\LabFiles\miyagi` **(1)**, ingrese el nombre de archivo **aoai-logger.bicep** **(2)**, guarde el tipo como **Todos los archivos** **(3)** y haga clic en **Guardar** **(4)**.
 
-    ![](./Media/bicepfile2.png)
+    ![](./Media/bicepfile2-1.png)
 
 11. En JumpVM abra la terminal de PowerShell y ejecute el siguiente comando para iniciar sesión en el **Portal de Azure**.
 
@@ -334,3 +340,5 @@ Podrás completar las siguientes tareas:
 ### Resumen
 
 En esta práctica de laboratorio, configuró un servicio API Management para administrar las APIs de manera eficiente. Inicialmente, se implementó el servicio y se creó una API dentro de él. Posteriormente se establecieron reglas y roles para controlar el acceso a la API. El registro de Event Hub se configuró para monitorear el uso de API de manera efectiva. Por último, se realizó una validación de entradas para garantizar que la API manejara varias entradas correctamente. En general, este proceso garantizó la gestión efectiva, la seguridad y el monitoreo del rendimiento de las API, contribuyendo a un ecosistema de API seguro y bien organizado.
+
+### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.

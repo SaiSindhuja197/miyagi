@@ -1,5 +1,7 @@
 # Laboratorio 3.1 - Contenedorización de la interfaz de usuario de Miyagi y el servicio de Recomendación en Azure Kubernetes Service (AKS)
 
+### Duración estimada: 60 minutos
+
 En esta práctica de laboratorio, creará las imágenes de Docker y las publicará en Azure Kubernetes Service (AKS).
 
 ## Objetivos del laboratorio
@@ -256,15 +258,13 @@ En esta tarea, enviará las imágenes Miyagi-recommendation a acr.
    
    ![](./Media/AKS-running.png)
 
-
-    <validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
  
 >**¡Felicitaciones** por completar la tarea! Ahora es el momento de validarla. Aquí están los pasos:
 > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
 > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
 > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
-    <validation step="1405474b-fe74-412b-a221-8c7fe07c7762" />
+<validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
 
 # Laboratorio 3.2: Explorar y Verificar la interfaz de usuario de Miyagi y el servicio de Recomendación contenedorizados en AKS
 
@@ -307,3 +307,5 @@ Podrás completar las siguientes tareas:
 ### Resumen
 
 En esta práctica de laboratorio, implementó Azure Kubernetes Service (AKS) tanto para la interfaz de usuario de Miyagi como para el servicio de Recomendación de Miyagi. Comenzó con la construcción de imágenes de Docker para estos servicios, que contienen todos los componentes necesarios como el código y los archivos de configuración. Después de la creación de la imagen, el siguiente paso consistió en enviar la imagen Docker del servicio de Recomendación a Azure Container Registry, una plataforma de almacenamiento e implementación para clústeres de Kubernetes. Finalmente, se implementaron pods de AKS, que representan contenedores en ejecución dentro del clúster de Kubernetes, lo que hizo que la interfaz de usuario y el servicio de Recomendación de Miyagi estuvieran operativos.
+
+### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.

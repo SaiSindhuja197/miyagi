@@ -30,7 +30,7 @@ Podrás completar las siguientes tareas:
 
 1. Dentro del **Explorador de Archivos**, navegue hasta **C:\LabFiles\miyagi** seleccione **miyagi** **(1)** y haga clic en **Seleccionar carpeta (2)**
 
-   ![](./Media/image-rg(003).png)
+   ![](./Media/select-miyagi-folder.png)
 
 1. En **Visual Studio Code**, haga clic en **Sí, confío en los autores** cuando se le solicite en la ventana **¿Confía en los autores de los archivos de esta carpeta?**.
 
@@ -196,7 +196,9 @@ Podrás completar las siguientes tareas:
 
     ![](./Media/ai-search1.png)    
 
-1. En la pestaña **Azure AI services | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. En la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+
+   ![](./Media/select-ai-search-service.png)
 
 1. En la pestaña **acs-<inject key="DeploymentID" enableCopy="false"/>** del servicio Search, haga clic en **Índices** **(1)** en Administración de búsquedas y revise que **miyagi-embeddings** **(2)** ha sido creado.   
 
@@ -204,12 +206,12 @@ Podrás completar las siguientes tareas:
 
    > **Nota**: Por favor haga clic en el botón Actualizar mientras ve el **Recuento de Documentos**.
 
-   >**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
-   > - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
-   > - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
-   > - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
+>**¡Felicitaciones** por completar la Tarea! Ahora es el momento de validarla. Aquí están los pasos:
+> - Pulse el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, ha validado correctamente el laboratorio.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio. 
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com.
 
-   <validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
+<validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
    
 ### Tarea 6: Explorar la Aplicación Miyagi y el servicio de Recomendación mediante Personalización
 
@@ -219,15 +221,15 @@ Podrás completar las siguientes tareas:
 
 1. En la página **Personalize**, seleccione su **asesor financiero** en el menú desplegable y haga clic en **Personalize**.
 
-   ![](./Media/financial-advisor.png)  
+    ![](./Media/financial-advisor.png)  
 
 1. Debería ver las recomendaciones del servicio de recomendación en el widget Top Stocks.
 
-   ![](./Media/financial-advisor-output.png) 
+    ![](./Media/financial-advisor-output.png) 
 
 1. Navegue a **Visual Studio Code** y haga clic en **dotnet** desde la terminal, puede revisar los registros.
 
-   ![](./Media/terminal-output.png)    
+    ![](./Media/terminal-output.png)    
 
 1. Una vez que revise los registros, presione **Ctrl + C** para detener la página **swagger UI**.
 
@@ -238,3 +240,5 @@ Podrás completar las siguientes tareas:
 ## Resumen
 
 En esta práctica de laboratorio, comenzó con la configuración de la Aplicación Miyagi para su preparación operativa, seguido de una exploración detallada de la implementación del servicio de Recomendación. La ejecución práctica implica ejecutar el servicio de Recomendación e implementar el frontend Miyagi localmente para realizar pruebas. Mejorar la eficiencia de la recuperación de datos es un paso fundamental que se logra mediante la persistencia de embeddings en Azure AI Search. El proyecto concluye con una amplia exploración de la Aplicación Miyagi y el servicio de Recomendación, priorizando una experiencia de usuario personalizada. Este enfoque sistemático garantiza una comprensión profunda y una implementación efectiva durante todo el proyecto.
+
+### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
