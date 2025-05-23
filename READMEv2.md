@@ -36,4 +36,4 @@ Este taller está diseñado para:
 
 ### Flujo de aprendizaje en contexto
 
-  ![round-trip](./assets/images/sk-round-trip.png)
+  ![round-trip](./assets/images/sk-round-trip-1.png)
