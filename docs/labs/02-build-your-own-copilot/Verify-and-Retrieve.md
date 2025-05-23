@@ -1,5 +1,7 @@
 # Laboratorio 1 - Verificar y Recuperar los valores de los Recursos de Azure (opcional)
 
+### Duración estimada: 20 minutos
+
 En esta tarea, se verifican y recuperan valores específicos, incluidos el punto de conexión, la cadena de conexión y la clave para los recursos designados.
 
    - Azure OpenAI : **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** 
@@ -86,4 +88,7 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
      ![](./Media/blob-storage-endpoint.png)
 
-1. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+## Resumen
+En este laboratorio, verificará y recuperará valores de configuración como el punto de conexión, la cadena de conexión y la clave para diversos recursos de Azure, como OpenAI Service, Cosmos DB y Cognitive Search. Esto garantiza una configuración y conectividad correctas. Los pasos implican acceder al Portal de Azure, navegar a grupos de recursos específicos y verificar los valores requeridos.
+
+### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
