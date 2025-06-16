@@ -29,10 +29,8 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
 
 1. Run the following command to log in to the Azure portal.
 
-   > **Note**: replace [ClusterName] with **<inject key="aksname" enableCopy="true"/>** and [ResourceGroupName] with **<inject key="rgname" enableCopy="true"/>**
-
    ```
-   az aks get-credentials -n [ClusterName] -g [ResourceGroupName]
+   az aks get-credentials -n <inject key="aksname" enableCopy="true"/> -g <inject key="rgname" enableCopy="true"/>
    ```
 
    >**Important**: The command az aks get-credentials -n [ClusterName] -g [ResourceGroupName] is used in Azure's command-line interface (CLI) to retrieve and merge the Kubernetes configuration files for a specified Azure Kubernetes Service (AKS) cluster into the local kubeconfig file.
@@ -127,9 +125,9 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
     ![](./Media/miyagi-image35.png)
 
-1. Click on **3000:3000** URL link
+1. Click on the URL link: **http://localhost:3000**
 
-    ![](./Media/miyagi-image36.png)
+    ![](./Media/aks-02-0.png)
    
 1. You should be able to see the application running locally
    
@@ -200,53 +198,43 @@ In this task, you'll Push Miyagi-recommendation images to acr.
    ![](./Media/azure-account-select.png)
 
 1. Run the following command to log in to an **Azure Container Registry (ACR)** using the Azure CLI.
-
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrUsername" enableCopy="true"/>**.
    
    ```
-   az acr login -n [ACRname] 
+   az acr login -n <inject key="AcrUsername" enableCopy="true"/> 
    ```
 
-   >**Note**: The command az acr login -n [ACRname] logs you into an Azure Container Registry (ACR) instance. It authenticates your session with the specified Azure Container Registry, allowing you to push and pull container images to and from the registry.
+   >**Note**: The command az acr login -n <inject key="AcrLoginServer" enableCopy="true"/> logs you into an Azure Container Registry (ACR) instance. It authenticates your session with the specified Azure Container Registry, allowing you to push and pull container images to and from the registry.
     
 1. Run the following command to add the tag.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest
+   docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
-   >**Note**: The command docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest tags a local Docker image with a new name that includes the Azure Container Registry (ACR) name. By tagging the image this way, you prepare it to be pushed to the specified Azure Container Registry.
+   >**Note**: The command docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest tags a local Docker image with a new name that includes the Azure Container Registry (ACR) name. By tagging the image this way, you prepare it to be pushed to the specified Azure Container Registry.
 
 1. Run the following command to push the image to the container registry.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker push [ACRname]/miyagi-recommendation:latest
+   docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
    ![](./Media/task2-6.png)
 
-   >**Note**: The command docker push [ACRname]/miyagi-recommendation:latest uploads the specified Docker image, which has been tagged with the Azure Container Registry (ACR) name, to the ACR. This makes the image available in the ACR for deployment and use in various Azure services.
+   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest uploads the specified Docker image, which has been tagged with the Azure Container Registry (ACR) name, to the ACR. This makes the image available in the ACR for deployment and use in various Azure services.
    
 1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrated Terminal**.
 
 1. Run the following command to add the tag.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker tag miyagi-ui:latest [ACRname]/miyagi-ui:latest
+   docker tag miyagi-ui:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-ui:latest
    ```
 
 1. Run the following command to push the image to the container registry.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker push [ACRname]/miyagi-ui:latest
+   docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-ui:latest
    ```
 
 ### Task 5: Deploy AKS Pods

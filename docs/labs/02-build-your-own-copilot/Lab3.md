@@ -82,9 +82,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image62.png)
 
-1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **api-key** **(4)** hit enter and click on **Create** **(5)**.
+1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **Azure OpenAI Service API** **(4)** hit enter and click on **Create** **(5)**.
 
-   ![](./Media/4.png)
+   ![](./Media/aks098.png)
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, from the left navigation pane under **APIs** select **Subscriptions** **(1)**  then lick on **+ Add subscription** **(2)**.
 
@@ -94,7 +94,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
    ![](./Media/miyagi-image64.png)
 
-1. Once the subscription is **AOAI Test** created click the **three dots** **(1)** next to **AOAI Test** and then click **Show/hide keys** **(2)**. Copy the **Primary subscription** **(3)** key and save it for later.
+1. Once the subscription is **AOAI Test** created click the **three dots** **(1)** next to **AOAI Test** and then click **Show/hide keys** **(2)**. Copy the **Primary key** **(3)** key and save it for later.
 
    ![](./Media/miyagi-image(65).png)
 
@@ -102,9 +102,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, select **Access control (IAM)** **(1)**, click on **+ Add** **(2)**, and select **Add role assignment** **(3)**.
 
-    ![](./Media/miyagi-image66.png)
+    ![](./Media/aksiam.png)
    
-1. In **Add role assignment** tab in the search bar search and select **Cognitive Services User (1) (2)** and click on **Next (3)**.
+1. In the **Add role assignment** tab, search for **Cognitive Services User (1)** in the search bar, select **Cognitive Services User (2)**, and click on **Next (3)**.
 
     ![](./Media/apinew3.png)
 
@@ -122,9 +122,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. Navigate back to **API Management service** in the Azure Portal, select the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service.
     
-1. In the **API Management service**, select **APIs** **(1)**, select the **api-key** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policies </>** **(4)** under **Inbound processing**.
+1. In the **API Management service**, select **APIs** **(1)**, select the **Azure OpenAI Service API** **(2)** API created in the earlier step, select **All Operations** **(3)** and click on **Policies </>** **(4)** under **Inbound processing**.
 
-    ![](./Media/pg6-18.png)
+    ![](./Media/api9808.png)
 
 1. In the code editor copy the below policy to overwrite the **inbound** **(1)** tags only, replace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** with **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** of API manager which you copied in Task 1 Step 4 and click on **Save** **(3)**.
 
@@ -186,32 +186,26 @@ In this lab, you'll be updating the configuration of the recommendation service,
 
 1. Run the following command to ACR login.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**, **[uname]** with **<inject key="AcrUsername" enableCopy="true"/>**, and **[password]** with **<inject key="AcrPassword" enableCopy="true"/>**.
-
     ```
-    docker login [ACRname] -u [uname] -p [password]
+    docker login <inject key="AcrLoginServer" enableCopy="true"/> -u <inject key="AcrUsername" enableCopy="true"/> -p <inject key="AcrPassword" enableCopy="true"/>
     ```
 
-    >**Note**: The command docker login [ACRname] -u [uname] -p [password] is used to authenticate your Docker client with the specified Azure Container Registry (ACR) using the provided username and password. This authentication is necessary for performing operations such as pushing and pulling container images to and from the ACR.
+    >**Note**: The command docker login <inject key="AcrLoginServer" enableCopy="true"/> -u <inject key="AcrUsername" enableCopy="true"/> -p <inject key="AcrPassword" enableCopy="true"/> is used to authenticate your Docker client with the specified Azure Container Registry (ACR) using the provided username and password. This authentication is necessary for performing operations such as pushing and pulling container images to and from the ACR.
 
 1. Run the following command to add the tag.
 
-   > **Note**: Please replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest
+   docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
-   >**Note**: The command docker push [ACRname]/miyagi-recommendation:latest uploads a Docker image from your local machine to the specified Azure Container Registry (ACR). By executing this command, you make the miyagi-recommendation:latest image available in the ACR, enabling it to be used in various deployments and services within Azure.
+   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest uploads a Docker image from your local machine to the specified Azure Container Registry (ACR). By executing this command, you make the miyagi-recommendation:latest image available in the ACR, enabling it to be used in various deployments and services within Azure.
    
 1. Once you are logged into ACR. Run the below command to push the updated docker image of the recommendation service to the container registry.
 
-   **Note**: Make sure to replace **[ACRname]** with **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker push [ACRname]/miyagi-recommendation:latest
+   docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
-   >**Note**: The command docker push [ACRname]/miyagi-recommendation:latest uploads the Docker image miyagi-recommendation:latest to the specified Azure Container Registry (ACR). This makes the image available in the ACR for use in deployments and other operations.
+   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest uploads the Docker image miyagi-recommendation:latest to the specified Azure Container Registry (ACR). This makes the image available in the ACR for use in deployments and other operations.
    
 ### Task 4: Revision of Recommendation service from AKS 
 
@@ -249,9 +243,9 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
    
 1. In the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>** Event hub Namespace tab, from the left menu select **Access control (IAM)** **(1)** , click on **+ Add** **(2)**, and select **Add role assignment** **(3)**.
 
-   ![](./Media/miyagi-image79.png)
+   ![](./Media/api9857.png)
 
-1. In the **Role** tab of the Add role assignment tab in the search bar search and select **Azure Event Hubs Data Sender (1) (2)** and click on **Next (3)**.
+1. In the **Add role assignment** tab, search for **Azure Event Hubs Data Sender (1)** in the search bar, select **Azure Event Hubs Data Sender (2)**, and click **Next (3)**.
 
    ![](./Media/miyagi-image80.png)
 
@@ -317,12 +311,10 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
     ![](./Media/azure-account-select.png)
 
 1. Run the following command to change the directory to `miyagi` root folder in the terminal and run the bicep file.
-
-    > **Note**: Replace &lt;&lt;RESOURCE_GROUP_NAME&gt;&gt; with **<inject key="rgname" enableCopy="true"/>**.
    
     ```
     cd C:\LabFiles\miyagi
-    az deployment group create --resource-group <<RESOURCE_GROUP_NAME>> --template-file .\aoai-logger.bicep
+    az deployment group create --resource-group <inject key="rgname" enableCopy="true"/> --template-file .\aoai-logger.bicep
     ```
 
      >**Note**: This command sequence navigates to the C:\LabFiles\miyagi directory containing the Bicep file and then deploys the resources defined in that file to the specified Azure resource group.
@@ -331,9 +323,9 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/lab3-t1-s1.png)
 
-1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **api-key** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **Policies (4)** editor.
+1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service for the left menu, click on **APIs** **(1)** and  Select the **Azure OpenAI Service API** **(2)** created in the earlier step, select **All Operations** **(3)** and under **outbound proccessing** click on **Policies (4)** editor.
 
-    ![](./Media/pg6-17.png)
+    ![](./Media/api4782.png)
 
 1. In the code editor copy the below policy to overwrite the **outbound** tags only and click on **Save**.
 
