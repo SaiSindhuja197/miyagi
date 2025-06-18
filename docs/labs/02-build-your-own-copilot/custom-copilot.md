@@ -75,6 +75,8 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
 
 1. Open Visual Studio Code from the LabVM Desktop and click on `File (1) > Open folder (2)`.
 
+   ![](./Media/vscode.png)
+
    ![](./Media/cp5.png)
 
 1. Select **CHAT-COPILOT (1)** and click **Select Folder (2)**.
