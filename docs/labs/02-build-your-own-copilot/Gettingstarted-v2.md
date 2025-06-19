@@ -146,9 +146,9 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
 1. **Nota:** Si no tiene la aplicación Microsoft Authenticator instalada en su dispositivo móvil:
 
-- Abra **Google Play Store** (Android) o **App Store** (iOS).
-- Busque **Microsoft Authenticator** y pulse **Instalar**.
-- Abra la aplicación **Microsoft Authenticator**, seleccione **Agregar cuenta** y luego elija **Cuenta profesional o educativa**.
+    - Abra **Google Play Store** (Android) o **App Store** (iOS).
+    - Busque **Microsoft Authenticator** y pulse **Instalar**.
+    - Abra la aplicación **Microsoft Authenticator**, seleccione **Agregar cuenta** y luego elija **Cuenta profesional o educativa**.
 
 1. Se mostrará un **código QR** en la pantalla de su computadora.
 
