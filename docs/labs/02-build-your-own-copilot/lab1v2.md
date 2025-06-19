@@ -217,19 +217,19 @@ Podrás completar las siguientes tareas:
 
 1. Vuelva a la página de la interfaz de usuario del **servicio de recomendación** y haga clic en el botón **personalize**.
 
-    ![](./Media/service-personalize.png)
+   ![](./Media/service-personalize.png)
 
 1. En la página **Personalize**, seleccione su **asesor financiero** en el menú desplegable y haga clic en **Personalize**.
 
-    ![](./Media/financial-advisor.png)  
+   ![](./Media/financial-advisor.png)  
 
 1. Debería ver las recomendaciones del servicio de recomendación en el widget Top Stocks.
 
-    ![](./Media/financial-advisor-output.png) 
+   ![](./Media/financial-advisor-output.png) 
 
 1. Navegue a **Visual Studio Code** y haga clic en **dotnet** desde la terminal, puede revisar los registros.
 
-    ![](./Media/terminal-output.png)    
+   ![](./Media/terminal-output.png)    
 
 1. Una vez que revise los registros, presione **Ctrl + C** para detener la página **swagger UI**.
 
