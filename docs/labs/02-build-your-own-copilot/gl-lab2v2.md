@@ -330,7 +330,7 @@ In this task, you will verify the Recommendation Service using Swagger by access
 
    ![](./Media/gg-4-1.png)
 
-   > **Note**: If you don't see endpoints, open Azure Cloud Shell and run the following command. Replace `<app-name>` with your container app name and `<resource-group>` with your resource group name:
+   > **Note**: If you don't see endpoints, open Azure Cloud Shell and run the following command.
 
    > **Note**: Please replace **[DID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
 
