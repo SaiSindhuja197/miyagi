@@ -41,7 +41,7 @@ The architecture for this lab involves several key components:
 
 # Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
    ![](../docs/labs/02-build-your-own-copilot/Media/gg-0-1.png)
  
@@ -70,6 +70,12 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
     >If you face any issue, the WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL. Click on the **Restart** Button.
   
      ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
+
+   >**Note:** If you still encounter the **WSL update failed** error, click **Quit**, then open **PowerShell** as an administrator and run the following command:
+   >
+   > ```powershell
+   > wsl --update
+   > ```
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
