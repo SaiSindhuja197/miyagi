@@ -55,7 +55,7 @@ The architecture for this lab involves several key components:
  
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+![](../docs/labs/02-build-your-own-copilot/Media/gg-0-2.png)
  
 ## Login to the Azure Portal
 
