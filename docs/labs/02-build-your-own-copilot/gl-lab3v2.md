@@ -96,7 +96,7 @@ In this task, you will update the Recommendation Service configuration to access
     dotnet run
      ```
 
-    **Note**: Let the command run, meanwhile, you can proceed with the next step.
+    **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, in the browser window, paste the following link
 
@@ -104,7 +104,7 @@ In this task, you will update the Recommendation Service configuration to access
    http://localhost:5224/swagger/index.html 
    ```
 
-   **Note**: Refresh the page continuously until you get the swagger page for the recommendation service as depicted in the image below.
+   **Note**: Refresh the page continuously until you get the Swagger page for the recommendation service as depicted in the image below.
 
    ![](./Media/miyagi2.png)
 
@@ -139,7 +139,7 @@ In this task, you will verify that the Recommendation Service successfully acces
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile, you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -147,7 +147,7 @@ In this task, you will verify that the Recommendation Service successfully acces
    http://localhost:4001
    ```
 
-   **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
+   **Note**: Refresh the page continuously until you get the Miyagi app running locally as depicted in the image below.
                        
    ![](./Media/b1.png)
 
@@ -159,7 +159,7 @@ In this task, you will verify that the Recommendation Service successfully acces
 
    ![](./Media/financial-advisor-output.png) 
 
-1. Navigate to the **Visual Studio Code**, and click on **dotnet** from the terminal, you can go through the logs.
+1. Navigate to the **Visual Studio Code**, and click on **dotnet** from the terminal, and you can go through the logs.
 
    ![](./Media/recommend-log.png)
 
