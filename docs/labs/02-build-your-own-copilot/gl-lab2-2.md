@@ -105,7 +105,7 @@ In this task, you will verify the Recommendation service running in the Containe
 
       ![](./Media/recomme-parameter-body.png)
 
-1. In the **Miyagi Recommendations** page, Scroll down to the Responses session review that it has been executed successfully by checking the code status is **200**, and review the **Response body** section.
+1. In the **Miyagi Recommendations** page, scroll down to the Responses session review that it has been executed successfully by checking the code status is **200**, and review the **Response body** section.
 
    ![](./Media/recommendations-parameter-output.png)
 
@@ -147,7 +147,7 @@ In this task, you will access the Recommendation Service running on Azure Contai
    http://localhost:4001
    ```
 
-    > **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
+    > **Note**: Refresh the page continuously until you get the Miyagi app running locally as depicted in the image below.
                        
     ![](./Media/b1.png)
 
