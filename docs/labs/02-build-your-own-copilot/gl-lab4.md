@@ -34,11 +34,11 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
     ![](./Media/data1.png)  
 
-1. Select the **Keys and Endpoints (1)** from the left pane. Copy the **Key1 (2)** and **Endpoint (3)** the store them in Notepad.
+1. Select the **Keys and Endpoints (1)** from the left pane. Copy the **Key1 (2)** and **Endpoint (3)**, the store them in Notepad.
    
     ![](./Media/data2.png)
 
-   > **Note**: If you dont see the Left side Navigation pane, click on the **three horizontal line** in the top left corner.
+   > **Note**: If you don't see the Left side Navigation pane, click on the **three horizontal lines** in the top left corner.
 
    ![](./Media/data3.png) 
 
@@ -54,7 +54,7 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
     
     ![](./Media/deploy-name.png)
 
-    > **Note**: Click on the **Expand** button, if you dont see the left side navigation pane.         
+    > **Note**: Click on the **Expand** button, if you don't see the left side navigation pane.         
 
 ### Task 2: Cloning the Chat-Copilot GitHub Repo
 
@@ -64,7 +64,7 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
 
     ![](./Media/data5.png)  
    
-1. Navigate to the directory `C:/Users/azureuser` by running the below command.
+1. Navigate to the directory `C:/Users/azureuser` by running the command below.
  
    ``` 
    cd C:/Users/azureuser
@@ -86,7 +86,7 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
 
    ![](./Media/ch4.png)
 
-   > **Note**: If the pop up appears for **Do you trust the authors of the file in this folder**, click on **Yes, I trust the authors.**   
+   > **Note**: If the pop-up appears for **Do you trust the authors of the file in this folder?**, click on **Yes, I trust the authors.**   
 
 ### Task 3: Setting up the Environment
 
@@ -96,7 +96,7 @@ In this task, you will set up the environment for the Chat-Copilot project by in
 
    ![](./Media/data5.png)
 
-1. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
+1. Set up your environment by navigating to the scripts directory of chat-copilot using the command:
 
    ``` 
    cd C:\Users\azureuser\chat-copilot\scripts\
@@ -140,12 +140,12 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    ```
    > **Note:** It may take a few minutes for Yarn packages to install on the first run.
  
-1. Open another tab in **Edge**, in the browser window paste the following link, and you should see a confirmation message: `Healthy`.
+1. Open another tab in **Edge**, in the browser window, paste the following link, and you should see a confirmation message: `Healthy`.
  
    ```powershell
    http://localhost:40443/healthz
    ```
-   > **Note:** Don't close the PowerShell window keep it running up.
+   > **Note:** Don't close the PowerShell window, keep it running up.
   
      ![](./Media/data9.png)
     
@@ -165,7 +165,7 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
    ```
  
-1. The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic. If promted **Do you want to change the execution policy?,** enter **A** and hit **Enter**.
+1. The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic. If prompted **Do you want to change the execution policy?,** enter **A** and hit **Enter**.
  
 1. Configure **Chat Copilot** by running the following command.
  
@@ -173,9 +173,9 @@ In this task, you will configure and run the Chat Copilot app locally by setting
    .\Start-Frontend.ps1
    ```
 
-1. Once the deployment of the script is executed successfully it will redirect to `http://localhost:3000/` Chat CoPilot in **Edge** browser.
+1. Once the deployment of the script is executed successfully, it will redirect to `http://localhost:3000/` Chat CoPilot in **Edge** browser.
  
-   >**Note:** Please wait for 2-3 mins for the browser to load
+   >**Note:** Please wait for 2-3 minutes for the browser to load
   
 1. You will get an output similar to this for the frontend:
 
@@ -204,7 +204,7 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
     ![](./Media/data13.png)  
 
-1. Navigate to C:\Labfiles\Documents to upload the 3 pdfs. Select the 3 files and click **Open.**
+1. Navigate to C:\Labfiles\Documents to upload the 3 PDFs. Select the 3 files and click **Open.**
 
     ![](./Media/ch10.png)
 
@@ -236,4 +236,4 @@ In this lab, you have accomplished the following:
 - Ran the Chat Copilot app locally for testing purposes.  
 - Interacted with your documents within the Chat Copilot app.  
 
-### You have succesfully completed the lab
+### You have successfully completed the lab
