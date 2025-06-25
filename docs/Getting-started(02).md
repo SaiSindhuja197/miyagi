@@ -10,8 +10,8 @@ In this lab, you will containerize the Recommendation service and deploy it to A
 
 Learn how to containerize the Recommendation service and deploy it to Azure Container Apps for scalable and consistent cloud-based operations. By the end of this lab, you will be able to:
 
-- **Verify and Retrieve the values of Azure Resources**: This hands-on exercise aims to verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
-- **Containerizing Recommendation service to Azure Container Apps** : This hands-on exercise aims to containerize and deploy the Recommendation service to Azure Container Apps, creating Docker images, pushing them to Azure Container Registry (ACR), and verifying the deployment for scalability and accessibility. 
+- **Verify and Retrieve the values of Azure Resources**: This hands-on exercise aims to verify and retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
+- **Containerizing Recommendation service to Azure Container Apps**: This hands-on exercise aims to containerize and deploy the Recommendation service to Azure Container Apps, creating Docker images, pushing them to Azure Container Registry (ACR), and verifying the deployment for scalability and accessibility. 
 - **Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI**: This hands-on exercise aims to explore and verify the containerized Recommendation service deployed in Azure Container Apps by integrating it with the local Miyagi UI, ensuring seamless functionality and validating service endpoints.
   
 ## Pre-requisites
@@ -44,7 +44,7 @@ The architecture for this lab involves several key components:
 
 # Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), and use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
    ![](../docs/labs/02-build-your-own-copilot/Media/ggg-0-1.png)
  
@@ -56,7 +56,7 @@ The architecture for this lab involves several key components:
 
 ## Lab Guide Zoom In/Zoom Out
  
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
 ![](../docs/labs/02-build-your-own-copilot/Media/gg-0-2.png)
  
@@ -70,7 +70,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
       ![](../docs/labs/02-build-your-own-copilot/Media/err.png)
   
-    >If you face any issue, the WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
+    >If you face any issue, the WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on the **Restart** Button.
   
      ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
 
