@@ -8,8 +8,8 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
 In this lab, you will complete the following tasks:
 
-- Task 1: Set up configuration for miyagi app
-- Task 2: Run miyagi frontend locally
+- Task 1: Set up configuration for Miyagi app
+- Task 2: Run Miyagi frontend locally
 - Task 3: Persist embeddings in Azure AI Search
 - Task 4: Build Docker Images for the Recommendation Service
 - Task 5: Push the Docker Image of the Recommendation service to the Container registry
@@ -19,7 +19,7 @@ In this lab, you will complete the following tasks:
 
 ### Duration: 60 minutes
 
-## Task 1: Set up configuration for miyagi app
+## Task 1: Set up configuration for Miyagi app
 
 In this task, you will set up the configuration for the Miyagi app by installing dependencies, configuring environment variables, and preparing the database for local development.
 
@@ -103,12 +103,12 @@ In this task, you will set up the configuration for the Miyagi app by installing
    http://localhost:5224/swagger/index.html 
    ```
 
-   **Note**: Refresh the page continuously until you get the swagger page for the recommendation service as depicted in the image below.
+   **Note**: Refresh the page continuously until you get the Swagger page for the recommendation service as depicted in the image below.
 
    ![](./Media/miyagi2.png)
 
 
-## Task 2: Run miyagi frontend locally
+## Task 2: Run Miyagi frontend locally
 
 In this task, you will run the Miyagi frontend locally by starting the development server and verifying the user interface for functionality and interaction.
 
@@ -124,7 +124,7 @@ In this task, you will run the Miyagi frontend locally by starting the developme
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile, you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -132,7 +132,7 @@ In this task, you will run the Miyagi frontend locally by starting the developme
    http://localhost:4001
    ```
 
-   **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
+   **Note**: Refresh the page continuously until you get Miyagi app running locally as depicted in the image below.
                        
    ![](./Media/b1.png)
    
@@ -176,7 +176,7 @@ In this task, you will persist embeddings in Azure AI Search by configuring the 
 
     > **Note**: Please click on the refresh button till you view the **Document Count**.
 
-1. once you viewed the indexes in AI Search, Navigae back to VS Code and  press **Ctrl + C** to stop the **swagger UI** page for node terminal.
+1. Once you have viewed the indexes in AI Search, navigate back to VS Code and  press **Ctrl + C** to stop the **swagger UI** page for the node terminal.
 
 1. From the **Terminal** select **dotnet** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
@@ -188,7 +188,7 @@ In this task, you will build Docker images for the Recommendation service by cre
 
    ![](./Media/docker1.png)
 
-    > **Note**: If docker desktop is already opened then proceed with step 4.
+    > **Note**: If Docker Desktop is already opened, then proceed with step 4.
    
 1. In the **Docker Subscription Service Agreement** window, click **Accept**.
 
@@ -290,9 +290,9 @@ In this task, you'll Push miyagi-recommendation images to acr.
 
 ## Task 6: Create a Container app for recommendation-service 
 
-In this task, you'll will be creating a container app for the recommendation.
+In this task, you'll be creating a container app for the recommendation.
 
-1. Run the following command to create **Container App environment**.
+1. Run the following command to create a **Container App environment**.
 
    > **Note**: Please replace **[DID]** with **<inject key="DeploymentID" enableCopy="true"/>** and **[Region]** with **<inject key="Region" enableCopy="true"/>**.
 
@@ -332,7 +332,7 @@ In this task, you will verify the Recommendation Service using Swagger by access
 
    ![](./Media/miyag-recc-web.png)
 
-1. You can view the **miyagi Recommendation service** website running through the Container Apps.
+1. You can view the **Miyagi Recommendation service** website running through the Container Apps.
 
    ![](./Media/online-output-recommendation.png)   
 
@@ -344,19 +344,19 @@ In this task, you will provision the API Management Service by creating an insta
 
 1. Click on **Create**.
 
-1. Provide the values as following and click on **Review + Create** and again **Create.**
+1. Provide the values as follows and click on **Review + Create** and again **Create.**
 
-   - Subscription : default selected subscription
-   - Resource Group : **miyagi-rg-<inject key="DeploymentID" enableCopy="true"/>**
-   - Region : **<inject key="Region" enableCopy="true"/>**
-   - Resource Name : **miyagi-apim-<inject key="DeploymentID" enableCopy="true"/>**
-   - Organization Name : **contoso**
-   - Administrator Email : **<inject key="AzureAdUserEmail" enableCopy="true"/>**
-   - Pricing Tier : **Basic (99.95% SLA)**
+   - Subscription: default selected subscription
+   - Resource Group: **miyagi-rg-<inject key="DeploymentID" enableCopy="true"/>**
+   - Region: **<inject key="Region" enableCopy="true"/>**
+   - Resource Name: **miyagi-apim-<inject key="DeploymentID" enableCopy="true"/>**
+   - Organization Name: **contoso**
+   - Administrator Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
+   - Pricing Tier: **Basic (99.95% SLA)**
 
       ![](./Media/api-management-prov.png)
 
-   >**Note**: Please Continue with the next step as the deployment will take around 20-30 minutes to complete. 
+   >**Note**: Please continue with the next step as the deployment will take around 20-30 minutes to complete. 
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
 
