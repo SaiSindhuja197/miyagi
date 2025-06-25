@@ -69,11 +69,11 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
    ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image1.png)
 
-   >**Note:** If you encounter WSL Update failed error in the Docker Desktop application, click on **Quit** and reopen the Docker Desktop application from the Desktop.
+   >**Note:** If you encounter the WSL Update failed error in the Docker Desktop application, click on **Quit** and reopen the Docker Desktop application from the Desktop.
    
       ![](../docs/labs/02-build-your-own-copilot/Media/err.png)
   
-    >If you face any issue A WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
+    >If you face any issue, the WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL. Click on the **Restart** Button.
   
      ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
 
