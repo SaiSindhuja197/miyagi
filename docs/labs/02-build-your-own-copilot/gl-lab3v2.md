@@ -17,7 +17,7 @@ In this lab, you will complete the following tasks:
 
 In this task, you will verify the API Management Service and create an API with operations by defining endpoints, setting policies, and testing the functionality to ensure proper integration and management of your APIs.
 
-1. Navigate to Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
+1. Navigate to the Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
    ![](./Media/lab3-t1-s1.png)
 
@@ -61,7 +61,7 @@ In this task, you will verify the API Management Service and create an API with 
 
    ![](./Media/opertation-embeddings.png)
 
-1. Once the **embeddings** operation created successfully, click on **Overview** page, and copy the **Gateway URL** paste the Gateway URL into a notepad you need this in upcoming task.
+1. Once the **embeddings** operation is created successfully, click on the **Overview** page, and copy the **Gateway URL** Paste the Gateway URL into a notepad; you need this in the  upcoming task.
 
    ![](./Media/gateway-url.png)
 
@@ -81,7 +81,7 @@ In this task, you will update the Recommendation Service configuration to access
 
       ![](./Media/lab3-t2-s1.png)
 
-1. In the `appsettings.json` file, you have to replace the **endpoint** value from **OpenAI resource endpoint** to **API Gateway URL** which you have copied in Task-1 Step-7 and press Ctrl + S to save the file.
+1. In the `appsettings.json` file, you have to replace the **endpoint** value from **OpenAI resource endpoint** to **API Gateway URL**, which you have copied in Task-1 Step-7, and press Ctrl + S to save the file.
 
       ![](./Media/lab3-t2-s2.png)
 
@@ -96,9 +96,9 @@ In this task, you will update the Recommendation Service configuration to access
     dotnet run
      ```
 
-    **Note**: Let the command run, meanwhile you can proceed with the next step.
+    **Note**: Let the command run, meanwhile, you can proceed with the next step.
 
-1. Open another tab in Edge, in the browser window paste the following link
+1. Open another tab in Edge, in the browser window, paste the following link
 
    ```
    http://localhost:5224/swagger/index.html 
@@ -119,7 +119,7 @@ In this task, you will update the Recommendation Service configuration to access
 
 In this task, you will verify that the Recommendation Service successfully accesses Azure OpenAI through API Management by testing the API calls and ensuring that responses are correctly received and processed.
 
-1. Navigate to **Miyagi** **(1)** folder, open **ui/typescript** **(2)** folder and then open `.env` file. Replace the existing code for **NEXT_PUBLIC_RECCOMMENDATION_SERVICE_URL** with the below provided URL and then save the file.
+1. Navigate to **Miyagi** **(1)** folder, open **ui/typescript** **(2)** folder and then open `.env` file. Replace the existing code for **NEXT_PUBLIC_RECOMMENDATION_SERVICE_URL** with the below provided URL and then save the file.
 
    ```
    http://localhost:5224
@@ -139,7 +139,7 @@ In this task, you will verify that the Recommendation Service successfully acces
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run, meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -163,7 +163,7 @@ In this task, you will verify that the Recommendation Service successfully acces
 
    ![](./Media/recommend-log.png)
 
-1. From the Terminal select Node terminal, press Ctrl + C to stop the recommendation service ui page. Now, click on Next from the lower right corner to move to the next page.
+1. From the Terminal, select Node terminal, press Ctrl + C to stop the recommendation service ui page. Now, click on Next from the lower right corner to move to the next page.
 
  ## Summary
  
