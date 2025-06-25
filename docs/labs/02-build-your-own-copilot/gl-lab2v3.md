@@ -8,10 +8,10 @@ In this Lab, you'll explore the process of containerizing a recommendation servi
 
 In this lab, you will complete the following tasks:
 
-- Task 1: Setup configuration for miyagi app
+- Task 1: Set up configuration for miyagi app
 - Task 2: Run miyagi frontend locally
 - Task 3: Persist embeddings in Azure AI Search
-- Task 4: Build Docker Images for the Recommendation service
+- Task 4: Build Docker Images for the Recommendation Service
 - Task 5: Push the Docker Image of the Recommendation service to the Container registry
 - Task 6: Create a Container app for recommendation-service
 - Task 7: Verify Recommendation Service using Swagger
@@ -19,7 +19,7 @@ In this lab, you will complete the following tasks:
 
 ### Duration: 60 minutes
 
-## Task 1: Setup configuration for miyagi app
+## Task 1: Set up configuration for miyagi app
 
 In this task, you will set up the configuration for the Miyagi app by installing dependencies, configuring environment variables, and preparing the database for local development.
 
@@ -39,15 +39,15 @@ In this task, you will set up the configuration for the Miyagi app by installing
 
    ![](./Media/image-rg(003).png)
 
-1. In **Visual Studio Code**, click on **Yes, I trust the authors** when **Do you trust the authors of the files in this folder?** window prompted.
+1. In **Visual Studio Code**, click on **Yes, I trust the authors** when the **Do you trust the authors of the files in this folder?** window prompted.
 
    ![](./Media/image-rg-18.png) 
    
-1. Expand **miyagi>ui** directory and verify that **.env.** file is present. 
+1. Expand **miyagi>ui** directory and verify that **.env.** The file is present. 
 
 1. Expand **miyagi/services/recommendation-service/dotnet** directory and verify that **appsettings.json** file is present.
   
-1. In the **appsettings.json** file replace the following values for the variables below.
+1. In the **appsettings.json** file, replace the following values for the variables below.
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
@@ -62,15 +62,15 @@ In this task, you will set up the configuration for the Miyagi app by installing
    | bingApiKey                   | **<inject key="Bing_API_KEY" enableCopy="true"/>**           |
    | cosmosDbConnectionString     | **<inject key="CosmosDBconnectinString" enableCopy="true"/>** |
    
-   > **Note**: FYI, the above values/Keys/Endpoints/ConnectionString of Azure Resources are directly injected to labguide. Leave default settings for "cosmosDbContainerName": "recommendations" and "logLevel": "Trace".
+   > **Note**: FYI, the above values/Keys/Endpoints/ConnectionString of Azure Resources are directly injected into the lab guide. Leave default settings for "cosmosDbContainerName": "recommendations" and "logLevel": "Trace".
 
       ![](./Media/appsetting-update.png)
    
-1. Once after updating the values kindly save the file by pressing **CTRL + S**.
+1. Once after updating the values, kindly save the file by pressing **CTRL + S**.
 
 1. Navigate to **miyagi/sandbox/usecases/rag/dotnet** and verify **.env** file is present.
   
-1. In the **.env** file replace the following values for the variables below.
+1. In the **.env** file, replace the following values for the variables below.
 
    | **Variables**                          | **Values**                                            |
    | ---------------------------------------| ------------------------------------------------------|
@@ -83,7 +83,7 @@ In this task, you will set up the configuration for the Miyagi app by installing
    
    ![](./Media/env1new.png)
 
-1. Once after updating the values kindly save the file by pressing **CTRL + S**.
+1. Once after updating the values, kindly save the file by pressing **CTRL + S**.
 
 1. Open a new terminal: by navigating **miyagi/services/recommendation-service/dotnet** and right-click on in cascading menu select **Open in Integrated Terminal**.
 
@@ -95,9 +95,9 @@ In this task, you will set up the configuration for the Miyagi app by installing
     dotnet run
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
-1. Open another tab in Edge, in the browser window paste the following link
+1. Open another tab in Edge, in the browser window, paste the following link
 
    ```
    http://localhost:5224/swagger/index.html 
@@ -124,7 +124,7 @@ In this task, you will run the Miyagi frontend locally by starting the developme
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run, meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -160,7 +160,7 @@ In this task, you will persist embeddings in Azure AI Search by configuring the 
 
       ![](./Media/swaggerUI-Execution.png)
       
-1. In the **swagger UI** page, Scroll down to the **Responses** session review that it has been executed successfully by checking the code status is **200**.
+1. In the **swagger UI** page, scroll down to the **Responses** section, review that it has been executed successfully by checking the code status is **200**.
 
     ![](./Media/swaggerUI-Responses.png)
 
@@ -180,7 +180,7 @@ In this task, you will persist embeddings in Azure AI Search by configuring the 
 
 1. From the **Terminal** select **dotnet** terminal, press **Ctrl + C** to stop the **recommendation service** ui page.
 
-## Task 4: Build Docker Images for the Recommendation service
+## Task 4: Build Docker Images for the Recommendation Service
 
 In this task, you will build Docker images for the Recommendation service by creating a Dockerfile and using it to package the application for consistent deployment.
 
@@ -200,7 +200,7 @@ In this task, you will build Docker images for the Recommendation service by cre
 
 1. In the **Tell us about the work you do** window, click on **Skip**.
 
-1. In the VS code, navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in Integrated Terminal**.
+1. In VS code, navigate to **miyagi/services/recommendation-service/dotnet**, right-click on dotnet in the cascading menu, and select **Open in Integrated Terminal**.
 
 1. Run the following command to build a **Docker image**.
 
@@ -228,7 +228,7 @@ In this task, you will build Docker images for the Recommendation service by cre
 
    ![](./Media/docker13.png)
 
-1. In the **Run a new container** window select the dropdown arrow.
+1. In the **Run a new container** window, select the dropdown arrow.
 
    ![](./Media/docker14-(1).png)
 
