@@ -10,7 +10,7 @@ In this Lab, verification and retrieval of specific values, including End Point,
 
 1. To verify the deployment model names for "**deploymentOrModelId**" and "**embeddingDeploymentOrModelId**" follow the below steps:
    
-      - In Azure Portal, click on **Resource groups** from the Navigate panel.
+      - In the Azure Portal, click on **Resource groups** from the Navigate panel.
 
       - From the Resource groups page, click on **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -48,7 +48,7 @@ In this Lab, verification and retrieval of specific values, including End Point,
      
       ![](./Media/gg-1-8.png)
 
-1. To verify the values for  "azureCognitiveSearchEndpoint", "azureCognitiveSearchApiKey", follow the steps below:
+1. To verify the values for  "azureCognitiveSearchEndpoint" and "azureCognitiveSearchApiKey", follow the steps below:
    
    - Navigate back to **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 
