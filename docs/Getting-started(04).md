@@ -39,9 +39,9 @@ The architecture for this lab involves several key components:
 
 # Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartedpagenew1-v2.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/gg4-0-1.png)
  
 1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
@@ -51,9 +51,9 @@ The architecture for this lab involves several key components:
 
 ## Lab Guide Zoom In/Zoom Out
  
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+![](../docs/labs/02-build-your-own-copilot/Media/gg-0-2.png)
  
 ## Login to the Azure Portal
 

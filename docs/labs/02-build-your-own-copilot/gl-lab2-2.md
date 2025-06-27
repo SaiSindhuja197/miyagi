@@ -1,4 +1,4 @@
-# Lab 2 : Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
+# Lab 2: Explore and Verify the Containerized Recommendation service in Azure Container App using Local Miyagi UI
 
 ### Estimated Duration: 60 minutes
 
@@ -26,9 +26,21 @@ In this task, you will verify the Recommendation service running in the Containe
 
    ![](./Media/container-ca-miyagi.png)
 
-1. In the **ca-miyagi-rec-<inject key="DeploymentID" enableCopy="false"/>** page, from the left navigation pane select **Ingress** **(1)** under setting session and click on **Endpoints** **(2)** URL link.
+1. In the **ca-miyagi-rec-<inject key="DeploymentID" enableCopy="false"/>** page, from the left navigation pane select **Ingress** **(1)** under Networking session and click on **Endpoints** **(2)** URL link.
 
-   ![](./Media/miyag-recc-web.png)
+   ![](./Media/gg-4-1.png)
+
+   > **Note**: If you don't see endpoints, open Azure Cloud Shell and run the following command.
+
+   > **Note**: Please replace **[DID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
+
+   > ```sh
+   > az containerapp ingress enable \
+   >   --name ca-miyagi-rec-[DID] \
+   >   --resource-group miyagi-rg-[DID] \
+   >   --type external \
+   >   --target-port 8080
+   > ```
 
 1. Navigate back to container app **ca-miyagi-rec-<inject key="DeploymentID" enableCopy="false"/>**, and click on **Log Stream** under **Monitoring** from the left menu.
 
@@ -93,7 +105,7 @@ In this task, you will verify the Recommendation service running in the Containe
 
       ![](./Media/recomme-parameter-body.png)
 
-1. In the **Miyagi Recommendations** page, Scroll down to the Responses session review that it has been executed successfully by checking the code status is **200**, and review the **Response body** section.
+1. In the **Miyagi Recommendations** page, scroll down to the Responses session review that it has been executed successfully by checking the code status is **200**, and review the **Response body** section.
 
    ![](./Media/recommendations-parameter-output.png)
 
@@ -105,7 +117,7 @@ In this task, you will verify the Recommendation service running in the Containe
 
 In this task, you will update the Container App Recommendation service URL for the Miyagi UI by modifying the configuration settings to ensure seamless integration between the front end and the service.
 
-1. Once you completed the review of the logs, click on **Ingress** **(1)** under **Settings** and copy **Endpoints** **(2)** URL link.
+1. Once you have completed the review of the logs, click on **Ingress** **(1)** under **Settings** and copy the **Endpoints** **(2)** URL link.
 
    ![](./Media/miyag-recc-web.png)
 
@@ -127,7 +139,7 @@ In this task, you will access the Recommendation Service running on Azure Contai
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -135,7 +147,7 @@ In this task, you will access the Recommendation Service running on Azure Contai
    http://localhost:4001
    ```
 
-    > **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
+    > **Note**: Refresh the page continuously until you get the Miyagi app running locally as depicted in the image below.
                        
     ![](./Media/b1.png)
 
@@ -155,7 +167,7 @@ In this task, you will access the Recommendation Service running on Azure Contai
 
     ![](./Media/continer-app-logstream.png)
 
-    > **Note**: Navigate back to VS code, from the Terminal select Node terminal, and press Ctrl + C to stop the recommendation service ui page.
+    > **Note**: Navigate back to VS Code, from the Terminal select Node terminal, and press Ctrl + C to stop the recommendation service ui page.
 
 ## Summary
 
@@ -163,7 +175,7 @@ In this lab, you have accomplished the following:
 
 - Verified the Recommendation Service by personalizing user interactions successfully.
 - Updated the Recommendation Service URL in Miyagi UI configuration.
-- Accessed the Recommendation Service from local Miyagi UI effectively.
+- Accessed the Recommendation Service from the local Miyagi UI effectively.
 
 ### You have successfully completed the lab
 

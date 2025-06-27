@@ -10,8 +10,8 @@ In this lab, you will focus on configuring the Miyagi App for operational readin
 
 This lab is designed to equip participants with hands-on experience in containerizing and deploying a Recommendation service to Azure Container Apps and verifying it using the local Miyagi UI for seamless integration and scalability.
 
-- **Verify and Retrieve the values of Azure Resources**: Verify and Retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
-- **Run Miyagi App Locally** : Configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
+- **Verify and Retrieve the values of Azure Resources**: Verify and retrieve the values to ensure the proper configuration and connectivity of the Azure resources.
+- **Run Miyagi App Locally**: Configure the Miyagi App, implement the Recommendation service, deploy the frontend locally, optimize data retrieval with Azure AI Search, and explore the app and service for a personalized user experience.
   
 ## Pre-requisites
 
@@ -41,9 +41,9 @@ The architecture for this lab involves several key components:
 
 # Getting Started with the Lab
 
-1. After the environment has been set up, your browser will load a virtual machine (JumpVM), use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
+1. After the environment has been set up, your browser will load a virtual machine (JumpVM) and use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the lab guide to switch to different exercises in the lab guide.
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/gettingstartedpagenew1-v2.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/gg-0-1.png)
  
 1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address. You can also open the Lab Guide in a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
@@ -53,9 +53,9 @@ The architecture for this lab involves several key components:
 
 ## Lab Guide Zoom In/Zoom Out
  
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-![](../docs/labs/02-build-your-own-copilot/Media/n21.png)
+![](../docs/labs/02-build-your-own-copilot/Media/gg-0-2.png)
  
 ## Login to the Azure Portal
 
@@ -63,13 +63,19 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image1.png)
 
-   >**Note:** If you encounter WSL Update failed error in the Docker Desktop application click on **Quit** and reopen the Docker Desktop application from the Desktop.
+   >**Note:** If you encounter the WSL Update failed error in the Docker Desktop application, click on **Quit** and reopen the Docker Desktop application from the Desktop.
    
       ![](../docs/labs/02-build-your-own-copilot/Media/err.png)
   
-    >If you face any issue A WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL, click on **Restart** Button.
+    >If you face any issue, the WSL distro Docker Desktop relies on has exited unexpectedly. This usually happens as a result of an external entity terminating WSL. Click on the **Restart** Button.
   
      ![](../docs/labs/02-build-your-own-copilot/Media/docker-error.png)
+
+   >**Note:** If you still encounter the **WSL update failed** error, click **Quit**, then open **PowerShell** as an administrator and run the following command:
+   >
+   > ```powershell
+   > wsl --update
+   > ```
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 

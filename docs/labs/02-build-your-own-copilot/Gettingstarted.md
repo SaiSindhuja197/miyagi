@@ -1,8 +1,8 @@
 #  Verify and Review the values of Azure Resources 
 
-### Estimated Duration : 20 minutes
+### Estimated Duration: 20 minutes
 
-In this Lab, verification, and retrieval of specific values, including End Point, Connection String, and Key for the designated resources.
+In this Lab, verification and retrieval of specific values, including End Point, Connection String, and Key for the designated resources.
 
    - Azure OpenAI : **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** 
    - Azure Cosmos DB account : **cosmos-<inject key="DeploymentID" enableCopy="false"/>**
@@ -10,15 +10,15 @@ In this Lab, verification, and retrieval of specific values, including End Point
 
 1. To verify the deployment model names for "**deploymentOrModelId**" and "**embeddingDeploymentOrModelId**" follow the below steps:
    
-      - In Azure Portal, click on **Resource groups** from the Navigate panel.
+      - In the Azure Portal, click on **Resource groups** from the Navigate panel.
 
       - From the Resource groups page, click on **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
-         ![](./Media/image-rg-1.png)
+         ![](./Media/gg-1-1.png)
 
       - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the **Overview (1)** tab select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-        ![](./Media/n1.png)
+        ![](./Media/gg-1-2.png)
 
       - In the **Overview** **(1)** page, click on **Go to Azure AI Foundry portal** (2).
 
@@ -30,7 +30,7 @@ In this Lab, verification, and retrieval of specific values, including End Point
 
           ![](./Media/n3.png)
         
-          ![](./Media/n4.png)
+          ![](./Media/gg-1-5.png)
       
       -  Navigate back to the **Deployment (1)** page
 
@@ -38,7 +38,7 @@ In this Lab, verification, and retrieval of specific values, including End Point
         
          ![](./Media/n5.png)
 
-         ![](./Media/n6.png)
+         ![](./Media/gg-1-7.png)
 
 1. To verify the values for **endpoint** and **apiKey** follow the below steps:
 
@@ -46,9 +46,9 @@ In this Lab, verification, and retrieval of specific values, including End Point
 
    -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint (1)**, verify the **KEY1 (1)** and **Endpoint (2)** 
      
-      ![](./Media/n7.png)
+      ![](./Media/gg-1-8.png)
 
-1. To verify the values for  "azureCognitiveSearchEndpoint", "azureCognitiveSearchApiKey", follow below steps:
+1. To verify the values for  "azureCognitiveSearchEndpoint" and "azureCognitiveSearchApiKey", follow the steps below:
    
    - Navigate back to **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 

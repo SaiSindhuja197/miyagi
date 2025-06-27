@@ -9,14 +9,14 @@ In this lab, the focus is on configuring the Miyagi App for operational readines
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
-- Task 1: Setup configuration for miyagi app
+- Task 1: Set up configuration for Miyagi app
 - Task 2: Understanding the implementation of the Recommendation service
-- Task 3: Run recommendation service locally
-- Task 4: Run miyagi frontend locally
+- Task 3: Run the recommendation service locally
+- Task 4: Run the Miyagi frontend locally
 - Task 5: Persist embeddings in Azure AI Search
 - Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 
-## Task 1: Setup configuration for miyagi app
+## Task 1: Set up configuration for the Miyagi app
 
 In this lab, you will configure the Miyagi app by setting up the environment, installing dependencies, and preparing the database for a seamless development experience.
 
@@ -36,15 +36,15 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
 
    ![](./Media/image-rg(003).png)
 
-1. In **Visual Studio Code**, click on **Yes, I trust the authors** when **Do you trust the authors of the files in this folder?** window prompted.
+1. In **Visual Studio Code**, click on **Yes, I trust the authors** when the **Do you trust the authors of the files in this folder?** window is prompted.
 
    ![](./Media/image-rg-18.png) 
    
-1. Expand **miyagi>ui** directory and verify that **.env.** file is present. 
+1. Expand **miyagi>ui** directory and verify that **.env.** The file is present. 
 
 1. Expand **miyagi/services/recommendation-service/dotnet** directory and verify that **appsettings.json** file is present.
   
-1. In the **appsettings.json** file replace the following values for the variables below.
+1. In the **appsettings.json** file, replace the following values for the variables below.
 
    | **Variables**                | **Values**                                                    |
    | ---------------------------- |---------------------------------------------------------------|
@@ -59,15 +59,15 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
    | bingApiKey                   | **<inject key="Bing_API_KEY" enableCopy="true"/>**           |
    | cosmosDbConnectionString     | **<inject key="CosmosDBconnectinString" enableCopy="true"/>** |
    
-   > **Note**: FYI, the above values/Keys/Endpoints/ConnectionString of Azure Resources are directly injected to labguide. Leave default settings for "cosmosDbContainerName": "recommendations" and "logLevel": "Trace".
+   > **Note**: FYI, the above values/Keys/Endpoints/ConnectionString of Azure Resources are directly injected into labguide. Leave default settings for "cosmosDbContainerName": "recommendations" and "logLevel": "Trace".
 
       ![](./Media/appsetting-update.png)
    
-1. Once after updating the values kindly save the file by pressing **CTRL + S**.
+1. Once after updating the values, kindly save the file by pressing **CTRL + S**.
 
 1. Navigate to **miyagi/sandbox/usecases/rag/dotnet** and verify **.env** file is present.
   
-1. In the **.env** file replace the following values for the variables below.
+1. In the **.env** file, replace the following values for the variables below.
 
    | **Variables**                          | **Values**                                            |
    | ---------------------------------------| ------------------------------------------------------|
@@ -80,7 +80,7 @@ In this lab, you will configure the Miyagi app by setting up the environment, in
    
    ![](./Media/env1new.png)
 
-1. Once after updating the values kindly save the file by pressing **CTRL + S**.
+1. Once after updating the values, kindly save the file by pressing **CTRL + S**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -95,21 +95,21 @@ In this lab, you will explore the implementation of the Recommendation service, 
 
 Recommendation service implements RAG pattern using Semantic Kernel SDK. The details of the implementation are captured in the Jupyter notebook in the folder miyagi/sandbox/usecases/rag/dotnet. You can open the notebook in VSCode and run the cells to understand step-by-step details of how the Recommendation Service is implemented. Pay special attention to how the RAG pattern is implemented using Semantic Kernel. Select kernel as .NET Interactive in the top right corner of the notebook.
 
-1. In the Visual Studio Code navigate to **miyagi/sandbox/usecases/rag/dotnet** folder and select **Getting-started.ipynb**
+1. In the Visual Studio Code, navigate to **miyagi/sandbox/usecases/rag/dotnet** folder and select **Getting-started.ipynb**
 
    ![](./Media/image-rg-23.png)
 
 1. **Execute the notebook cell by cell** (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
   
-   > **Note**: Make sure **.Net Interactive** is in ready State, If not please wait for 15 to 20 seconds. Also, please do not click on **Run All** option to execute all the cell at a time which may lead to exceed in token limit that results Error: 503 – Service unreachable. 
+   > **Note**: Make sure **.Net Interactive** is in ready State, if not please wait for 15 to 20 seconds. Also, please do not click on the **Run All** option to execute all the cells at a time,e this may lead to exceeding in token limit that resulting in Error: 503 – Service unreachable. 
 
       ![](./Media/run.png)
 
-   > **Note**: Ensure to install python extensions before running the cells.
+   > **Note**: Ensure to install Python extensions before running the cells.
    
    > **Note**: Ensure to click on **Work or School Account** when a window opens and provide the username and password
    
-   > **Note**: Incase of any issues or errors occured related to exceeded call rate limit of your current OpenAI S0 pricing tier. , Please wait for 15 to 20 seconds and Re-run the cell
+   > **Note**: In case of any issues or errors occur related to the exceeded call rate limit of your current OpenAI S0 pricing tier. Please wait for 15 to 20 seconds and re-run the cell
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 
@@ -133,15 +133,15 @@ In this lab, you will set up the environment, install necessary dependencies, an
     dotnet run
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
-1. Open another tab in Edge, in the browser window paste the following link
+1. Open another tab in Edge, in the browser window, paste the following link
 
    ```
    http://localhost:5224/swagger/index.html 
    ```
 
-   **Note**: Refresh the page continuously until you get the swagger page for the recommendation service as depicted in the image below.
+   **Note**: Refresh the page continuously until you get the Swagger page for the recommendation service as depicted in the image below.
 
    ![](./Media/miyagi2.png)
 
@@ -160,7 +160,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
     yarn dev
     ```
 
-   **Note**: Let the command run, meanwhile you can proceed with the next step.
+   **Note**: Let the command run; meanwhile, you can proceed with the next step.
 
 1. Open another tab in Edge, and  browse the following
 
@@ -168,7 +168,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
    http://localhost:4001
    ```
 
-   **Note**: Refresh the page continuously until you get miyagi app running locally as depicted in the image below.
+   **Note**: Refresh the page continuously until you get Miyagi app running locally as depicted in the image below.
                        
    ![](./Media/b1.png)
    
@@ -194,7 +194,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
       ![](./Media/swaggerUI-Execution.png)
       
-1. In the **swagger UI** page, Scroll down to the **Responses** session review that it has been executed successfully by checking the code status is **200**.
+1. In the **swagger UI** page, scroll down to the **Responses** section, review that it has been executed successfully by checking the code status is **200**.
 
     ![](./Media/swaggerUI-Responses.png)
 
@@ -208,7 +208,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
     ![](./Media/search-service.png)
 
-    > **Note**: Please click on the refresh button still you view the **Document Count**.
+    > **Note**: Please click on the refresh button, you can still view the **Document Count**.
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
   > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
@@ -231,7 +231,7 @@ In this lab, you will set up the environment, install necessary dependencies, an
 
    ![](./Media/financial-advisor-output.png) 
 
-1. Navigate to the **Visual Studio Code**, and click on **dotnet** from the terminal, you can go through the logs.
+1. Navigate to the **Visual Studio Code**, and click on **dotnet** from the terminal, and you can go through the logs.
 
    ![](./Media/recommend-log.png)    
 
