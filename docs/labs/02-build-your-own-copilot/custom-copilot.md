@@ -42,9 +42,9 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
    ![](./Media/lop-03.png) 
 
-1. From the Overview page, click on **Go to Azure AI Foundry portal**.
+1. From the **Overview** page, click on **Go to Azure AI Foundry portal**.
    
-    ![](./Media/lop-02.png)
+    ![](./Media/AI-Foundry.png)
 
 1. Go to **Deployments (1)** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad **(2)**.
     
