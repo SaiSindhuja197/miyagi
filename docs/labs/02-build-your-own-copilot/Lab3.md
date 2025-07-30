@@ -24,7 +24,7 @@ In this lab, you'll be setting up an HTTP API within Azure API Management to int
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, click on **APIs** **(1)** under APIs from the left menu and select **HTTP** **(2)** under **Define a new API** to create an HTTP API.
 
-    ![](./Media/miyagi-image55.png)
+    ![](./Media/api-01.png)
 
 1. On the **Create an HTTP API** pane, enter the following values:
    
@@ -56,7 +56,12 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, from the left navigation pane under **APIs** section select **APIs** **(1)**, click on the **three dots** **(2)** next to miyagi-api, select **Import** **(3)**, and click on **OpenAPI** **(4)**.
 
-   ![](./Media/miyagi-image58.png)
+   ![](./Media/api-02.png)
+
+   ![](./Media/api-03.png)
+
+   ![](./Media/api-05.png)
+   
 
 1. In the popup of **Import from OpenAPI specification** paste the below link in the OpenAPI specification **textbox** **(1)** , and then click **import** **(2)**. 
 
@@ -80,7 +85,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, from the left navigation pane under **APIs** click on **Products** **(1)** then select **+ Add** **(2)**.
 
-   ![](./Media/miyagi-image62.png)
+   ![](./Media/api-06.png)
 
 1. In the **Add product** window, specify **Display name** as **OpenAi** **(1)**, **Description** as **OpenAI** **(2)**. Under the **APIs** menu click the **Plus sign** **(3)** select the **Azure OpenAI Service API** **(4)** hit enter and click on **Create** **(5)**.
 
@@ -88,7 +93,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. In the **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service, from the left navigation pane under **APIs** select **Subscriptions** **(1)**  then lick on **+ Add subscription** **(2)**.
 
-   ![](./Media/miyagi-image63.png)
+   ![](./Media/api-07.png)
 
 1. In the **Add subscription** window, provide **Name** as **aoai-test** **(1)** and  **Display name** as **AOAI Test** **(2)**, and click on **Create** **(3)**.
 
@@ -146,7 +151,7 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 1. In API Management, click on **Test** **(1)**, select Creates a **completion for the chat message** **(2)**, enter the gpt-4 deployment name **<inject key="CompletionModel" enableCopy="true"/>** **(3)** in the deployment-id field, enter **2024-08-01-preview** **(4)** in the API version field.
 
-     ![](./Media/new-api-test.png)
+     ![](./Media/api-08.png)
 
 1. Scroll down to the **Request body** section **(1)**, replace the existing code with the code below, and click on **Send** **(2)**.
 

@@ -19,7 +19,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
-   ![](./Media/vs.png)
+   ![](./Media/ds-01.png)
 
 1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 

@@ -23,9 +23,9 @@ You will be able to complete the following tasks:
 
 In this task, you will deploy the Miyagi recommendation and UI services to an Azure Kubernetes Service (AKS) cluster. This involves logging into the Azure portal, applying Kubernetes configurations, and updating configuration files with the services' external IP addresses.
 
-1. Navigate back to the Visual Studio code window and navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**, right-click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
+1. Navigate back to the Visual Studio code window and navigate to **miyagi (1)/deploy (2)/infrastructure (3)/kubernetes/manifests (4)/50-miyagi (5)**, right-click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal (6)**.
 
-    ![](./Media/aks-01.png)
+    ![](./Media/vs-02.png)
 
 1. Run the following command to log in to the Azure portal.
 
@@ -33,7 +33,7 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
    az aks get-credentials -n <inject key="aksname" enableCopy="true"/> -g <inject key="rgname" enableCopy="true"/>
    ```
 
-   >**Important**: The command az aks get-credentials -n [ClusterName] -g [ResourceGroupName] is used in Azure's command-line interface (CLI) to retrieve and merge the Kubernetes configuration files for a specified Azure Kubernetes Service (AKS) cluster into the local kubeconfig file.
+   >**Important**: The command az aks get-credentials -n <inject key="aksname" enableCopy="true"/> -g <inject key="rgname" enableCopy="true"/> is used in Azure's command-line interface (CLI) to retrieve and merge the Kubernetes configuration files for a specified Azure Kubernetes Service (AKS) cluster into the local kubeconfig file.
    
 1. Once the command finishes you should now have access to the cluster and can run the following commands to deploy the application services.
 
@@ -75,7 +75,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 1. Navigate to the Docker Desktop application from the taskbar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
 
-   ![](./Media/docker1.png)
+   ![](./Media/ds-01.png)
    
     >**Note:** If you are prompted with Docker Desktop initial sign-in prompts follow the below steps:
     
@@ -87,7 +87,9 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
      ![](./Media/without-signin.png)
 
-    > In the **Tell us about the work you do** window, click on **Skip**.
+    > In the **Sign in** window, click on **Skip**.
+
+      ![](./Media/sign-01.png)
    
     >**Note**: Please ensure that the Docker engine is in a running state before proceeding to the next step.
 
@@ -253,7 +255,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
 1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
 
-    ![](./Media/aks-01.png)
+    ![](./Media/vs-02.png)
 
 1. Run the following commands to deploy the application pods.
 

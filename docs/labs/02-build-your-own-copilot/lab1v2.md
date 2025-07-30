@@ -21,7 +21,7 @@ In this task, you will configure the Miyagi application by updating specific set
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
-   ![](./Media/vs.png)
+   ![](./Media/vs-01.png)
 
    >**Note**: If **Join us in making promt-flow extension better!** window prompted please click on **No,thanks**.
 
@@ -137,7 +137,7 @@ In this task, you will run the recommendation service locally by using Visual St
    http://localhost:5224/swagger/index.html 
    ```
 
-   **Note**: Refresh the page continuously until you get the swagger page for the recommendation service as depicted in the image below.
+   > **Note**: Refresh the page continuously until you get the swagger page for the recommendation service as depicted in the image below.
 
    ![](./Media/miyagi-image21.png)
 
@@ -166,7 +166,7 @@ In this task, you will run the miyagi frontend locally by installing dependencie
    http://localhost:4001
    ```
 
-   >**Note:** You can get the port from the logs in the terminal.
+   >**Note:** You can get the port from the logs in the terminal, close it.
 
       ![](./Media/error-pop-up.png)
 
@@ -204,7 +204,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 
     ![](./Media/miyagi-image24.png)
 
-1. Navigate back to the **Azure portal** tab, in Search resources, services and docs (G+/) box at the top of the portal, enter **AI Search**, and then select **AI Search** under services.
+1. Navigate back to the **Azure portal** tab, in Search resources, services and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under services.
 
     ![](./Media/miyagi-image25.png)
 
