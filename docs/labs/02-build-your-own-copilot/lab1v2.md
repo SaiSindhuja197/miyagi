@@ -27,7 +27,7 @@ In this task, you will configure the Miyagi application by updating specific set
 
    ![](./Media/image-rg-01.png)
    
-1. In **Visual Studio Code** from menu bar select **File (1) > Open folder (2)**.
+1. In **Visual Studio Code** from menu bar, select **File (1) > Open folder (2)**.
 
    ![](./Media/image-rg-02.png)
 
@@ -41,7 +41,7 @@ In this task, you will configure the Miyagi application by updating specific set
    
 1. Expand **miyagi>ui** directory and verify that **.env.** file is present. 
 
-1. Expand **miyagi/services/recommendation-service/dotnet** directory and verify that **appsettings.json** file is present.
+1. Open **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** directory and verify that **appsettings.json (4)** file is present.
 
    ![](./Media/open-appsettings.png)
   
@@ -83,18 +83,18 @@ In this task, you will configure the Miyagi application by updating specific set
    
 1. Once after updating the values kindly save the file by pressing **CTRL + S**.
 
-  >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
+<validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
 ### Task 2: Understanding the implementation of the Recommendation service
 
 Recommendation service implements RAG pattern using Semantic Kernel SDK. The details of the implementation are captured in the Jupyter Notebook in the folder miyagi/sandbox/usecases/rag/dotnet. You can open the notebook in VSCode and run the cells to understand step-by-step details of how the Recommendation Service is implemented. Pay special attention to how the RAG pattern is implemented using Semantic Kernel. Select kernel as .NET Interactive in the top right corner of the notebook.
 
-1. In the Visual Studio Code navigate to **miyagi/sandbox/usecases/rag/dotnet** folder and select **Getting-started.ipynb**
+1. In the Visual Studio Code, navigate to **miyagi folder (1)** and expand **sandbox (2)/usecases (3)/rag (4)/dotnet (5)** folder and select **Getting-started.ipynb (6)**.
 
    ![](./Media/miyagi-image19.png)
 
@@ -107,7 +107,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
    
    > **Note**: In case any issues or errors occur related to exceeding the call rate limit of your current OpenAI S0 pricing tier. , Please wait for 15 to 20 seconds and Re-run the cell
 
- >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
@@ -117,7 +117,7 @@ Recommendation service implements RAG pattern using Semantic Kernel SDK. The det
 ### Task 3: Run recommendation service locally
 In this task, you will run the recommendation service locally by using Visual Studio Code to build and run the service in the terminal and then verify its functionality by accessing the Swagger page in the browser.
 
-1. Open a new terminal: by navigating **miyagi/services/recommendation-service/dotnet** and right-click on **dotnet** in cascading menu select **Open in intergate Terminal**.
+1. To open a new terminal, naviagate to **miyagi (1)/services (2)/recommendation-service (3)/dotnet (4)** and right-click on **dotnet** in cascading menu select **Open in intergate Terminal (5)**.
 
     ![](./Media/task4-1.png)
 
@@ -131,7 +131,7 @@ In this task, you will run the recommendation service locally by using Visual St
    > **Note**: Let the command run, meanwhile you can proceed with the next step.
    > **Note**: The commands dotnet build and dotnet run are fundamental in .NET Core and .NET 5+ environments for building and running .NET applications locally on your machine.
 
-1. Open another tab in Edge, in the browser window paste the following link
+1. Open another tab in Edge browser, in the browser window paste the following link
 
    ```
    http://localhost:5224/swagger/index.html 
@@ -142,9 +142,10 @@ In this task, you will run the recommendation service locally by using Visual St
    ![](./Media/miyagi-image21.png)
 
 ### Task 4: Run miyagi frontend locally
+
 In this task, you will run the miyagi frontend locally by installing dependencies using npm and yarn and then starting the development server. You will verify its functionality by accessing the local development server in the browser.
 
-1. Open a new terminal: by navigating  **miyagi/ui** and right-click on **ui/typescript** , in cascading menu select **Open in intergate Terminal**.
+1. To open a new terminal, navigate to  **miyagi folder (1)**, then expand **ui (2)** and right-click on **ui/typescript (3)** folder , in cascading menu select **Open in integrated Terminal (4)**.
 
    ![](./Media/image-rg-25.png)
 
@@ -160,13 +161,13 @@ In this task, you will run the miyagi frontend locally by installing dependencie
    
    > **Note**: These commands (npm install --global yarn, yarn install, and yarn dev) are indeed essential in JavaScript and TypeScript projects for managing dependencies and running scripts necessary to set up and run applications. They ensure that all required packages are installed (yarn install), and they execute development scripts (yarn dev) defined in the project's configuration (package.json).
 
-1. Open a new tab in Edge, and browse the following
+1. Open a new tab in Edge browser, and browse the following URL:
 
    ```
    http://localhost:4001
    ```
 
-   >**Note:** You can get the port from the logs in the terminal, close it.
+   >**Note:** You can get the port from the logs in the terminal.
 
       ![](./Media/error-pop-up.png)
 
@@ -174,7 +175,8 @@ In this task, you will run the miyagi frontend locally by installing dependencie
 
      ![](./Media/error-side.png)
 
-   >**Note:** Please donot close the VS Code as you will need the localhost running for the future tasks.
+   > **[!IMPORTANT]**<br>
+   > Please do not close the VS Code as you will need the localhost running for the future tasks.
 
 ### Task 5: Persist embeddings in Azure AI Search
 
@@ -223,7 +225,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
+<validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
 
 ### Task 6: Explore the Miyagi App and Recommendation service  by Personalizing
 In this task, you'll personalize the Miyagi App's Recommendation service by selecting a financial advisor and reviewing the recommendations. Then, you'll check the logs in Visual Studio Code and stop the services.

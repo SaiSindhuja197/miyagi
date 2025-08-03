@@ -16,7 +16,7 @@ You will be able to complete the following tasks:
 
 ### Task 1: Verify the deployed API Management service and create an API
 
-In this lab, you'll be setting up an HTTP API within Azure API Management to interact with the Azure OpenAI service. It ensures the API is configured correctly and provides a gateway URL for external access and integration with other services.
+In this task, you'll be setting up an HTTP API within Azure API Management to interact with the Azure OpenAI service. It ensures the API is configured correctly and provides a gateway URL for external access and integration with other services.
 
 1. Navigate to Azure portal, open the **Resource Group** named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
@@ -43,12 +43,13 @@ In this lab, you'll be setting up an HTTP API within Azure API Management to int
 
     ![](./Media/miyagi-image57.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      > - Hit the Validate button for the corresponding task.
-      > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the labguide.
-      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+   
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the labguide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    <validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
+<validation step="5385328b-c6b7-4d03-9fcc-c2d33d96d9cd" />
 
 ### Task 2: Create API Management Policy and Roles
 
@@ -167,9 +168,9 @@ In this lab, you'll be setting up API policies, defining roles and subscriptions
 
 ### Task 3: Update the Docker Image for the Recommendation service
 
-In this lab, you'll be updating the configuration of the recommendation service, rebuilding the Docker image, pushing it to ACR, and ensuring that the updated image is ready for deployment within the Azure environment.
+In this task, you'll be updating the configuration of the recommendation service, rebuilding the Docker image, pushing it to ACR, and ensuring that the updated image is ready for deployment within the Azure environment.
 
-1. Navigate to Visual Studio Code, expand **miyagi/services/recommendation-service/dotnet** directory and select the **appsettings.json**.
+1. Navigate to Visual Studio Code, open **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** directory and select the **appsettings.json (4)**.
 
    ![](./Media/open-appsettings.png)
 
@@ -177,7 +178,7 @@ In this lab, you'll be updating the configuration of the recommendation service,
 
     ![](./Media/miyagi-image(72).png)
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
+1. Navigate back to **Visual studio code** window and navigate to **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** right - click on dotnet in cascading menu, select **Open in integrated Terminal (4)**.
 
    ![](./Media/aks-04.png)
 
@@ -202,6 +203,7 @@ In this lab, you'll be updating the configuration of the recommendation service,
    ```
    docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
+   
    >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest uploads a Docker image from your local machine to the specified Azure Container Registry (ACR). By executing this command, you make the miyagi-recommendation:latest image available in the ACR, enabling it to be used in various deployments and services within Azure.
    
 1. Once you are logged into ACR. Run the below command to push the updated docker image of the recommendation service to the container registry.
@@ -214,7 +216,7 @@ In this lab, you'll be updating the configuration of the recommendation service,
    
 ### Task 4: Revision of Recommendation service from AKS 
 
-In this lab, you'll be managing the deployment lifecycle of the recommendation service on Azure Kubernetes Service (AKS), including starting and stopping the service as well as verifying its functionality post-revision.
+In this task, you'll be managing the deployment lifecycle of the recommendation service on Azure Kubernetes Service (AKS), including starting and stopping the service as well as verifying its functionality post-revision.
 
 1. Navigate to the Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** Kubernetes service from the resources list.
 
@@ -230,7 +232,7 @@ In this lab, you'll be managing the deployment lifecycle of the recommendation s
 
    ![](./Media/miyagi-image75.png)
 
-1. Once the Kubernetes service starts, select **Services and ingresses** under **Kubernetes resources** and click on **External IP** of the miyagi-recommendation-service.
+1. Once the Kubernetes service starts, select **Services and ingresses (1)** under **Kubernetes resources** and click on **External IP (2)** of the miyagi-recommendation-service.
 
    ![](./Media/miyagi-image76.png)
 
@@ -240,7 +242,7 @@ In this lab, you'll be managing the deployment lifecycle of the recommendation s
 
 ### Task 5: Setup Event Hub Logging and Validate Input
 
-In this lab, you'll be setting up Event Hub logging for API Management, configuring the necessary components in Azure, deploying the logging configuration using a Bicep template, and validating the integration through testing and monitoring.
+In this task, you'll be setting up Event Hub logging for API Management, configuring the necessary components in Azure, deploying the logging configuration using a Bicep template, and validating the integration through testing and monitoring.
 
 1. In the Azure portal Search and select **Event Hubs**, select the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -322,7 +324,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
     az deployment group create --resource-group <inject key="rgname" enableCopy="true"/> --template-file .\aoai-logger.bicep
     ```
 
-     >**Note**: This command sequence navigates to the C:\LabFiles\miyagi directory containing the Bicep file and then deploys the resources defined in that file to the specified Azure resource group.
+    >**Note**: This command sequence navigates to the C:\LabFiles\miyagi directory containing the Bicep file and then deploys the resources defined in that file to the specified Azure resource group.
 
 1. Navigate to Azure portal, open the Resource Group named **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  and select **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management service from the resources list.
 
@@ -332,7 +334,7 @@ In this lab, you'll be setting up Event Hub logging for API Management, configur
 
     ![](./Media/api4782.png)
 
-1. In the code editor copy the below policy to overwrite the **outbound** tags only and click on **Save**.
+1. In the code editor copy the below policy to overwrite the **outbound (1)** tags only and click on **Save (2)**.
 
       ```
       <outbound>

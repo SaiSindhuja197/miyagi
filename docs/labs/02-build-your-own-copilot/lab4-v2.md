@@ -15,13 +15,14 @@ You will be able to complete the following tasks:
 - Task 2: Configure Azure AI Search
 
 ### Task 1: Configure and Run the Semantic Kernel Sample
+
 In this task, you will configure the Semantic Kernel plugin in Visual Studio Code, create a C# Home Automation app using Azure OpenAI, and build and run the application to interact with it.
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
    ![](./Media/ds-01.png)
 
-1. In the **Visual Studio Code** from the left panel select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
+1. In the **Visual Studio Code** from the left panel, select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 
     ![](./Media/miyagi-image92.png)
 
@@ -41,7 +42,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
     ![](./Media/miyagi-image96.png)
 
-1. Browse the location `C:\LabFiles` and **Select location for new app**.
+1. Browse the location `C:\LabFiles` **(1)** and **Select location for new app** **(2)**.
 
    ![](./Media/miyagi-image97.png)
 
@@ -217,7 +218,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
 In this task, you'll configure Azure AI Search by importing data from CosmosDB into a search index named "realestate-us-sample-index". You customize the index and create an indexer named "realestate-us-sample-indexer" to synchronize data. Finally, you verify the search functionality by querying data for "Seattle".
 
-1. Navigate back to the **Azure portal** tab, in Search resources, services and docs (G+/) box at the top of the portal, enter **AI Search**, and then select **AI Search** under services.
+1. Navigate back to the **Azure portal** tab, in Search resources, services and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under services.
 
     ![](./Media/miyagi-image25.png)
 
@@ -237,7 +238,7 @@ In this task, you'll configure Azure AI Search by importing data from CosmosDB i
 
     ![](./Media/miyagi-image105.png)
    
-1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** and click on **Next: Create an indexer**.
+1. In the **Customize target index**, Enter the index name as **realestate-us-sample-index** **(1)** and click on **Next: Create an indexer** **(2)**.
 
    ![](./Media/miyagi-image106.png)
    

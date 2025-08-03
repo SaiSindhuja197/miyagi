@@ -55,14 +55,15 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
 
    ![](./Media/external-ip.png)
 
-1. Next navigate to **miyagi/services/recommendation-service/dotnet** and open **appsettings.json** file.
+1. Next navigate to **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** and open **appsettings.json (4)** file.
 
    ![](./Media/aks-02.png)
    
-1. Copy the **miyagi-ui** External IP address from the console and paste it in the **CorsAllowedOrigins** section formatted as an **http://** endpoint  and save the file by **Ctrl + S**.  
+1. Copy the **miyagi-ui** External IP address from the console and paste it in the **CorsAllowedOrigins** section formatted as an **http://** endpoint and save the file by **Ctrl + S**.
+
    ![](./Media/ui-cors.png)
 
-1. Next navigate to **miyagi/ui/typescript** and open the **.env** file. 
+1. Next navigate to **miyagi/ui/typescript (1)** and open the **.env (2)** file. 
 
    ![](./Media/aks-03.png)
 
@@ -71,6 +72,7 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
    ![](./Media/miyagi-ui-env.png)
 
 ### Task 2: Build a Docker Image for the Miyagi UI
+
 In this task, you will build and run the Miyagi UI Docker container locally. Begin by opening the Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi UI. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
 
 1. Navigate to the Docker Desktop application from the taskbar. If it is not open, you can open it by double-clicking on  the **Docker** Application from the Lab VM desktop.
@@ -137,11 +139,13 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 ### Task 3: Build Docker Images for the Recommendation service
 
-1. Navigate back to **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
+In this task, you will build and run the Miyagi recommendation service Docker container locally. Begin by opening the Docker Desktop and completing the initial setup. Next, use Visual Studio Code to build the Docker image for the Miyagi recommendation service. Once the image is created, verify it and run the image in Docker. Configure the host port and access the application locally via the provided URL.
+
+1. Navigate back to **Visual studio code** window and navigate to **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** right - click on dotnet in cascading menu, select **Open in integrated Terminal (4)**.
 
    ![](./Media/aks-04.png)
 
-1. Run the following command to build a **Docker image**
+1. Run the following command to build a **Docker image**.
 
    ```
    docker build . -t miyagi-recommendation      
@@ -149,7 +153,7 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
    > **Note**: Please wait as this command may require some time to complete.
 
-1. Run the following command to get the newly created image.
+1. Run the following command to get the newly created **Docker image**.
 
    ```
    docker images
@@ -183,9 +187,9 @@ In this task, you will build and run the Miyagi UI Docker container locally. Beg
 
 ### Task 4: Push the Docker Image of Recommendation service to the Container registry
 
-In this task, you'll Push Miyagi-recommendation images to acr. 
+In this task, you will push the Docker image of the Miyagi recommendation service to the Azure Container Registry (ACR). This involves logging into the Azure portal, tagging the Docker image with the ACR name, and then pushing the image to the ACR. 
 
-1. Navigate back to the **Visual studio code** window and navigate to **miyagi/services/recommendation-service/dotnet** right - click on dotnet in cascading menu, select **Open in integrated Terminal**.
+1. Navigate back to the **Visual studio code** window and navigate to **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** right - click on dotnet in cascading menu, select **Open in integrated Terminal (4)**.
 
     ![](./Media/aks-04.png)
    
@@ -205,7 +209,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
    az acr login -n <inject key="AcrUsername" enableCopy="true"/> 
    ```
 
-   >**Note**: The command az acr login -n <inject key="AcrLoginServer" enableCopy="true"/> logs you into an Azure Container Registry (ACR) instance. It authenticates your session with the specified Azure Container Registry, allowing you to push and pull container images to and from the registry.
+   >**Note**: The command **az acr login -n <inject key="AcrLoginServer" enableCopy="false"/>** logs you into an Azure Container Registry (ACR) instance. It authenticates your session with the specified Azure Container Registry, allowing you to push and pull container images to and from the registry.
     
 1. Run the following command to add the tag.
 
@@ -213,7 +217,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
    docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
-   >**Note**: The command docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest tags a local Docker image with a new name that includes the Azure Container Registry (ACR) name. By tagging the image this way, you prepare it to be pushed to the specified Azure Container Registry.
+   >**Note**: The command **docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** tags a local Docker image with a new name that includes the Azure Container Registry (ACR) name. By tagging the image this way, you prepare it to be pushed to the specified Azure Container Registry.
 
 1. Run the following command to push the image to the container registry.
 
@@ -223,7 +227,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
    ![](./Media/task2-6.png)
 
-   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest uploads the specified Docker image, which has been tagged with the Azure Container Registry (ACR) name, to the ACR. This makes the image available in the ACR for deployment and use in various Azure services.
+   >**Note**: The command **docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest** uploads the specified Docker image, which has been tagged with the Azure Container Registry (ACR) name, to the ACR. This makes the image available in the ACR for deployment and use in various Azure services.
    
 1. Navigate back to **Visual studio code** window and navigate to **miyagi/ui/typescript** right - click in cascading menu, select **Open in integrated Terminal**.
 
@@ -241,6 +245,8 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
 ### Task 5: Deploy AKS Pods
 
+In this task, you will deploy the Miyagi UI and Recommendation services to Azure Kubernetes Service (AKS) pods. This involves modifying the Kubernetes manifest files to include the Azure Container Registry (ACR) name, applying the configurations, and verifying the deployment of the pods.
+
 1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**. Open the **miyagi-recommendation.yaml** file and replace the &lt;ACR-NAME&gt; with **<inject key="acrUsername" enableCopy="true"/>** Azure container registry name and save the file by **Ctrl + S**.
 
    ![](./Media/miyagi-image47.png)
@@ -253,7 +259,7 @@ In this task, you'll Push Miyagi-recommendation images to acr.
 
    ![](./Media/miyagi-image50.png)
 
-1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal**.
+1. Navigate to **miyagi folder** and expand **deploy (2)/infrastructure (3)/kubernetes/manifests (4)/50-miyagi (5)** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal (6)**.
 
     ![](./Media/vs-02.png)
 
@@ -278,12 +284,12 @@ In this task, you'll Push Miyagi-recommendation images to acr.
    ![](./Media/AKS-running.png)
 
  
-   >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-    <validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
+<validation step="e8c4db10-7879-482c-a538-de23b5f3eba3" />
 
 # Lab 3.2: Explore and Verify the Containerized Miyagi UI and Recommendation service in AKS
 

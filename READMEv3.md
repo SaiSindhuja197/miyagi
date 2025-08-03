@@ -37,3 +37,5 @@ This workshop is designed for:
 ### In-context learning flow
 
   ![round-trip](./assets/images/sk-round-trip.png)
+
+### Now click on **Next** from the lower right corner to move to the next page.

@@ -4,9 +4,9 @@
 
 In this lab, you will verify and retrieve specific values such as Endpoint, Connection String, and Key for various Azure resources. This is crucial for ensuring the proper configuration and connectivity of these resources.
 
-   - Azure OpenAI : **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** 
-   - Azure Cosmos DB account : **cosmos-<inject key="DeploymentID" enableCopy="false"/>**
-   - Search Service : **acs-<inject key="DeploymentID" enableCopy="false"/>**
+- Azure OpenAI : **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** 
+- Azure Cosmos DB account : **cosmos-<inject key="DeploymentID" enableCopy="false"/>**
+- Search Service : **acs-<inject key="DeploymentID" enableCopy="false"/>**
 
 1. To verify the deployment model names for "**deploymentOrModelId**" and "**embeddingDeploymentOrModelId**" follow the below steps:
    
@@ -18,7 +18,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
          ![](./Media/miyagi-image7.png)
 
-      - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the Overview tab select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
+      - In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**, from the **Overview (1)** tab, select the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** **(2)**.
 
         ![](./Media/openai_service.png)
 
@@ -38,7 +38,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
       
       -  Navigate back to the **Deployment (1)** page.
 
-      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of **text-embedding-ada-002 model(2)**.
+      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of **text-embedding-ada-002 model (2)**.
         
          ![](./Media/deployments0909.png)
 
@@ -78,7 +78,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
      
      ![](./Media/miyagi-image114.png)
 
-   - On **cosmos-<inject key="DeploymentID" enableCopy="false"/>** under **Settings**, select **Keys** and verify the value of the **Cosmos DB Primary Connection String**.
+   - On **cosmos-<inject key="DeploymentID" enableCopy="false"/>** under **Settings**, select **Keys** **(1)** and verify the value of the **Cosmos DB Primary Connection String** **(2)**.
 
      ![](./Media/miyagi-image115.png)
 
