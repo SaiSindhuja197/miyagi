@@ -39,7 +39,9 @@ In this task, you will configure the Miyagi application by updating specific set
 
    ![](./Media/image-rg-18.png) 
    
-1. Expand **miyagi>ui** directory and verify that **.env.** file is present. 
+1. Expand **miyagi>ui>typescript** directory and verify that **.env.** file is present. 
+
+   ![](./Media/miyagi-image-16.png)
 
 1. Open **miyagi folder** and expand **services (1)/recommendation-service (2)/dotnet (3)** directory and verify that **appsettings.json (4)** file is present.
 
