@@ -17,6 +17,8 @@ En este laboratorio, obtendrá una sólida comprensión de los conceptos básico
   
 ## Requisitos previos
 
+Los participantes deberían contar con:
+
 - Comprensión de los conceptos básicos de la IA generativa
 - Familiaridad con Azure Open AI
 - Experiencia con Semantic Kernel
@@ -46,7 +48,7 @@ La arquitectura de este laboratorio incluye los siguientes componentes clave:
 
 ## Introducción al laboratorio
 
-¡Bienvenido a tu taller "Crea aplicaciones inteligentes con Copilot Stack y Azure OpenAI" de Microsoft! Hemos preparado un entorno perfecto para que explores y aprendas sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
+¡Bienvenido a su taller "Crea aplicaciones inteligentes con Copilot Stack y Azure OpenAI" de Microsoft! Hemos preparado un entorno perfecto para que explores y aprendas sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
 
 ## Comenzando con el Laboratorio
 
@@ -56,11 +58,11 @@ Una vez configurado el ambiente, su navegador cargará una máquina virtual (Jum
 
 ### Máquina Virtual y Guía de Laboratorio
 
-Tu máquina virtual es tu herramienta principal durante el taller. La guía de laboratorio es tu hoja de ruta hacia el éxito.
+Su máquina virtual es su herramienta principal durante el taller. La guía de laboratorio es su hoja de ruta hacia el éxito.
 
 ## Explorando los recursos de su laboratorio
 
-Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Entorno**.
+Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Ambiente**.
 
    ![](./Media/2025-05-23-1.png)
    
@@ -72,9 +74,9 @@ Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separad
 
    ![](./Media/2025-05-23-2.png)
 
-## Administra tu máquina virtual
+## Administre su máquina virtual
 
-Puedes iniciar, detener o reiniciar tu máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Tu experiencia está en tus manos!
+Puede iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
 
    ![](./Media/2025-05-23-3.png)
 
@@ -114,7 +116,7 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
      ![](./Media/11-10-24(5).png)
 
-     > **Nota**: Si se le solicita MFA, siga los pasos resaltados en - [Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible](#Pasos-para-continuar-con-la-configuración-de-MFA-si-la-opción-"Preguntar-más-tarde"-no-está-visible)  
+     > **Nota**: Si se le solicita MFA, siga los pasos resaltados en - [Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible](#Pasos-para-continuar-con-la-configuración-de-MFA-si-la-opción-Preguntar-más-tarde-no-está-visible)  
    
 1. Si ve la ventana emergente **¿Permanecer conectado?**, seleccione **No**.
 
@@ -136,7 +138,7 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
    ![](./Media/11-10-24(17).png)
 
-## Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible
+## Pasos para continuar con la configuración de MFA si la opción Preguntar más tarde no está visible
 
 > **Nota:** Continúe con los ejercicios si la MFA ya está habilitada o la opción no está disponible.
 

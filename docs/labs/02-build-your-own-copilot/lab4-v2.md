@@ -1,4 +1,4 @@
-# Laboratorio 5- Cómo empezar con tu propio copiloto [Léeme]
+# Laboratorio 5- Cómo empezar con su propio copiloto [Solo lectura]
 
 ### Duración estimada: 30 minutos
 
@@ -9,9 +9,11 @@ Sin embargo, lo que hace a Semantic Kernel _especial_ es su capacidad para orque
 ## Objetivos del laboratorio
 Podrás completar las siguientes tareas:
 - Tarea 1: Configurar y Ejecutar el Ejemplo de Semantic Kernel.
-- Tarea 2: Configurar Azure Cognitive Search.
+- Tarea 2: Configurar Azure AI Search.
 
 ### Tarea 1: Configurar y Ejecutar el Ejemplo de Semantic Kernel
+
+En esta tarea, configurará el plugin de Semantic Kernel en Visual Studio Code, creará una aplicación de automatización del hogar en C# con Azure OpenAI y compilará y ejecutará la aplicación para interactuar con ella.
 
 1. Abra **Visual Studio Code** desde el escritorio de Lab VM haciendo doble clic en el acceso directo.
 
@@ -45,7 +47,7 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/trustauthor.png)
 
-9. Navegue al archivo **appsettings.json** **(1)** y reemplace el **script** **(2)** existente con lo siguiente. La sección AzureOpenAIOptions en appsettings.json almacena los ajustes de configuración para los servicios de Azure OpenAI, como la clave API, la dirección URL del punto final y el nombre del modelo, que se usan para la autenticación y el acceso al servicio.
+9. Navegue al archivo **appsettings.json** **(1)** y reemplace el **script** **(2)** existente con lo siguiente. La sección `AzureOpenAIOptions` en appsettings.json almacena los ajustes de configuración para los servicios de Azure OpenAI, como la clave API, la dirección URL del punto final y el nombre del modelo, que se usan para la autenticación y el acceso al servicio.
 
    ```
    {
@@ -71,7 +73,7 @@ Podrás completar las siguientes tareas:
 
     ![](./Media/miyagi-image(99).png)
 
-12. Navegue hasta el archivo **Program.cs** **(1)** y reemplace el código existente con lo siguiente. El archivo `Program.cs` configura una aplicación .NET mediante inyección de dependencia y kernel semántico. Configura servicios, incluido Azure OpenAI para completar el chat, y agrega varios complementos `(MyTimePlugin, MyAlarmPlugin, MyLightPlugin)`. Las `AzureOpenAIOptions` se cargan desde archivos de configuración y variables de entorno. Un servicio alojado `(Trabajador)` maneja la lógica de ejecución principal. Se crea un kernel de automatización del hogar con una colección de estos complementos y se agrega al contenedor de inyección de dependencias.
+12. Navegue hasta el archivo **Program.cs** **(1)** y reemplace el código existente con lo siguiente. El archivo `Program.cs` configura una aplicación .NET mediante inyección de dependencia y Semantic Kernel. Configura servicios, incluido Azure OpenAI para completar el chat, y agrega varios complementos `(MyTimePlugin, MyAlarmPlugin, MyLightPlugin)`. Las `AzureOpenAIOptions` se cargan desde archivos de configuración y variables de entorno. Un servicio alojado `(Worker)` maneja la lógica de ejecución principal. Se crea un kernel de automatización del hogar con una colección de estos complementos y se agrega al contenedor de inyección de dependencias.
 
       ```
       using HomeAutomation.Options;
@@ -209,15 +211,17 @@ Podrás completar las siguientes tareas:
 
 20. Alternativamente, puede plantear cualquier pregunta en la terminal.
 
-### Tarea 2: Configurar Azure Cognitive Search
+### Tarea 2: Configurar Azure CognAIitive Search
 
-1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **Búsqueda de IA**.
+En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un índice de búsqueda llamado "realestate-us-sample-index". Personalizará el índice y creará un indexador llamado "realestate-us-sample-indexer" para sincronizar los datos. Finalmente, verificará la funcionalidad de búsqueda consultando los datos de "Seattle".
+
+1. Vuelva a la pestaña **Portal de Azure**,  en el cuadro "Buscar recursos, servicios y documentos (G+/)" en la parte superior del portal, escriba **Búsqueda de IA (1)** y, a continuación, seleccione **Búsqueda de IA (2)** en la sección "Servicios".
 
     ![](./Media/ai-search1.png)    
 
 1. En la pestaña **Azure AI services | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   > **Nota**: Por favor haga clic en el botón Actualizar mientras ve el **Recuento de Documentos**.
+    ![](./Media/miyagi-image26.png)
 
 1. En la pestaña Información general del servicio Search, haga clic en **Importar datos**.
 
@@ -236,13 +240,21 @@ Podrás completar las siguientes tareas:
 1. En **Crear un indizador**, cambie el nombre del indizador a **realestate-us-sample-indexer** y haga clic en **Enviar**.
 
    ![](./Media/import-data4.png)
-    
-1. Haga clic en **realestate-us-sample-index**, en la barra de búsqueda ingrese **Seattle** y haga clic en **Buscar**.
+
+1. Regrese a la pestaña **Azure AI services | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+
+   ![](./Media/miyagi-image26.png)
+   
+1. En el panel de navegación izquierdo, en **Administración de búsqueda** select **Índices (1)** y haga clic en **realestate-us-sample-index (2)**.
+
+1. ![](./Media/miyagi-image108.png)
+
+1. Haga clic en **realestate-us-sample-index**, en la barra de búsqueda ingrese **Seattle** y haga clic en **Buscar** para ver el **Resultado**.
 
    ![](./Media/final-indexer.png)
 
 ### Resumen
 
-En esta práctica de laboratorio, aprendió a configurar y ejecutar el ejemplo de Semantic Kernel integrando el SDK en su proyecto, configurando proveedores de LLM, definiendo plugins y ejecutando el código. Además, adquirió conocimientos sobre la configuración de Azure Cognitive Search, incluyendo la creación o selección de un índice, la configuración de campos, la configuración de Semantic Kernel para interactuar con Azure, la definición de plugins y la prueba de la integración para capacidades de búsqueda mejoradas.
+En esta práctica de laboratorio, aprendió a configurar y ejecutar el ejemplo de Semantic Kernel integrando el SDK en su proyecto, configurando proveedores de LLM, definiendo plugins y ejecutando el código. Además, adquirió conocimientos sobre la configuración de Azure AI Search, incluyendo la creación o selección de un índice, la configuración de campos, la configuración de Semantic Kernel para interactuar con Azure, la definición de plugins y la prueba de la integración para capacidades de búsqueda mejoradas.
 
 ### You have completed this lab.

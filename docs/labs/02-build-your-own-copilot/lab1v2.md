@@ -1,20 +1,22 @@
 # Laboratorio 2 - Ejecutar la Aplicación Miyagi Localmente
 
-### Duración: 80 minutos
+### Duración: 60 minutos
 
 En esta práctica de laboratorio, la atención se centra en configurar la aplicación Miyagi para que esté lista para funcionar. Posteriormente, la atención se centra en comprender la implementación matizada del servicio de Recomendación. La fase práctica implica ejecutar el servicio de Recomendación e implementar el frontend Miyagi localmente para pruebas y desarrollo. Un paso crucial incluye optimizar la eficiencia de la recuperación de datos mediante la persistencia de los embeddings en Azure AI Search. El proyecto culmina con una exploración más amplia de la aplicación Miyagi y el servicio de Recomendación, enfatizando una experiencia de usuario personalizada. Este enfoque basado en tareas garantiza una progresión sistemática a través de las complejidades del proyecto, facilitando una comprensión integral y una implementación efectiva.
 
 ## Objetivos del laboratorio
 Podrás completar las siguientes tareas:
 
-- Tarea 1: Configuración de la aplicación miyagi
+- Tarea 1: Configurar la aplicación miyagi
 - Tarea 2: Comprender la implementación del servicio de Recomendación
-- Tarea 3: Ejecutar el servicio de recomendaciones localmente
+- Tarea 3: Ejecutar el servicio de recomendación localmente
 - Tarea 4: Ejecutar el frontend de Miyagi localmente
-- Tarea 5: Persistiendo embeddings en Azure AI Search
+- Tarea 5: Persistir embeddings en Azure AI Search
 - Tarea 6: Explorar la Aplicación Miyagi y el servicio de Recomendación mediante Personalización
 
-### Tarea 1: Configuración de la aplicación miyagi
+### Tarea 1: Configurar la aplicación miyagi
+
+En esta tarea, configurará la aplicación Miyagi actualizando configuraciones específicas en Visual Studio Code. Esto implica reemplazar los valores de marcador de posición (placeholder) en los archivos de configuración con los valores reales de varios recursos de Azure para garantizar la conectividad y el funcionamiento correctos.
 
 1. Abra **Visual Studio Code** desde el escritorio de Lab VM haciendo doble clic en el acceso directo.
 
@@ -36,7 +38,9 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/image-rg-18.png) 
    
-1. Expanda el directorio **miyagi > ui** y verifique que el archivo **.env** está presente. 
+1. Expanda el directorio **miyagi > ui > typescript** y verifique que el archivo **.env** está presente. 
+
+   ![](./Media/miyagi-image-16.png) 
 
 1. Expanda el directorio **miyagi/services/recommendation-service/dotnet** y verifique que el archivo **appsettings.json** está presente.
 
@@ -112,6 +116,8 @@ Podrás completar las siguientes tareas:
 
 ### Tarea 3: Ejecutar el servicio de recomendaciones localmente
 
+En esta tarea, ejecutará el servicio de recomendación localmente utilizando Visual Studio Code para compilar y ejecutar el servicio en la terminal y luego verificará su funcionalidad accediendo a la página Swagger en el navegador.
+
 1. Abra una nueva terminal: navegando a **miyagi/services/recommendation-service/dotnet** y haciendo clic derecho, en el menú contextual seleccione **Abrir en Terminal Integrada**.
 
     ![](./Media/task4-1.png)
@@ -123,7 +129,7 @@ Podrás completar las siguientes tareas:
    dotnet run
    ```
 
-   **Nota**: Deje que se ejecute el comando, mientras tanto puede continuar con el siguiente paso.
+   **Nota**: Deje que se ejecute el comando, mientras tanto puede continuar con el siguiente paso. **Nota**: Los comandos dotnet build y dotnet run son fundamentales en entornos .NET Core y .NET 5+ para crear y ejecutar aplicaciones .NET localmente en su máquina.
 
 1. Abra otra pestaña en Edge, en la ventana del navegador pegue el siguiente enlace
 
@@ -138,6 +144,8 @@ Podrás completar las siguientes tareas:
 
 ### Tarea 4: Ejecutar el frontend de Miyagi localmente
 
+En esta tarea, ejecutará la interfaz de Miyagi localmente instalando las dependencias con npm y yarn, y luego iniciará el servidor de desarrollo. Verificará su funcionalidad accediendo al servidor de desarrollo local desde el navegador.
+
 1. Abra una nueva terminal: navegando a **miyagi/ui** y haciendo clic derecho en **ui/typescript**, en el menú contextual seleccione **Abrir en Terminal Integrada**.
 
    ![](./Media/image-rg-25.png)
@@ -150,7 +158,9 @@ Podrás completar las siguientes tareas:
     yarn dev
     ```
 
-   **Nota**: Por favor espere hasta que el comando se ejecute correctamente. Tardará hasta 5 minutos.
+   > **Nota**: Por favor espere hasta que el comando se ejecute correctamente. Tardará hasta 5 minutos. Una vez que el comando **yarn dev** comience a ejecutarse, espere 2 minutos y continúe con el siguiente paso.
+
+   > **Nota**: Estos comandos (npm install --global yarn, yarn install y yarn dev) son esenciales en proyectos de JavaScript y TypeScript para gestionar dependencias y ejecutar los scripts necesarios para configurar y ejecutar aplicaciones. Garantizan la instalación de todos los paquetes necesarios (yarn install) y ejecutan los scripts de desarrollo (yarn dev) definidos en la configuración del proyecto (package.json).
 
 1. Abra una nueva pestaña en Edge, navegue a la siguiente dirección
 
@@ -165,8 +175,13 @@ Podrás completar las siguientes tareas:
    >**Nota:** Si encuentra una ventana emergente **Error de tiempo de ejecución no controlado**, ciérrela y descarte también el mensaje de error en la esquina inferior izquierda.
 
      ![](./Media/error-side.png)
-   >**Nota:** No cierre VS Code ya que necesitará que el host local se ejecute para tareas futuras.
-### Tarea 5: Persistiendo embeddings en Azure AI Search
+
+   > **[!IMPORTANTE]**
+   > No cierre VS Code ya que necesitará que el host local se ejecute para tareas futuras.
+
+### Tarea 5: Persistir embeddings en Azure AI Search
+
+En esta tarea, conservará las incorporaciones en Azure AI Search ejecutando una solicitud POST en Swagger UI, verificando la ejecución y luego confirmando la creación del índice en Azure Portal.
 
 1. Vuelva a la página **swagger UI**, desplácese hasta la sección **Memory**, haga clic en **POST /dataset** para ampliar y haga clic en **Try it out**.
 
@@ -192,7 +207,7 @@ Podrás completar las siguientes tareas:
 
     ![](./Media/swaggerUI-Responses.png)
 
-1. Vuelva a la pestaña **Portal de Azure**, busque y seleccione **Búsqueda de IA**.
+1. Vuelva a la pestaña **Portal de Azure**, en el cuadro Buscar recursos, servicios y documentos (G+/) en la parte superior del portal, ingrese **Búsqueda de IA** (1) y luego seleccione **Búsqueda de IA** (2) en Servicios.
 
     ![](./Media/ai-search1.png)    
 
@@ -215,13 +230,16 @@ Podrás completar las siguientes tareas:
    
 ### Tarea 6: Explorar la Aplicación Miyagi y el servicio de Recomendación mediante Personalización
 
+En esta tarea, personalizará el servicio de recomendaciones de la aplicación Miyagi seleccionando un asesor financiero y revisando las recomendaciones. Después, revisará los registros en Visual Studio Code y detendrá los servicios.
+
 1. Vuelva a la página de la interfaz de usuario del **servicio de recomendación** y haga clic en el botón **personalize**.
 
    ![](./Media/service-personalize.png)
 
-1. En la página **Personalize**, seleccione su **asesor financiero** en el menú desplegable y haga clic en **Personalize**.
+1. En la página , seleccione su **asesor financiero** en el menú desplegable y haga clic en **Personalize**.
+1. En la página **Personalize**, seleccione su **asesor financiero favorito (1)** y elija **GPT-4 (2)** para el **Reasoning Engine** en el menú desplegable, luego haga clic en **Personalize** (3).
 
-   ![](./Media/financial-advisor.png)  
+   ![](./Media/miyagi-image126.png)
 
 1. Debería ver las recomendaciones del servicio de recomendación en el widget Top Stocks.
 
@@ -235,10 +253,12 @@ Podrás completar las siguientes tareas:
 
 1. Desde la **Terminal** seleccione la terminal **Node**, presione **Ctrl + C** para detener la página de la interfaz de usuario del **servicio de recomendación**.
 
+   ![](./Media/miyagi-image31.png)
+
 1. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
 
 ## Resumen
 
 En esta práctica de laboratorio, comenzó con la configuración de la Aplicación Miyagi para su preparación operativa, seguido de una exploración detallada de la implementación del servicio de Recomendación. La ejecución práctica implica ejecutar el servicio de Recomendación e implementar el frontend Miyagi localmente para realizar pruebas. Mejorar la eficiencia de la recuperación de datos es un paso fundamental que se logra mediante la persistencia de embeddings en Azure AI Search. El proyecto concluye con una amplia exploración de la Aplicación Miyagi y el servicio de Recomendación, priorizando una experiencia de usuario personalizada. Este enfoque sistemático garantiza una comprensión profunda y una implementación efectiva durante todo el proyecto.
 
-### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+### Ha completado con éxito el laboratorio. Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.

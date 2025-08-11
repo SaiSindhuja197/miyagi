@@ -10,7 +10,9 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
 1. Para verificar los nombres de los modelos implementados para "**deploymentOrModelId**" y para "**embeddingDeploymentOrModelId**" siga los pasos a continuación:
    
-      - En el Portal de Azure, haga clic en **Grupos de Recursos** en el panel Navegar.
+      - En la página de inicio del Portal de Azure, haga clic en **Grupos de Recursos** en el panel Navegar.
+
+          ![](./Media/miyagi-image6.png)
 
       - Desde la página Grupos de Recursos, haga clic en **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -20,13 +22,15 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
         ![](./Media/11-10-24(18).png)
 
-      - En la página **Información general de OpenAI** **(1)**, haga clic en el botón **Go to Azure AI Foundry portal (2)**.
+      - En la página **Información general de OpenAI** **(1)**, haga clic en el botón **Go to Azure AI Foundry portal (2)** para ir al **Portal de Azure AI Foundry**.
 
            ![](./Media/azurespanishaiupd.png) 
    
-      - En **Azure AI Foundry portal**, seleccione **Implementaciones**, en la sección Administración.
+      - En el **Portal de Azure AI Foundry**, en el panel de navegación izquierdo, seleccione **Implementaciones**, en la sección **Recursos compartidos**.
 
-      - En la hoja **Implementaciones** de Azure AI Studio, haga clic en el nombre de modelo **gpt-4o** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4o **(2)**.
+           ![](./Media/deployments-11.png)
+
+      - En la hoja **Implementaciones** de Azure AI Foundry, haga clic en el nombre de modelo **miyagi-CompletionModel-** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4o **(2)**.
 
           ![](./Media/spanish-01.png)
         
@@ -34,13 +38,13 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
       
       -  Vuelva a la página **Implementaciones**.
 
-      - En la hoja Implementaciones de Azure AI Studio, haga clic en **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** nombre de implementación y verifique el **nombre de implementación** de **incrustación de texto -ada-002 modelo(2)**.
+      - En la hoja Implementaciones de Azure AI Foundry, haga clic en **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** nombre de implementación y verifique el **nombre de implementación** del modelo **text-embedding-ada-002(2)**.
         
           ![](./Media/spanish-02.png)
 
          ![](./Media/11-10-24(23).png)
 
-1. Para verificar los valores para **Extremo** y **Clave 1**, siga los pasos a continuación:
+1. Para verificar los valores para **endpoint** y **apiKey**, siga los pasos a continuación:
 
    -  Vuelva a la pestaña que muestra **Portal de Azure**. 
 

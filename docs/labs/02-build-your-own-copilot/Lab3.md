@@ -1,9 +1,9 @@
 # Laboratorio 4 - Exponer Open AI a través de APIM
 
-En esta práctica de laboratorio, verificará y creará APIs en el servicio implementado API Management a fin de actualizar la imagen de Docker para el servicio de Recomendación. La revisión del servicio de Recomendación de los servicios de Azure Kubernetes encapsula el enfoque meticuloso para mantener y optimizar las aplicaciones en contenedores dentro del alcance del proyecto.
+En este laboratorio, profundizará en la configuración y verificación de API en Azure API Management, centrándose en la integración del servicio Azure OpenAI. Esto implica configurar API HTTP, garantizar una configuración correcta y obtener una URL de puerta de enlace para un acceso externo y una integración sin problemas. También explorará la creación de políticas, la definición de roles y la administración de suscripciones para operar las API de forma segura. Este laboratorio destaca las prácticas recomendadas en la administración de API, garantizando una autenticación, autorización y pruebas operativas robustas dentro del completo ecosistema de Azure.
 
 ## Objetivos del laboratorio
-Podrás completar las siguientes tareas:
+Podrá completar las siguientes tareas:
 
 - Tarea 1: Verificar el servicio implementado API Management y crear una API.
 - Tarea 2: Crear Políticas y Roles de API Management
@@ -12,6 +12,8 @@ Podrás completar las siguientes tareas:
 - Tarea 5: Configurar Event Hub Logging y Validar la Entrada
 
 ### Tarea 1: Verificar el servicio implementado API Management y crear una API
+
+En esta tarea, configurará una API HTTP en Azure API Management para interactuar con el servicio Azure OpenAI. Esto garantiza que la API esté configurada correctamente y proporciona una URL de puerta de enlace para el acceso externo y la integración con otros servicios.
 
 1. Navegue al Portal de Azure, abra el Grupo de recursos llamado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  y seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** de la lista de recursos.
 
@@ -48,9 +50,13 @@ Podrás completar las siguientes tareas:
 
 ### Tarea 2: Crear Políticas y Roles de API Management
 
+En este laboratorio, configurará políticas de API, definirá roles y suscripciones, e integrará la API de Azure OpenAI Service en Azure API Management. Esto garantiza la correcta autenticación, autorización y pruebas operativas de los puntos de conexión de la API.
+
 1. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **API** **(1)**, luego clic en los **three dots** **(2)** al lado de miyagi-api, seleccione **Import** **(3)**, y haga clic en **OpenAPI** **(4)**.
 
    ![](./Media/api-openi-import.png)
+
+   ![](./Media/api-05.png)
 
 2. En la ventana emergente de **Import from OpenAPI specification** pegue el siguiente enlace en el **textbox** **(1)** de la especificación OpenAPI, y entonces haga clic en **Import** **(2)**. 
 
@@ -64,59 +70,63 @@ Podrás completar las siguientes tareas:
    
     ![](./Media/apim4.png)
 
-1. En la API **api-key**, navegue a la pestaña **Configuración** **(1)** y actualice la URL del servicio web **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)**.
+4. En la API **api-key**, navegue a la pestaña **Configuración** **(1)** y actualice la URL del servicio web **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)**.
 
    ![](./Media/miyagi-image161n.png)
 
-4. En la API **Azure OpenAI Service API** navegue a la pestaña **Settings** **(1)** y actualice el **Header Name** con el valor **api-key** **(2)** y haga clic en **Save** **(3)**.
+5. En la API **Azure OpenAI Service API** navegue a la pestaña **Settings** **(1)** y actualice el **Header Name** con el valor **api-key** **(2)** y haga clic en **Save** **(3)**.
 
    ![](./Media/azure-open-api-setting.png)
 
-5. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Productos** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar** **(2)**.
+6. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Productos** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar** **(2)**.
 
    ![](./Media/api-product1.png)
 
-6. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **api-key** **(4)** presione Enter y haga clic en **Crear** **(5)**.
+7. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **api-key** **(4)** presione Enter y haga clic en **Crear** **(5)**.
 
    ![](./Media/productSpan.png)
 
-7. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Suscripciones** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar suscripción** **(2)**.
+8. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Suscripciones** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar suscripción** **(2)**.
 
    ![](./Media/api-product3.png)
 
-8. En **Agregar suscripción**, ingrese el Nombre como **aoai-test** **(1)**, establezca el Nombre para mostrar como **AOAI Test** **(2)**, y haga clic en **Crear** **(3)**.
+9. En **Agregar suscripción**, ingrese el Nombre como **aoai-test** **(1)**, establezca el Nombre para mostrar como **AOAI Test** **(2)**, y haga clic en **Crear** **(3)**.
 
    ![](./Media/api-product4.png)
 
-9. Una vez creada la suscripción, haga clic en los **tres puntos** **(1)** al lado de la clave recién creada y haga clic en **Mostrar u ocultar claves** **(2)**. Copie la clave **principal de suscripción** **(3)** y guárdela para más adelante.
+10. Una vez creada la suscripción, haga clic en los **tres puntos** **(1)** al lado de la clave recién creada y haga clic en **Mostrar u ocultar claves** **(2)**. Copie la clave **principal de suscripción** **(3)** y guárdela para más adelante.
 
    ![](./Media/api-product5.png)
 
-10. Navegue a **Azure OpenAI** en el Portal de Azure, seleccione el recurso Azure OpenAI **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
+11. Navegue a **Azure OpenAI** en el Portal de Azure, seleccione el recurso Azure OpenAI **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
 
-11. En **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, seleccione **Control de acceso (IAM)** **(1)**, haga clic en **+ Agregar** **(2)**, y seleccione **Agregar asignación de roles** **(3)**.
+12. En **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, seleccione **Control de acceso (IAM)** **(1)**, haga clic en **+ Agregar** **(2)**, y seleccione **Agregar asignación de roles** **(3)**.
 
     ![](./Media/apinew2-1.png)
    
-12. En la pestaña **Adición de la asignación de roles** en la barra de búsqueda escriba y seleccione **Cognitive Services User** y haga clic en **Siguiente**.
+13. En la pestaña **Adición de la asignación de roles** en la barra de búsqueda escriba y seleccione **Cognitive Services User** y haga clic en **Siguiente**.
 
     ![](./Media/apinew3-1.png)
 
-13. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**, en la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada seleccione **API Management service** **(3)**, elija **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)** y haga clic en **Siguiente** **(6)**.
+14. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**.
+
+15. En la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada, para **Suscripción** deje el valor predeterminado, luego en **Identidad administrada** seleccione **API Management service** **(3)**, elija **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)**. 
+
+16. Haga clic en **Siguiente** **(6)**.
 
     ![](./Media/apim-role-1.png)
 
-14. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
+17. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
       ![](./Media/namespace3-1.png)
 
-15. Vuelva al **servicio API Management** en el Portal de Azure, seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**.
+18. Vuelva al **servicio API Management** en el Portal de Azure, seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**.
 
-16. En el servicio **API Management**, seleccione **API** **(1)**, elija la API **api-key** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
+19. En el servicio **API Management**, seleccione **API** **(1)**, elija la API **Azure OpenAI Service API** **(2)** creada en el paso anterior, seleccione **Todas las Operaciones** **(3)** y haga clic en **Editor de código de política** **(4)** en **Procesamiento entrante**.
 
-      ![](./Media/pg6-18.png)
+      ![](./Media/api9808.png)
 
-17. En el editor de código, copie la siguiente política para sobrescribir solo las etiquetas **entrantes** **(1)**, reemplace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** con **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** del administrador de API que copió el Paso 4 de la Tarea 1 y haga clic en **Guardar** **(3)**.
+20. En el editor de código, copie la siguiente política para sobrescribir solo las etiquetas **entrantes** **(1)**, reemplace **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** con **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(2)** del administrador de API que copió el Paso 4 de la Tarea 1 y haga clic en **Guardar** **(3)**.
 
       ```
       <inbound>
@@ -126,7 +136,7 @@ Podrás completar las siguientes tareas:
          <set-header name="Authorization" exists-action="override">
             <value>@("Bearer " + (string)context.Variables["msi-access-token"])</value>
          </set-header>
-         <set-backend-service base-url="https://<<Azure_OpenAI_Endpoint>>/openai" />
+         <set-backend-service base-url="<<Azure_OpenAI_Endpoint>>openai" />
       </inbound>
       ```
 
@@ -134,15 +144,25 @@ Podrás completar las siguientes tareas:
 
     >**Nota**: Asegúrese de pegar los valores de **OpenAIEndpoint** y eliminar cualquier duplicación de **https://**.
 
-18. En API Management, haga clic en **Probar** **(1)**, seleccione Creates a **completion for the chat message** **(2)**, ingrese el nombre de la implementación gpt-35-turbo **<inject key="CompletionModel" enableCopy="true"/>** **(3)** en el campo deployment-id, ingrese **2023-05-15** **(4)** en el campo api-version, y haga clic en **Enviar** **(5)**. 
+21. En API Management, haga clic en **Probar** **(1)**, seleccione Creates a **completion for the chat message** **(2)**, ingrese el nombre de la implementación gpt-35-turbo **<inject key="CompletionModel" enableCopy="true"/>** **(3)** en el campo deployment-id, ingrese **2024-08-01-preview** **(4)** en el campo api-version, y haga clic en **Enviar**. 
 
-     ![](./Media/api-test.png)
+     ![](./Media/api-08.png)
 
-19. Desplácese hacia abajo en la respuesta y debería ver una respuesta `200` y un mensaje devuelto por su servicio OpenAI.
+22. Desplácese hasta la sección **Request body** **(1)**, reemplace el código existente con el código a continuación y haga clic en **Send** **(2)**.
+
+   ```
+   {"model":"gpt-4","messages":[{"role":"user","content":"Hello! What does an API Management Service in Azure do?"}]}
+   ```
+
+   ![](./Media/new-api-body.png)
+
+23. Desplácese hacia abajo en la respuesta y debería ver una respuesta `200` y un mensaje devuelto por su servicio OpenAI.
 
     ![](./Media/api-product8.png)
 
 ### Tarea 3: Actualizar la Imagen de Docker para el servicio de Recomendación
+
+En esta tarea, actualizará la configuración del servicio de recomendaciones, reconstruirá la imagen de Docker, la enviará a ACR y se asegurará de que la imagen actualizada esté lista para su implementación dentro del entorno de Azure.
 
 1. Navegue a Visual Studio Code, expanda el directorio **miyagi/services/recommendation-service/dotnet** y seleccione **appsettings.json**.
 
@@ -162,8 +182,9 @@ Podrás completar las siguientes tareas:
    docker build . -t miyagi-recommendation
    ```
 
-   ![](./Media/lab3-t2-s4.png)
-   
+    >**Nota**: Este comando crea una imagen Docker llamada Miyagi-recommendation a partir del Dockerfile y los archivos asociados en el directorio actual.
+
+
 1. Ejecute el siguiente comando para iniciar sesión en ACR.
 
    > **Nota**: Por favor reemplace **[ACRname]** con **<inject key="AcrLoginServer" enableCopy="true"/>**, **[uname]** con **<inject key="AcrUsername" enableCopy="true"/>**, y **[password]** con **<inject key="AcrPassword" enableCopy="true"/>**.
@@ -171,6 +192,8 @@ Podrás completar las siguientes tareas:
     ```
     docker login [ACRname] -u [uname] -p [password]
     ```
+
+    >**Nota**: El comando docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/> se usa para autenticar el cliente de Docker con el Azure Container Registry (ACR) especificado mediante el nombre de usuario y la contraseña proporcionados. Esta autenticación es necesaria para realizar operaciones como enviar y recibir imágenes de contenedor del ACR.
 
 1. Ejecute el siguiente comando para agregar la etiqueta.
 
@@ -180,6 +203,8 @@ Podrás completar las siguientes tareas:
    docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest
    ```
 
+   >**Note**: El comando docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest carga una imagen de Docker desde su equipo local al Azure Container Registry (ACR) especificado. Al ejecutar este comando, la imagen miyagi-recommendation:latest está disponible en el ACR, lo que permite su uso en diversas implementaciones y servicios de Azure.
+
 1. Una vez que haya iniciado sesión en ACR, ejecute el siguiente comando para enviar la imagen docker actualizada del servicio de recomendación al registro del contenedor.
 
    **Nota**: Asegúrese de reemplazar **[ACRname]** con **<inject key="AcrLoginServer" enableCopy="true"/>**.
@@ -188,9 +213,11 @@ Podrás completar las siguientes tareas:
    docker push [ACRname]/miyagi-recommendation:latest
    ```
 
-   ![](./Media/lab3-t2-s5.png)
+   >**Nota**: El comando docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest carga la imagen de Docker miyagi-recommendation:latest en el Azure Container Registry (ACR) especificado. Esto hace que la imagen esté disponible en el ACR para su uso en implementaciones y otras operaciones.
 
 ### Tarea 4: Revisión del servicio de Recomendación de AKS 
+
+En esta tarea, administrará el ciclo de vida de la implementación del servicio de recomendaciones en Azure Kubernetes Service (AKS), lo que incluye iniciar y detener el servicio, así como verificar su funcionalidad después de la revisión.
 
 1. Navegue al Portal de Azure, abra el Grupo de Recursos denominado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  y seleccione el servicio de Kubernetes **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** de la lista de recursos.
 
@@ -216,6 +243,8 @@ Podrás completar las siguientes tareas:
 
 ### Tarea 5: Configurar Event Hub Logging y Validar la Entrada
 
+En esta tarea, configurará el registro de Event Hub para API Management, configurará los componentes necesarios en Azure, implementará la configuración de registro mediante una plantilla Bicep y validará la integración mediante pruebas y monitoreo.
+
 1. En el Portal de Azure, busque y seleccione **Event Hubs**, seleccione **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](./Media/api-product9.png)
@@ -228,23 +257,27 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/namespace2-1.png)
 
-4. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**, en la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada elija **API Management service** **(3)**, seleccione **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)** y haga clic en **Siguiente** **(6)**.
+4. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**. 
+
+5. En la ventana emergente Selección de identidades administradas, para **Suscripción deje el valor predeterminado**, en el menú desplegable Identidad administrada elija **API Management service** **(3)**, seleccione **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)**. 
+
+6. Haga clic en **Siguiente** **(6)**.
 
    ![](./Media/apim-role-2.png)
 
-5. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
+7. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
    ![](./Media/namespace3-2.png)
 
-6. En la pestaña Espacio de nombres de Event hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Event Hubs** **(1)** en Entidades y haga clic en **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**
+8. En la pestaña Espacio de nombres de Event hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Event Hubs** **(1)** en Entidades y haga clic en **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**
 
    ![](./Media/namespace4.png)
 
-7. En la **Instancia de Event Hubs** de **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Políticas de acceso compartido** **(1)** en Configuración, haga clic en **apimLoggerAccessPolicy** **(2)** y copie la **Cadena de conexión primaria** **(3)** y péguela en un bloc de notas.
+9. En la **Instancia de Event Hubs** de **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Políticas de acceso compartido** **(1)** en Configuración, haga clic en **apimLoggerAccessPolicy** **(2)** y copie la **Cadena de conexión primaria** **(3)** y péguela en un bloc de notas.
 
    ![](./Media/primary-spanish.png)
 
-8. Abra el **bloc de notas** de JumpVM y copie y pegue el siguiente código, actualizando **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** con el nombre **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** y &lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt; con el valor copiado en el paso anterior.
+10. Abra el **bloc de notas** de JumpVM y copie y pegue el siguiente código, actualizando **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** con el nombre **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** y &lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt; con el valor copiado en el paso anterior.
 
    ```
    resource existingApiManagement 'Microsoft.ApiManagement/service@2023-03-01-preview' existing = {
@@ -267,23 +300,23 @@ Podrás completar las siguientes tareas:
 
    ![](./Media/bicepfile1.png)
 
-9. En la barra de menú del bloc de notas seleccione **Archivo** y haga clic en **Guardar como**.
+11. En la barra de menú del bloc de notas seleccione **Archivo** y haga clic en **Guardar como**.
 
-10. En **Guardar como** navegue a la ruta `C:\LabFiles\miyagi` **(1)**, ingrese el nombre de archivo **aoai-logger.bicep** **(2)**, guarde el tipo como **Todos los archivos** **(3)** y haga clic en **Guardar** **(4)**.
+12. En **Guardar como** navegue a la ruta `C:\LabFiles\miyagi` **(1)**, ingrese el nombre de archivo **aoai-logger.bicep** **(2)**, guarde el tipo como **Todos los archivos** **(3)** y haga clic en **Guardar** **(4)**.
 
     ![](./Media/bicepfile2-1.png)
 
-11. En JumpVM abra la terminal de PowerShell y ejecute el siguiente comando para iniciar sesión en el **Portal de Azure**.
+13. En JumpVM abra la terminal de PowerShell y ejecute el siguiente comando para iniciar sesión en el **Portal de Azure**.
 
     ```
     az login
     ```
 
-12. Esto lo redireccionará a la **página de inicio de sesión de Microsoft**, seleccione su cuenta de Azure **<inject key="AzureAdUserEmail"></inject>**, y regrese de vuelta a **PowerShell**.
+14. Esto lo redireccionará a la **página de inicio de sesión de Microsoft**, seleccione su cuenta de Azure **<inject key="AzureAdUserEmail"></inject>**, y regrese de vuelta a **PowerShell**.
 
     ![](./Media/azure-account-select.png)
 
-13. Ejecute el siguiente comando para cambiar el directorio a la carpeta raiz `miyagi` en la terminal y ejecutar el archivo bicep.
+15. Ejecute el siguiente comando para cambiar el directorio a la carpeta raiz `miyagi` en la terminal y ejecutar el archivo bicep.
 
     > **Nota**: Reemplace &lt;&lt;RESOURCE_GROUP_NAME&gt;&gt; con **<inject key="rgname" enableCopy="true"/>**.
    
@@ -291,16 +324,18 @@ Podrás completar las siguientes tareas:
     cd C:\LabFiles\miyagi
     az deployment group create --resource-group <<RESOURCE_GROUP_NAME>> --template-file .\aoai-logger.bicep
     ```
+
+    > **Nota**: Esta secuencia de comandos navega al directorio C:\LabFiles\miyagi que contiene el archivo Bicep y luego implementa los recursos definidos en ese archivo en el grupo de recursos de Azure especificado.
     
-14. Navegue al Portal de Azure, abra el Grupo de recursos denominado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  y seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** de la lista de recursos.
+16. Navegue al Portal de Azure, abra el Grupo de recursos denominado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**  y seleccione el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** de la lista de recursos.
 
     ![](./Media/lab3-t1-s1.png)
 
-15. En servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** en el menú de la izquierda haga clic en **APIs** **(1)** y seleccione **api-key** **(2)** que fue creado en un paso anterior, seleccionando **Todas las Operaciones** **(3)** y en **procesamiento saliente** haga clic en el **Editor de código de política(4)**.
+17. En servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** en el menú de la izquierda haga clic en **APIs** **(1)** y seleccione **Azure OpenAI Service API** **(2)** que fue creado en un paso anterior, seleccionando **Todas las Operaciones** **(3)** y en **procesamiento saliente** haga clic en el **Editor de código de política(4)**.
 
-    ![](./Media/pg6-17.png)
+    ![](./Media/api4782.png)
 
-16. En el editor de código copie la siguiente política para sobrescribir las etiquetas **salientes** únicamente y haga clic en **Guardar**.
+18. En el editor de código copie la siguiente política para sobrescribir las etiquetas **salientes** únicamente y haga clic en **Guardar**.
 
       ```
       <outbound>
@@ -321,19 +356,26 @@ Podrás completar las siguientes tareas:
 
       ![](./Media/apmi-output.png)
 
-17. Vuelva a Event Hubs, seleccione el recurso Event Hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
+19. Ahora abra la interfaz de usuario de Miyagi en una pestaña separada del navegador, haga clic en **Personalize**, seleccione su **Asesor Financiero Favorito (1)**, elija **GPT-4 (2)** para **Reasoning Engine** de la lista. Luego, haga clic en **Personalize (3)** y repita los mismos pasos seleccionando diferentes **Asesores Financieros Favoritos** de 6 a 7 veces para generar registros adicionales. 
+
+    ![](./Media/miyagi-image126.png)
+
+    >**Note**: Please ensure that the localhost is running in the VS code or else follow the steps in **Page 4 - Lab 2 - Task 4 - Steps 1 & 2**
+
+20. Vuelva a Event Hubs, seleccione el recurso Event Hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![](./Media/api-product9.png)
 
-18. En el Espacio de nombres Event Hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Event Hubs** **(1)** en Entidades y haga clic en **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**
+21. En el Espacio de nombres Event Hub **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Event Hubs** **(1)** en **Entidades** y haga clic en **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**
 
     ![](./Media/namespace4.png)
 
-19. En la Instancia de Event Hubs **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Procesar datos** **(1)**, desplácese hacia abajo hasta localizar **Procese sus datos de Event Hub usando Stream Analytics Query Language** y haga clic en **Iniciar** **(2)**.
+22. En la Instancia de Event Hubs **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**, en el menú de la izquierda seleccione **Procesar datos** **(1)**, desplácese hacia abajo hasta localizar **Procese sus datos de Event Hub usando Stream Analytics Query Language** y haga clic en **Iniciar** **(2)**.
 
     ![](./Media/bicepfile4.png)
 
-20. Ahora abra la interfaz de usuario de Miyagi en una pestaña separada del navegador, haga clic en **Personalize** y cambie sus preferencias de stock. Luego, haga clic en **Personalize** y repita los mismos pasos varias veces para generar registros adicionales. En Query de Event hub, debería ver información de registro de los tokens utilizados.
+
+23. Haga clic en **Test Query** y en Query de Event hub, debería ver información de registro de los tokens utilizados.
 
     ![](./Media/event-hub-data.png)
 
@@ -341,4 +383,4 @@ Podrás completar las siguientes tareas:
 
 En esta práctica de laboratorio, configuró un servicio API Management para administrar las APIs de manera eficiente. Inicialmente, se implementó el servicio y se creó una API dentro de él. Posteriormente se establecieron reglas y roles para controlar el acceso a la API. El registro de Event Hub se configuró para monitorear el uso de API de manera efectiva. Por último, se realizó una validación de entradas para garantizar que la API manejara varias entradas correctamente. En general, este proceso garantizó la gestión efectiva, la seguridad y el monitoreo del rendimiento de las API, contribuyendo a un ecosistema de API seguro y bien organizado.
 
-### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+### Ha completado con éxito el laboratorio. Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
