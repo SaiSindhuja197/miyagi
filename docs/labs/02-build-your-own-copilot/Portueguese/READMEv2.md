@@ -52,7 +52,7 @@ A arquitetura deste laboratório envolve os seguintes componentes principais:
 
 - **AKS (Azure Kubernetes Service):** Serviço Kubernetes gerenciado para orquestração e escalonamento de contêineres.
 
-- **Apache Kafka: **Gerencia o streaming de dados em tempo real e o processamento de eventos.
+- **Apache Kafka:** Gerencia o streaming de dados em tempo real e o processamento de eventos.
 
 - **Cosmos DB:** Banco de dados distribuído globalmente, multi-modelo, com baixa latência e alta disponibilidade.
 
@@ -60,3 +60,6 @@ A arquitetura deste laboratório envolve os seguintes componentes principais:
 
 - **Bing Search:** Permite adicionar recursos de pesquisa do Bing aos seus aplicativos, oferecendo APIs para pesquisas na web, imagens, vídeos e notícias.
 
+> Important message
+
+> Support Contact
