@@ -1,4 +1,4 @@
-# Laboratório 5: Primeiros passos com o seu próprio copiloto
+# Laboratório 5 - Primeiros passos com o seu próprio copiloto
 
 ### Duração: 30 minutos
 
@@ -255,7 +255,7 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
    ![](../Media/896.png)
 
-1. Clique em **realestate-us-sample-index** na barra de pesquisa, escreva **Seattle (1)** e clique em **Pesquisar (2)** e veja o **Resultado (3)**.
+1. Clique em **realestate-us-sample-index** na barra de pesquisa, escreva **Seattle (1)** e clique em **Procurar (2)** e veja o **Resultado (3)**.
 
    ![](../Media/897.png)
 
@@ -263,4 +263,6 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
 Neste laboratório, aprendeu a configurar e executar o exemplo do Kernel Semântico integrando o SDK no seu projeto, configurando fornecedores LLM, definindo plug-ins e executando o código. Além disso, adquiriu conhecimentos sobre a configuração do Azure Cognitive Search, incluindo a criação ou seleção de um índice, a configuração de campos, a configuração do Kernel Semântico para interagir com o Azure, a definição de plug-ins e o teste da integração para recursos de pesquisa melhorados.
 
-### Concluiu este laboratório com sucesso. Agora clique em Seguinte no canto inferior direito para passar para a página seguinte.
+### Conclusão
+
+Você concluiu com sucesso o _Crie aplicações inteligentes com a pilha Copilot da Microsoft e Azure OpenAI_ , adquirindo competências práticas em validação de recursos do Azure, execução e contentorização da aplicação Miyagi, implementação no AKS, gestão de APIs via APIM e criação do seu próprio Copilot com integração de LLMs.
