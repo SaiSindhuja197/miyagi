@@ -1,6 +1,6 @@
 ## Introduction to Miyagi 
 
-Estimated Duration
+### Duração: 10 minutos
 
 ## Acessando seu ambiente de laboratório
 
