@@ -146,7 +146,7 @@ Nesta tarefa, irá executar o serviço de recomendação localmente utilizando o
 ### Tarefa 4: Executar o frontend miyagi localmente
 Nesta tarefa, irá executar o frontend miyagi localmente instalando dependências utilizando npm e yarn e, em seguida, iniciando o servidor de desenvolvimento. Irá verificar a sua funcionalidade acedendo ao servidor de desenvolvimento local no navegador.
 
-1. Abra um novo terminal: navegando **miyagi/ui** e clique com o botão direito do rato em **ui/typescript** , no menu em cascata selecione **Open in intergate Terminal**.
+1. Abra um novo terminal: navegando **miyagi** e clique com o botão direito do rato em **ui/typescript** , no menu em cascata selecione **Open in intergate Terminal**.
 
    ![](../Media/834.png)
 
