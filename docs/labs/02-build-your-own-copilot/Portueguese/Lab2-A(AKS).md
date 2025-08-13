@@ -283,7 +283,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
 > - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
 > - Se precisar de ajuda, contacte-nos através do e-mail cloudlabs-support@spektrasystems.com.
 
- <validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
+<validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
 
 # Laboratório 3.2 - Explorar e verificar a UI Miyagi em contentor e o serviço de recomendação no AKS
 
