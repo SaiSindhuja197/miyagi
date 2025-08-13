@@ -1,3 +1,7 @@
+## Introduction to Miyagi 
+
+
+
 ## Acessando seu ambiente de laboratório
 
 Após a configuração do ambiente, o seu browser irá carregar uma máquina virtual (JumpVM), utilize esta máquina virtual durante todo o workshop para realizar o laboratório. Pode ver o número na parte inferior do guia de laboratório para alternar para diferentes exercícios no guia de.
@@ -77,5 +81,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
    ![](../Media/812.png)
 
 
-> [!IMPORTANTE]<br>
+> **[MPORTANTE]** <br>
 > **Para uma experiência mais tranquila durante o laboratório prático, é importante rever minuciosamente as instruções e as notas que as acompanham. Ajudará a navegar pelas tarefas com facilidade e confiança.**
+
+Now click on **Next** from the lower right corner to move to the next page.
