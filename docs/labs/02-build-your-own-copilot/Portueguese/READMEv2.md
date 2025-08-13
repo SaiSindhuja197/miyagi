@@ -38,7 +38,7 @@ Integra Azure Functions, AKS e Apache Kafka para uma comunicação fluida, com o
 
 #### Diagrama de Arquitetura
 
-> Update the arch diagram
+![](../Media/1023.png)
 
 ### Explicação dos Componentes
 
@@ -60,6 +60,28 @@ A arquitetura deste laboratório envolve os seguintes componentes principais:
 
 - **Bing Search:** Permite adicionar recursos de pesquisa do Bing aos seus aplicativos, oferecendo APIs para pesquisas na web, imagens, vídeos e notícias.
 
-> Important message
+> Importante 
+ 
+    Para uma experiência prática de laboratório mais tranquila, é importante revisar atentamente as instruções e as notas que as acompanham. Isso ajudará você a realizar as tarefas com facilidade e confiança.
 
-> Support Contact
+Este laboratório prático o guiará na criação de sistemas inteligentes com a pilha Copilot da Microsoft, aproveitando os padrões de IA generativa e RAG para maior produtividade e experiências personalizadas.
+
+### Contato de suporte
+
+A equipe de suporte da CloudLabs está disponível 24 horas por dia, 7 dias por semana, 365 dias por ano, por e-mail e chat ao vivo, para garantir assistência contínua a qualquer momento. Oferecemos canais de suporte dedicados, adaptados especificamente para alunos e instrutores, garantindo que todas as suas necessidades sejam atendidas com rapidez e eficiência.
+
+Contatos de Suporte ao Aluno:
+    
+- Suporte por e-mail:cloudlabs-support@spektrasystems.com.
+
+- Suporte por chat ao vivo: https://cloudlabs.ai/labs-support
+
+Agora, clique em Avançar no canto inferior direito para avançar para a **próxima** página.
+
+![](../Media/1024.png)
+
+
+### Feliz aprendizado!!
+ 
+    
+
