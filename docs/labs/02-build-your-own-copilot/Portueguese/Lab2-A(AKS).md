@@ -1,9 +1,8 @@
-# Laboratório 3.1: Contentorização da UI Miyagi e do serviço de recomendação para o Azure Kubernetes Service (AKS)
+# Laboratório 3.1 - Contentorização da UI Miyagi e do serviço de recomendação para o Azure Kubernetes Service (AKS)
 
 ### Duração: 80 minutos
 
 Neste laboratório, irá contentorizar e implementar a UI Miyagi e os serviços de recomendação no Azure Kubernetes Service (AKS). Começará por configurar o Kubernetes e construir imagens Docker para ambos os serviços. O processo envolve o envio destas imagens para o Azure Container Registry (ACR) e depois a sua implementação num cluster AKS. Isto garante que os serviços estão perfeitamente integrados e operacionais num ambiente escalável e em contentores e aplicam configurações do Kubernetes, atualizando os endereços IP de serviço e verificando a implementação acedendo aos serviços através dos seus respetivos endpoints.
-
 
 ## Objetivos do laboratório
 
