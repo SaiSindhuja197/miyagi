@@ -1,6 +1,6 @@
 # Laboratório 1: Verificar e recuperar os valores dos recursos do Azure (opcional)
 
-## Duração: 20 minutos
+### Duração: 20 minutos
 
 Neste laboratório, irá verificar e recuperar valores específicos, como Endpoint, Connection String e Key, para vários recursos do Azure. Isto é crucial para garantir a configuração e conectividade adequadas destes recursos.
 
