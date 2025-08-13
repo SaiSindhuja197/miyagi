@@ -1,8 +1,10 @@
 ## Introduction to Miyagi 
 
-
+Estimated Duration
 
 ## Acessando seu ambiente de laboratório
+
+Estimated Duration
 
 Após a configuração do ambiente, o seu browser irá carregar uma máquina virtual (JumpVM), utilize esta máquina virtual durante todo o workshop para realizar o laboratório. Pode ver o número na parte inferior do guia de laboratório para alternar para diferentes exercícios no guia de.
 
