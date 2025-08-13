@@ -1,4 +1,4 @@
-# Laboratório 1: Verificar e recuperar os valores dos recursos do Azure (opcional)
+# Laboratório 1 - Verificar e recuperar os valores dos recursos do Azure (opcional)
 
 ### Duração: 20 minutos
 
