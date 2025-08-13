@@ -1,4 +1,4 @@
-# Laboratório 4 – Expor a IA aberta através do APIM
+# Laboratório 4 - Expor a IA aberta através do APIM
 
 ### Duração: 80 minutos
 
@@ -58,15 +58,15 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/845.png)
 
-1. junto ao miyagi-api, seleccione **Import**.
+2. junto ao miyagi-api, seleccione **Import**.
 
    ![](../Media/846.png)
 
-1. e clique em **OpenAPI**.
+3. e clique em **OpenAPI**.
 
    ![](../Media/847.png)
 
-1. No pop-up de **Importar da especificação OpenAPI** cole o link abaixo na especificação OpenAPI **textbox** **(1)** e clique em **import** **(2)** .
+4. No pop-up de **Importar da especificação OpenAPI** cole o link abaixo na especificação OpenAPI **textbox** **(1)** e clique em **import** **(2)** .
 
     ```
     https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/stable/2023-05-15/inference.json
@@ -74,65 +74,65 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/miyagi-image59.png)
 
-1. Agora deve ver uma série de APIs na API do serviço Azure OpenAI.
+5. Agora deve ver uma série de APIs na API do serviço Azure OpenAI.
 
    ![](../Media/miyagi-image60.png)
 
-1. Na API **Azure OpenAI Service**, navegue até ao separador **configurações** **(1)** e atualize a chave de assinatura **Nome do cabeçalho** para **api-key** **(2)** e clique em **Guardar** **(3)**.
+6. Na API **Azure OpenAI Service**, navegue até ao separador **configurações** **(1)** e atualize a chave de assinatura **Nome do cabeçalho** para **api-key** **(2)** e clique em **Guardar** **(3)**.
 
    ![](../Media/miyagi-image61.png)
 
-1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management, no painel de navegação esquerdo em **APIs** clique em **Produtos** **(1)** e selecione **+ Adicionar** **(2)**.
+7. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management, no painel de navegação esquerdo em **APIs** clique em **Produtos** **(1)** e selecione **+ Adicionar** **(2)**.
 
    ![](../Media/848.png)
 
-1. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **Azure OpenAI Service API** **(4)** prima Enter e clique em **Create** **(5)**.
+8. Na janela **Adicionar produto**, especifique **Nome de visualização** como **OpenAi** **(1)**, **Descrição** como **OpenAI** **(2)* *. No menu **APIs**, clique no sinal de mais** **(3)** seleccione **Azure OpenAI Service API** **(4)** prima Enter e clique em **Create** **(5)**.
 
    ![](../Media/849.png)
 
    ![](../Media/850.png)
 
-1. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management, no painel de navegação esquerdo em **APIs** selecione **Subscrições** **(1)** e clique em **+ Adicionar assinatura** **(2)**.
+9. No serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management, no painel de navegação esquerdo em **APIs** selecione **Subscrições** **(1)** e clique em **+ Adicionar assinatura** **(2)**.
 
    ![](../Media/851.png)
 
-1. No Janela **Adicionar assinatura**, forneça **Nome** como **aoai-test** **(1)** e **Nome de visualização** como **AOAI Test** **(2)** e clique em **Criar** **(3)**.
+10. No Janela **Adicionar assinatura**, forneça **Nome** como **aoai-test** **(1)** e **Nome de visualização** como **AOAI Test** **(2)** e clique em **Criar** **(3)**.
 
    ![](../Media/852.png)
 
-1. Depois de a subscrição ser **Teste AOAI** criada, clique nos **três pontos** **(1)** junto ao **Teste AOAI** e clique em **Mostrar\ocultar chaves** **(2)**. Copie a chave **assinatura primária** **(3)** e guarde-a para mais tarde.
+11. Depois de a subscrição ser **Teste AOAI** criada, clique nos **três pontos** **(1)** junto ao **Teste AOAI** e clique em **Mostrar\ocultar chaves** **(2)**. Copie a chave **assinatura primária** **(3)** e guarde-a para mais tarde.
 
    ![](../Media/853.png)
 
-1. Navegue até **Azure OpenAI** no Portal Azure, selecione **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
+12. Navegue até **Azure OpenAI** no Portal Azure, selecione **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
 
-1. No ficheiro **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, seleccione **Controlo de acesso (IAM)** **(1)**, clique em **+ Adicionar** **(2)** e selecione **Adicionar atribuição de função** **(3)**.
+13. No ficheiro **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**, seleccione **Controlo de acesso (IAM)** **(1)**, clique em **+ Adicionar** **(2)** e selecione **Adicionar atribuição de função** **(3)**.
 
    ![](../Media/854.png)
 
-1. No separador **Adicionar atribuição de função** da barra de pesquisa, pesquise e selecione **Utilizador de serviços cognitivos (1) (2)** e clique em **Seguinte (3)**.
+14. No separador **Adicionar atribuição de função** da barra de pesquisa, pesquise e selecione **Utilizador de serviços cognitivos (1) (2)** e clique em **Seguinte (3)**.
 
    ![](../Media/855.png)
 
-1. No separador **Membros**, selecione **Identidade gerida** **(1)**, clique em **+ Selecionar membros** **(2)**.
+15. No separador **Membros**, selecione **Identidade gerida** **(1)**, clique em **+ Selecionar membros** **(2)**.
 
    ![](../Media/856.png)
 
-1. No pop-up selecionar identidade gerida, para **Assinatura (1)** aceite o valor por defeito e **Identidade gerida** selecione **Serviço de gestão de API** **(2)**, escolha **miyagi -apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)** e clique em **Selecionar** **(4)**.
+16. No pop-up selecionar identidade gerida, para **Assinatura (1)** aceite o valor por defeito e **Identidade gerida** selecione **Serviço de gestão de API** **(2)**, escolha **miyagi -apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)** e clique em **Selecionar** **(4)**.
 
    ![](../Media/857.png)
 
-1. Clique em **Seguinte**.
+17. Clique em **Seguinte**.
 
-1. No separador **Rever + atribuir** clique em **Rever + atribuir**.
+18. No separador **Rever + atribuir** clique em **Rever + atribuir**.
 
-1. Navegue de volta para **serviço de gestão de API** no Portal Azure, selecione o serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management.
+19. Navegue de volta para **serviço de gestão de API** no Portal Azure, selecione o serviço **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** API Management.
 
-1. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **api-key** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
+20. No **serviço de gestão de API**, selecione **APIs** **(1)**, selecione a **api-key** **(2)** API criada no passo anterior, selecione **Todas as operações** **(3)** e clique em **Editor de código de política**</> **(4)** em **Processamento de entrada**.
 
    ![](../Media/858.png)
 
-1. No editor de código, copie a política abaixo para substituir apenas as tags **inbound** **(1)**, substitua **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** por **<inject key=" OpenAIEndpoint " enableCopy="true"/>** **(2)** do gestor de API que copiou na Tarefa 1, Passo 4 e clique em **Guardar** **(3)**.
+21. No editor de código, copie a política abaixo para substituir apenas as tags **inbound** **(1)**, substitua **&lt;&lt;Azure_OpenAI_Endpoint&gt;&gt;** por **<inject key=" OpenAIEndpoint " enableCopy="true"/>** **(2)** do gestor de API que copiou na Tarefa 1, Passo 4 e clique em **Guardar** **(3)**.
 
       ```
       <inbound>
@@ -149,13 +149,13 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/api-inbound1.png)
 
-    >**Nota**: Certifique-se de que cola os valores **OpenAIEndpoint** e elimina qualquer duplicação de **https://**.
+>**Nota**: Certifique-se de que cola os valores **OpenAIEndpoint** e elimina qualquer duplicação de **https://**.
 
-1. Em API Management, clique em **Test** **(1)**, selecione Cria uma **conclusão para a mensagem de chat** **(2)**, introduza o nome de implementação gpt-4 **<inject key="CompletionModel" enableCopy="true"/>** **(3)** no campo de implementação ID, introduza **2023-05-15** **(4)** na API campo versão.
+22. Em API Management, clique em **Test** **(1)**, selecione Cria uma **conclusão para a mensagem de chat** **(2)**, introduza o nome de implementação gpt-4 **<inject key="CompletionModel" enableCopy="true"/>** **(3)** no campo de implementação ID, introduza **2023-05-15** **(4)** na API campo versão.
 
    ![](../Media/new-api-test.png)
 
-1. Desça até à secção **Corpo do pedido** **(1)**, substitua o código existente pelo código abaixo e clique em **Submeter** **(2)**.
+23. Desça até à secção **Corpo do pedido** **(1)**, substitua o código existente pelo código abaixo e clique em **Submeter** **(2)**.
 
     ```
     {"model":"gpt-4","messages":[{"role":"user","content":"Hello! What does an API Management Service in Azure do?"}]}
@@ -163,7 +163,7 @@ Neste laboratório, irá configurar políticas de API, definir funções e assin
 
    ![](../Media/new-api-body.png)
 
-1. Desça a resposta e verá uma resposta `200` e uma mensagem de retorno do seu serviço OpenAI.
+24. Desça a resposta e verá uma resposta `200` e uma mensagem de retorno do seu serviço OpenAI.
 
    ![](../Media/new-api-result.png)
 
@@ -228,7 +228,6 @@ Neste laboratório, irá gerir o ciclo de vida de implementação do serviço de
 1. Navegue até ao portal do Azure, abra o Grupo de Recursos denominado **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** e seleccione **env-miyagi-<inject key=" DeploymentID" enableCopy="false"/>** Serviço Kubernetes da lista de recursos.
 
    ![](../Media/859.png)
-
 
 1. No separador Visão geral **env-miyagi-<inject key="DeploymentID" enableCopy="false"/>** painel de serviço Kubernetes, clique no botão **Parar**.
 
@@ -344,7 +343,7 @@ Neste laboratório, irá configurar o registo do Event Hub para a gestão de API
 
    ![](../Media/873.png)
 
-1. No editor de código, copie a política abaixo para substituir apenas as tags **outbound** e clique em **Guardar**.
+1. No editor de código, copie a política abaixo para substituir apenas as tags **outbound (1)** e clique em **Save(2)**.
 
       ```
       <outbound>
