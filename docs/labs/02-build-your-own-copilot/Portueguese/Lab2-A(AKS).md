@@ -285,7 +285,7 @@ Nesta tarefa, irá enviar imagens de recomendação miyagi para acr.
 
  <validation step="f50c7e4e-0b5a-4ae2-bd9e-ff29a023f1d2" />
 
-# Laboratório 3.2: Explorar e verificar a UI Miyagi em contentor e o serviço de recomendação no AKS
+# Laboratório 3.2 - Explorar e verificar a UI Miyagi em contentor e o serviço de recomendação no AKS
 
 Neste laboratório, irá explorar a implementação e verificação da UI Miyagi e dos serviços de recomendação no Azure Kubernetes Service (AKS). As tarefas envolvem testar APIs e aceder à UI através de pontos finais do Ingress, garantindo a funcionalidade adequada no ambiente AKS.
 
