@@ -1,99 +1,62 @@
 # Crie aplicações inteligentes com a pilha Copilot da Microsoft e Azure OpenAI
 
+## Duração Total Estimada: 4 horas
+
 ## Visão geral do workshop
 
-Neste workshop, obterá uma forte compreensão dos conceitos básicos de IA generativa, Azure Open AI, padrões de geração aumentada de recuperação (RAG), kernel semântico e como utilizar estes conceitos para criar o seu próprio copiloto para as suas necessidades de negócio. Explorará também casos de utilização que mostram experiências de produtos Copilot. Utilizando a pilha Copilot da Microsoft e casos de utilização práticos, este workshop irá guiá-lo na visão e criação de sistemas inteligentes que integram modelos básicos, resultando em maior produtividade e experiências de produto hiperpersonalizadas.
+Neste laboratório, irá adquirir uma compreensão sólida dos fundamentos da IA generativa, do Azure OpenAI, dos padrões de Geração Aumentada por Recuperação (RAG), do Semantic Kernel e de como utilizar estes conceitos para criar o seu próprio Copilot para as necessidades do seu negócio. Irá também explorar casos de utilização que demonstram experiências de produtos Copilot. Utilizando a pilha Copilot da Microsoft e casos de utilização práticos, este laboratório irá guiá-lo na conceção e criação de sistemas inteligentes que integrem modelos de base, resultando num aumento da produtividade e em experiências de produto hiperpersonalizadas.
 
-### O que esperar?
+## Objetivo
 
-Aprenda conceitos:
+- **Verificar e obter os valores dos recursos do Azure:** Este exercício prático tem como objetivo verificar e obter os valores para garantir a configuração e a conectividade corretas dos recursos do Azure.
 
-O primeiro segmento do workshop envolve uma apresentação que lhe fornecerá uma base sólida nos conceitos de IA generativa e o guiará no processo de criação do seu próprio copiloto utilizando a pilha Microsoft Copilot.
+- **Executar a aplicação Miyagi localmente:** Este exercício prático tem como objetivo configurar a aplicação Miyagi, implementar o serviço de recomendações, implementar o frontend localmente, otimizar a recuperação de dados com o Azure AI Search e explorar a aplicação e o serviço para uma experiência de utilizador personalizada.
 
-## Laboratório prático:
+- **Contentorizar a interface Miyagi e o serviço de recomendações para o Azure Kubernetes Service (AKS):** Este exercício prático tem como objetivo contentorizar e implementar a interface Miyagi e o serviço de recomendações no AKS, configurar o Kubernetes, enviar imagens Docker para o Azure Container Registry (ACR) e verificar a implementação através dos endpoints do serviço.
 
-No segmento prático (que será a maior parte deste workshop), os participantes terão uma exposição profunda às características do Copilot Stack, especialmente com o Kernel Semântico, a Prompt Engineering e a Azure Cognitive Search. Durante esta parte do laboratório prático, irá clonar um exemplo de aplicação de Consultor de Investimentos e implantá-lo no Azure. Esta aplicação aproveita o poder do Azure Open AI, RAG, Semantic Kernel e outros serviços Azure. Explorará os seguintes recursos principais e obterá insights sobre os mecanismos subjacentes:
+- **Explorar e verificar a interface Miyagi e o serviço de recomendações contentorizados no AKS:** Este exercício prático tem como objetivo implementar e verificar a interface Miyagi e o serviço de recomendações no AKS, testar APIs e aceder à interface através dos endpoints do Ingress para garantir a funcionalidade. Este exercício reforça a compreensão da gestão e do encaminhamento de tráfego em ambientes Kubernetes.
 
-Copiloto do Consultor de Investimentos: Este Copiloto, desenvolvido com IA Generativa, fornece recomendações de investimento com base nas preferências do utilizador. Utiliza Azure Open AI, Semantic Kernel, Azure Cognitive Search (com indexação vetorial para incorporações), Azure Cosmos DB, Container Apps e Azure API Management.
+- **Expor o Azure OpenAI através do APIM:** Este exercício prático tem como objetivo verificar e criar APIs no serviço API Management para atualizar a imagem Docker do serviço de recomendações, garantindo a otimização e manutenção de aplicações contentorizadas.
 
-Copiloto de chat: obtenha assistência em tempo real com investimentos utilizando esta funcionalidade. Tira partido do Azure Open AI, do Semantic Kernel, do Azure Cognitive Search (com indexação vetorial para incorporações), do Azure Cosmos DB, das Container Apps e do Azure API Management.
+- **Introdução à criação do seu próprio Copilot:** Este exercício prático tem como objetivo integrar Modelos de Linguagem de Grande Escala (LLMs) com linguagens como C#, Python e Java, permitindo a criação de plugins facilmente encadeáveis.
 
-### Projecto Miyagi – Exemplo de previsão para [copilot stack](https://learn.microsoft.com/en-us/semantic-kernel/overview/#semantic-kernel-is-at-the-center-of- o -copiloto-stack)
+## Pré-requisitos
 
-O Projecto Miyagi apresenta o Copilot Stack da Microsoft num [workshop de visão](https://github.com/Azure-Samples/intelligent-app-workshop) destinado a conceber, desenvolver e implementar aplicações inteligentes de nível empresarial. Ao explorar [casos de utilização] de ML generativo e tradicional (https://iappwksp.com/wksp/05-use-cases/), a Miyagi oferece uma abordagem experiencial para o desenvolvimento de experiências de produtos com IA que aumentam a produtividade e permitem a hiperpersonalização . Além disso, o workshop apresenta aos engenheiros de software tradicionais padrões de design emergentes em engenharia imediata, como a cadeia de pensamento e o aumento da recuperação, bem como técnicas como a vetorização para memória de longo prazo, o ajuste fino de modelos OSS e plug-ins. ferramentas para aumentar e aterrar LLMs.
+Os participantes devem ter:
 
-O projeto inclui exemplos de utilização do [Kernel Semântico](https://learn.microsoft.com/en-us/semantic-kernel/overview/#semantic-kernel-is-at-the-center-of-the-copilot -stack), [Promptflow](https://promptflow.azurewebsites.net/overview-what-is-prompt-flow.html), [LlamaIndex](https://github.com/jerryjliu/llama_index), [LangChain ](https://github.com/hwchase17/langchain#readme), lojas de vetores ([Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr), [CosmosDB Postgres pgvector ] (https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/howto-use-pgvector) e utilitários de imagem generativos, como o [DreamFusion](https://huggingface.co/thegovind / reddogpillmodel512) e [ControlNet](https://github.com/lllyasviel/ControlNet). . e ajuste os seus dados privados para criar os seus próprios copilotos.
+- Compreensão dos fundamentos de IA generativa
 
-Esta base de código poliglota depende de uma infinidade de micro-serviços, implementando vários [casos de uso](https://iappwksp.com/wksp/05-use-cases/) utilizando a nossa pilha Copilot. Inclui texto e imagens generativas para treino financeiro personalizado, resumo e orquestração semelhante a um agente. Construído num backbone de arquitetura dividida em eventos (EDA) nativo da cloud, o design e a base de código garantem atributos de qualidade de nível empresarial, como disponibilidade, escalabilidade e facilidade de manutenção.
+- Familiaridade com o Azure OpenAI
 
-Embarque numa viagem para transformar as suas aplicações em sistemas inteligentes e de ponta com o workshop autoguiado e descubra a arte do possível.
-
-### Front-end
-A interação com modelos básicos é mais do que chat. Este exemplo mostra alguns casos de utilização
-
-![frontend](../Media/wip-ui.png)
+- Experiência com o Semantic Kernel
 
 ### Arquitetura
 
-#### Arquitetura lógica de alto nível
+A arquitetura do Miyagi utiliza IA para interações de utilizador hiperpersonalizadas, transformando aplicações com competências do Semantic Kernel e engenharia de prompts avançada. Apresenta microsserviços escaláveis e uma espinha dorsal orientada a eventos, evoluindo com novos modelos de IA. O frontend oferece experiências personalizadas semelhantes ao Microsoft Copilot.
 
-![azure](../Media/wip-azure.png)
+Integra Azure Functions, AKS e Apache Kafka para uma comunicação fluida, com os dados geridos pelo Cosmos DB e pelo Azure Storage. O Miyagi exemplifica a utilização avançada de IA e de serviços Azure para aplicações inteligentes preparadas para o futuro.
 
-#### Orquestração Kernel Semântico para o caso de uso Miyagi
+#### Diagrama de Arquitetura
 
-![sk-orchestration](../Media/sk-memory-orchestration.png)
+> Update the arch diagram
 
-#### Vista de 30 mil pés
+### Explicação dos Componentes
 
-![pilha copiloto](../Media/basic-arch.png)
+A arquitetura deste laboratório envolve os seguintes componentes principais:
 
-### Pilha de copiloto
+- **Azure OpenAI:** Integra os modelos de linguagem da OpenAI na nuvem Microsoft Azure, permitindo soluções de IA escaláveis para processamento de linguagem natural e automação.
 
-![pilha copiloto](../Media/copilot-stack.png)
+- **AI Search:** Serviço de nuvem que oferece recursos poderosos e flexíveis de pesquisa, incluindo pesquisa de texto completo e funcionalidades aprimoradas por IA.
 
-### Serviços e capacidades
+- **Azure Functions:** Executa código em resposta a eventos sem a necessidade de gerenciar servidores. Escala automaticamente de acordo com a demanda.
 
-- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models)
-  - gpt-4
-  - gpt-35-turbo
-  - text-embedding-ada-002
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
-- [Use your own data with Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/use-your-data-quickstart?tabs=command-line&pivots=rest-api#example-curl-commands)
-- [AzureML PromptFlow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2)
-- [TypeChat](https://microsoft.github.io/TypeChat)
-- [Azure Functions](https://azure.microsoft.com/en-ca/products/functions/)
-- [APIM](https://learn.microsoft.com/en-us/azure/api-management/)
-- [Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/overview)
-- [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
-- [Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db/)
-- [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/)
-- [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction)
-- [LangChain](https://github.com/hwchase17/langchain#readme)
-- [Foundation Models from CogServices](https://azure.microsoft.com/en-us/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/)
-- [Qdrant](https://qdrant.tech/solutions/)
-- [Microsoft DeepSpeed Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
-- [Azure Web PubSub](https://azure.microsoft.com/en-us/products/web-pubsub)
-- [Azure Communication Services (ACS)](https://learn.microsoft.com/en-us/azure/communication-services/overview#common-scenarios)
+- **AKS (Azure Kubernetes Service):** Serviço Kubernetes gerenciado para orquestração e escalonamento de contêineres.
 
-## Resumo
+- **Apache Kafka: **Gerencia o streaming de dados em tempo real e o processamento de eventos.
 
-### Introdução à criação de aplicações inteligentes com a pilha Copilot da Microsoft e o Azure OpenAI
+- **Cosmos DB:** Banco de dados distribuído globalmente, multi-modelo, com baixa latência e alta disponibilidade.
 
-### Introdução ao ambiente CloudLabs
+- **Azure Storage:** Armazenamento escalável para blobs, arquivos, filas e tabelas.
 
-### Laboratório 1 - Execute localmente a aplicação Miyagi
+- **Bing Search:** Permite adicionar recursos de pesquisa do Bing aos seus aplicativos, oferecendo APIs para pesquisas na web, imagens, vídeos e notícias.
 
-Neste laboratório, o foco está na configuração da aplicação Miyagi para prontidão operacional. Posteriormente, a atenção passa para a compreensão da implementação diferenciada do serviço de recomendação. A fase prática envolve a execução do serviço de recomendação e a implementação local do frontend Miyagi para teste e desenvolvimento.
-
-### Laboratório 2.1: Contentorização da UI Miyagi e do serviço de recomendação para o Azure Kubernetes Service (AKS)
-
-Neste laboratório, irá criar as imagens Docker e publicá-las no Azure Kubernetes Service (AKS).
-
-### Laboratório 3 – Expor o OpenAI através do serviço de gestão de API
-
-Neste laboratório, irá verificar e criar APIs no serviço de gestão de APIs implementado para atualizar a imagem do Docker para o serviço de recomendação. A revisão do serviço de recomendação do Container App encapsula a abordagem meticulosa para manter e otimizar as aplicações contentorizadas dentro do âmbito do projeto.
-
-### Primeiros passos com o seu próprio copiloto
-
-Neste laboratório, irá criar a sua própria aplicação Copilot utilizando Semantic Kernal Tools. Além disso, irá configurar o Azure AI Search.
