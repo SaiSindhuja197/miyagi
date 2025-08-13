@@ -31,13 +31,15 @@ Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições espe
 
    ![](../Media/831.png)
 
+   >**Nota** No VS code para alterar o idioma clique em ctrl+shift+P e selecione Configurar idioma de exibição e altere para português
+
 1. No **File Explorer**, navegue até **C:\LabFiles\miyagi** seleccione **miyagi** **(1)** clique em **Select folder (2)**
 
    ![](../Media/832.png)
 
 1. No **Visual Studio Code**, clique em **Sim, confio nos autores** quando a janela **Confia nos autores dos ficheiros desta pasta?** for apresentada.
 
-   ![](../Media/image-rg-18.png)
+   ![](../Media/884.png)
 
 1. Expanda o diretório **miyagi>ui** e verifique se o ficheiro **. env.** está presente.
 

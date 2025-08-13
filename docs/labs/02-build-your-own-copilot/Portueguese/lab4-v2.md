@@ -35,7 +35,7 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
    ![](../Media/miyagi-image94.png)
 
-5. Navegue de volta para **Visual Studio Code** No **painel Funções**, clique no **ícone Introdução** **(1)** e siga o assistente para **criar a sua aplicação** **(2)** com a função semântica.
+5. Navegue de volta para **Visual Studio Code** No **painel Funções**, clique no **ícone Introdução** **(1)** e siga o assistente para **Create a new app** **(2)** com a função semântica.
 
    ![](../Media/883.png)
 
