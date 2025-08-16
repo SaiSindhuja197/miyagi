@@ -1,6 +1,6 @@
 # Laboratório 4 - Expor a IA aberta através do APIM
 
-### Duração: 80 minutos
+### Duração: 80 minutos 
 
 Neste laboratório, irá aprofundar a configuração e verificação de APIs no Azure API Management, com foco na integração do serviço Azure OpenAI. Isto envolve configurar APIs HTTP, garantir a configuração correta e obter um URL de gateway para acesso e integração externos perfeitos. Explorará também a criação de políticas, definições de funções e gestão de assinaturas para operar as APIs em segurança. Este laboratório destaca as melhores práticas de gestão de API, garantindo a autenticação, autorização e testes operacionais robustos no ecossistema Azure abrangente.
 
