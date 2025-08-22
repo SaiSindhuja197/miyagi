@@ -39,3 +39,5 @@ This workshop is designed for:
   ![round-trip](./assets/images/sk-round-trip.png)
 
 ### Now click on **Next** from the lower right corner to move to the next page.
+
+![](./docs/labs/02-build-your-own-copilot/Media/next-page.png)
