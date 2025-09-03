@@ -2,25 +2,27 @@
 
 ### Estimated Duration: 60 minutes
 
-## Lab objectives 
+## Lab overview 
 
 In this lab, you'll run Chat Copilot locally after retrieving Azure OpenAI Service values from the Azure portal. By cloning the Chat-Copilot GitHub repo and setting up dependencies, you'll configure and execute the application. Uploading documents enables interaction with Copilot, which generates responses based on their content, complete with citations for validation. This exercise provides hands-on experience in utilizing Chat Copilot with your own data, managing documents and sessions within the application.
 
-# Exercise 1: Run the Chat Copilot App Locally
+## Lab Objectives
 
-- Task 1: Retrieving the Azure OpenAI Service values
-- Task 2: Cloning the Chat-Copilot GitHub Repo
-- Task 3: Setting up the Environment
-- Task 4: Configure and run the Chat Copilot App Locally
+- Exercise 1: Run the Chat Copilot App Locally
 
-# Exercise 2: Chat with your own documents
+   - Task 1: Retrieving the Azure OpenAI Service values
+   - Task 2: Cloning the Chat-Copilot GitHub Repo
+   - Task 3: Setting up the Environment
+   - Task 4: Configure and run the Chat Copilot App Locally
 
-- Task 1: Chat with your own documents in the Chat Copilot Application
-- Task 2: Cloning the Chat-Copilot GitHub Repo
+- Exercise 2: Chat with your own documents
+
+   - Task 1: Chat with your own documents in the Chat Copilot Application
+
  
-# Exercise 1: Run the Chat Copilot App Locally
+## Exercise 1: Run the Chat Copilot App Locally
 
-In this lab, you will run the Chat Copilot app locally by setting up the environment, installing dependencies, and launching the application for testing and interaction.
+In this exercise, you will run the Chat Copilot app locally by setting up the environment, installing dependencies, and launching the application for testing and interaction.
 
 ### Task 1: Retrieving the Azure OpenAI Service values
 
@@ -201,11 +203,11 @@ In this task, you will configure and run the Chat Copilot app locally by setting
 
 <validation step="df43cbbf-d05e-4a3b-b34a-a5f2dd969bad" />
 
-# Exercise 2: Chat with your own documents
+## Exercise 2: Chat with your own documents
 
-In this lab, you will chat with your own documents by uploading files to the Chat Copilot app and interacting with the integrated chat interface for personalized responses.
+In this exercise, you will chat with your own documents by uploading files to the Chat Copilot app and interacting with the integrated chat interface for personalized responses.
 
-## Task 1: Chat with your own documents in the Chat Copilot Application
+### Task 1: Chat with your own documents in the Chat Copilot Application
 
 In this task, you will learn how to chat with your own documents in the Chat Copilot application by uploading files, configuring the document processing, and interacting with the integrated chat interface for personalized responses.
 
