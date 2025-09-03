@@ -42,9 +42,9 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
    ![](./Media/lop-03.png) 
 
-1. From the **Overview** page, click on **Go to Azure AI Foundry portal**.
+1. From the **Overview (1)** page, click on **Go to Azure AI Foundry portal (2)**.
    
-    ![](./Media/AI-Foundry.png)
+    ![](./Media/br1.png)
 
 1. Go to **Deployments (1)** in the left navigation pane, click on the names of your AI model to copy them, and paste them into Notepad **(2)**.
     
@@ -95,9 +95,9 @@ In this task, you will clone the Chat-Copilot GitHub repository by using Git com
 
 In this task, you will set up the environment for the Chat-Copilot project by installing necessary dependencies, configuring environment variables, and preparing the development environment for local execution.
 
-1. Open PowerShell as an administrator on your local machine. You need to have PowerShell Core 6+ installed, which is different from the default PowerShell installed on Windows.
+1. In the LabVM, click on **Start**, from the start menu search for **Powershell (1)**, right click on **Windows PowerShell (2)** and run **PowerShell as an administrator (3)**.
 
-   ![](./Media/data5.png)
+   ![](./Media/br2.png)
 
 1. Setup your environment by navigating to the scripts directory of chat-copilot using the command:
 
@@ -154,7 +154,7 @@ In this task, you will configure and run the Chat Copilot app locally by setting
   
      ![](./Media/data9.png)
     
-1. In the LabVM, click on **Start**, from the start menu search for **PowerShell (1)** and select for **PowerShell 7 (2)**.
+1. In the LabVM, click on **Start**, from the start menu search for **PowerShell 7 (1)** and select for **PowerShell 7 (2)**.
 
    ![](./Media/cp10.png)
  
