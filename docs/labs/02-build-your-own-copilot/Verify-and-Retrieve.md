@@ -30,7 +30,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
            ![](./Media/deployments-11.png)
         
-      - In the **Deployments**  **(1)** blade of Azure AI Studio, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of gpt-4o model **(2)**.
+      - In the **Deployments**  **(1)** blade of Azure AI Foundry, click on **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of gpt-4.1 model **(2)**.
 
           ![](./Media/completionmodelnew.png)
         
@@ -38,21 +38,21 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
       
       -  Navigate back to the **Deployment (1)** page.
 
-      - In the Deployments blade of Azure AI Studio, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of **text-embedding-ada-002 model (2)**.
+      - In the Deployments blade of Azure AI Foundry, click on **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** deployment name and verify the **deployment name** of **text-embedding-ada-002 model (2)**.
         
          ![](./Media/deployments0909.png)
 
          ![](./Media/miyagi-embedded.png)
 
-1. To verify the values for **endpoint** and **apiKey** follow the below steps:
+1. To verify the values for "**endpoint**" and "**apiKey**" follow the below steps:
 
-   -  Navigate back to the tab displaying **Azure portal**. 
+   -  Navigate back to the **Azure portal**. 
 
    -  In the **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>** blade under **Resource Management** section, select **Keys and Endpoint (1)**, verify the **KEY 1 (2)** and **Endpoint (3)**.
      
       ![](./Media/miyagi-image16.png)
 
-1. To verify the values for  "azureCognitiveSearchEndpoint", "azureCognitiveSearchApiKey", follow below steps:
+1. To verify the values for  "**azureCognitiveSearchEndpoint**", "**azureCognitiveSearchApiKey**", follow below steps:
    
    - Navigate back to **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 
@@ -74,7 +74,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
      ![](./Media/miyagi-image113.png)
      
-   - On **cosmos-<inject key="DeploymentID" enableCopy="false"/>** verify the **URL**.
+   - On **cosmos-<inject key="DeploymentID" enableCopy="false"/>** , verify the **URL**.
      
      ![](./Media/miyagi-image114.png)
 
@@ -82,7 +82,7 @@ In this lab, you will verify and retrieve specific values such as Endpoint, Conn
 
      ![](./Media/miyagi-image115.png)
 
-1. To obtain the values for **blobServiceUri**, please follow the steps below:
+1. To obtain the values for "**blobServiceUri**", please follow the steps below:
 
    - Navigative back to resource group **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group page, select **miyagiblobstorge<inject key="DeploymentID" enableCopy="false"/>** from resources list.
 

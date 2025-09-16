@@ -68,7 +68,9 @@ In this task, you will configure the Miyagi application by updating specific set
    
 1. Once after updating the values kindly save the file by pressing **CTRL + S**.
 
-1. Navigate to **miyagi/sandbox/usecases/rag/dotnet** and verify **.env** file is present.
+1. In the **miyagi** folder, expand **sandbox (1)/usecases (2)/rag (3)/dotnet (4)** and verify **.env (5)** file is present.
+
+   ![](./Media/miyagi-image(111).png)
   
 1. In the **.env** file replace the following values for the variables below.
 
