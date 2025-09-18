@@ -30,6 +30,12 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
 1. Run the following command to log in to the Azure portal.
 
    ```
+   az login --user <inject key="AzureAdUserEmail"></inject> --password <inject key="AzureAdUserPassword"></inject>
+   ```
+
+1. Run the following command to log in to the Azure portal.
+
+   ```
    az aks get-credentials -n <inject key="aksname" enableCopy="true"/> -g <inject key="rgname" enableCopy="true"/>
    ```
 
