@@ -265,7 +265,7 @@ In this task, you will deploy the Miyagi UI and Recommendation services to Azure
 
    ![](./Media/miyagi-image50.png)
 
-1. Navigate to **miyagi folder** and expand **deploy (2)/infrastructure (3)/kubernetes/manifests (4)/50-miyagi (5)** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal (6)**.
+1. Navigate to **miyagi folder (1)** and expand **deploy (2)/infrastructure (3)/kubernetes/manifests (4)/50-miyagi (5)** click on **50-miyagi** in the cascading menu, and select **Open in integrated Terminal (6)**.
 
     ![](./Media/vs-02.png)
 
