@@ -1,4 +1,4 @@
-# Laboratorio 5- Cómo empezar con su propio copiloto [Solo lectura]
+# Laboratorio 5- Cómo empezar con su propio copiloto
 
 ### Duración estimada: 30 minutos
 
@@ -35,7 +35,7 @@ En esta tarea, configurará el plugin de Semantic Kernel en Visual Studio Code, 
 
    ![](./Media/sematic-kernal-file-select.png)
 
-6. Elija **C# Home Automation**
+6. Elija **Semantic Kernel: C# Home Automation**
 
     ![](./Media/kkernal1.png)
 
@@ -203,7 +203,7 @@ En esta tarea, configurará el plugin de Semantic Kernel en Visual Studio Code, 
 
 18. Ejemplo 2: `Set an alarm for 6:00 am.`
 
-    ![](./Media/questionn2.png)
+    ![](./Media/miyagi-image101.png)
 
 19. Si desea incluir preguntas adicionales, navegue hasta el archivo **worker.cs** e inserte sus nuevas preguntas en la **línea número 32**.
 
@@ -219,7 +219,7 @@ En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un í
 
     ![](./Media/ai-search1.png)    
 
-1. En la pestaña **Azure AI services | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. En la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![](./Media/miyagi-image26.png)
 
@@ -231,7 +231,9 @@ En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un í
 
    ![](./Media/import-data2.png)
    
-1. En **aptitudes cognitivas** deje todo con los valores predeterminados y haga clic en **Personalizar índice de destino**.
+1. En **aptitudes cognitivas** deje todo con los valores predeterminados y haga clic en **Omitir hasta: Personalizar índice de destino**.
+
+    ![](./Media/import-data5.png)
 
 1. En **Personalizar índice de destino**, establezca el nombre del índice como **realestate-us-sample-index** y haga clic en **Siguiente: Crear indizador**.
 
@@ -241,15 +243,15 @@ En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un í
 
    ![](./Media/import-data4.png)
 
-1. Regrese a la pestaña **Azure AI services | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. Regrese a la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](./Media/miyagi-image26.png)
    
 1. En el panel de navegación izquierdo, en **Administración de búsqueda** select **Índices (1)** y haga clic en **realestate-us-sample-index (2)**.
 
-1. ![](./Media/miyagi-image108.png)
+    ![](./Media/miyagi-image108.png)
 
-1. Haga clic en **realestate-us-sample-index**, en la barra de búsqueda ingrese **Seattle** y haga clic en **Buscar** para ver el **Resultado**.
+1. Haga clic en **realestate-us-sample-index**, en la barra de búsqueda ingrese **Seattle (1)** y haga clic en **Buscar (2)** para ver el **Resultado**.
 
    ![](./Media/final-indexer.png)
 

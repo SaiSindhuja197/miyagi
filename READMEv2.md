@@ -39,3 +39,5 @@ Este taller está diseñado para:
   ![round-trip](./assets/images/sk-round-trip-1.png)
   
 ### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+
+  ![](./docs/labs/02-build-your-own-copilot/Media/next-page-2.png)

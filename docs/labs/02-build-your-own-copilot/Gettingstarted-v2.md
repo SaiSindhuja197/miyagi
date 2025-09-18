@@ -15,7 +15,7 @@ En este laboratorio, obtendrá una sólida comprensión de los conceptos básico
 - **Exponer Open AI a través de APIM**: Este ejercicio práctico tiene como objetivo verificar y crear APIs en el servicio APIM para actualizar la imagen de Docker para el servicio de recomendación, asegurando la optimización y el mantenimiento de las aplicaciones en contenedores.
 - **Comenzando con su propio Copiloto**: Este ejercicio práctico tiene como objetivo integrar Modelos de Lenguaje Grande (LLM) con lenguajes como C#, Python y Java, permitiendo la creación de complementos que se pueden encadenar fácilmente.
   
-## Requisitos previos
+## Prerrequisitos
 
 Los participantes deberían contar con:
 
@@ -84,7 +84,7 @@ Puede iniciar, detener o reiniciar su máquina virtual según sea necesario desd
 
 Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono **A↕ : 100%**, ubicado junto al temporizador en el entorno de laboratorio.
 
-   ![](./Media/labzoom-1.png)
+   ![](./Media/labzoom-2.png)
 
 ## Iniciar Sesión en el Portal de Azure
 

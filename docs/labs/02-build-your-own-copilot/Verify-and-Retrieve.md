@@ -30,21 +30,21 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 
            ![](./Media/deployments-11.png)
 
-      - En la hoja **Implementaciones** de Azure AI Foundry, haga clic en el nombre de modelo **miyagi-CompletionModel-** **(1)** y verifique el **nombre de la implementación** del modelo gpt-4o **(2)**.
+      - En la hoja **Implementaciones** **(1)** de Azure AI Foundry, haga clic en el nombre de la implementación **miyagi-CompletionModel-<inject key="DeploymentID" enableCopy="false"/>** y verifique el **nombre de la implementación** del modelo gpt-4.1 **(2)**.
 
           ![](./Media/spanish-01.png)
         
           ![](./Media/11-10-24(21).png)
       
-      -  Vuelva a la página **Implementaciones**.
+      -  Vuelva a la página **Implementaciones (1)**.
 
-      - En la hoja Implementaciones de Azure AI Foundry, haga clic en **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** nombre de implementación y verifique el **nombre de implementación** del modelo **text-embedding-ada-002(2)**.
+      - En la hoja Implementaciones de Azure AI Foundry, haga clic en el nombre de implementación **miyagi-EmbeddingModel-<inject key="DeploymentID" enableCopy="false"/>** y verifique el **nombre de implementación** del modelo **text-embedding-ada-002 (2)**.
         
           ![](./Media/spanish-02.png)
 
          ![](./Media/11-10-24(23).png)
 
-1. Para verificar los valores para **endpoint** y **apiKey**, siga los pasos a continuación:
+1. Para verificar los valores para "**endpoint**" y "**apiKey**", siga los pasos a continuación:
 
    -  Vuelva a la pestaña que muestra **Portal de Azure**. 
 
@@ -52,7 +52,7 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
      
       ![](./Media/image-rg-3.png)
 
-1. Para verificar los valores para  "azureCognitiveSearchEndpoint" y  "azureCognitiveSearchApiKey", siga los pasos a continuación:
+1. Para verificar los valores para  "**azureCognitiveSearchEndpoint**" y  "**azureCognitiveSearchApiKey**", siga los pasos a continuación:
    
    - Vuelva al grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -96,3 +96,5 @@ En esta tarea, se verifican y recuperan valores específicos, incluidos el punto
 En este laboratorio, verificará y recuperará valores de configuración como el punto de conexión, la cadena de conexión y la clave para diversos recursos de Azure, como OpenAI Service, Cosmos DB y Cognitive Search. Esto garantiza una configuración y conectividad correctas. Los pasos implican acceder al Portal de Azure, navegar a grupos de recursos específicos y verificar los valores requeridos.
 
 ### Ahora haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+
+   ![](./Media/next-page-2.png)

@@ -80,7 +80,7 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
 6. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Productos** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar** **(2)**.
 
-   ![](./Media/api-product1.png)
+   ![](./Media/api-product1-1.png)
 
 7. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **api-key** **(4)** presione Enter y haga clic en **Crear** **(5)**.
 
@@ -96,7 +96,7 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
 10. Una vez creada la suscripción, haga clic en los **tres puntos** **(1)** al lado de la clave recién creada y haga clic en **Mostrar u ocultar claves** **(2)**. Copie la clave **principal de suscripción** **(3)** y guárdela para más adelante.
 
-   ![](./Media/api-product5.png)
+    ![](./Media/api-product5.png)
 
 11. Navegue a **Azure OpenAI** en el Portal de Azure, seleccione el recurso Azure OpenAI **OpenAIService-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -104,17 +104,21 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
     ![](./Media/apinew2-1.png)
    
-13. En la pestaña **Adición de la asignación de roles** en la barra de búsqueda escriba y seleccione **Cognitive Services User** y haga clic en **Siguiente**.
+13. En la pestaña **Agregar asignación de rol**, busque **Cognitive Services User (1)** en la barra de búsqueda, seleccione **Usuario de Servicios Cognitivos (2)** y haga clic en **Siguiente (3)**.
 
     ![](./Media/apinew3-1.png)
 
 14. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**.
 
-15. En la ventana emergente Selección de identidades administradas en el menú desplegable Identidad administrada, para **Suscripción** deje el valor predeterminado, luego en **Identidad administrada** seleccione **API Management service** **(3)**, elija **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)**. 
+    ![](./Media/apim-role-0.png)
 
-16. Haga clic en **Siguiente** **(6)**.
+15. En la ventana emergente de selección de identidad administrada, para **Suscripción (1)** acepte el valor predeterminado y luego en **Identidad administrada** seleccione **Servicio de API Management** **(2)**, elija **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)** y luego haga clic en **Seleccionar** **(4)**.
 
-    ![](./Media/apim-role-1.png)
+    ![](./Media/apim-role-3.png)
+
+16. Haga clic en **Siguiente**.
+
+    ![](./Media/apim-role-1-1.png)
 
 17. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
@@ -150,11 +154,11 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
 22. Desplácese hasta la sección **Request body** **(1)**, reemplace el código existente con el código a continuación y haga clic en **Send** **(2)**.
 
-   ```
-   {"model":"gpt-4","messages":[{"role":"user","content":"Hello! What does an API Management Service in Azure do?"}]}
-   ```
+      ```
+      {"model":"gpt-4","messages":[{"role":"user","content":"Hello! What does an API Management Service in Azure do?"}]}
+      ```
 
-   ![](./Media/new-api-body.png)
+      ![](./Media/new-api-body.png)
 
 23. Desplácese hacia abajo en la respuesta y debería ver una respuesta `200` y un mensaje devuelto por su servicio OpenAI.
 
@@ -187,30 +191,24 @@ En esta tarea, actualizará la configuración del servicio de recomendaciones, r
 
 1. Ejecute el siguiente comando para iniciar sesión en ACR.
 
-   > **Nota**: Por favor reemplace **[ACRname]** con **<inject key="AcrLoginServer" enableCopy="true"/>**, **[uname]** con **<inject key="AcrUsername" enableCopy="true"/>**, y **[password]** con **<inject key="AcrPassword" enableCopy="true"/>**.
-
     ```
-    docker login [ACRname] -u [uname] -p [password]
+    docker login <inject key="AcrLoginServer" enableCopy="true"/> -u <inject key="AcrUsername" enableCopy="true"/> -p <inject key="AcrPassword" enableCopy="true"/>
     ```
 
     >**Nota**: El comando docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/> se usa para autenticar el cliente de Docker con el Azure Container Registry (ACR) especificado mediante el nombre de usuario y la contraseña proporcionados. Esta autenticación es necesaria para realizar operaciones como enviar y recibir imágenes de contenedor del ACR.
 
 1. Ejecute el siguiente comando para agregar la etiqueta.
 
-   > **Nota**: Por favor reemplace **[ACRname]** con **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker tag miyagi-recommendation:latest [ACRname]/miyagi-recommendation:latest
+   docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
    >**Note**: El comando docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest carga una imagen de Docker desde su equipo local al Azure Container Registry (ACR) especificado. Al ejecutar este comando, la imagen miyagi-recommendation:latest está disponible en el ACR, lo que permite su uso en diversas implementaciones y servicios de Azure.
 
 1. Una vez que haya iniciado sesión en ACR, ejecute el siguiente comando para enviar la imagen docker actualizada del servicio de recomendación al registro del contenedor.
 
-   **Nota**: Asegúrese de reemplazar **[ACRname]** con **<inject key="AcrLoginServer" enableCopy="true"/>**.
-
    ```
-   docker push [ACRname]/miyagi-recommendation:latest
+   docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
    >**Nota**: El comando docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest carga la imagen de Docker miyagi-recommendation:latest en el Azure Container Registry (ACR) especificado. Esto hace que la imagen esté disponible en el ACR para su uso en implementaciones y otras operaciones.
@@ -233,7 +231,7 @@ En esta tarea, administrará el ciclo de vida de la implementación del servicio
 
    ![](./Media/kub3.png)
 
-1. Una vez que se inicie el servicio de Kubernetes, seleccione **Servicios e ingresses** en recursos de Kubernetes y haga clic en **Extension IP** de miyagi-recommendation-service.
+1. Una vez que se inicie el servicio de Kubernetes, seleccione **Servicios y entradas** en recursos de Kubernetes y haga clic en **Extension IP** de miyagi-recommendation-service.
 
    ![](./Media/kub4.png)
 
@@ -253,7 +251,7 @@ En esta tarea, configurará el registro de Event Hub para API Management, config
 
    ![](./Media/namespace1-1.png)
 
-3. En la pestaña **Rol** de la pestaña Adición de la asignación de roles en la barra de búsqueda escriba y seleccione **Azure Event Hubs Data Sender** y haga clic en **Siguiente**.
+3. En la pestaña **Agregar asignación de rol**, busque **Remitente de datos de Azure Event Hubs (1)** en la barra de búsqueda, seleccione **Remitente de datos de Azure Event Hubs (2)** y haga clic en **Siguiente (3)**.
 
    ![](./Media/namespace2-1.png)
 
@@ -277,28 +275,28 @@ En esta tarea, configurará el registro de Event Hub para API Management, config
 
    ![](./Media/primary-spanish.png)
 
-10. Abra el **bloc de notas** de JumpVM y copie y pegue el siguiente código, actualizando **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** con el nombre **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** y &lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt; con el valor copiado en el paso anterior.
+10. Abra el **bloc de notas** de JumpVM y copie y pegue el siguiente código, actualizando **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** con el nombre **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** y **&lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt;** con el valor copiado en el paso anterior.
 
-   ```
-   resource existingApiManagement 'Microsoft.ApiManagement/service@2023-03-01-preview' existing = {
-      name: '<<API_MANAGEMENT_NAME>>'
-    }
-    
-    resource ehLoggerWithConnectionString 'Microsoft.ApiManagement/service/loggers@2023-05-01-preview' = {
-      name: 'AOAILogger'
-      parent: existingApiManagement
-      properties: {
-        loggerType: 'azureEventHub'
-        description: 'Event hub logger with connection string'
-        credentials: {
-          connectionString: '<<EVENT_HUB_CONNECTION_STRING>>'
-          name: 'ApimEventHub'
-        }
-      }
-    }
-   ```
+    ```
+    resource existingApiManagement 'Microsoft.ApiManagement/service@2023-03-01-preview' existing = {
+       name: '<<API_MANAGEMENT_NAME>>'
+     }
+     
+     resource ehLoggerWithConnectionString 'Microsoft.ApiManagement/service/loggers@2023-05-01-preview' = {
+       name: 'AOAILogger'
+       parent: existingApiManagement
+       properties: {
+         loggerType: 'azureEventHub'
+         description: 'Event hub logger with connection string'
+         credentials: {
+           connectionString: '<<EVENT_HUB_CONNECTION_STRING>>'
+           name: 'ApimEventHub'
+         }
+       }
+     }
+    ```
 
-   ![](./Media/bicepfile1.png)
+    ![](./Media/bicepfile1.png)
 
 11. En la barra de menú del bloc de notas seleccione **Archivo** y haga clic en **Guardar como**.
 
@@ -317,12 +315,10 @@ En esta tarea, configurará el registro de Event Hub para API Management, config
     ![](./Media/azure-account-select.png)
 
 15. Ejecute el siguiente comando para cambiar el directorio a la carpeta raiz `miyagi` en la terminal y ejecutar el archivo bicep.
-
-    > **Nota**: Reemplace &lt;&lt;RESOURCE_GROUP_NAME&gt;&gt; con **<inject key="rgname" enableCopy="true"/>**.
    
     ```
     cd C:\LabFiles\miyagi
-    az deployment group create --resource-group <<RESOURCE_GROUP_NAME>> --template-file .\aoai-logger.bicep
+    az deployment group create --resource-group <inject key="rgname" enableCopy="true"/> --template-file .\aoai-logger.bicep
     ```
 
     > **Nota**: Esta secuencia de comandos navega al directorio C:\LabFiles\miyagi que contiene el archivo Bicep y luego implementa los recursos definidos en ese archivo en el grupo de recursos de Azure especificado.
