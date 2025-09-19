@@ -236,27 +236,27 @@ En esta tarea, personalizará el servicio de recomendaciones de la aplicación M
 
 1. Vuelva a la página de la interfaz de usuario del **servicio de recomendación** y haga clic en el botón **personalize**.
 
-   ![](./Media/service-personalize.png)
+    ![](./Media/service-personalize.png)
 
-1. En la página **Personalize**, seleccione su **asesor financiero favorito (1)** y elija **GPT-4 (2)** para el **Reasoning Engine** en el menú desplegable, luego haga clic en **Personalize (3)**.
+2. En la página **Personalize**, seleccione su **asesor financiero favorito (1)** y elija **GPT-4 (2)** para el **Reasoning Engine** en el menú desplegable, luego haga clic en **Personalize (3)**.
 
-   ![](./Media/miyagi-image126.png)
+    ![](./Media/miyagi-image126.png)
 
-1. Debería ver las recomendaciones del servicio de recomendación en el widget Top Stocks.
+3. Debería ver las recomendaciones del servicio de recomendación en el widget Top Stocks.
 
-   ![](./Media/financial-advisor-output.png) 
+    ![](./Media/financial-advisor-output.png) 
 
-1. Navegue a **Visual Studio Code** y haga clic en **dotnet** desde la terminal, puede revisar los registros.
+4. Navegue a **Visual Studio Code** y haga clic en **dotnet** desde la terminal, puede revisar los registros.
 
-   ![](./Media/terminal-output.png)    
+    ![](./Media/terminal-output.png)    
 
-1. Una vez que revise los registros, presione **Ctrl + C** para detener la página **swagger UI**.
+5. Una vez que revise los registros, presione **Ctrl + C** para detener la página **swagger UI**.
 
-1. Desde la **Terminal** seleccione la terminal **Node**, presione **Ctrl + C** para detener la página de la interfaz de usuario del **servicio de recomendación**.
+6. Desde la **Terminal** seleccione la terminal **Node**, presione **Ctrl + C** para detener la página de la interfaz de usuario del **servicio de recomendación**.
 
-   ![](./Media/miyagi-image31.png)
+    ![](./Media/miyagi-image31.png)
 
-1. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+7. Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
 
 ## Resumen
 
