@@ -21,7 +21,7 @@ En esta tarea, configurará el plugin de Semantic Kernel en Visual Studio Code, 
 
 2. En **Visual Studio Code** en el panel izquierdo seleccione la extensión **Semantic Kernel** **(1)**, expanda haciendo clic en **AI ENDPONTS (OPENAI)** **(2)**, haga clic en **Cambiar Proveedor de Punto de Conexión** **(3)**, y elija **AzureOpenAI** **(4)**.
 
-   ![](./Media/Semantic-select.png)
+   ![](./Media/miyagi-image92.png)
 
 3. En **AI ENDPONTS(AZURE OPENAI)**, haga clic en **Sign in to Azure** **(1)**, en la ventana emergente **La extensión 'Semantic Kernel Tools' quiere iniciar sesión con Microsoft** haga clic en **Permitir** **(2)**.
 
