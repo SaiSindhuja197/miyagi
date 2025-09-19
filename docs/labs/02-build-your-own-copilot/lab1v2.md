@@ -214,7 +214,7 @@ In this task, you will persist embeddings in Azure AI Search by executing a POST
 
     ![](./Media/miyagi-image25.png)
 
-1. In **Azure AI services | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. In **AI Foundry | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![](./Media/miyagi-image26.png)
    

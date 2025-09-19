@@ -157,6 +157,8 @@ In this task, you will build and run the Miyagi recommendation service Docker co
    docker build . -t miyagi-recommendation      
    ```
 
+   ![](./Media/task2-1.png)
+
    > **Note**: Please wait as this command may require some time to complete.
 
 1. Run the following command to get the newly created **Docker image**.
@@ -165,7 +167,7 @@ In this task, you will build and run the Miyagi recommendation service Docker co
    docker images
    ```
    
-   ![](./Media/miyagi-image40.png)
+   ![](./Media/task2-2.png)
    
 1. Navigate back to **Docker desktop**, from the left pane select **Images**.
 
@@ -253,7 +255,11 @@ In this task, you will push the Docker image of the Miyagi recommendation servic
 
 In this task, you will deploy the Miyagi UI and Recommendation services to Azure Kubernetes Service (AKS) pods. This involves modifying the Kubernetes manifest files to include the Azure Container Registry (ACR) name, applying the configurations, and verifying the deployment of the pods.
 
-1. Navigate to **miyagi/deploy/infrastructure/kubernetes/manifests/50-miyagi**. Open the **miyagi-recommendation.yaml** file and replace the &lt;ACR-NAME&gt; with **<inject key="acrUsername" enableCopy="true"/>** Azure container registry name and save the file by **Ctrl + S**.
+1. Navigate to **Miyagi/deploy (1)/infrastructure (2)/Kubernetes/manifests (3)/50-miyagi (4)**. Open the **miyagi-recommendation.yaml (5)** file.
+
+   ![](./Media/aks-05.png)
+
+1. In the **miyagi-recommendation.yaml** file, replace &lt;ACR-NAME&gt; with the name of your Azure container registry **<inject key="acrUsername" enableCopy="true"/>** and save the file with **Ctrl + S**.
 
    ![](./Media/miyagi-image47.png)
    
@@ -281,7 +287,7 @@ In this task, you will deploy the Miyagi UI and Recommendation services to Azure
 
 1. The applications should now be deployed. To verify run the below command and you should see both pods in a running state.
 
-   >**Note**: It could take a few minutes for the output to appear so wait a few minutes before running the command.
+   >**Note**: It could take a few minutes for the output to appear, so wait a few minutes before running the command.
    
    ```
    kubectl get pods
