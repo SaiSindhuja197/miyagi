@@ -82,7 +82,7 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
    ![](./Media/api-product1-1.png)
 
-7. En **Agregar producto** coloque el nombre para mostrar como **OpenAi** **(1)** y la descripción como **OpenAI** **(2)**. En el menú APIs haga clic en el **signo más** **(3)** seleccione **api-key** **(4)** presione Enter y haga clic en **Crear** **(5)**.
+7. En la ventana **Agregar producto**, especifique **OpenAi** **(1)** como **Nombre para mostrar** y **OpenAI** **(2)** como **Descripción**. En el menú **API**, haga clic en el **Signo más** **(3)**, seleccione **Azure OpenAI Service API** **(4)**, presione Intro y haga clic en **Crear** **(5)**.
 
    ![](./Media/productSpan.png)
 
