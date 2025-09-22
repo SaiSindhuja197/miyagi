@@ -105,7 +105,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. In the **Resource groups**, click on **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 
-   ![](../docs/labs/02-build-your-own-copilot/Media/miyagi-image7.png)
+   ![](../docs/labs/02-build-your-own-copilot/Media/br-1.png)
 
 1. In the **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>** resource groups, verify the resources present in it.
 
