@@ -244,9 +244,9 @@ In this task, you'll be managing the deployment lifecycle of the recommendation 
 
 In this task, you'll be setting up Event Hub logging for API Management, configuring the necessary components in Azure, deploying the logging configuration using a Bicep template, and validating the integration through testing and monitoring.
 
-1. In the Azure portal Search and select **Event Hubs**, select the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
+1. In the **Azure portal**, Search and select **Event Hubs**, select the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](./Media/miyagi-image78.png)
+    ![](./Media/api-product9.png)
    
 1. In the **miyagi-event-<inject key="DeploymentID" enableCopy="false"/>** Event hub Namespace tab, from the left menu select **Access control (IAM)** **(1)** , click on **+ Add** **(2)**, and select **Add role assignment** **(3)**.
 
@@ -266,7 +266,7 @@ In this task, you'll be setting up Event Hub logging for API Management, configu
 
 1. Click on **Next**.
 
-1. In the **Review + assign** tab click on **Review + assign**.
+1. In the **Review + assign** tab, click on **Review + assign**.
 
    ![](./Media/namespace3.png)
 
@@ -278,7 +278,7 @@ In this task, you'll be setting up Event Hub logging for API Management, configu
 
    ![](./Media/primaryconnectionstring.png)
 
-1. Open the **notepad** from the jumpvm and copy and paste the below code, update the **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** with **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** name and the &lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt; copied from the step above.
+1. Open the **notepad** from the jumpvm and copy and paste the below code, update the **&lt;&lt;API_MANAGEMENT_NAME&gt;&gt;** with **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** name and the **&lt;&lt;EVENT_HUB_CONNECTION_STRING&gt;&gt;** copied from the step above.
 
    ```
    resource existingApiManagement 'Microsoft.ApiManagement/service@2023-03-01-preview' existing = {

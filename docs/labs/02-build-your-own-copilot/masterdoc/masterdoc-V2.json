@@ -38,11 +38,11 @@
 		"Language": "Spanish",
 		"Files": [
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/localized-content/READMEv2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/localized-content/docs/labs/02-build-your-own-copilot/Gettingstarted-v2.md",
 				"Order": 1
 			},
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/localized-content/docs/labs/02-build-your-own-copilot/Gettingstarted-v2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/localized-content/READMEv2.md",
 				"Order": 2
 			},
 			{
@@ -72,11 +72,11 @@
 		"Language": "Portuguese",
 		"Files": [
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/Portuguese-Content/docs/labs/02-build-your-own-copilot/Portueguese/READMEv2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/Portuguese-Content/docs/labs/02-build-your-own-copilot/Portueguese/Gettingstarted-v2.md",
 				"Order": 1
 			},
 			{
-				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/Portuguese-Content/docs/labs/02-build-your-own-copilot/Portueguese/Gettingstarted-v2.md",
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/miyagi/localized-content/READMEv2.md",
 				"Order": 2
 			},
 			{

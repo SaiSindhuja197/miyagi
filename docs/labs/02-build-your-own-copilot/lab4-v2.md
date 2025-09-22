@@ -1,4 +1,4 @@
-# Lab 5: Getting Started with Your Own Copilot [Read me]
+# Lab 5: Getting Started with Your Own Copilot
 
 ### Estimated Duration: 30 minutes
 
@@ -20,7 +20,7 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
-   ![](./Media/ds-01.png)
+   ![](./Media/vs-01.png)
 
 1. In the **Visual Studio Code** from the left panel, select **Semantic Kernel** **(1)** plugin, expand  by click on **AI ENDPOINTS (OPENAI)** **(2)**, click on **Switch EndPoint Provider** **(3)**, and select **AzureOpenAI** **(4)**.
 
@@ -38,9 +38,9 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
 
    ![](./Media/miyagi-image95.png)
 
-1. Choose **C# Home Automation**.
+1. Choose **Semantic Kernel: C# Home Automation**.
 
-    ![](./Media/miyagi-image96.png)
+    ![](./Media/kkernal1.png)
 
 1. Browse the location `C:\LabFiles` **(1)** and **Select location for new app** **(2)**.
 
@@ -200,11 +200,11 @@ In this task, you will configure the Semantic Kernel plugin in Visual Studio Cod
     
     > **Note** The commands dotnet build and dotnet run are fundamental in .NET Core and .NET 5+ environments for building and running .NET applications locally on your machine.
 
-1. After running `dotnet run`, you can ask a few questions and review the response. For example: `What time is it?`
+1. After running `dotnet run`, you can ask a few questions and review the response. For example: `What time is it?` **(1)** and get the **Result (2)**.
 
     ![](./Media/miyagi-image100.png)
 
-1. Example 2: `Set an alarm for 6:00 am.`
+1. **Example 2:** `Set an alarm for 6:00 am.`
 
     ![](./Media/miyagi-image101.png)
 
@@ -222,7 +222,7 @@ In this task, you'll configure Azure AI Search by importing data from CosmosDB i
 
     ![](./Media/miyagi-image25.png)
 
-1. In **Azure AI services | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. In **AI Foundry | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![](./Media/miyagi-image26.png)
 
@@ -246,7 +246,7 @@ In this task, you'll configure Azure AI Search by importing data from CosmosDB i
 
    ![](./Media/miyagi-image107.png)
 
-1. Navigate back to **Azure AI services | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. Navigate back to **AI Foundry | AI Search** tab, select **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](./Media/miyagi-image26.png)
    
