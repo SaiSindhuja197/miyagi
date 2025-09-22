@@ -58,7 +58,7 @@ In this task, you will retrieve the Azure OpenAI Service values by accessing the
 
 In this task, you will clone the Chat-Copilot GitHub repository by using Git commands to download the code to your local machine for further exploration and development.
 
-1. In the LabVM, click on **Start**, from the start menu search for **Powershell (1)** and select **Windows PowerShell (2)** and then pen PowerShell as an administrator.
+1. In the LabVM, click on **Start**, from the start menu search for **Powershell (1)** and select **Windows PowerShell (2)** and then open PowerShell as an administrator.
 
     ![](./Media/cp3.png)  
    
@@ -241,7 +241,7 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
       ![](./Media/cp15.png)     
    
-1. The response not only answered the question based on the content found in these documents, but it also included citations (1) to that content to validate the accuracy of the information. When you click on an annotation, the app jumps right to the page of the document (2) that goes into the comparison of the plans, so that we can read more or do additional validation on the accuracy of the answer under the citation section.
+1. The response not only answered the question based on the content found in these documents, but it also included **citations** to that content to validate the accuracy of the information. When you click on an annotation, the app jumps right to the page of the document that goes into the comparison of the plans, so that we can read more or do additional validation on the accuracy of the answer under the citation section.
 
 1. Click on the **Edit** button on the left to rename.
 
