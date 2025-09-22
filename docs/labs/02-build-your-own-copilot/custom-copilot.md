@@ -253,12 +253,12 @@ In this task, you will learn how to chat with your own documents in the Chat Cop
 
 ## Summary
 
-In this lab, you have accomplished the following:
+In this lab, you retrieved Azure OpenAI Service values, cloned the Chat-Copilot GitHub repository, set up the environment with required dependencies, ran the Chat Copilot app locally, and interacted with your documents within the app.
 
-- Retrieved Azure OpenAI Service values for proper integration.  
-- Cloned the Chat-Copilot GitHub repository to access the code.  
-- Set up the environment with required dependencies and configurations.  
-- Ran the Chat Copilot app locally for testing purposes.  
-- Interacted with your documents within the Chat Copilot app.  
 
 ### You have succesfully completed the lab
+
+## Conclusion
+
+By completing the Build Custom Copilot Application using Azure AI Foundry lab, you gained hands-on experience in setting up and running a Chat Copilot application locally. You explored Azure OpenAI Service integration, cloned and configured the Chat-Copilot repository, installed necessary dependencies, and executed the application. Additionally, you learned to upload documents and interact with them through Copilot, observing how AI-generated responses are derived and validated with citations. This lab enhanced your practical understanding of building AI-powered applications and managing document-driven interactions.
+
