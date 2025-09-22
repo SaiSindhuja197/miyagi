@@ -41,7 +41,7 @@ The architecture for this lab involves several key components:
 
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![](../docs/labs/02-build-your-own-copilot/Media/cpg1upd.png)
 
