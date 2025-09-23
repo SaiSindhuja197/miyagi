@@ -6,11 +6,13 @@
 
 In this lab, you will explore how to use Chat Copilot with your own data, leveraging Azure AI Search and Azure OpenAI Service. You will begin by retrieving necessary service values from the Azure portal and setting up the Chat Copilot app locally. Through configuring the app and uploading documents, you’ll enable the generation of context-based responses with citations for validation. This lab offers hands-on experience in integrating your data with Chat Copilot, managing documents, and interacting with the application for personalized insights.
 
-## Objective
+## Objectives
 
-Understand how to configure and run the Chat Copilot application locally, integrate your own data with Azure AI Search, and generate responses with contextual accuracy. By the end of this lab, you will be able to:
+Understand how to configure and run the Chat Copilot application locally, integrate your own documents, and generate AI-powered responses with contextual validation. By the end of this lab, you will be able to:
 
-- **Bringing your own data with Azure AI Search**: This hands-on exercise aims to integrate Large Language Models (LLMs) with languages like C#, Python, and Java by allowing the creation of easily chainable plugins. 
+- **Run the Chat Copilot App Locally:** This exercise focuses on retrieving Azure OpenAI Service values, cloning the Chat-Copilot GitHub repository, setting up the environment with required dependencies, and running the Chat Copilot application locally for testing and interaction.
+
+- **Chat with your own documents:** This exercise demonstrates how to upload and manage documents within the Chat Copilot application. You will interact with the chat interface to query the uploaded files, receive AI-generated responses, and validate them through citations for accuracy.
   
 ## Pre-requisites
 
@@ -19,6 +21,8 @@ Participants should have the following prerequisites
 - **Basic Knowledge of Azure Services**: Familiarity with Azure OpenAI Service and Azure AI Search.
 - **Experience with Git and Repositories**: Ability to clone and work with GitHub repositories.
 - **Basic Programming Skills**: Proficiency in setting up environments and running applications locally.
+- **Development Tools Knowledge:** Familiarity with Visual Studio Code, Node.js, .NET SDK, and package managers like Yarn/Chocolatey.
+- **Understanding of AI Concepts:** Awareness of language models, embeddings, and how AI can interact with documents.
 
 ## Architecture
 
