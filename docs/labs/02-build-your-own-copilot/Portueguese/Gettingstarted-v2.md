@@ -119,7 +119,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
       ![](../Media/808.png)
 
-      > **Nota**: Se for solicitado o MFA, siga os passos destacados em - [Passos para prosseguir com a configuração do MFA se a opção Perguntar mais tarde não estiver visível](#passos-a-proceder-com-mfa-setup-if-ask-later-option-is-not-visible)
+      > **Nota**: Se for solicitado o MFA, siga os passos destacados em - [Passos para prosseguir com a configuração do MFA se a opção Perguntar mais tarde não estiver visível](#Passos-para-prosseguir-com-a-configuração-do-MFA-se-a-opção-Pergunta-mais-tarde-não-estiver-visível)
 
 1. Se vir o pop-up **Permanecer ligado?**, selecione **Não**.
 
@@ -142,7 +142,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
    ![](../Media/812.png)
 
 
-## Passos para prosseguir com a configuração do MFA se a opção "Perguntar Mais Tarde" não estiver visível
+## Passos para prosseguir com a configuração do MFA se a opção Perguntar Mais Tarde não estiver visível
 
 > **Nota:** Continue com os exercícios se o MFA já estiver activado ou indisponível.
 
