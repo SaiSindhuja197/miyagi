@@ -1,6 +1,6 @@
 # Laboratório 1 - Verificar e recuperar os valores dos recursos do Azure (opcional)
 
-### Duração: 20 minutos
+### Duração estimada: 20 minutos
 
 Neste laboratório, irá verificar e recuperar valores específicos, como Endpoint, Connection String e Key, para vários recursos do Azure. Isto é crucial para garantir a configuração e conectividade adequadas destes recursos.
 
@@ -46,7 +46,7 @@ Neste laboratório, irá verificar e recuperar valores específicos, como Endpoi
 
       ![](../Media/821.png)
 
-1. Para verificar os valores de "azureCognitiveSearchEndpoint", "azureCognitiveSearchApiKey", siga os passos abaixo:
+1. Para verificar os valores de **azureCognitiveSearchEndpoint** e **azureCognitiveSearchApiKey**, siga os passos abaixo:
 
     - Navegue de volta para o grupo de recursos **miyagi-rg-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -90,3 +90,5 @@ Neste laboratório, irá verificar e recuperar valores específicos, como Endpoi
 Neste laboratório, irá verificar e recuperar valores de configuração como Endpoint, Connection String e Key para vários recursos do Azure, como OpenAI Service, Cosmos DB e Cognitive Search. Isto garante uma configuração e conectividade adequadas. Os passos envolvem aceder ao Portal Azure, navegar até grupos de recursos específicos e verificar os valores necessários.
 
 ### Tem sucesso concluiu este laboratório com sucesso. Agora clique em **Seguinte** no canto inferior direito para passar para a página seguinte.
+
+![](../Media/1024.png)

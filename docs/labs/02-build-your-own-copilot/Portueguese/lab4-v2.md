@@ -1,6 +1,6 @@
 # Laboratório 5 - Primeiros passos com o seu próprio copiloto
 
-### Duração: 30 minutos
+### Duração estimada: 30 minutos
 
 O Semantic Kernel é um SDK que integra Large Language Models (LLMs) como OpenAI, Azure OpenAI e Hugging Face com linguagens de programação convencionais como C#, Python e Java. O Kernel Semântico consegue isto permitindo definir plug-ins que podem ser encadeados em apenas algumas linhas de código.
 
@@ -39,9 +39,9 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
    ![](../Media/883.png)
 
-6. Escolha **C# Domótica**
+6. Escolha **Semantic Kernel: C# Home Automation**.
 
-   ![](../Media/miyagi-image96.png)
+   ![](../Media/kkernal1.png)
 
 7. Procure o local **C:\LabFiles** e **selecione o local para a nova aplicação**
 
@@ -51,7 +51,7 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
    ![](../Media/884.png)
 
-9. Navegue até ao ficheiro **appsettings. json** **(1)** e substitua o **script** **(2)** existente pelo seguinte:
+9. Navegue até ao ficheiro **appsettings. json** **(1)** e substitua o **script** **(2)** existente pelo seguinte. A secção `AzureOpenAIOptions` em appsettings. json armazena definições de configuração para os serviços do Azure OpenAI, como a chave API, o URL do ponto de extremidade e o nome do modelo, utilizados para autenticação e acesso ao serviço.
 
    ```
    {
@@ -80,86 +80,86 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 12. Navegue até o arquivo **Program.cs (1)** e substitua o código existente pelo seguinte. O arquivo `Program.cs` configura um aplicativo .NET usando injeção de dependência e Kernel Semântico. Configura serviços, incluindo Azure OpenAI para conclusão de chat, e adiciona vários plugins (`MyTimePlugin, MyAlarmPlugin, MyLightPlugin`). Os `AzureOpenAIOptions` são carregados de arquivos de configuração e variáveis ​​de ambiente. Um serviço hospedado `(Worker)` trata da lógica de execução principal. Um kernel de automação residencial é criado com uma coleção desses plug-ins e adicionado ao contêiner de injeção de dependência.
 
     ```
-      using HomeAutomation.Options;
-      using HomeAutomation.Plugins;
-      using Microsoft.Extensions.DependencyInjection;
-      using Microsoft.Extensions.Hosting;
-      using Microsoft.Extensions.Options;
-      using Microsoft.SemanticKernel;
-      using Microsoft.SemanticKernel.ChatCompletion;
-      using Microsoft.SemanticKernel.Connectors.OpenAI;
+    using HomeAutomation.Options;
+    using HomeAutomation.Plugins;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Options;
+    using Microsoft.SemanticKernel;
+    using Microsoft.SemanticKernel.ChatCompletion;
+    using Microsoft.SemanticKernel.Connectors.OpenAI;
    
-      namespace HomeAutomation;
-   
-      internal static class Program
-      {
-         internal static async Task Main(string[] args)
-         {
-            HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
-   
-            // Actual code to execute is found in Worker class
-            builder.Services.AddHostedService<Worker>();
-   
-            // Get configuration
-            builder.Services.AddOptions<AzureOpenAIOptions>()
-                              .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
-                              .ValidateDataAnnotations()
-                              .ValidateOnStart();
-   
-            // Chat completion service that kernels will use
-            builder.Services.AddSingleton<IChatCompletionService>(sp =>
-            {
-                  /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
-   
-                  // A custom HttpClient can be provided to this constructor
-                  return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
-   
-                  Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
-                     of OpenAI options with builder.Services.AddOptions:*/
-   
-                  AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
-   
-                  return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
-            });
-   
-            // Add plugins that can be used by kernels
-            // The plugins are added as singletons so that they can be used by multiple kernels
-            builder.Services.AddSingleton<MyTimePlugin>();
-            builder.Services.AddSingleton<MyAlarmPlugin>();
-            builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
-            builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
-            {
-                  return new MyLightPlugin(turnedOn: true);
-            });
-   
-            /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
-               Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
-            Kernel kernel = new();
-            KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
-            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
-   
-            KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
-            builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
-   
-            // Add a home automation kernel to the dependency injection container
-            builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
-            {
-                  // Create a collection of plugins that the kernel will use
-                  KernelPluginCollection pluginCollection = [];
-                  pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
-                  pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
-                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
-                  pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
-   
-                  // When created by the dependency injection container, Semantic Kernel logging is included by default
-                  return new Kernel(sp, pluginCollection);
-            });
-   
-            using IHost host = builder.Build();
-   
-            await host.RunAsync();
-         }
-      }
+    namespace HomeAutomation;
+ 
+    internal static class Program
+    {
+       internal static async Task Main(string[] args)
+       {
+          HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+ 
+          // Actual code to execute is found in Worker class
+          builder.Services.AddHostedService<Worker>();
+ 
+          // Get configuration
+          builder.Services.AddOptions<AzureOpenAIOptions>()
+                            .Bind(builder.Configuration.GetSection(nameof(AzureOpenAIOptions)))
+                            .ValidateDataAnnotations()
+                            .ValidateOnStart();
+ 
+          // Chat completion service that kernels will use
+          builder.Services.AddSingleton<IChatCompletionService>(sp =>
+          {
+                /*OpenAIOptions options = sp.GetRequiredService<IOptions<OpenAIOptions>>().Value;
+ 
+                // A custom HttpClient can be provided to this constructor
+                return new OpenAIChatCompletionService(options.ChatModelId, options.ApiKey);
+ 
+                Alternatively, you can use plain, Azure OpenAI after loading AzureOpenAIOptions instead
+                   of OpenAI options with builder.Services.AddOptions:*/
+ 
+                AzureOpenAIOptions options = sp.GetRequiredService<IOptions<AzureOpenAIOptions>>().Value;
+ 
+                return new AzureOpenAIChatCompletionService(options.ChatDeploymentName, options.Endpoint, options.ApiKey); 
+          });
+ 
+          // Add plugins that can be used by kernels
+          // The plugins are added as singletons so that they can be used by multiple kernels
+          builder.Services.AddSingleton<MyTimePlugin>();
+          builder.Services.AddSingleton<MyAlarmPlugin>();
+          builder.Services.AddKeyedSingleton<MyLightPlugin>("OfficeLight");
+          builder.Services.AddKeyedSingleton<MyLightPlugin>("PorchLight", (sp, key) =>
+          {
+                return new MyLightPlugin(turnedOn: true);
+          });
+ 
+          /* To add an OpenAI or OpenAPI plugin, you need to be using Microsoft.SemanticKernel.Plugins.OpenApi.
+             Then create a temporary kernel, use it to load the plugin and add it as keyed singleton.
+          Kernel kernel = new();
+          KernelPlugin openAIPlugin = await kernel.ImportPluginFromOpenAIAsync("<plugin name>", new Uri("<OpenAI-plugin>"));
+          builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenAIPlugin", openAIPlugin);
+ 
+          KernelPlugin openApiPlugin = await kernel.ImportPluginFromOpenApiAsync("<plugin name>", new Uri("<OpenAPI-plugin>"));
+          builder.Services.AddKeyedSingleton<KernelPlugin>("MyImportedOpenApiPlugin", openApiPlugin);*/
+ 
+          // Add a home automation kernel to the dependency injection container
+          builder.Services.AddKeyedTransient<Kernel>("HomeAutomationKernel", (sp, key) =>
+          {
+                // Create a collection of plugins that the kernel will use
+                KernelPluginCollection pluginCollection = [];
+                pluginCollection.AddFromObject(sp.GetRequiredService<MyTimePlugin>());
+                pluginCollection.AddFromObject(sp.GetRequiredService<MyAlarmPlugin>());
+                pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("OfficeLight"), "OfficeLight");
+                pluginCollection.AddFromObject(sp.GetRequiredKeyedService<MyLightPlugin>("PorchLight"), "PorchLight");
+ 
+                // When created by the dependency injection container, Semantic Kernel logging is included by default
+                return new Kernel(sp, pluginCollection);
+          });
+ 
+          using IHost host = builder.Build();
+ 
+          await host.RunAsync();
+       }
+    }
     ```
 
 13. Navegue até o arquivo **Worker.cs** e atualize o número da linha 29 e **CTRL+S**.
@@ -190,7 +190,7 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
 16. Para construir e executar a aplicação Home Automation a partir do terminalnal utilize os seguintes comandos:
 
-    ```PowerShell
+    ```
     dotnet build
     dotnet run
     ```
@@ -201,15 +201,15 @@ Nesta tarefa, irá configurar o plug-in do Kernel Semântico no Visual Studio Co
 
     > **Nota** Os comandos dotnet build e dotnet run são fundamentais em ambientes .NET Core e .NET 5+ para criar e executar aplicações .NET localmente na sua máquina.
 
-17. Depois de executar `dotnet run`, pode fazer algumas perguntas e rever a resposta. Por exemplo: `Que horas são?`
+17. Após executar `dotnet run`, pode fazer algumas perguntas e analisar a resposta. Por exemplo: `What time is it?` **(1)** e obter o **Resultado (2)**.
 
     ![](../Media/887.png)
 
-18. Exemplo 2: `Defina um alarme para as 6h.`
+18. Exemplo 2: `Set an alarm for 6:00 am`
 
     ![](../Media/miyagi-image101.png)
 
-19. Se desejar incluir questões adicionais, navegue até ao ficheiro **worker.cs** e insira as suas novas questões na **linha número 32**.
+19. Se desejar incluir questões adicionais, navegue até ao ficheiro **worker.cs (1)** e insira as suas novas questões na **linha número 32 (2)**.
 
     ![](../Media/miyagi-image102.png)
 
@@ -223,7 +223,7 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
    ![](../Media/888.png)
 
-1. Em **serviços Azure IA | No separador AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. Em **AI Foundry | AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](../Media/889.png)
 
@@ -239,7 +239,7 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
    ![](../Media/892.png)
 
-1. Em **Personalizar índice de destino**, introduza o nome do índice como **realestate-us-sample-index** e clique em **Seguinte:Criar um indexador**.
+1. Em **Personalizar índice de destino**, introduza o nome do índice como **realestate-us-sample-index (1)** e clique em **Seguinte:Criar um indexador (2)**.
 
    ![](../Media/894.png)
 
@@ -247,7 +247,7 @@ Nesta tarefa, irá configurar o Azure Cognitive Search importando dados do Cosmo
 
    ![](../Media/895.png)
 
-1. Navegue de volta para **Serviços de IA do Azure | No separador AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. Navegue de volta para **AI Foundry | AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](../Media/889.png)
 
@@ -265,4 +265,6 @@ Neste laboratório, aprendeu a configurar e executar o exemplo do Kernel Semânt
 
 ### Conclusão
 
-Você concluiu com sucesso o _Crie aplicações inteligentes com a pilha Copilot da Microsoft e Azure OpenAI_ , adquirindo competências práticas em validação de recursos do Azure, execução e contentorização da aplicação Miyagi, implementação no AKS, gestão de APIs via APIM e criação do seu próprio Copilot com integração de LLMs.
+Concluiu com sucesso o curso Build Intelligent Applications with Microsoft's Copilot Stack e Azure OpenAI, adquirindo competências práticas na validação de recursos do Azure, execução e contentorização da aplicação Miyagi, implementação em AKS, gestão de APIs via APIM e criação do seu próprio Copilot com integração LLM.
+
+### Concluiu este laboratório.

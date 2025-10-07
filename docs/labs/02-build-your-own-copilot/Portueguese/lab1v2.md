@@ -1,6 +1,6 @@
-# Laboratório 2 - Execute a aplicação Miyagi localmente
+# Laboratório 2: Executar a Aplicação Miyagi Localmente
 
-### Duração: 80 minutos
+### Duração Estimada: 60 minutos
 
 Neste laboratório, o foco está na configuração da aplicação Miyagi para prontidão operacional. Posteriormente, a atenção passa para a compreensão da implementação diferenciada do serviço de recomendação. A fase prática envolve a execução do serviço de recomendação e a implementação local do frontend Miyagi para teste e desenvolvimento. Uma etapa crucial inclui a otimização da eficiência da recuperação de dados através da persistência de incorporações no Azure AI Search. O projeto culmina com uma exploração mais ampla da aplicação Miyagi e do serviço de recomendação, enfatizando uma experiência de utilizador personalizada. Esta abordagem baseada em tarefas garante uma progressão sistemática através das complexidades do projeto, facilitando uma compreensão abrangente e uma implementação eficaz.
 
@@ -41,9 +41,11 @@ Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições espe
 
    ![](../Media/884.png)
 
-1. Expanda o diretório **miyagi>ui** e verifique se o ficheiro **. env.** está presente.
+1. Expanda o diretório **Miyagi>ui>typescript (1)** e verifique se o ficheiro **. env (2)** está presente.
 
-1. Expanda o diretório **miyagi/services/recommendation-service/dotnet** e verifique se o ficheiro **appsettings. json** está presente.
+   ![](../Media/miyagi-image-16.png)
+
+1. Abra a pasta **miyagi** e expanda o diretório **services(1)/recommendation-service(2)/dotnet(3)** e verifique se o ficheiro **appsettings.json(4)** está presente.
 
    ![](../Media/open-appsettings.png)
 
@@ -69,7 +71,9 @@ Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições espe
 
 1. Após atualizar os valores, guarde o ficheiro premindo **CTRL + S**.
 
-1. Navegue até **miyagi/sandbox/usecases/rag/dotnet** e verifique se o ficheiro **. env** está presente.
+1. Na pasta **miyagi**, expanda **sandbox(1)/usecases(2)/rag(3)/dotnet(4)** e verifique se o ficheiro **. env(5)** está presente.
+
+   ![](../Media/miyagi-image(111).png)
 
 1. No ficheiro **. env** substitua os seguintes valores pelas variáveis ​​abaixo.
 
@@ -87,40 +91,42 @@ Nesta tarefa, irá configurar a aplicação Miyagi atualizando definições espe
 
 1. Após atualizar os valores, guarde o ficheiro premindo **CTRL + S**.
 
-    >**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
-    > - Clique no botão Validar para a tarefa correspondente. Se receber um mensagem de sucesso, validou o laboratório com sucesso.
-    > - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
-    > - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
+>**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
+> - Clique no botão Validar para a tarefa correspondente. Se receber um mensagem de sucesso, validou o laboratório com sucesso.
+> - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
+> - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
 
- <validation step="d37dd2bb-631a-4ffe-a41e-fc3ef07aa2b5" />
+<validation step="209e971c-dc3f-486b-b7c7-1096724301f7" />
 
 ### Tarefa 2: Compreender a implementação do serviço de recomendação
 
 O serviço de recomendação implementa o padrão RAG utilizando o SDK do Kernel Semântico. Os detalhes da implementação são capturados no Jupyter notebook na pasta miyagi/sandbox/usecases/rag/dotnet. Pode abrir o notebook no VSCode e executar as células para compreender os detalhes passo a passo de como o serviço de recomendação é implementado. Preste especial atenção à forma como o padrão RAG é implementado utilizando o Kernel Semântico. Selecione kernel como .NET Interactive no canto superior direito do portátil.
 
-1. No Visual Studio Code, navegue até à pasta **miyagi/sandbox/usecases/rag/dotnet** e selecione **Getting-started.ipynb**
+1. No Visual Studio Code, navegue até à pasta **miyagi(1)** e expanda a pasta **sandbox(2)/usecases(3)/rag(4)/dotnet(5)** e seleccione **Getting-started.ipynb(6)**.
 
    ![](../Media/miyagi-image19.png)
 
 1. **Execute o caderno célula a célula** (utilizando Ctrl + Enter para permanecer na mesma célula ou Shift + Enter para avançar para a célula seguinte) e observe os resultados da execução de cada célula.
 
-    > **Nota**: Certifique-se de que o **. Net Interactive** está no estado pronto. Além disso, não clique na opção **Executar tudo** para executar todas as células de uma só vez, o que pode levar a exceder o limite de tokens, resultando no Erro: 503 – Serviço inacessível.
+    > **Nota**: Certifique-se de que o **. Net Interactive** está pronto. Caso contrário, aguarde 2 a 3 minutos. Se ainda não estiver a carregar, feche e abra o Visual Studio. Além disso, não clique na opção **Executar Tudo** para executar todas as células de uma só vez, o que pode levar à ultrapassagem do limite de tokens, resultando no erro: 503 – Serviço inacessível.
 
    ![](../Media/miyagi-image20.png)
 
-    > **Nota**: Caso ocorram problemas ou erros relacionados com o excesso do limite da taxa de chamada do seu nível de preços OpenAI S0 atual. , Aguarde 15 a 20 segundos e execute novamente a célula
+   > **Nota**: Caso ocorram problemas ou erros relacionados com o excesso do limite da taxa de chamada do seu nível de preços OpenAI S0 atual. , Aguarde 15 a 20 segundos e execute novamente a célula
 
-    >**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
-    > - Clique no botão Validar para a tarefa correspondente. Se receber uma mensagem de sucesso, validou o laboratório com sucesso.
-    > - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
-    > - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
 
-<validation step="f277b99e-c179-4bb8-b9c1-6479a526ee4b" />
+>**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
+> - Clique no botão Validar para a tarefa correspondente. Se receber uma mensagem de sucesso, validou o laboratório com sucesso.
+> - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
+> - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
+
+<validation step="560130f4-fca1-49e1-98a6-97ec61155364" />
 
 ### Tarefa 3: executar o serviço de recomendação localmente
+
 Nesta tarefa, irá executar o serviço de recomendação localmente utilizando o Visual Studio Code para criar e executar o serviço no terminal e, em seguida, verificar a sua funcionalidade acedendo à página do Swagger no browser.
 
-1. Abra um novo terminal: navegando **miyagi/services/recommendation-service/dotnet** e clique com o botão direito do rato em **dotnet** no menu em cascata e selecione **Abrir no terminal de intergate**.
+1. Para abrir um novo terminal, navegue até **miyagi(1)/services(2)/recommendation-service(3)/dotnet(4)** e clique com o botão direito do rato em **dotnet** no menu em cascata e selecione **Abrir no Terminal Integrado (5)**.
 
    ![](../Media/833.png)
 
@@ -148,7 +154,7 @@ Nesta tarefa, irá executar o serviço de recomendação localmente utilizando o
 ### Tarefa 4: Executar o frontend miyagi localmente
 Nesta tarefa, irá executar o frontend miyagi localmente instalando dependências utilizando npm e yarn e, em seguida, iniciando o servidor de desenvolvimento. Irá verificar a sua funcionalidade acedendo ao servidor de desenvolvimento local no navegador.
 
-1. Abra um novo terminal: navegando **miyagi** e clique com o botão direito do rato em **ui/typescript** , no menu em cascata selecione **Open in intergate Terminal**.
+1. Para abrir um novo terminal, navegue até à pasta **miyagi (1)**, expanda **ui** e clique com o botão direito do rato na pasta **ui/typescript (2)**, no menu em cascata selecione **Abrir no Terminal integrado (3)**.
 
    ![](../Media/834.png)
 
@@ -178,17 +184,18 @@ Nesta tarefa, irá executar o frontend miyagi localmente instalando dependência
 
      ![](../Media/error-side.png)
 
-   > **Nota**: Não feche o VS Code, pois você precisará do host local em execução para tarefas futuras.
+   > **[!IMPORTANTE]**<br>
+   > Não feche o VS Code, pois irá necessitar do host local em execução para tarefas futuras.
 
 ### Tarefa 5: persistir incorporações no Azure AI Search
 
 Nesta tarefa, irá persistir os embeddings no Azure AI Search executando um pedido POST na interface do utilizador do Swagger, verificando a execução e, em seguida, confirmando a criação do índice no portal do Azure.
 
-1. Navegue de volta para a página **Swagger UI**, vá até à sessão **Memory**, clique em **POST /dataset (1)** para expansão e clique em **Experimente (2)**.
+1. Navegue de volta para a página **Swagger UI**, desça até à sessão **Memória**, clique em **POST /dataset(1)** para expansão e clique em **Try it out (2)**.
 
    ![](../Media/miyagi-image22.png)
 
-1. Substitua o **código (1)** abaixo pelo código abaixo e clique em **Executar (2)**.
+1. Substitua o **código (1)** abaixo pelo código abaixo e clique em **Execute (2)**.
 
      ```
      {
@@ -212,7 +219,7 @@ Nesta tarefa, irá persistir os embeddings no Azure AI Search executando um pedi
 
    ![](../Media/838.png)
 
-1. Em **AI Foundry | No separador AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. Em **AI Foundry | AI Search**, selecione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](../Media/837.png)
 
@@ -222,12 +229,12 @@ Nesta tarefa, irá persistir os embeddings no Azure AI Search executando um pedi
 
     > **Nota**: Clique no botão Atualizar para visualizar a **Contagem de documentos**.
 
-    >**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
-    > - Clique no botão Validar para a tarefa correspondente. Se receber uma mensagem de sucesso, validou o laboratório com sucesso.
-    > - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
-    > - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
+>**Parabéns** pela conclusão da tarefa! Agora é altura de validá-lo. Aqui estão os passos:
+> - Clique no botão Validar para a tarefa correspondente. Se receber uma mensagem de sucesso, validou o laboratório com sucesso.
+> - Caso contrário, leia atentamente a mensagem de erro e tente novamente o passo, seguindo as instruções do guia do laboratório.
+> - Se precisar de ajuda, contacte-nos através do e-mail labs-support@spektrasystems.com.
 
- <validation step="940ebf1a-9add-4bf0-a7fd-c6d929961497" />
+<validation step="32fe7dd9-0728-4b16-b975-374eb199044d" />
 
 ### Tarefa 6: Explore a aplicação Miyagi e o serviço de recomendação personalizando
 Nesta tarefa, irá personalizar o serviço de recomendação da aplicação Miyagi, selecionando um consultor financeiro e analisando as recomendações. Em seguida, irá verificar os registos no Visual Studio Code e interromper os serviços.
@@ -260,3 +267,5 @@ Nesta tarefa, irá personalizar o serviço de recomendação da aplicação Miya
 Neste laboratório, começou por configurar a aplicação Miyagi para prontidão operacional, seguida de uma exploração detalhada da implementação do serviço de recomendação. A execução prática envolve a execução do serviço de recomendação e a implementação local do frontend Miyagi para teste. Melhorar a eficiência da recuperação de dados é um passo fundamental, alcançado através de incorporações persistentes no Azure AI Search. O projeto termina com uma ampla exploração da App Miyagi e do serviço de recomendação, dando prioridade a uma experiência de utilizador personalizada. Esta abordagem sistemática garante uma compreensão completa e uma implementação eficaz ao longo de todo o projeto.
 
 ### Concluiu este laboratório com sucesso. Agora clique em Seguinte no canto inferior direito para passar para a página seguinte.
+
+![](../Media/1024.png)
