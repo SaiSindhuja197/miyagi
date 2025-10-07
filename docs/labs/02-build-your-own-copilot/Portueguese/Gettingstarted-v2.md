@@ -31,9 +31,9 @@ A arquitetura do Miyagi utiliza IA para interações de utilizador hiperpersonal
 
 Integra Azure Functions, AKS e Apache Kafka para uma comunicação fluida, com os dados geridos pelo Cosmos DB e pelo Azure Storage. O Miyagi exemplifica a utilização avançada de IA e de serviços Azure para aplicações inteligentes preparadas para o futuro.
 
-#### Diagrama de Arquitetura
+## Diagrama de Arquitetura
 
-![](../Media/1023.png)
+![](../Media/sk-memory-orchestration-1.png)
 
 ## Explicação dos Componentes
 
@@ -109,15 +109,17 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
 1. No separador **Entrar no Microsoft Azure**, verá o ecrã de login. Introduza o seguinte e-mail ou nome de utilizador e clique em **Seguinte**.
 
-     * **E-mail/Nome de utilizador**: **<inject key="AzureAdUserEmail"></inject>**
+     - **E-mail/Nome de utilizador**: **<inject key="AzureAdUserEmail"></inject>**
 
        ![](../Media/807.png)
 
 1. Agora digite a seguinte palavra-passe e clique em **Entrar**.
 
-    * **Palavra-passe**: **<inject key="AzureAdUserPassword"></inject>**
+    - **Palavra-passe**: **<inject key="AzureAdUserPassword"></inject>**
 
       ![](../Media/808.png)
+
+      > **Nota**: Se for solicitado o MFA, siga os passos destacados em - [Passos para prosseguir com a configuração do MFA se a opção Perguntar mais tarde não estiver visível](#passos-a-proceder-com-mfa-setup-if-ask-later-option-is-not-visible)
 
 1. Se vir o pop-up **Permanecer ligado?**, selecione **Não**.
 
@@ -139,6 +141,35 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
    ![](../Media/812.png)
 
+
+## Passos para prosseguir com a configuração do MFA se a opção "Perguntar Mais Tarde" não estiver visível
+
+> **Nota:** Continue com os exercícios se o MFA já estiver activado ou indisponível.
+
+1. No aviso **"Mais informações necessárias"**, selecione **Seguinte**.
+
+1. Na página **"Mantenha a sua conta segura"**, selecione **Seguinte** duas vezes.
+
+1. **Nota:** Se não tiver a aplicação Microsoft Authenticator instalada no seu dispositivo móvel:
+
+   - Abra a **Google Play Store** (Android) ou a **App Store** (iOS).
+   - Procure por **Microsoft Authenticator** e toque em **Instalar**.
+   - Abra a aplicação **Microsoft Authenticator**, selecione **Adicionar conta** e, em seguida, escolha **Conta empresarial ou escolar**.
+
+1. Um **código QR** será apresentado no ecrã do seu computador.
+
+1. Na aplicação Authenticator, selecione **Escanear um código QR** e digitalize o código apresentado no ecrã.
+
+1. Após a digitalização, clique em **Seguinte** para prosseguir.
+
+1. No seu telemóvel, introduza o número apresentado no ecrã do computador na aplicação Authenticator e selecione **Seguinte**.
+
+1. Se lhe for pedido para permanecer ligado, pode clicar em **Não**.
+
+1. Se for apresentada uma janela pop-up **Bem-vindo ao Microsoft Azure**, clique em **Cancelar** para ignorar o tour.
+
+1. Agora, clique em **Seguinte** no canto inferior direito para avançar para a página seguinte.
+
 > [!IMPORTANTE]<br>
 > **Para uma experiência mais tranquila durante o laboratório prático, é importante rever atentamente as instruções e as notas que o acompanham. Ajudará a navegar pelas tarefas com facilidade e confiança.**
 
@@ -150,7 +181,7 @@ A equipe de suporte da CloudLabs está disponível 24 horas por dia, 7 dias por 
 
 Contatos de Suporte ao Aluno:
     
-- Suporte por e-mail:cloudlabs-support@spektrasystems.com.
+- Suporte por e-mail: cloudlabs-support@spektrasystems.com.
 
 - Suporte por chat ao vivo: https://cloudlabs.ai/labs-support
 
@@ -158,8 +189,4 @@ Agora, clique em Avançar no canto inferior direito para avançar para a **próx
 
 ![](../Media/1024.png)
 
-
 ### Feliz aprendizado!!
- 
-    
-
