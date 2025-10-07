@@ -196,7 +196,7 @@ In this task, you'll be updating the configuration of the recommendation service
     docker login <inject key="AcrLoginServer" enableCopy="true"/> -u <inject key="AcrUsername" enableCopy="true"/> -p <inject key="AcrPassword" enableCopy="true"/>
     ```
 
-    >**Note**: The command docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/> is used to authenticate your Docker client with the specified Azure Container Registry (ACR) using the provided username and password. This authentication is necessary for performing operations such as pushing and pulling container images to and from the ACR.
+    >**Note**: The command **docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/>** is used to authenticate your Docker client with the specified Azure Container Registry (ACR) using the provided username and password. This authentication is necessary for performing operations such as pushing and pulling container images to and from the ACR.
 
 1. Run the following command to add the tag.
 
@@ -204,15 +204,15 @@ In this task, you'll be updating the configuration of the recommendation service
    docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
    
-   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest uploads a Docker image from your local machine to the specified Azure Container Registry (ACR). By executing this command, you make the miyagi-recommendation:latest image available in the ACR, enabling it to be used in various deployments and services within Azure.
-   
+   >**Note**: The command **docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** tags a local Docker image with a new name that includes the Azure Container Registry (ACR) name. By tagging the image this way, you prepare it to be pushed to the specified Azure Container Registry.
+
 1. Once you are logged into ACR. Run the below command to push the updated docker image of the recommendation service to the container registry.
 
    ```
    docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
    ```
 
-   >**Note**: The command docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest uploads the Docker image miyagi-recommendation:latest to the specified Azure Container Registry (ACR). This makes the image available in the ACR for use in deployments and other operations.
+   >**Note**: The command **docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** uploads the Docker image miyagi-recommendation:latest to the specified Azure Container Registry (ACR). This makes the image available in the ACR for use in deployments and other operations.
    
 ### Task 4: Revision of Recommendation service from AKS 
 
