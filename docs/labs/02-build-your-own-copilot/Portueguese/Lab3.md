@@ -200,7 +200,7 @@ Neste laboratório, irá atualizar a configuração do serviço de recomendaçã
     docker login <inject key="AcrLoginServer" enableCopy="true"/> -u <inject key="AcrUsername" enableCopy="true"/> -p <inject key="AcrPassword" enableCopy="true"/>
     ```
 
-    >**Nota**: O comando docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/> é utilizado para autenticar o seu cliente Docker com o registo de contentores do Azure (ACR) especificado utilizando o nome de utilizador e a palavra-passe fornecidos. Esta autenticação é necessária para executar operações como o envio e receção de imagens de contentores do ACR.
+    >**Nota**: O comando **docker login <inject key="AcrLoginServer" enableCopy="false"/> -u <inject key="AcrUsername" enableCopy="false"/> -p <inject key="AcrPassword" enableCopy="false"/>** é utilizado para autenticar o seu cliente Docker com o registo de contentores do Azure (ACR) especificado utilizando o nome de utilizador e a palavra-passe fornecidos. Esta autenticação é necessária para executar operações como o envio e receção de imagens de contentores do ACR.
 
 1. Execute o seguinte comando para adicionar a etiqueta.
 
@@ -208,7 +208,7 @@ Neste laboratório, irá atualizar a configuração do serviço de recomendaçã
     docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
     ```
 
-    >**Nota**: 
+    >**Nota**: O comando **docker tag miyagi-recommendation:latest <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** marca uma imagem local do Docker com um novo nome que inclui o nome do Azure Contentor Registry (ACR). Ao marcar a imagem desta forma, prepara-a para ser enviada para o Registo de Contentor do Azure especificado.
 
 1. Depois de fazer login no ACR. Execute o comando abaixo para enviar a imagem docker atualizada do serviço de recomendação para o registo do contentor.
 
@@ -216,7 +216,7 @@ Neste laboratório, irá atualizar a configuração do serviço de recomendaçã
     docker push <inject key="AcrLoginServer" enableCopy="true"/>/miyagi-recommendation:latest
     ```
 
-    >**Nota**: O comando docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest carrega a imagem do Docker miyagi-recommendation:latest para o registo de contentores do Azure (ACR) especificado. Isto torna a imagem disponível no ACR para utilização em implementações e outras operações.
+    >**Nota**: O comando **docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** carrega a imagem do Docker miyagi-recommendation:latest para o registo de contentores do Azure (ACR) especificado. Isto torna a imagem disponível no ACR para utilização em implementações e outras operações.
 
 ### Tarefa 4: Revisão do serviço de recomendação do AKS
 
