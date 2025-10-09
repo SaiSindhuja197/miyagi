@@ -219,15 +219,15 @@ En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un í
 
     ![](./Media/ai-search1.png)    
 
-1. En la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. En la pestaña **Fundición de IA | Búsqueda de IA**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](./Media/miyagi-image26.png)
+    ![](./Media/select-ai-search-service.png)
 
 1. En la pestaña Información general del servicio Search, haga clic en **Importar datos**.
 
     ![](./Media/import-data1.png)    
    
-1. En el menú desplegable, establezca el **Origen de Datos** en **Muestra**, seleccione **CosmosDB hotels-sample**, y haga clic en **Siguiente : Agregar aptitudes cognitivas (opcional)**.
+1. En el menú desplegable, establezca el **Origen de Datos** en **Muestras**, seleccione **CosmosDB hotels-sample**, y haga clic en **Siguiente : Agregar aptitudes cognitivas (opcional)**.
 
    ![](./Media/import-data2.png)
    
@@ -243,9 +243,9 @@ En esta tarea, configurará Azure AI Search importando datos de CosmosDB a un í
 
    ![](./Media/import-data4.png)
 
-1. Regrese a la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. En la pestaña **Fundición de IA | Búsqueda de IA**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
-   ![](./Media/miyagi-image26.png)
+    ![](./Media/select-ai-search-service.png)
    
 1. En el panel de navegación izquierdo, en **Administración de búsqueda** select **Índices (1)** y haga clic en **realestate-us-sample-index (2)**.
 
