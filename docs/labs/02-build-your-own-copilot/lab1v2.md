@@ -213,7 +213,7 @@ En esta tarea, conservará las incorporaciones en Azure AI Search ejecutando una
 
     ![](./Media/ai-search1.png)    
 
-1. En la pestaña **AI Foundry | AI Search**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
+1. En la pestaña **Fundición de IA | Búsqueda de IA**, seleccione **acs-<inject key="DeploymentID" enableCopy="false"/>**.
 
    ![](./Media/select-ai-search-service.png)
 
