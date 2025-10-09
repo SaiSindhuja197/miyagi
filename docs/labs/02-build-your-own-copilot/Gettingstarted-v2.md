@@ -102,25 +102,25 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
 1. En JumpVM, haga clic en el acceso directo al Portal de Azure del navegador Microsoft Edge, el cual se ha creado en el escritorio.
 
-   ![](./Media/11-10-24(3).png)
+   ![](./Media/10-10-25.png)
 
 1. En la pestaña **Iniciar sesión en Microsoft Azure**, verá la pantalla de inicio de sesión. Ingrese el siguiente correo electrónico o nombre de usuario y haga clic en **Siguiente**. 
 
    * **Correo electrónico/Nombre de usuario**: **<inject key="AzureAdUserEmail"></inject>**
 
-     ![](./Media/11-10-24(4).png)
+     ![](./Media/sign-in.png)
      
 1. Ahora ingrese la siguiente contraseña y haga clic en **Iniciar sesión**.
    
    * **Contraseña**: **<inject key="AzureAdUserPassword"></inject>**
 
-     ![](./Media/11-10-24(5).png)
+     ![](./Media/tap-password.png)
 
      > **Nota**: Si se le solicita MFA, siga los pasos resaltados en - [Pasos para continuar con la configuración de MFA si la opción "Preguntar más tarde" no está visible](#Pasos-para-continuar-con-la-configuración-de-MFA-si-la-opción-Preguntar-más-tarde-no-está-visible)  
    
 1. Si ve la ventana emergente **¿Permanecer conectado?**, seleccione **No**.
 
-   ![](./Media/11-10-24(6).png)
+   ![](./Media/stay-logged-in.png)
 
 1. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, seleccione **Cancelar** para omitir el recorrido.
 
