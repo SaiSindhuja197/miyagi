@@ -30,7 +30,7 @@ En esta tarea, configurará una API HTTP en Azure API Management para interactua
    | API Type **(1)**     | **Basic**            | 
    | Display name **(2)** | **miyagi-api**       |
    | Name **(3)**         | **miyagi-api**       |
-   | Web service URL **(4)** | Enter the Endpoint of Azure OpenAI Endpoint  **<inject key="OpenAIEndpoint" enableCopy="true"/>**  |
+   | Web service URL **(4)** | Ingrese el punto final de Azure OpenAI Endpoint  **<inject key="OpenAIEndpoint" enableCopy="true"/>**  |
    | API URL suffix **(5)** | **openai** |
    | Click on  **(6)** | **Create** |
 
@@ -84,7 +84,9 @@ En este laboratorio, configurará políticas de API, definirá roles y suscripci
 
 7. En la ventana **Agregar producto**, especifique **OpenAi** **(1)** como **Nombre para mostrar** y **OpenAI** **(2)** como **Descripción**. En el menú **API**, haga clic en el **Signo más** **(3)**, seleccione **Azure OpenAI Service API** **(4)**, presione Intro y haga clic en **Crear** **(5)**.
 
-   ![](./Media/productSpan.png)
+   ![](./Media/productSpan-1.png)
+
+   ![](./Media/productSpan-2.png)
 
 8. En el servicio API Management **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>**, haga clic en **Suscripciones** **(1)** en APIs del menú izquierdo y haga clic en **+ Agregar suscripción** **(2)**.
 
@@ -188,7 +190,6 @@ En esta tarea, actualizará la configuración del servicio de recomendaciones, r
 
     >**Nota**: Este comando crea una imagen Docker llamada Miyagi-recommendation a partir del Dockerfile y los archivos asociados en el directorio actual.
 
-
 1. Ejecute el siguiente comando para iniciar sesión en ACR.
 
     ```
@@ -255,13 +256,15 @@ En esta tarea, configurará el registro de Event Hub para API Management, config
 
    ![](./Media/namespace2-1.png)
 
-4. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**. 
+4. En la pestaña **Miembros**, seleccione **Identidad administrada** **(1)**, haga clic en **+ Seleccionar miembros** **(2)**.
 
-5. En la ventana emergente Selección de identidades administradas, para **Suscripción deje el valor predeterminado**, en el menú desplegable Identidad administrada elija **API Management service** **(3)**, seleccione **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(4)**, haga clic en **Seleccionar** **(5)**. 
+   ![](./Media/miyagi-image82.png)
 
-6. Haga clic en **Siguiente** **(6)**.
+5. En la ventana emergente Selección de identidades administradas, para **Suscripción deje el valor predeterminado (1)**, en el menú desplegable Identidad administrada elija **Servicio de gestión de API** **(2)**, seleccione **miyagi-apim-<inject key="DeploymentID" enableCopy="false"/>** **(3)**, haga clic en **Seleccionar** **(4)**. 
 
-   ![](./Media/apim-role-2.png)
+   ![](./Media/miyagi-image83.png)
+
+6. Haga clic en **Siguiente**.
 
 7. En la pestaña **Revisar y asignar** haga clic en **Revisar y asignar**.
 
