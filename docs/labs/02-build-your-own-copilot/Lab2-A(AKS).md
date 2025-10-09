@@ -29,8 +29,12 @@ En esta tarea, implementará los servicios de recomendación y UI de Miyagi en u
 1. Ejecute el siguiente comando para iniciar sesión en el portal de Azure.
 
    ```
-   az login --user <inject key="AzureAdUserEmail"></inject> --password <inject key="AzureAdUserPassword"></inject>
+   az login
    ```
+
+1. Esto lo redirigirá a la **Página de Inicio de sesión de Microsoft Azure**, seleccione su cuenta de Azure **<inject key="AzureAdUserEmail"></inject>**, y regrese a **Visual Studio Code**.
+
+   ![](./Media/azure-account-select.png)
 
 1. Ejecute el siguiente comando para iniciar sesión en el portal de Azure.
 
@@ -234,7 +238,9 @@ En esta tarea, enviará la imagen de Docker del servicio de recomendaciones Miya
 
    > **Nota**: El comando **docker push <inject key="AcrLoginServer" enableCopy="false"/>/miyagi-recommendation:latest** carga la imagen de Docker especificada, etiquetada con el nombre de Azure Container Registry (ACR), en el ACR. Esto hace que la imagen esté disponible en el ACR para su implementación y uso en diversos servicios de Azure.
 
-1. Vuelva a la ventana **Visual Studio Code** y navegue a **miyagi/ui/typescript** haga clic derecho, en el menú contextual seleccione **Abrir en la Terminal Integrada**.
+1. Vuelva a la ventana **Visual Studio Code** y navegue a **miyagi(1)/ui/typescript (2)** haga clic derecho, en el menú contextual seleccione **Abrir en la Terminal Integrada (3)**.
+
+   ![](./Media/image-rg-25.png)
 
 1. Ejecute el siguiente comando para agregar la etiqueta.
 
