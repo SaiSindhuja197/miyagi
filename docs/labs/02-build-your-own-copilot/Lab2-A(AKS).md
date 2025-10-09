@@ -30,8 +30,12 @@ In this task, you will deploy the Miyagi recommendation and UI services to an Az
 1. Run the following command to log in to the Azure portal.
 
    ```
-   az login --user <inject key="AzureAdUserEmail"></inject> --password <inject key="AzureAdUserPassword"></inject>
+   az login
    ```
+
+1. This will redirect to **Microsoft login page**, select your Azure account **<inject key="AzureAdUserEmail"></inject>**, and navigate back to the **Visual studio code**.
+
+   ![](./Media/azure-account-select.png)
 
 1. Run the following command to log in to the Azure portal.
 
