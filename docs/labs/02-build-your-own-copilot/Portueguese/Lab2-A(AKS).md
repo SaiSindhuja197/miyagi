@@ -30,8 +30,12 @@ Nesta tarefa, irá implementar a recomendação Miyagi e os serviços UI num clu
 1. Execute o seguinte comando para iniciar sessão no portal Azure.
 
    ```
-   az login --user <inject key="AzureAdUserEmail"></inject> --password <inject key="AzureAdUserPassword"></inject>
+   az login
    ```   
+
+1. Isto irá redirecionar para **página de login da Microsoft**, selecione a sua conta do Azure **<inject key="AzureAdUserEmail"></inject>** e navegue de volta para **código do Visual Studio**.
+
+   ![](../Media/azure-account-select.png)
 
 1. Execute o seguinte comando para iniciar sessão no portal Azure.
 
